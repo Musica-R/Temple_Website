@@ -1,0 +1,96 @@
+/* ═══════════════════════════════════
+   TICKER
+   Dark obsidian bar with gilded marquee
+═══════════════════════════════════ */
+
+:root {
+  --gold:        #d4af37;
+  --gold-light:  #f0d060;
+  --gold-dim:    rgba(212, 175, 55, 0.18);
+  --obsidian:    #08060a;
+  --deep:        #0f0c10;
+  --ink:         #1a1520;
+  --cream:       #fffaf0;
+  --cream-dim:   rgba(255, 250, 240, 0.55);
+  --font-display: 'Cinzel', serif;
+  --font-body:    'Cormorant Garamond', serif;
+}
+
+.ticker-wrap {
+  position: relative;
+  width: 100%;
+  background: var(--obsidian);
+  border-top:    1px solid var(--gold-dim);
+  border-bottom: 1px solid var(--gold-dim);
+  overflow: hidden;
+  z-index: 10;
+  padding: 0;
+}
+
+/* Side fade glows */
+.ticker-glow-left,
+.ticker-glow-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+.ticker-glow-left  { left:  0; background: linear-gradient(to right, var(--obsidian) 0%, transparent 100%); }
+.ticker-glow-right { right: 0; background: linear-gradient(to left,  var(--obsidian) 0%, transparent 100%); }
+
+.ticker-inner {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  overflow: hidden;
+}
+
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: tickerScroll 28s linear infinite;
+  will-change: transform;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.ticker-set {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 10px;
+}
+
+.ticker-sep {
+  color: var(--gold);
+  font-size: 0.75rem;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.ticker-text {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  transition: color 0.3s;
+}
+
+.ticker-item:hover .ticker-text {
+  color: var(--gold-light);
+}
+
+@keyframes tickerScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

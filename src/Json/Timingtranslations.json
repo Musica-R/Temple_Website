@@ -1,0 +1,63 @@
+{
+    "timing": {
+        "EN": {
+            "morning": "Morning Session",
+            "evening": "Evening Session",
+            "desc": "The temple follows a strict daily puja schedule.",
+            "events": {
+                "open": "Temple Opens",
+                "morningPrayer": "Morning Prayer",
+                "closeMorning": "Temple Closes",
+                "reopen": "Temple Re-opens",
+                "deeparadhana": "Deeparadhana",
+                "closeEvening": "Temple Closes"
+            }
+        },
+        "TA": {
+            "morning": "காலை வழிபாடு",
+            "evening": "மாலை வழிபாடு",
+            "desc": "கோவில் தினசரி பூஜை நேரத்தை பின்பற்றுகிறது.",
+            "events": {
+                "open": "கோவில் திறப்பு",
+                "morningPrayer": "காலை பூஜை",
+                "closeMorning": "கோவில் மூடல்",
+                "reopen": "கோவில் மீண்டும் திறப்பு",
+                "deeparadhana": "தீபாராதனை",
+                "closeEvening": "கோவில் மூடல்"
+            }
+        },
+        "ML": {
+            "morning": "രാവിലെ പൂജ",
+            "evening": "വൈകുന്നേര പൂജ",
+            "desc": "ക്ഷേത്രം കർശനമായ ദിനചర్య പാലിക്കുന്നു.",
+            "events": {
+                "open": "ക്ഷേത്രം തുറക്കുന്നു",
+                "morningPrayer": "പ്രഭാത പൂജ",
+                "closeMorning": "ക്ഷേത്രം അടയ്ക്കുന്നു",
+                "reopen": "ക്ഷേത്രം വീണ്ടും തുറക്കുന്നു",
+                "deeparadhana": "ദീപാരാധന",
+                "closeEvening": "ക്ഷേത്രം അടയ്ക്കുന്നു"
+            }
+        }
+    },
+    "ticker": {
+        "EN": {
+            "darshan": "🪔 Morning Darshan: 5:00 AM – 10:30 AM",
+            "evening": "✨ Evening Darshan: 5:30 PM – 8:00 PM",
+            "prayer": "🙏 Morning Prayer: 7:00 AM",
+            "deeparadhana": "🪔 Deeparadhana: 6:30 PM"
+        },
+        "TA": {
+            "darshan": "🪔 காலை தரிசனம்: 5:00 AM – 10:30 AM",
+            "evening": "✨ மாலை தரிசனம்: 5:30 PM – 8:00 PM",
+            "prayer": "🙏 காலை பூஜை: 7:00 AM",
+            "deeparadhana": "🪔 தீபாராதனை: 6:30 PM"
+        },
+        "ML": {
+            "darshan": "🪔 രാവിലെ ദർശനം: 5:00 AM – 10:30 AM",
+            "evening": "✨ വൈകുന്നേര ദർശനം: 5:30 PM – 8:00 PM",
+            "prayer": "🙏 പ്രഭാത പൂജ: 7:00 AM",
+            "deeparadhana": "🪔 ദീപാരാധന: 6:30 PM"
+        }
+    }
+}

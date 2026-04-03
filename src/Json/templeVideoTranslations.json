@@ -1,0 +1,40 @@
+{
+  "templeVideo": {
+    "EN": {
+      "sectionLabel": "Sacred Darshan",
+      "title": "Experience the Divine",
+      "subtitle": "Temple Live Darshan",
+      "description": "Witness the sacred rituals and timeless traditions of our temple. Let the divine energy flow through your screen and bless your home.",
+      "watchLabel": "Watch Now",
+      "volumeHint": "Unmute for sacred chants",
+      "galleryTitle": "Temple Gallery",
+      "gallerySubtitle": "Glimpses of Divine Grace",
+      "videoCaption": "Morning Abhishekam Ceremony",
+      "footerNote": "May the blessings of the divine be with you always."
+    },
+    "TA": {
+      "sectionLabel": "புனித தரிசனம்",
+      "title": "தெய்வீகத்தை உணருங்கள்",
+      "subtitle": "கோவில் நேரடி தரிசனம்",
+      "description": "நமது கோவிலின் புனித சடங்குகளையும் நித்திய பாரம்பரியங்களையும் காணுங்கள். தெய்வீக சக்தி உங்கள் திரையில் பாய்ந்து உங்கள் இல்லத்தை ஆசீர்வதிக்கட்டும்.",
+      "watchLabel": "இப்போது காணுங்கள்",
+      "volumeHint": "புனித மந்திரங்களுக்கு ஒலி இயக்கவும்",
+      "galleryTitle": "கோவில் தொகுப்பு",
+      "gallerySubtitle": "தெய்வீக அருளின் காட்சிகள்",
+      "videoCaption": "காலை அபிஷேக விழா",
+      "footerNote": "தெய்வீக ஆசீர்வாதம் என்றும் உங்களுடன் இருக்கட்டும்."
+    },
+    "ML": {
+      "sectionLabel": "പവിത്ര ദർശനം",
+      "title": "ദൈവികത അനുഭവിക്കുക",
+      "subtitle": "ക്ഷേത്ര ലൈവ് ദർശനം",
+      "description": "ഞങ്ങളുടെ ക്ഷേത്രത്തിലെ പവിത്ര ചടങ്ങുകളും നിത്യ പാരമ്പര്യങ്ങളും കാണൂ. ദൈവിക ശക്തി നിങ്ങളുടെ സ്ക്രീൻ വഴി ഒഴുകി നിങ്ങളുടെ വീട്ടിനെ അനുഗ്രഹിക്കട്ടെ.",
+      "watchLabel": "ഇപ്പോൾ കാണുക",
+      "volumeHint": "പവിത്ര മന്ത്രങ്ങൾക്കായി ശബ്ദം ഓണാക്കുക",
+      "galleryTitle": "ക്ഷേത്ര ഗാലറി",
+      "gallerySubtitle": "ദൈവിക കൃപയുടെ ദൃശ്യങ്ങൾ",
+      "videoCaption": "പ്രഭാത അഭിഷേകം ചടങ്ങ്",
+      "footerNote": "ദൈവിക അനുഗ്രഹങ്ങൾ എപ്പോഴും നിങ്ങളോടൊപ്പമുണ്ടാകട്ടെ."
+    }
+  }
+}

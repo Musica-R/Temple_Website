@@ -1,0 +1,188 @@
+/* ===== ROOT COLORS (YOUR THEME) ===== */
+:root {
+  --bg-light: #fffaf0;
+  --cream-soft: #f9ecd2;
+  --brown: #8b5e3c;
+  --gold: #d4af37;
+  --text-dark: #3b2a1d;
+  --text-history: #5e110e;
+}
+
+/* ===== SECTION ===== */
+.pooja-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, var(--bg-light), var(--cream-soft));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.pooja-container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border: 1px solid rgba(139, 94, 60, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(139, 94, 60, 0.15);
+}
+
+/* ===== TITLE ===== */
+.pooja-title {
+  text-align: center;
+  font-size: 30px;
+  color: var(--text-history);
+  margin-bottom: 25px;
+  font-family: "Cinzel", serif;
+}
+
+/* ===== FORM ===== */
+.pooja-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ===== INPUT GROUP ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: var(--text-dark);
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== INPUTS ===== */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(139, 94, 60, 0.3);
+  background: var(--cream-soft);
+  color: var(--text-dark);
+  outline: none;
+  transition: 0.3s;
+}
+
+/* ===== FOCUS EFFECT ===== */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* ===== BUTTON ===== */
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  background: linear-gradient(45deg, var(--gold), #f3d77a);
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ===== BUTTON HOVER ===== */
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.5);
+}
+
+/* ===== 1024px (Tablets / Small Laptops) ===== */
+@media (max-width: 1024px) {
+  .pooja-section {
+    padding: 60px 15px;
+  }
+
+  .pooja-container {
+    max-width: 500px;
+    padding: 25px;
+  }
+
+  .pooja-title {
+    font-size: 26px;
+  }
+}
+
+
+/* ===== 768px (Tablets / Large Mobile) ===== */
+@media (max-width: 768px) {
+  .pooja-section {
+    padding: 50px 15px;
+  }
+
+  .pooja-container {
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .pooja-title {
+    font-size: 24px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 9px;
+  }
+
+  .submit-btn {
+    padding: 11px;
+    font-size: 14px;
+  }
+}
+
+
+/* ===== 420px (Mobile Phones) ===== */
+@media (max-width: 420px) {
+  .pooja-section {
+    padding: 40px 10px;
+  }
+
+  .pooja-container {
+    max-width: 100%;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .pooja-title {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  textarea {
+    min-height: 70px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

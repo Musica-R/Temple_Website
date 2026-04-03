@@ -1,0 +1,83 @@
+{
+  "footer": {
+    "EN": {
+      "bannerSub": "Established Since Ancient Times",
+      "bannerTitle": "Sri Kurumba Bhagavathy Temple",
+      "bannerLocation": "Puthussery, Palakkad, Kerala",
+      "desc": "Experience divine blessings, sacred rituals, and spiritual peace at one of Kerala's most revered shrines.",
+      "exploreHeading": "Explore",
+      "timingsHeading": "Pooja Timings",
+      "contactHeading": "Contact Us",
+      "navLinks": {
+        "home": "Home",
+        "heritage": "Our Heritage",
+        "booking": "Book Seva",
+        "donation": "Donation",
+        "gallery": "Gallery",
+        "contact": "Contact"
+      },
+      "timings": [
+        { "label": "Morning Pooja", "time": "5:30 AM – 11:00 AM" },
+        { "label": "Afternoon",     "time": "12:00 PM – 1:00 PM" },
+        { "label": "Evening Pooja", "time": "5:00 PM – 8:30 PM" },
+        { "label": "Night Deeparadhana", "time": "8:00 PM – 8:30 PM" }
+      ],
+      "address": "Puthussery, Palakkad, Kerala – 678 XXX",
+      "copyright": "© {year} Sri Kurumba Bhagavathy Temple. All rights reserved.",
+      "bottomNote": "Dedicated with devotion."
+    },
+    "TA": {
+      "bannerSub": "பண்டைய காலத்திலிருந்து நிறுவப்பட்டது",
+      "bannerTitle": "ஸ்ரீ குரும்பா பகவதி கோயில்",
+      "bannerLocation": "புதுசேரி, பாலக்காடு, கேரளா",
+      "desc": "கேரளாவின் மிகவும் மதிப்பிற்குரிய கோயில்களில் ஒன்றில் தெய்வீக ஆசி, புனித சடங்குகள் மற்றும் ஆன்மீக அமைதியை அனுபவியுங்கள்.",
+      "exploreHeading": "ஆராய்க",
+      "timingsHeading": "பூஜை நேரங்கள்",
+      "contactHeading": "தொடர்பு கொள்ளுங்கள்",
+      "navLinks": {
+        "home": "முகப்பு",
+        "heritage": "நமது பாரம்பரியம்",
+        "booking": "சேவை பதிவு",
+        "donation": "தானம்",
+        "gallery": "தொகுப்பு",
+        "contact": "தொடர்பு"
+      },
+      "timings": [
+        { "label": "காலை பூஜை",     "time": "காலை 5:30 – 11:00" },
+        { "label": "மதிய வேளை",     "time": "மதியம் 12:00 – 1:00" },
+        { "label": "மாலை பூஜை",     "time": "மாலை 5:00 – 8:30" },
+        { "label": "இரவு தீபாராதனை", "time": "இரவு 8:00 – 8:30" }
+      ],
+      "address": "புதுசேரி, பாலக்காடு, கேரளா – 678 XXX",
+      "copyright": "© {year} ஸ்ரீ குரும்பா பகவதி கோயில். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+      "bottomNote": "பக்தியோடு அர்பணிக்கப்பட்டது."
+    },
+    "ML": {
+      "bannerSub": "പുരാതന കാലം മുതൽ സ്ഥാപിതമായത്",
+      "bannerTitle": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം",
+      "bannerLocation": "പുതുശ്ശേരി, പാലക്കാട്, കേരളം",
+      "desc": "കേരളത്തിലെ ഏറ്റവും പ്രശസ്തമായ ക്ഷേത്രങ്ങളിൽ ഒന്നിൽ ദൈവിക അനുഗ്രഹവും പവിത്രമായ ആചാരങ്ങളും ആത്മീയ ശാന്തിയും അനുഭവിക്കൂ.",
+      "exploreHeading": "അന്വേഷിക്കുക",
+      "timingsHeading": "പൂജാ സമയം",
+      "contactHeading": "ബന്ധപ്പെടുക",
+      "navLinks": {
+        "home": "ഹോം",
+        "heritage": "നമ്മുടെ പൈതൃകം",
+        "booking": "സേവ ബുക്ക് ചെയ്യുക",
+        "donation": "സംഭാവന",
+        "gallery": "ഗ്യാലറി",
+        "contact": "ബന്ധപ്പെടുക"
+      },
+      "timings": [
+        { "label": "രാവിലെ പൂജ",    "time": "5:30 AM – 11:00 AM" },
+        { "label": "ഉച്ചനേരം",       "time": "12:00 PM – 1:00 PM" },
+        { "label": "വൈകുന്നേരം പൂജ", "time": "5:00 PM – 8:30 PM" },
+        { "label": "രാത്രി ദീപാരാധന", "time": "8:00 PM – 8:30 PM" }
+      ],
+      "address": "പുതുശ്ശേരി, പാലക്കാട്, കേരളം – 678 XXX",
+      "copyright": "© {year} ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തമാണ്.",
+      "bottomNote": "ഭക്തിയോടെ സമർപ്പിച്ചത്."
+    }
+  }
+}
+ 

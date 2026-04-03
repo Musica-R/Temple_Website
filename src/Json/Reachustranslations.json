@@ -1,0 +1,706 @@
+{
+    "header": {
+        "EN": {
+            "logoName": "Sri Kurumba Bhagavathy Temple",
+            "logoSubtitle": "Puthussery Palakkad",
+            "navLinks": {
+                "home": "Home",
+                "heritage": "Our Heritage",
+                "donation": "Donation",
+                "gallery": "Divine Gallery",
+                "contact": "Reach Us"
+            },
+            "languages": {
+                "EN": "English",
+                "TA": "Tamil",
+                "ML": "Malayalam"
+            }
+        },
+        "TA": {
+            "logoName": "ஸ்ரீ குரும்பா பகவதி கோயில்",
+            "logoSubtitle": "புதுச்சேரி பாலக்காடு",
+            "navLinks": {
+                "home": "முகப்பு",
+                "heritage": "எங்கள் பாரம்பரியம்",
+                "donation": "நன்கொடை",
+                "gallery": "தெய்வீக தொகுப்பு",
+                "contact": "எங்களை தொடர்பு கொள்ளுங்கள்"
+            },
+            "languages": {
+                "EN": "English",
+                "TA": "தமிழ்",
+                "ML": "മലയാളം"
+            }
+        },
+        "ML": {
+            "logoName": "ശ്രീ കുരുംബ ഭഗവതി ക്ഷേത്രം",
+            "logoSubtitle": "പുതുശ്ശേരി പാലക്കാട്",
+            "navLinks": {
+                "home": "ഹോം",
+                "heritage": "ഞങ്ങളുടെ പൈതൃകം",
+                "donation": "സംഭാവന",
+                "gallery": "ദൈവിക ഗാലറി",
+                "contact": "ഞങ്ങളെ ബന്ധപ്പെടുക"
+            },
+            "languages": {
+                "EN": "English",
+                "TA": "തമിഴ്",
+                "ML": "മലയാളം"
+            }
+        }
+    },
+    "hero": {
+        "EN": {
+            "title": "Sri Kurumba Bhagavathy Temple",
+            "subtitle": "Puthussery, Palakkad",
+            "tagline": "A Sacred Abode of Divine Grace & Ancient Tradition",
+            "ctaPooja": "Book a Pooja",
+            "ctaDonation": "Make a Donation"
+        },
+        "TA": {
+            "title": "ஸ்ரீ குரும்பா பகவதி கோயில்",
+            "subtitle": "புதுச்சேரி, பாலக்காடு",
+            "tagline": "தெய்வீக அருளும் தொன்மையான மரபும் நிறைந்த புனித தலம்",
+            "ctaPooja": "பூஜை பதிவு செய்யுங்கள்",
+            "ctaDonation": "நன்கொடை வழங்குங்கள்"
+        },
+        "ML": {
+            "title": "ശ്രീ കുരുംബ ഭഗവതി ക്ഷേത്രം",
+            "subtitle": "പുതുശ്ശേരി, പാലക്കാട്",
+            "tagline": "ദൈവിക കൃപയുടെയും പുരാതന പാരമ്പര്യത്തിന്റെയും പുണ്യഭൂമി",
+            "ctaPooja": "പൂജ ബുക്ക് ചെയ്യൂ",
+            "ctaDonation": "സംഭാവന നൽകൂ"
+        }
+    },
+    "donation": {
+        "EN": {
+            "formPanel": {
+                "icon": "🙏",
+                "title": "Make a Sacred Offering",
+                "subtitle": "Choose an amount, select a purpose, then scan the QR or tap Pay via GPay.",
+                "amountLabel": "Donation Amount (₹) *",
+                "amountPlaceholder": "Enter custom amount",
+                "purposeLabel": "Purpose of Donation",
+                "generateBtn": "Generate QR & Pay",
+                "qrScanHint": "Scan with any UPI app to donate",
+                "orDivider": "or",
+                "gpayBtn": "Pay with GPay",
+                "upiLabel": "UPI ID",
+                "acceptsNote": "Accepts all UPI apps · Cash · Bank Transfer",
+                "badges": {
+                    "secure": "Secure",
+                    "tax": "80G Tax Exempt",
+                    "receipt": "Receipt Issued"
+                }
+            },
+            "purposeOptions": {
+                "general": "🛕 General Temple Fund",
+                "annadanam": "🍛 Annadanam — Feed the Devotees",
+                "festival": "🎊 Festival & Utsavam",
+                "lamp": "🪔 Nithyadeepam — Daily Lamp",
+                "renovation": "🏗️ Temple Renovation",
+                "abhishekam": "🌸 Abhishekam Sponsorship",
+                "vastra": "👘 Vastram — Deity Garments",
+                "pushpam": "🌺 Pushpam — Daily Flowers",
+                "kalyana": "💛 Kalyana Utsavam"
+            },
+            "purposeLabels": {
+                "general": "General Temple Fund",
+                "annadanam": "Annadanam",
+                "festival": "Festival & Utsavam",
+                "lamp": "Nithyadeepam",
+                "renovation": "Temple Renovation",
+                "abhishekam": "Abhishekam",
+                "vastra": "Vastram",
+                "pushpam": "Pushpam",
+                "cow": "Go Pooja",
+                "education": "Vedic Education",
+                "kalyana": "Kalyana Utsavam"
+            },
+            "imagePanel": {
+                "imgAlt": "Temple Sanctum",
+                "quote": "The hand that gives, the heart that prays — both are touched by the grace of the divine. Your offering sustains the sacred flame for all devotees.",
+                "quoteAuthor": "— Temple Tradition",
+                "stats": {
+                    "devotees": {
+                        "num": "5,000+",
+                        "label": "Devotees Fed"
+                    },
+                    "lamps": {
+                        "num": "365",
+                        "label": "Lamps Lit"
+                    },
+                    "seva": {
+                        "num": "50 Yrs",
+                        "label": "Of Seva"
+                    }
+                }
+            },
+            "donationTypes": {
+                "sectionTag": "ॐ",
+                "sectionTitle": "Ways You Can Contribute",
+                "sectionSubtitle": "Every act of giving is a step toward the divine.",
+                "dividerSymbol": "✦",
+                "cards": [
+                    {
+                        "key": "annadanam",
+                        "icon": "🍛",
+                        "imgAlt": "Annadanam",
+                        "title": "Annadanam",
+                        "description": "Offer a sacred meal to devotees and receive the supreme blessing of nourishing a soul.",
+                        "from": "From ₹501"
+                    },
+                    {
+                        "key": "lamp",
+                        "icon": "🪔",
+                        "imgAlt": "Nithyadeepam",
+                        "title": "Nithyadeepam",
+                        "description": "Keep the eternal flame alive — sponsor the daily lamp in the sanctum sanctorum.",
+                        "from": "From ₹251"
+                    },
+                    {
+                        "key": "festival",
+                        "icon": "🎊",
+                        "imgAlt": "Festival",
+                        "title": "Festival & Utsavam",
+                        "description": "Help conduct grand utsavams and rituals that celebrate the deity's glory with thousands.",
+                        "from": "From ₹1,001"
+                    },
+                    {
+                        "key": "renovation",
+                        "icon": "🏗️",
+                        "imgAlt": "Renovation",
+                        "title": "Gopuram Renovation",
+                        "description": "Preserve this sacred heritage for future generations by supporting temple restoration.",
+                        "from": "From ₹5,001"
+                    },
+                    {
+                        "key": "abhishekam",
+                        "icon": "🌸",
+                        "imgAlt": "Abhishekam",
+                        "title": "Abhishekam",
+                        "description": "Sponsor the sacred bathing ritual of the deity with milk, honey, rose water and more.",
+                        "from": "From ₹501"
+                    },
+                    {
+                        "key": "vastra",
+                        "icon": "👘",
+                        "imgAlt": "Vastram",
+                        "title": "Vastram — Deity Garments",
+                        "description": "Offer sacred garments to adorn the deity on auspicious occasions and daily rituals.",
+                        "from": "From ₹751"
+                    }
+                ]
+            },
+            "cta": {
+                "smallLabel": "Every Rupee Counts",
+                "title": "Together, We Keep the Flame Alive",
+                "description": "Your generosity sustains daily rituals, feeds thousands, and preserves centuries of spiritual tradition. Be part of this divine mission.",
+                "button": "Donate Now"
+            }
+        },
+        "TA": {
+            "formPanel": {
+                "icon": "🙏",
+                "title": "புனித காணிக்கை செலுத்துங்கள்",
+                "subtitle": "தொகையை தேர்வு செய்து, நோக்கத்தை குறிப்பிட்டு, QR ஸ்கேன் செய்யுங்கள் அல்லது GPay மூலம் பணம் செலுத்துங்கள்.",
+                "amountLabel": "நன்கொடை தொகை (₹) *",
+                "amountPlaceholder": "தனிப்பயன் தொகை உள்ளிடுக",
+                "purposeLabel": "நன்கொடையின் நோக்கம்",
+                "generateBtn": "QR உருவாக்கி பணம் செலுத்துக",
+                "qrScanHint": "எந்த UPI பயன்பாட்டிலும் ஸ்கேன் செய்து நன்கொடை செய்யுங்கள்",
+                "orDivider": "அல்லது",
+                "gpayBtn": "GPay மூலம் செலுத்துக",
+                "upiLabel": "UPI ID",
+                "acceptsNote": "அனைத்து UPI பயன்பாடுகள் · பணம் · வங்கி பரிமாற்றம்",
+                "badges": {
+                    "secure": "பாதுகாப்பானது",
+                    "tax": "80G வரி விலக்கு",
+                    "receipt": "ரசீது வழங்கப்படும்"
+                }
+            },
+            "purposeOptions": {
+                "general": "🛕 பொது கோயில் நிதி",
+                "annadanam": "🍛 அன்னதானம் — பக்தர்களுக்கு உணவு",
+                "festival": "🎊 திருவிழா & உத்சவம்",
+                "lamp": "🪔 நித்யதீபம் — தினசரி விளக்கு",
+                "renovation": "🏗️ கோயில் புனரமைப்பு",
+                "abhishekam": "🌸 அபிஷேக ஸ்பான்சர்ஷிப்",
+                "vastra": "👘 வஸ்திரம் — தெய்வ ஆடைகள்",
+                "pushpam": "🌺 புஷ்பம் — தினசரி மலர்கள்",
+                "kalyana": "💛 கல்யாண உத்சவம்"
+            },
+            "purposeLabels": {
+                "general": "பொது கோயில் நிதி",
+                "annadanam": "அன்னதானம்",
+                "festival": "திருவிழா & உத்சவம்",
+                "lamp": "நித்யதீபம்",
+                "renovation": "கோயில் புனரமைப்பு",
+                "abhishekam": "அபிஷேகம்",
+                "vastra": "வஸ்திரம்",
+                "pushpam": "புஷ்பம்",
+                "cow": "கோ பூஜை",
+                "education": "வேத கல்வி",
+                "kalyana": "கல்யாண உத்சவம்"
+            },
+            "imagePanel": {
+                "imgAlt": "கோயில் கருவறை",
+                "quote": "தரும் கை, வேண்டும் இதயம் — இரண்டும் இறைவனின் அருளால் தொடப்படுகின்றன. உங்கள் காணிக்கை அனைத்து பக்தர்களுக்கும் புனித தீபத்தை நிலைநிறுத்துகிறது.",
+                "quoteAuthor": "— கோயில் மரபு",
+                "stats": {
+                    "devotees": {
+                        "num": "5,000+",
+                        "label": "உணவு வழங்கப்பட்டவர்கள்"
+                    },
+                    "lamps": {
+                        "num": "365",
+                        "label": "விளக்குகள் ஏற்றப்பட்டன"
+                    },
+                    "seva": {
+                        "num": "50 ஆண்டு",
+                        "label": "சேவையில்"
+                    }
+                }
+            },
+            "donationTypes": {
+                "sectionTag": "ॐ",
+                "sectionTitle": "நீங்கள் பங்களிக்கும் வழிகள்",
+                "sectionSubtitle": "ஒவ்வொரு தானமும் தெய்வீகத்தை நோக்கிய ஒரு அடி.",
+                "dividerSymbol": "✦",
+                "cards": [
+                    {
+                        "key": "annadanam",
+                        "icon": "🍛",
+                        "imgAlt": "அன்னதானம்",
+                        "title": "அன்னதானம்",
+                        "description": "பக்தர்களுக்கு புனித உணவு வழங்கி, ஒரு ஆன்மாவை போஷிக்கும் உயர்ந்த ஆசீர்வாதத்தை பெறுங்கள்.",
+                        "from": "₹501 முதல்"
+                    },
+                    {
+                        "key": "lamp",
+                        "icon": "🪔",
+                        "imgAlt": "நித்யதீபம்",
+                        "title": "நித்யதீபம்",
+                        "description": "நித்திய சுடரை வாழ வையுங்கள் — கருவறையில் தினசரி விளக்கை ஸ்பான்சர் செய்யுங்கள்.",
+                        "from": "₹251 முதல்"
+                    },
+                    {
+                        "key": "festival",
+                        "icon": "🎊",
+                        "imgAlt": "திருவிழா",
+                        "title": "திருவிழா & உத்சவம்",
+                        "description": "ஆயிரக்கணக்கானவர்களுடன் தெய்வத்தின் மகிமையை கொண்டாடும் மகா உத்சவங்கள் நடத்த உதவுங்கள்.",
+                        "from": "₹1,001 முதல்"
+                    },
+                    {
+                        "key": "renovation",
+                        "icon": "🏗️",
+                        "imgAlt": "புனரமைப்பு",
+                        "title": "கோபுர புனரமைப்பு",
+                        "description": "கோயில் புனரமைப்பை ஆதரிப்பதன் மூலம் இந்த புனித மரபை எதிர்கால தலைமுறைக்கு பாதுகாத்திடுங்கள்.",
+                        "from": "₹5,001 முதல்"
+                    },
+                    {
+                        "key": "abhishekam",
+                        "icon": "🌸",
+                        "imgAlt": "அபிஷேகம்",
+                        "title": "அபிஷேகம்",
+                        "description": "பாலும் தேனும் ரோஜாஜலமும் கொண்டு தெய்வத்தின் திருமஞ்சன சடங்கை ஸ்பான்சர் செய்யுங்கள்.",
+                        "from": "₹501 முதல்"
+                    },
+                    {
+                        "key": "vastra",
+                        "icon": "👘",
+                        "imgAlt": "வஸ்திரம்",
+                        "title": "வஸ்திரம் — தெய்வ ஆடைகள்",
+                        "description": "மங்கல நாட்களிலும் தினசரி வழிபாட்டிலும் தெய்வத்தை அலங்கரிக்க புனித ஆடைகள் வழங்குங்கள்.",
+                        "from": "₹751 முதல்"
+                    }
+                ]
+            },
+            "cta": {
+                "smallLabel": "ஒவ்வொரு ரூபாயும் முக்கியமானது",
+                "title": "ஒன்றாக, நாம் சுடரை நிலைநிறுத்துவோம்",
+                "description": "உங்கள் தாராள மனம் தினசரி சடங்குகளை நிலைநிறுத்தி, ஆயிரக்கணக்கானவர்களுக்கு உணவளித்து, நூற்றாண்டு கால ஆன்மீக மரபை பாதுகாக்கிறது. இந்த தெய்வீக பணியின் ஒரு பகுதியாக இருங்கள்.",
+                "button": "இப்போதே நன்கொடை வழங்குக"
+            }
+        },
+        "ML": {
+            "formPanel": {
+                "icon": "🙏",
+                "title": "പുണ്യ വഴിപാട് അർപ്പിക്കൂ",
+                "subtitle": "തുക തിരഞ്ഞെടുത്ത്, ഉദ്ദേശ്യം നൽകി, QR സ്കാൻ ചെയ്യൂ അല്ലെങ്കിൽ GPay വഴി അടക്കൂ.",
+                "amountLabel": "സംഭാവന തുക (₹) *",
+                "amountPlaceholder": "ഇഷ്ടാനുസരണ തുക നൽകൂ",
+                "purposeLabel": "സംഭാവനയുടെ ഉദ്ദേശ്യം",
+                "generateBtn": "QR ഉണ്ടാക്കി അടക്കൂ",
+                "qrScanHint": "ഏതൊരു UPI ആപ്പ് ഉപയോഗിച്ചും സ്കാൻ ചെയ്ത് സംഭാവന നൽകൂ",
+                "orDivider": "അല്ലെങ്കിൽ",
+                "gpayBtn": "GPay വഴി അടക്കൂ",
+                "upiLabel": "UPI ID",
+                "acceptsNote": "എല്ലാ UPI ആപ്പുകളും · പണം · ബാങ്ക് ട്രാൻസ്ഫർ",
+                "badges": {
+                    "secure": "സുരക്ഷിതം",
+                    "tax": "80G നികുതി ഇളവ്",
+                    "receipt": "രസീത് നൽകും"
+                }
+            },
+            "purposeOptions": {
+                "general": "🛕 പൊതു ക്ഷേത്ര ഫണ്ട്",
+                "annadanam": "🍛 അന്നദാനം — ഭക്തർക്ക് ഭക്ഷണം",
+                "festival": "🎊 ഉത്സവം & ആഘോഷം",
+                "lamp": "🪔 നിത്യദീപം — ദൈനംദിന വിളക്ക്",
+                "renovation": "🏗️ ക്ഷേത്ര നവീകരണം",
+                "abhishekam": "🌸 അഭിഷേക സ്പോൺസർഷിപ്പ്",
+                "vastra": "👘 വസ്ത്രം — ദേവതയ്ക്കുള്ള വസ്ത്രം",
+                "pushpam": "🌺 പുഷ്പം — ദൈനംദിന പൂക്കൾ",
+                "kalyana": "💛 കല്യാണ ഉത്സവം"
+            },
+            "purposeLabels": {
+                "general": "പൊതു ക്ഷേത്ര ഫണ്ട്",
+                "annadanam": "അന്നദാനം",
+                "festival": "ഉത്സവം & ആഘോഷം",
+                "lamp": "നിത്യദീപം",
+                "renovation": "ക്ഷേത്ര നവീകരണം",
+                "abhishekam": "അഭിഷേകം",
+                "vastra": "വസ്ത്രം",
+                "pushpam": "പുഷ്പം",
+                "cow": "ഗോ പൂജ",
+                "education": "വൈദിക വിദ്യാഭ്യാസം",
+                "kalyana": "കല്യാണ ഉത്സവം"
+            },
+            "imagePanel": {
+                "imgAlt": "ക്ഷേത്ര ഗർഭഗൃഹം",
+                "quote": "നൽകുന്ന കൈ, പ്രാർഥിക്കുന്ന ഹൃദയം — രണ്ടും ദൈവകൃപയാൽ സ്പർശിക്കപ്പെടുന്നു. നിങ്ങളുടെ വഴിപാട് എല്ലാ ഭക്തർക്കും പുണ്യദീപം നിലനിർത്തുന്നു.",
+                "quoteAuthor": "— ക്ഷേത്ര പാരമ്പര്യം",
+                "stats": {
+                    "devotees": {
+                        "num": "5,000+",
+                        "label": "ഭക്തർക്ക് ഭക്ഷണം"
+                    },
+                    "lamps": {
+                        "num": "365",
+                        "label": "വിളക്കുകൾ തെളിഞ്ഞു"
+                    },
+                    "seva": {
+                        "num": "50 വർഷം",
+                        "label": "സേവനത്തിൽ"
+                    }
+                }
+            },
+            "donationTypes": {
+                "sectionTag": "ॐ",
+                "sectionTitle": "നിങ്ങൾക്ക് സംഭാവന ചെയ്യാനുള്ള വഴികൾ",
+                "sectionSubtitle": "ഓരോ ദാനവും ദൈവത്തിലേക്കുള്ള ഒരു ചുവടു വയ്പ്പ്.",
+                "dividerSymbol": "✦",
+                "cards": [
+                    {
+                        "key": "annadanam",
+                        "icon": "🍛",
+                        "imgAlt": "അന്നദാനം",
+                        "title": "അന്നദാനം",
+                        "description": "ഭക്തർക്ക് പുണ്യഭക്ഷണം നൽകി, ഒരു ആത്മാവിനെ പോഷിപ്പിക്കുന്ന ഉന്നത അനുഗ്രഹം നേടൂ.",
+                        "from": "₹501 മുതൽ"
+                    },
+                    {
+                        "key": "lamp",
+                        "icon": "🪔",
+                        "imgAlt": "നിത്യദീപം",
+                        "title": "നിത്യദീപം",
+                        "description": "നിത്യദീപം ജ്വലിച്ചു നിൽക്കട്ടെ — ഗർഭഗൃഹത്തിലെ ദൈനംദിന വിളക്ക് സ്പോൺസർ ചെയ്യൂ.",
+                        "from": "₹251 മുതൽ"
+                    },
+                    {
+                        "key": "festival",
+                        "icon": "🎊",
+                        "imgAlt": "ഉത്സവം",
+                        "title": "ഉത്സവം & ആഘോഷം",
+                        "description": "ആയിരങ്ങളോടൊപ്പം ദേവതയുടെ മഹത്വം ആഘോഷിക്കുന്ന മഹോത്സവങ്ങൾ നടത്താൻ സഹായിക്കൂ.",
+                        "from": "₹1,001 മുതൽ"
+                    },
+                    {
+                        "key": "renovation",
+                        "icon": "🏗️",
+                        "imgAlt": "നവീകരണം",
+                        "title": "ഗോപുര നവീകരണം",
+                        "description": "ക്ഷേത്ര പുനരുദ്ധാരണം പിന്തുണച്ച് ഈ പുണ്യ പൈതൃകം ഭാവി തലമുറയ്ക്കായി സംരക്ഷിക്കൂ.",
+                        "from": "₹5,001 മുതൽ"
+                    },
+                    {
+                        "key": "abhishekam",
+                        "icon": "🌸",
+                        "imgAlt": "അഭിഷേകം",
+                        "title": "അഭിഷേകം",
+                        "description": "പാൽ, തേൻ, റോസ് വെള്ളം എന്നിവ കൊണ്ട് ദേവതയ്ക്കുള്ള പുണ്യ അഭിഷേക ചടങ്ങ് സ്പോൺസർ ചെയ്യൂ.",
+                        "from": "₹501 മുതൽ"
+                    },
+                    {
+                        "key": "vastra",
+                        "icon": "👘",
+                        "imgAlt": "വസ്ത്രം",
+                        "title": "വസ്ത്രം — ദേവതയ്ക്കുള്ള ആടയാഭരണം",
+                        "description": "ശുഭദിനങ്ങളിലും ദൈനംദിന ചടങ്ങുകളിലും ദേവതയെ അലങ്കരിക്കാൻ പുണ്യ വസ്ത്രം നൽകൂ.",
+                        "from": "₹751 മുതൽ"
+                    }
+                ]
+            },
+            "cta": {
+                "smallLabel": "ഓരോ രൂപയും വിലപ്പെട്ടതാണ്",
+                "title": "ഒന്നിച്ച്, നമ്മൾ ദീപം നിലനിർത്തും",
+                "description": "നിങ്ങളുടെ ഔദാര്യം ദൈനംദിന ചടങ്ങുകൾ നിലനിർത്തുകയും ആയിരങ്ങൾക്ക് ഭക്ഷണം നൽകുകയും നൂറ്റാണ്ടുകൾ പഴക്കമുള്ള ആദ്ധ്യാത്മിക പാരമ്പര്യം സംരക്ഷിക്കുകയും ചെയ്യുന്നു. ഈ ദൈവിക ദൗത്യത്തിന്റെ ഭാഗമാകൂ.",
+                "button": "ഇപ്പോൾ സംഭാവന ചെയ്യൂ"
+            }
+        }
+    },
+    "reachUs": {
+        "EN": {
+            "heroBanner": {
+                "tag": "Sacred Glimpses",
+                "title": "Reach Us",
+                "subtitle": "Your path to the divine begins here.",
+                "breadcrumb": {
+                    "home": "HOME",
+                    "separator": "ॐ",
+                    "current": "Reach Us"
+                }
+            },
+            "verseBand": {
+                "quote": "Reach out to us and take a step closer to sacred blessings, where guidance, peace, and devotion await you."
+            },
+            "sectionHeader": {
+                "tag": "Find Us",
+                "title": "Reach Our Temple",
+                "subtitle": "Experience peace, devotion, and divine blessings"
+            },
+            "infoCards": [
+                {
+                    "icon": "📍",
+                    "label": "Address",
+                    "content": {
+                        "line1": "Arulmigu Sri Temple,",
+                        "line2": "Main Road, Chennai,",
+                        "line3": "Tamil Nadu – 600001"
+                    }
+                },
+                {
+                    "icon": "📞",
+                    "label": "Phone",
+                    "content": {
+                        "phone1": "+91 98765 43210",
+                        "phone2": "044 1234 5678"
+                    }
+                },
+                {
+                    "icon": "✉️",
+                    "label": "Email",
+                    "content": {
+                        "email1": "temple@email.com",
+                        "email2": "info@temple.org"
+                    }
+                },
+                {
+                    "icon": "🕰️",
+                    "label": "Timings",
+                    "content": {
+                        "morning": {
+                            "label": "Morning",
+                            "time": "5:30 AM – 12:00 PM"
+                        },
+                        "evening": {
+                            "label": "Evening",
+                            "time": "4:30 PM – 9:00 PM"
+                        }
+                    }
+                }
+            ],
+            "mapBox": {
+                "label": "Temple Location"
+            },
+            "form": {
+                "title": "Send Your Prayer",
+                "subtitle": "We read every message with devotion",
+                "fields": {
+                    "name": {
+                        "label": "Your Name",
+                        "placeholder": "Eg. Arjun Kumar"
+                    },
+                    "email": {
+                        "label": "Your Email",
+                        "placeholder": "you@email.com"
+                    },
+                    "message": {
+                        "label": "Message / Prayer",
+                        "placeholder": "Share your prayer or message..."
+                    }
+                },
+                "submitButton": "Submit Prayer"
+            }
+        },
+        "TA": {
+            "heroBanner": {
+                "tag": "புனித தோற்றங்கள்",
+                "title": "எங்களை தொடர்பு கொள்ளுங்கள்",
+                "subtitle": "தெய்வீகத்தை நோக்கிய உங்கள் பாதை இங்கே தொடங்குகிறது.",
+                "breadcrumb": {
+                    "home": "முகப்பு",
+                    "separator": "ॐ",
+                    "current": "எங்களை தொடர்பு கொள்ளுங்கள்"
+                }
+            },
+            "verseBand": {
+                "quote": "எங்களை தொடர்பு கொண்டு புனித ஆசீர்வாதங்களை நோக்கி ஒரு அடி முன்னோக்கி வாருங்கள், இங்கு வழிகாட்டுதல், அமைதி மற்றும் பக்தி உங்களுக்காக காத்திருக்கிறது."
+            },
+            "sectionHeader": {
+                "tag": "எங்களை கண்டறியுங்கள்",
+                "title": "எங்கள் கோயிலை அடையுங்கள்",
+                "subtitle": "அமைதி, பக்தி மற்றும் தெய்வீக ஆசீர்வாதங்களை அனுபவியுங்கள்"
+            },
+            "infoCards": [
+                {
+                    "icon": "📍",
+                    "label": "முகவரி",
+                    "content": {
+                        "line1": "அருள்மிகு ஸ்ரீ கோயில்,",
+                        "line2": "பிரதான சாலை, சென்னை,",
+                        "line3": "தமிழ்நாடு – 600001"
+                    }
+                },
+                {
+                    "icon": "📞",
+                    "label": "தொலைபேசி",
+                    "content": {
+                        "phone1": "+91 98765 43210",
+                        "phone2": "044 1234 5678"
+                    }
+                },
+                {
+                    "icon": "✉️",
+                    "label": "மின்னஞ்சல்",
+                    "content": {
+                        "email1": "temple@email.com",
+                        "email2": "info@temple.org"
+                    }
+                },
+                {
+                    "icon": "🕰️",
+                    "label": "நேரங்கள்",
+                    "content": {
+                        "morning": {
+                            "label": "காலை",
+                            "time": "காலை 5:30 – பகல் 12:00"
+                        },
+                        "evening": {
+                            "label": "மாலை",
+                            "time": "மாலை 4:30 – இரவு 9:00"
+                        }
+                    }
+                }
+            ],
+            "mapBox": {
+                "label": "கோயில் இருப்பிடம்"
+            },
+            "form": {
+                "title": "உங்கள் பிரார்த்தனையை அனுப்புங்கள்",
+                "subtitle": "ஒவ்வொரு செய்தியையும் நாங்கள் பக்தியுடன் படிக்கிறோம்",
+                "fields": {
+                    "name": {
+                        "label": "உங்கள் பெயர்",
+                        "placeholder": "எ.கா. அர்ஜுன் குமார்"
+                    },
+                    "email": {
+                        "label": "உங்கள் மின்னஞ்சல்",
+                        "placeholder": "you@email.com"
+                    },
+                    "message": {
+                        "label": "செய்தி / பிரார்த்தனை",
+                        "placeholder": "உங்கள் பிரார்த்தனை அல்லது செய்தியை பகிருங்கள்..."
+                    }
+                },
+                "submitButton": "பிரார்த்தனையை சமர்ப்பிக்கவும்"
+            }
+        },
+        "ML": {
+            "heroBanner": {
+                "tag": "പുണ്യദർശനങ്ങൾ",
+                "title": "ഞങ്ങളെ ബന്ധപ്പെടുക",
+                "subtitle": "ദൈവികതയിലേക്കുള്ള നിങ്ങളുടെ പാത ഇവിടെ തുടങ്ങുന്നു.",
+                "breadcrumb": {
+                    "home": "ഹോം",
+                    "separator": "ॐ",
+                    "current": "ഞങ്ങളെ ബന്ധപ്പെടുക"
+                }
+            },
+            "verseBand": {
+                "quote": "ഞങ്ങളെ ബന്ധപ്പെടുക, പുണ്യ അനുഗ്രഹങ്ങളിലേക്ക് ഒരു ചുവടുകൂടി അടുക്കൂ — ഇവിടെ മാർഗദർശനവും ശാന്തിയും ഭക്തിയും നിങ്ങൾക്കായി കാത്തിരിക്കുന്നു."
+            },
+            "sectionHeader": {
+                "tag": "ഞങ്ങളെ കണ്ടെത്തൂ",
+                "title": "ഞങ്ങളുടെ ക്ഷേത്രത്തിലേക്ക് എത്തൂ",
+                "subtitle": "ശാന്തിയും ഭക്തിയും ദൈവിക അനുഗ്രഹങ്ങളും അനുഭവിക്കൂ"
+            },
+            "infoCards": [
+                {
+                    "icon": "📍",
+                    "label": "വിലാസം",
+                    "content": {
+                        "line1": "അരുൾമിഗു ശ്രീ ക്ഷേത്രം,",
+                        "line2": "മെയിൻ റോഡ്, ചെന്നൈ,",
+                        "line3": "തമിഴ്‌നാട് – 600001"
+                    }
+                },
+                {
+                    "icon": "📞",
+                    "label": "ഫോൺ",
+                    "content": {
+                        "phone1": "+91 98765 43210",
+                        "phone2": "044 1234 5678"
+                    }
+                },
+                {
+                    "icon": "✉️",
+                    "label": "ഇമെയിൽ",
+                    "content": {
+                        "email1": "temple@email.com",
+                        "email2": "info@temple.org"
+                    }
+                },
+                {
+                    "icon": "🕰️",
+                    "label": "സമയം",
+                    "content": {
+                        "morning": {
+                            "label": "രാവിലെ",
+                            "time": "രാവിലെ 5:30 – ഉച്ചയ്ക്ക് 12:00"
+                        },
+                        "evening": {
+                            "label": "വൈകുന്നേരം",
+                            "time": "വൈകുന്നേരം 4:30 – രാത്രി 9:00"
+                        }
+                    }
+                }
+            ],
+            "mapBox": {
+                "label": "ക്ഷേത്രത്തിന്റെ സ്ഥാനം"
+            },
+            "form": {
+                "title": "നിങ്ങളുടെ പ്രാർഥന അയക്കൂ",
+                "subtitle": "ഓരോ സന്ദേശവും ഞങ്ങൾ ഭക്തിയോടെ വായിക്കുന്നു",
+                "fields": {
+                    "name": {
+                        "label": "നിങ്ങളുടെ പേര്",
+                        "placeholder": "ഉദാ. അർജുൻ കുമാർ"
+                    },
+                    "email": {
+                        "label": "നിങ്ങളുടെ ഇമെയിൽ",
+                        "placeholder": "you@email.com"
+                    },
+                    "message": {
+                        "label": "സന്ദേശം / പ്രാർഥന",
+                        "placeholder": "നിങ്ങളുടെ പ്രാർഥനയോ സന്ദേശമോ പങ്കുവെക്കൂ..."
+                    }
+                },
+                "submitButton": "പ്രാർഥന സമർപ്പിക്കൂ"
+            }
+        }
+    }
+}

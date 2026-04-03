@@ -1,0 +1,620 @@
+{
+    "divineGallery": {
+        "EN": {
+            "heroTag": "Sacred Glimpses",
+            "heroTitle": "Divine Gallery",
+            "heroSub": "Every sight is a blessing",
+            "breadcrumb": {
+                "home": "HOME",
+                "active": "Divine Gallery"
+            },
+            "verse": "\"Where the lamp burns eternal, where fragrance rises with the dawn, where stone speaks in silence — this is the house of the divine.\"",
+            "chapter1": {
+                "number": "01",
+                "title": "Sanctum & Entrance",
+                "sub": "The first steps into the sacred realm"
+            },
+            "contentLeft": {
+                "badge": "Sacred Spaces",
+                "title": "Divine Moments",
+                "p1": "Step into the sacred world of devotion, where every corner of the temple reflects divine energy, timeless traditions, and spiritual serenity.",
+                "p2": "From grand festivals to peaceful darshan, each moment captured here carries the essence of faith and devotion passed down through centuries.",
+                "features": [
+                    "🌸 Daily abhishekam at dawn",
+                    "🪔 Nithyadeepam — eternal flame",
+                    "🌺 Fresh pushpam offerings every morning"
+                ],
+                "btn": "Explore More ✦"
+            },
+            "chapter2": {
+                "number": "02",
+                "title": "Festivals & Celebrations",
+                "sub": "When the divine dances with the devoted"
+            },
+            "contentRight": {
+                "badge": "Festival Chronicles",
+                "title": "Temple Corridor",
+                "p1": "The ancient corridors of the temple carry the echo of ten thousand prayers. Carved pillars, oil lamps, and the scent of sandalwood define these sacred walkways.",
+                "p2": "Festivals transform these spaces into rivers of colour, sound, and devotion — a living testament to an unbroken spiritual heritage.",
+                "features": [
+                    "🎊 Grand Brahmotsavam annually",
+                    "🥁 Traditional nadaswaram performances",
+                    "🌟 Chariot procession through the streets"
+                ],
+                "btn": "View All Festivals ✦"
+            },
+            "testimonials": {
+                "heading": "Devotees Speak",
+                "sub": "Words from the hearts that have experienced the divine",
+                "list": [
+                    {
+                        "name": "Ramesh Kumar",
+                        "loc": "Chennai",
+                        "text": "Visiting this temple fills my heart with profound peace. The divine energy here is unlike anywhere else I've been."
+                    },
+                    {
+                        "name": "Priya Shankar",
+                        "loc": "Bangalore",
+                        "text": "Every festival celebrated here feels like heaven on earth. The aarti, the flowers, the chants — truly a divine experience."
+                    },
+                    {
+                        "name": "Anand Natarajan",
+                        "loc": "Coimbatore",
+                        "text": "The architecture, the rituals, the devotion of the priests — this temple is a living breathing sacred space."
+                    }
+                ]
+            },
+            "stats": [
+                {
+                    "num": "500+",
+                    "label": "Years of Heritage"
+                },
+                {
+                    "num": "1,200",
+                    "label": "Sacred Rituals / Year"
+                },
+                {
+                    "num": "50,000+",
+                    "label": "Devotees Monthly"
+                },
+                {
+                    "num": "365",
+                    "label": "Days of Worship"
+                }
+            ],
+            "cta": {
+                "title": "Plan Your Sacred Visit",
+                "sub": "Open every day from 5:30 AM · Abhishekam at 6:00 AM · Evening Aarti at 7:00 PM",
+                "btnPrimary": "Get Directions",
+                "btnSecondary": "Book Pooja"
+            },
+            "galleryData": [
+                {
+                    "id": 1,
+                    "title": "Temple Entrance",
+                    "desc": "Sacred entrance welcoming devotees",
+                    "img": "/assets/vinayagar3.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Main Deity",
+                    "desc": "Divine darshan of the presiding deity",
+                    "img": "/assets/Gallery1.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Temple Corridor",
+                    "desc": "Ancient stone corridor architecture",
+                    "img": "/assets/Gallery3.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Temple Entrance",
+                    "desc": "Grand spiritual festival moments",
+                    "img": "/assets/img2.png"
+                },
+                {
+                    "id": 5,
+                    "title": "Festival Celebration",
+                    "desc": "Majestic gopuram view",
+                    "img": "/assets/kavvu.avif"
+                },
+                {
+                    "id": 6,
+                    "title": "Evening Aarti",
+                    "desc": "Spiritual lighting ceremony",
+                    "img": "/assets/festival.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "Lord Shiva Sanctum",
+                    "desc": "Sacred abode of Mahadeva",
+                    "img": "/assets/gallery11.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "Lord Vinayagar",
+                    "desc": "Blessings of Ganesha for new beginnings",
+                    "img": "/assets/gallery17.png"
+                },
+                {
+                    "id": 9,
+                    "title": "Vinayagar Festival",
+                    "desc": "Vibrant celebration of Vinayagar Chaturthi",
+                    "img": "/assets/bamboo.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "Temple Panorama",
+                    "desc": "Full view of the temple complex",
+                    "img": "/assets/gallery8.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "Sacred Grounds",
+                    "desc": "Serene pathways of the temple",
+                    "img": "/assets/gallery9.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "Divine Light",
+                    "desc": "Golden hour over the sanctum",
+                    "img": "/assets/gallery4.jpg"
+                },
+                {
+                    "id": 13,
+                    "title": "Temple Entrance",
+                    "desc": "Devotees entering the holy premises",
+                    "img": "/assets/vedifestival.jpeg"
+                }
+            ]
+        },
+        "TA": {
+            "heroTag": "புனித காட்சிகள்",
+            "heroTitle": "தெய்வீக தொகுப்பு",
+            "heroSub": "ஒவ்வொரு பார்வையும் ஒரு ஆசீர்வாதம்",
+            "breadcrumb": {
+                "home": "முகப்பு",
+                "active": "தெய்வீக தொகுப்பு"
+            },
+            "verse": "\"விளக்கு என்றும் எரிகிறது, விடியலில் மணம் கமழ்கிறது, கல் மௌனமாகப் பேசுகிறது — இதுவே இறைவனின் இல்லம்.\"",
+            "chapter1": {
+                "number": "01",
+                "title": "கருவறை & நுழைவு",
+                "sub": "புனித உலகில் முதல் அடி"
+            },
+            "contentLeft": {
+                "badge": "புனித இடங்கள்",
+                "title": "தெய்வீக தருணங்கள்",
+                "p1": "பக்தியின் புனித உலகில் அடியெடுத்து வையுங்கள், இங்கு கோயிலின் ஒவ்வொரு மூலையும் தெய்வீக சக்தியையும் காலம் கடந்த பாரம்பரியத்தையும் ஆன்மீக அமைதியையும் பிரதிபலிக்கிறது.",
+                "p2": "மாபெரும் திருவிழாக்கள் முதல் அமைதியான தரிசனம் வரை, இங்கு பதிவாகும் ஒவ்வொரு தருணமும் நூற்றாண்டுகளாக கடத்தப்படும் நம்பிக்கையின் சாரத்தை கொண்டுள்ளது.",
+                "features": [
+                    "🌸 விடியலில் தினசரி அபிஷேகம்",
+                    "🪔 நித்யதீபம் — நித்திய ஜோதி",
+                    "🌺 காலையில் புதிய பூ படையல்"
+                ],
+                "btn": "மேலும் காண்க ✦"
+            },
+            "chapter2": {
+                "number": "02",
+                "title": "திருவிழாக்கள் & கொண்டாட்டங்கள்",
+                "sub": "தெய்வம் பக்தருடன் நடனமாடும் நேரம்"
+            },
+            "contentRight": {
+                "badge": "திருவிழா வரலாறு",
+                "title": "கோயில் மண்டபம்",
+                "p1": "கோயிலின் பண்டைய மண்டபங்கள் பத்தாயிரம் பிரார்த்தனைகளின் எதிரொலியை சுமந்துள்ளன. செதுக்கப்பட்ட தூண்கள், எண்ணெய் விளக்குகள், சந்தன வாசனை இந்த புனித நடைவழிகளை வரையறுக்கின்றன.",
+                "p2": "திருவிழாக்கள் இந்த இடங்களை வண்ணம், ஒலி, பக்தியின் நதியாக மாற்றுகின்றன — ஒரு தொடர்ச்சியான ஆன்மீக பாரம்பரியத்தின் சான்று.",
+                "features": [
+                    "🎊 ஆண்டு தோறும் மகா பிரம்மோத்சவம்",
+                    "🥁 பாரம்பரிய நாதஸ்வர இசை",
+                    "🌟 தெருக்களில் தேர் ஊர்வலம்"
+                ],
+                "btn": "அனைத்து திருவிழாக்களும் ✦"
+            },
+            "testimonials": {
+                "heading": "பக்தர்கள் கூறுவது",
+                "sub": "தெய்வீகத்தை அனுபவித்த இதயங்களின் வார்த்தைகள்",
+                "list": [
+                    {
+                        "name": "ரமேஷ் குமார்",
+                        "loc": "சென்னை",
+                        "text": "இக்கோயிலுக்கு வருவது என் மனதை ஆழமான அமைதியால் நிரப்புகிறது. இங்கே உள்ள தெய்வீக ஆற்றல் வேறு எங்கும் கிடைக்காதது."
+                    },
+                    {
+                        "name": "பிரியா சங்கர்",
+                        "loc": "பெங்களூரு",
+                        "text": "இங்கே கொண்டாடப்படும் ஒவ்வொரு திருவிழாவும் சொர்க்கத்தை போல் தோன்றுகிறது. ஆரத்தி, மலர்கள், மந்திரங்கள் — உண்மையிலேயே ஒரு தெய்வீக அனுபவம்."
+                    },
+                    {
+                        "name": "ஆனந்த் நடராஜன்",
+                        "loc": "கோயம்புத்தூர்",
+                        "text": "கட்டடக்கலை, சடங்குகள், குருமார்களின் பக்தி — இந்த கோயில் ஒரு உயிரோட்டமான புனித இடம்."
+                    }
+                ]
+            },
+            "stats": [
+                {
+                    "num": "500+",
+                    "label": "ஆண்டுகள் பாரம்பரியம்"
+                },
+                {
+                    "num": "1,200",
+                    "label": "புனித சடங்குகள் / ஆண்டு"
+                },
+                {
+                    "num": "50,000+",
+                    "label": "மாதாந்திர பக்தர்கள்"
+                },
+                {
+                    "num": "365",
+                    "label": "நாட்கள் வழிபாடு"
+                }
+            ],
+            "cta": {
+                "title": "உங்கள் புனித வருகையை திட்டமிடுங்கள்",
+                "sub": "தினமும் காலை 5:30 மணிக்கு திறக்கும் · அபிஷேகம் 6:00 AM · மாலை ஆரத்தி 7:00 PM",
+                "btnPrimary": "வழி காண்க",
+                "btnSecondary": "பூஜை முன்பதிவு"
+            },
+            "galleryData": [
+                {
+                    "id": 1,
+                    "title": "கோயில் நுழைவாயில்",
+                    "desc": "பக்தர்களை வரவேற்கும் புனித நுழைவு",
+                    "img": "/assets/vinayagar3.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "முதன்மை தெய்வம்",
+                    "desc": "பிரதான தெய்வத்தின் தெய்வீக தரிசனம்",
+                    "img": "/assets/Gallery1.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "கோயில் மண்டபம்",
+                    "desc": "பண்டைய கல் மண்டப கட்டடக்கலை",
+                    "img": "/assets/Gallery3.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "கோயில் நுழைவு",
+                    "desc": "மாபெரும் ஆன்மீக திருவிழா தருணங்கள்",
+                    "img": "/assets/img2.png"
+                },
+                {
+                    "id": 5,
+                    "title": "திருவிழா கொண்டாட்டம்",
+                    "desc": "மாட்சிமை மிக்க கோபுர காட்சி",
+                    "img": "/assets/kavvu.avif"
+                },
+                {
+                    "id": 6,
+                    "title": "மாலை ஆரத்தி",
+                    "desc": "ஆன்மீக விளக்கேற்றும் சடங்கு",
+                    "img": "/assets/festival.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "சிவன் சந்நிதி",
+                    "desc": "மகாதேவரின் புனித வாசம்",
+                    "img": "/assets/gallery11.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "விநாயகர்",
+                    "desc": "புதிய தொடக்கங்களுக்கு கணேசரின் ஆசி",
+                    "img": "/assets/gallery17.png"
+                },
+                {
+                    "id": 9,
+                    "title": "விநாயகர் திருவிழா",
+                    "desc": "விநாயகர் சதுர்த்தியின் உற்சாகமான கொண்டாட்டம்",
+                    "img": "/assets/bamboo.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "கோயில் பரிதோற்றம்",
+                    "desc": "கோயில் வளாகத்தின் முழு காட்சி",
+                    "img": "/assets/gallery8.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "புனித வளாகம்",
+                    "desc": "கோயிலின் அமைதியான பாதைகள்",
+                    "img": "/assets/gallery9.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "தெய்வீக ஒளி",
+                    "desc": "சந்நிதியின் மேல் பொன் நேர ஒளி",
+                    "img": "/assets/gallery4.jpg"
+                },
+                {
+                    "id": 13,
+                    "title": "கோயில் நுழைவு",
+                    "desc": "பக்தர்கள் புனித வளாகத்தில் நுழைகின்றனர்",
+                    "img": "/assets/vedifestival.jpeg"
+                }
+            ]
+        },
+        "ML": {
+            "heroTag": "പുണ്യദൃശ്യങ്ങൾ",
+            "heroTitle": "ദൈവിക ഗ്യാലറി",
+            "heroSub": "ഓരോ ദൃശ്യവും ഒരു അനുഗ്രഹം",
+            "breadcrumb": {
+                "home": "ഹോം",
+                "active": "ദൈവിക ഗ്യാലറി"
+            },
+            "verse": "\"വിളക്ക് നിത്യം കത്തുന്നിടത്ത്, പ്രഭാതത്തിൽ സൗരഭ്യം ഉയരുന്നിടത്ത്, കല്ല് മൗനത്തിൽ സംസാരിക്കുന്നിടത്ത് — ഇതാണ് ദൈവത്തിന്റെ ഭവനം.\"",
+            "chapter1": {
+                "number": "01",
+                "title": "ശ്രീകോവിലും നടപ്പുരയും",
+                "sub": "പുണ്യലോകത്തിലേക്കുള്ള ആദ്യ ചുവടുകൾ"
+            },
+            "contentLeft": {
+                "badge": "പുണ്യ ഇടങ്ങൾ",
+                "title": "ദൈവിക നിമിഷങ്ങൾ",
+                "p1": "ഭക്തിയുടെ പുണ്യ ലോകത്തിലേക്ക് കടന്നു വരൂ, ക്ഷേത്രത്തിന്റെ ഓരോ മൂലയും ദൈവിക ഊർജ്ജവും കാലാതീതമായ പാരമ്പര്യങ്ങളും ആത്മീയ ശാന്തിയും പ്രതിഫലിപ്പിക്കുന്നു.",
+                "p2": "മഹോത്സവങ്ങൾ മുതൽ ശാന്തമായ ദർശനം വരെ, ഇവിടെ പകർത്തുന്ന ഓരോ നിമിഷവും നൂറ്റാണ്ടുകളായി കൈമാറ്റം ചെയ്യപ്പെടുന്ന വിശ്വാസത്തിന്റെ സാരം ഉൾക്കൊള്ളുന്നു.",
+                "features": [
+                    "🌸 പ്രഭാതത്തിൽ ദൈനംദിന അഭിഷേകം",
+                    "🪔 നിത്യദീപം — ശാശ്വത ജ്വാല",
+                    "🌺 എല്ലാ പ്രഭാതത്തിലും പുതിയ പൂക്കൾ"
+                ],
+                "btn": "കൂടുതൽ കാണുക ✦"
+            },
+            "chapter2": {
+                "number": "02",
+                "title": "ഉത്സവങ്ങളും ആഘോഷങ്ങളും",
+                "sub": "ദൈവം ഭക്തരോടൊപ്പം നൃത്തം ചെയ്യുമ്പോൾ"
+            },
+            "contentRight": {
+                "badge": "ഉത്സവ ചരിത്രം",
+                "title": "ക്ഷേത്ര ഇടനാഴി",
+                "p1": "ക്ഷേത്രത്തിന്റെ പുരാതന ഇടനാഴികൾ പതിനായിരം പ്രാർഥനകളുടെ പ്രതിധ്വനി ഉൾക്കൊള്ളുന്നു. കൊത്തുപണി ചെയ്ത തൂണുകൾ, എണ്ണ വിളക്കുകൾ, ചന്ദനത്തിന്റെ സൗരഭ്യം ഈ പുണ്യ നടവഴികളെ നിർവചിക്കുന്നു.",
+                "p2": "ഉത്സവങ്ങൾ ഈ ഇടങ്ങളെ നിറങ്ങളുടെയും ശബ്ദങ്ങളുടെയും ഭക്തിയുടെയും നദിയാക്കി മാറ്റുന്നു — ഒരു അഖണ്ഡ ആത്മീയ പൈതൃകത്തിന്റെ സാക്ഷ്യം.",
+                "features": [
+                    "🎊 വാർഷിക മഹാ ബ്രഹ്മോത്സവം",
+                    "🥁 പാരമ്പരിക നാദസ്വര അവതരണം",
+                    "🌟 തെരുവിലൂടെ തേരോട്ടം"
+                ],
+                "btn": "എല്ലാ ഉത്സവങ്ങളും ✦"
+            },
+            "testimonials": {
+                "heading": "ഭക്തർ പറയുന്നത്",
+                "sub": "ദൈവികം അനുഭവിച്ച ഹൃദയങ്ങളുടെ വാക്കുകൾ",
+                "list": [
+                    {
+                        "name": "രമേഷ് കുമാർ",
+                        "loc": "ചെന്നൈ",
+                        "text": "ഈ ക്ഷേത്രം സന്ദർശിക്കുന്നത് എന്റെ ഹൃദയത്തെ ആഴമേറിയ ശാന്തിയാൽ നിറക്കുന്നു. ഇവിടത്തെ ദൈവിക ഊർജ്ജം മറ്റൊരിടത്തും ഇല്ല."
+                    },
+                    {
+                        "name": "പ്രിയ ശങ്കർ",
+                        "loc": "ബെംഗളൂരു",
+                        "text": "ഇവിടെ ആഘോഷിക്കുന്ന ഓരോ ഉത്സവവും സ്വർഗ്ഗം പോലെ തോന്നുന്നു. ആരതി, പൂക്കൾ, മന്ത്രങ്ങൾ — ഒരു യഥാർഥ ദൈവിക അനുഭവം."
+                    },
+                    {
+                        "name": "ആനന്ദ് നടരാജൻ",
+                        "loc": "കോയമ്പത്തൂർ",
+                        "text": "വാസ്തുവിദ്യ, ചടങ്ങുകൾ, പൂജാരിമാരുടെ ഭക്തി — ഈ ക്ഷേത്രം ഒരു ജീവനുള്ള പുണ്യ ഇടമാണ്."
+                    }
+                ]
+            },
+            "stats": [
+                {
+                    "num": "500+",
+                    "label": "വർഷത്തെ പൈതൃകം"
+                },
+                {
+                    "num": "1,200",
+                    "label": "പുണ്യ ചടങ്ങുകൾ / വർഷം"
+                },
+                {
+                    "num": "50,000+",
+                    "label": "മാസംതോറും ഭക്തർ"
+                },
+                {
+                    "num": "365",
+                    "label": "ദിവസവും ആരാധന"
+                }
+            ],
+            "cta": {
+                "title": "നിങ്ങളുടെ പുണ്യ സന്ദർശനം ആസൂത്രണം ചെയ്യൂ",
+                "sub": "എല്ലാ ദിവസവും രാവിലെ 5:30 ന് തുറക്കും · അഭിഷേകം 6:00 AM · വൈകുന്നേരം ആരതി 7:00 PM",
+                "btnPrimary": "വഴി കണ്ടെത്തുക",
+                "btnSecondary": "പൂജ ബുക്ക് ചെയ്യുക"
+            },
+            "galleryData": [
+                {
+                    "id": 1,
+                    "title": "ക്ഷേത്ര നടപ്പുര",
+                    "desc": "ഭക്തരെ സ്വാഗതം ചെയ്യുന്ന പുണ്യ നടപ്പുര",
+                    "img": "/assets/vinayagar3.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "മുഖ്യ ദേവത",
+                    "desc": "പ്രതിഷ്ഠ ദേവതയുടെ ദൈവിക ദർശനം",
+                    "img": "/assets/Gallery1.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "ക്ഷേത്ര ഇടനാഴി",
+                    "desc": "പുരാതന ശിലാ ഇടനാഴി വാസ്തുവിദ്യ",
+                    "img": "/assets/Gallery3.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "ക്ഷേത്ര നടപ്പുര",
+                    "desc": "മഹത്തായ ആത്മീയ ഉത്സവ നിമിഷങ്ങൾ",
+                    "img": "/assets/img2.png"
+                },
+                {
+                    "id": 5,
+                    "title": "ഉത്സവ ആഘോഷം",
+                    "desc": "പ്രൗഢഗംഭീരമായ ഗോപുര ദൃശ്യം",
+                    "img": "/assets/kavvu.avif"
+                },
+                {
+                    "id": 6,
+                    "title": "വൈകുന്നേരം ആരതി",
+                    "desc": "ആത്മീയ വിളക്ക് ചടങ്ങ്",
+                    "img": "/assets/festival.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "ശിവൻ ശ്രീകോവിൽ",
+                    "desc": "മഹാദേവന്റെ പുണ്യ വാസം",
+                    "img": "/assets/gallery11.jpg"
+                },
+                {
+                    "id": 8,
+                    "title": "വിനായകൻ",
+                    "desc": "പുതിയ തുടക്കങ്ങൾക്ക് ഗണേശന്റെ അനുഗ്രഹം",
+                    "img": "/assets/gallery17.png"
+                },
+                {
+                    "id": 9,
+                    "title": "വിനായക ഉത്സവം",
+                    "desc": "വിനായക ചതുർഥിയുടെ ഉത്സാഹഭരിതമായ ആഘോഷം",
+                    "img": "/assets/bamboo.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "ക്ഷേത്ര പനോരമ",
+                    "desc": "ക്ഷേത്ര സമുച്ചയത്തിന്റെ മുഴുവൻ ദൃശ്യം",
+                    "img": "/assets/gallery8.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "പുണ്യ ഭൂമി",
+                    "desc": "ക്ഷേത്രത്തിന്റെ ശാന്തമായ നടവഴികൾ",
+                    "img": "/assets/gallery9.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "ദൈവിക വെളിച്ചം",
+                    "desc": "ശ്രീകോവിലിനു മുകളിൽ സ്വർണ്ണ നേര ഒളി",
+                    "img": "/assets/gallery4.jpg"
+                },
+                {
+                    "id": 13,
+                    "title": "ക്ഷേത്ര നടപ്പുര",
+                    "desc": "ഭക്തർ പുണ്യ വളപ്പിൽ പ്രവേശിക്കുന്നു",
+                    "img": "/assets/vedifestival.jpeg"
+                }
+            ]
+        }
+    },
+    "section": {
+        "EN": {
+            "tag": "Our Sacred Temple",
+            "titlePre": "The Divine Presence of",
+            "titleHighlight": "Kurumba Bhagavathy",
+            "p1": "Sri Kurumba Bhagavathy Temple at Puthussery, Palakkad is a revered Shakti kshetram of ancient origins. The presiding deity blesses devotees with protection and prosperity.",
+            "p2": "Rooted in Kerala's Tantric traditions, the temple preserves centuries-old rituals and divine energy.",
+            "facts": {
+                "location": {
+                    "label": "Location :",
+                    "value": " Puthussery, Palakkad"
+                },
+                "deity": {
+                    "label": "Deity :",
+                    "value": " Kurumba Bhagavathy"
+                },
+                "phone": {
+                    "label": "Phone :",
+                    "value": " 0491-2567812"
+                },
+                "mobile": {
+                    "label": "Mobile :",
+                    "value": " 9037092183"
+                }
+            }
+        },
+        "TA": {
+            "tag": "எங்கள் புனித கோயில்",
+            "titlePre": "தெய்வீக சாந்நித்தியம்",
+            "titleHighlight": "குறும்ப பகவதி",
+            "p1": "பாலக்காட்டில் உள்ள புத்துச்சேரி ஸ்ரீ குறும்ப பகவதி கோயில், பண்டைய காலத்தில் தோன்றிய ஒரு வணக்கத்திற்குரிய சக்தி க்ஷேத்திரம். பிரதான தெய்வம் பக்தர்களுக்கு பாதுகாப்பும் செழிப்பும் அருள்கிறது.",
+            "p2": "கேரளாவின் தாந்த்ரீக பாரம்பரியத்தில் வேரூன்றி, கோயில் நூற்றாண்டுகள் பழமையான சடங்குகளையும் தெய்வீக ஆற்றலையும் காத்து வருகிறது.",
+            "facts": {
+                "location": {
+                    "label": "இடம் :",
+                    "value": " புத்துச்சேரி, பாலக்காடு"
+                },
+                "deity": {
+                    "label": "தெய்வம் :",
+                    "value": " குறும்ப பகவதி"
+                },
+                "phone": {
+                    "label": "தொலைபேசி :",
+                    "value": " 0491-2567812"
+                },
+                "mobile": {
+                    "label": "கைபேசி :",
+                    "value": " 9037092183"
+                }
+            }
+        },
+        "ML": {
+            "tag": "ഞങ്ങളുടെ പുണ്യ ക്ഷേത്രം",
+            "titlePre": "ദൈവിക സാന്നിദ്ധ്യം",
+            "titleHighlight": "കുറുമ്പ ഭഗവതി",
+            "p1": "പാലക്കാട്ടെ പുതുശ്ശേരിയിലുള്ള ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം, പ്രാചീന ഉത്ഭവമുള്ള ഒരു ആദരണീയ ശക്തി ക്ഷേത്രമാണ്. പ്രതിഷ്ഠ ദേവത ഭക്തർക്ക് സംരക്ഷണവും സമൃദ്ധിയും നൽകുന്നു.",
+            "p2": "കേരളത്തിന്റെ താന്ത്രിക പാരമ്പര്യത്തിൽ വേരൂന്നി, ക്ഷേത്രം നൂറ്റാണ്ടുകൾ പഴക്കമുള്ള ചടങ്ങുകളും ദൈവിക ഊർജ്ജവും കാത്തു സൂക്ഷിക്കുന്നു.",
+            "facts": {
+                "location": {
+                    "label": "സ്ഥലം :",
+                    "value": " പുതുശ്ശേരി, പാലക്കാട്"
+                },
+                "deity": {
+                    "label": "ദേവത :",
+                    "value": " കുറുമ്പ ഭഗവതി"
+                },
+                "phone": {
+                    "label": "ഫോൺ :",
+                    "value": " 0491-2567812"
+                },
+                "mobile": {
+                    "label": "മൊബൈൽ :",
+                    "value": " 9037092183"
+                }
+            }
+        }
+    },
+    "donationPage": {
+        "EN": {
+            "heroTag": "Sacred Glimpses",
+            "heroTitle": "Donation",
+            "heroSub": "Every frame holds a glimpse of the divine.",
+            "breadcrumb": {
+                "home": "HOME",
+                "active": "Donation"
+            },
+            "verse": "\"Every moment captured here becomes a timeless blessing, preserving the beauty, faith, and sacred spirit of the divine.\""
+        },
+        "TA": {
+            "heroTag": "புனித காட்சிகள்",
+            "heroTitle": "நன்கொடை",
+            "heroSub": "ஒவ்வொரு தருணமும் ஒரு தெய்வீக ஆசீர்வாதம்.",
+            "breadcrumb": {
+                "home": "முகப்பு",
+                "active": "நன்கொடை"
+            },
+            "verse": "\"இங்கு பதிவாகும் ஒவ்வொரு தருணமும் ஒரு நிரந்தர ஆசீர்வாதமாகிறது, தெய்வத்தின் அழகு, நம்பிக்கை மற்றும் புனித ஆவியை பாதுகாக்கிறது.\""
+        },
+        "ML": {
+            "heroTag": "പുണ്യദൃശ്യങ്ങൾ",
+            "heroTitle": "സംഭാവന",
+            "heroSub": "ഓരോ നിമിഷവും ദൈവിക ദർശനം ഉൾക്കൊള്ളുന്നു.",
+            "breadcrumb": {
+                "home": "ഹോം",
+                "active": "സംഭാവന"
+            },
+            "verse": "\"ഇവിടെ പകർത്തുന്ന ഓരോ നിമിഷവും ഒരു ശാശ്വത അനുഗ്രഹമാകുന്നു, ദൈവത്തിന്റെ സൗന്ദര്യവും വിശ്വാസവും പുണ്യ ആത്മാവും സംരക്ഷിക്കുന്നു.\""
+        }
+    }
+}

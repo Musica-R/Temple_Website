@@ -1,0 +1,1010 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   DonationPage.css  —  Cinematic Scroll & Parallax Animation System
+   Import AFTER Donation.css so these layer cleanly on top.
+═══════════════════════════════════════════════════════════════════════ */
+
+:root {
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-inout-sine: cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   HERO — CINEMATIC PARALLAX
+══════════════════════════════════════════════════════════════════ */
+
+.dp-hero {
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+}
+
+.dp-parallax-img {
+    height: 130% !important;
+    top: -15%;
+    transform-origin: center center;
+    will-change: transform;
+    transition: none !important;
+}
+
+/* Deep atmospheric overlay */
+.dp-hero-overlay {
+    background:
+        radial-gradient(ellipse 80% 60% at 50% 20%, rgba(0, 0, 0, 0) 0%, rgba(15, 6, 2, 0.28) 100%),
+        linear-gradient(180deg,
+            rgba(212, 175, 55, 0.06) 0%,
+            rgba(0, 0, 0, 0) 20%,
+            rgba(59, 26, 10, 0.58) 62%,
+            rgba(18, 6, 2, 0.94) 100%) !important;
+}
+
+/* Cinematic film-grain overlay */
+.dp-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+    animation: dpGrainShift 0.08s steps(1) infinite;
+}
+
+@keyframes dpGrainShift {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    10% {
+        background-position: -10px -30px;
+    }
+
+    20% {
+        background-position: 30px 10px;
+    }
+
+    30% {
+        background-position: -30px -20px;
+    }
+
+    40% {
+        background-position: 20px 40px;
+    }
+
+    50% {
+        background-position: -40px 10px;
+    }
+
+    60% {
+        background-position: 10px -40px;
+    }
+
+    70% {
+        background-position: -20px 30px;
+    }
+
+    80% {
+        background-position: 40px -20px;
+    }
+
+    90% {
+        background-position: -10px 20px;
+    }
+
+    100% {
+        background-position: 15px -10px;
+    }
+}
+
+/* Gold scan line that sweeps top-to-bottom on load */
+.dp-hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(212, 175, 55, 0.85) 28%,
+            rgba(255, 228, 100, 1) 50%,
+            rgba(212, 175, 55, 0.85) 72%,
+            transparent 100%);
+    z-index: 8;
+    box-shadow: 0 0 16px 4px rgba(212, 175, 55, 0.50);
+    animation: dpScanLine 1.6s var(--ease-out-expo) 0.3s both;
+}
+
+@keyframes dpScanLine {
+    from {
+        top: 0%;
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/* Hero content — JS controls opacity + translateY */
+.dp-hero-content {
+    will-change: transform, opacity;
+    transition: none !important;
+    z-index: 6;
+}
+
+/* Staggered blur-up entrance for each hero element */
+.dp-hero-tag {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: rgba(212, 175, 55, 0.75);
+    margin-bottom: 14px;
+    opacity: 0;
+    filter: blur(10px);
+    animation: dpHeroReveal 1s var(--ease-out-expo) 0.5s forwards;
+}
+
+.dp-hero-title {
+    opacity: 0;
+    filter: blur(14px);
+    transform: translateY(18px) skewY(1.2deg);
+    animation: dpHeroReveal 1.1s var(--ease-out-expo) 0.72s forwards;
+}
+
+.dp-hero-sub {
+    opacity: 0;
+    filter: blur(7px);
+    transform: translateY(12px);
+    animation: dpHeroReveal 0.9s var(--ease-out-expo) 1s forwards;
+}
+
+.dp-hero-breadcrumb {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: dpHeroReveal 0.8s var(--ease-out-expo) 1.22s forwards;
+}
+
+@keyframes dpHeroReveal {
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0) skewY(0deg);
+    }
+}
+
+/* Hero title shimmer on the gradient text */
+.ourheritage-content h1 {
+    background-size: 200% 100% !important;
+    /* animation: dpTitleShimmer 5s linear 2s infinite !important; */
+}
+
+@keyframes dpTitleShimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ── Floating embers ── */
+.dp-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.dp-ember {
+    position: absolute;
+    bottom: -12px;
+    border-radius: 50%;
+    will-change: transform, opacity;
+    animation: dpEmberRise linear infinite;
+}
+
+.dp-ember:nth-child(1) {
+    width: 3px;
+    height: 3px;
+    left: 8%;
+    background: rgba(212, 175, 55, 0.9);
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.dp-ember:nth-child(2) {
+    width: 2px;
+    height: 2px;
+    left: 17%;
+    background: rgba(240, 160, 64, 0.7);
+    animation-duration: 15s;
+    animation-delay: 1.8s;
+}
+
+.dp-ember:nth-child(3) {
+    width: 4px;
+    height: 4px;
+    left: 26%;
+    background: rgba(212, 175, 55, 0.6);
+    animation-duration: 9s;
+    animation-delay: 3.2s;
+}
+
+.dp-ember:nth-child(4) {
+    width: 2px;
+    height: 2px;
+    left: 35%;
+    background: rgba(255, 220, 120, 0.8);
+    animation-duration: 13s;
+    animation-delay: 0.6s;
+}
+
+.dp-ember:nth-child(5) {
+    width: 3px;
+    height: 3px;
+    left: 47%;
+    background: rgba(212, 175, 55, 0.75);
+    animation-duration: 10s;
+    animation-delay: 2.4s;
+}
+
+.dp-ember:nth-child(6) {
+    width: 2px;
+    height: 2px;
+    left: 56%;
+    background: rgba(240, 160, 64, 0.6);
+    animation-duration: 16s;
+    animation-delay: 4.1s;
+}
+
+.dp-ember:nth-child(7) {
+    width: 5px;
+    height: 5px;
+    left: 63%;
+    background: rgba(212, 175, 55, 0.5);
+    animation-duration: 8s;
+    animation-delay: 1.1s;
+}
+
+.dp-ember:nth-child(8) {
+    width: 2px;
+    height: 2px;
+    left: 72%;
+    background: rgba(255, 210, 80, 0.85);
+    animation-duration: 12s;
+    animation-delay: 3.7s;
+}
+
+.dp-ember:nth-child(9) {
+    width: 3px;
+    height: 3px;
+    left: 80%;
+    background: rgba(212, 175, 55, 0.65);
+    animation-duration: 14s;
+    animation-delay: 0.3s;
+}
+
+.dp-ember:nth-child(10) {
+    width: 2px;
+    height: 2px;
+    left: 88%;
+    background: rgba(240, 160, 64, 0.8);
+    animation-duration: 11s;
+    animation-delay: 2.9s;
+}
+
+.dp-ember:nth-child(11) {
+    width: 4px;
+    height: 4px;
+    left: 93%;
+    background: rgba(212, 175, 55, 0.55);
+    animation-duration: 17s;
+    animation-delay: 1.5s;
+}
+
+.dp-ember:nth-child(12) {
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    background: rgba(255, 240, 150, 0.9);
+    animation-duration: 9s;
+    animation-delay: 5.2s;
+}
+
+@keyframes dpEmberRise {
+    0% {
+        opacity: 0;
+        transform: translateY(0) translateX(0px) scale(0.6);
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-560px) translateX(40px) scale(0.2);
+    }
+}
+
+/* ── Animated scroll cue ── */
+.dp-scroll-cue {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    z-index: 10;
+    opacity: 0;
+    animation: dpFadeIn 1s ease 2s forwards;
+}
+
+.dp-scroll-track {
+    width: 1px;
+    height: 52px;
+    background: rgba(212, 175, 55, 0.18);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.dp-scroll-fill {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.9));
+    animation: dpScrollFill 1.8s var(--ease-inout-sine) infinite;
+}
+
+.dp-scroll-cap {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.6);
+    margin-top: 5px;
+    animation: dpScrollCap 1.8s var(--ease-inout-sine) infinite;
+}
+
+@keyframes dpScrollFill {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes dpScrollCap {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(0.6);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes dpFadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   VERSE BAND — LIQUID REVEAL
+══════════════════════════════════════════════════════════════════ */
+
+.dp-verse-band {
+    position: relative;
+    overflow: hidden;
+}
+
+.dp-verse-band .verse-om {
+    display: inline-block;
+    opacity: 0;
+    transform: rotate(-360deg) scale(0.1);
+    transition: opacity 1.1s var(--ease-out-expo), transform 1.1s var(--ease-out-spring);
+}
+
+.dp-verse-band.dp-in .verse-om {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.dp-verse-inner {
+    opacity: 0;
+    transform: translateY(40px) scaleY(0.9);
+    transform-origin: top center;
+    transition: opacity 0.9s var(--ease-out-expo) 0.25s, transform 0.9s var(--ease-out-expo) 0.25s;
+}
+
+.dp-verse-band.dp-in .dp-verse-inner {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+}
+
+/* Gold shimmer sweep across the band */
+.dp-verse-band::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 30%, rgba(212, 175, 55, 0.10) 50%, transparent 70%);
+    background-size: 200% 100%;
+    background-position: -100% 0;
+    pointer-events: none;
+}
+
+.dp-verse-band.dp-in::after {
+    animation: dpBandShimmer 1.2s ease 0.3s forwards;
+}
+
+@keyframes dpBandShimmer {
+    to {
+        background-position: 200% 0;
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   UNIVERSAL SCROLL-REVEAL UTILITIES
+   JS adds .dp-in when element enters viewport
+══════════════════════════════════════════════════════════════════ */
+
+.dp-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    filter: blur(5px);
+    transition: opacity 0.85s var(--ease-out-expo), transform 0.85s var(--ease-out-expo), filter 0.6s ease;
+    will-change: transform, opacity, filter;
+}
+
+.dp-reveal.dp-in {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.dp-reveal-left {
+    opacity: 0;
+    transform: translateX(-70px);
+    filter: blur(5px);
+    transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo), filter 0.6s ease;
+}
+
+.dp-reveal-left.dp-in {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.dp-reveal-right {
+    opacity: 0;
+    transform: translateX(70px);
+    filter: blur(5px);
+    transition: opacity 0.9s var(--ease-out-expo) 0.15s, transform 0.9s var(--ease-out-expo) 0.15s, filter 0.6s ease 0.15s;
+}
+
+.dp-reveal-right.dp-in {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.dp-reveal-scale {
+    opacity: 0;
+    transform: scale(0.85) translateY(28px);
+    filter: blur(6px);
+    transition: opacity 0.75s var(--ease-out-expo), transform 0.75s var(--ease-out-spring), filter 0.55s ease;
+}
+
+.dp-reveal-scale.dp-in {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   FORM BOX & IMAGE PANEL
+══════════════════════════════════════════════════════════════════ */
+
+.donation-form-box {
+    opacity: 0;
+    transform: translateX(-60px);
+    filter: blur(4px);
+    transition: opacity 1s var(--ease-out-expo), transform 1s var(--ease-out-expo), filter 0.7s ease;
+}
+
+.donation-form-box.dp-in {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.donation-image-panel {
+    opacity: 0;
+    transform: translateX(60px);
+    filter: blur(4px);
+    transition: opacity 1s var(--ease-out-expo) 0.18s, transform 1s var(--ease-out-expo) 0.18s, filter 0.7s ease 0.18s;
+}
+
+.donation-image-panel.dp-in {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+/* Donation image Ken Burns on panel reveal */
+.donation-image-panel.dp-in .donation-image img {
+    animation: dpKenBurns 14s ease-in-out infinite alternate;
+}
+
+@keyframes dpKenBurns {
+    from {
+        transform: scale(1.0) translate(0%, 0%);
+    }
+
+    to {
+        transform: scale(1.07) translate(-1.5%, 1%);
+    }
+}
+
+/* Quote card — perspective tilt reveal */
+.quote-card {
+    opacity: 0;
+    transform: perspective(900px) rotateX(10deg) translateY(24px);
+    transition: opacity 0.8s var(--ease-out-expo) 0.3s, transform 0.8s var(--ease-out-expo) 0.3s;
+}
+
+.donation-image-panel.dp-in .quote-card {
+    opacity: 1;
+    transform: perspective(900px) rotateX(0deg) translateY(0);
+}
+
+/* Stat items pop in with spring */
+.stat-item {
+    opacity: 0;
+    transform: translateY(28px) scale(0.9);
+    transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-spring);
+}
+
+.stat-item.dp-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.stat-item:nth-child(1) {
+    transition-delay: 0.45s;
+}
+
+.stat-item:nth-child(2) {
+    transition-delay: 0.60s;
+}
+
+.stat-item:nth-child(3) {
+    transition-delay: 0.75s;
+}
+
+/* Stat numbers spring-pop */
+.stat-item.dp-in .stat-num {
+    animation: dpStatBounce 0.5s var(--ease-out-spring) 0.2s both;
+}
+
+@keyframes dpStatBounce {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    65% {
+        transform: scale(1.10);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION HEADING — SPLIT REVEAL
+══════════════════════════════════════════════════════════════════ */
+
+.section-heading .heading-om {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(80%) rotate(-20deg);
+    transition: opacity 0.7s ease, transform 0.7s var(--ease-out-spring);
+}
+
+.section-heading.dp-in .heading-om {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+.section-heading h3 {
+    opacity: 0;
+    transform: translateY(32px);
+    filter: blur(4px);
+    transition: opacity 0.8s var(--ease-out-expo) 0.14s, transform 0.8s var(--ease-out-expo) 0.14s, filter 0.6s ease 0.14s;
+}
+
+.section-heading.dp-in h3 {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Divider lines draw from center outward */
+.section-heading .divider span {
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.7s var(--ease-out-expo) 0.3s;
+}
+
+.section-heading.dp-in .divider span {
+    transform: scaleX(1);
+}
+
+.section-heading>p {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s ease 0.42s, transform 0.7s var(--ease-out-expo) 0.42s;
+}
+
+.section-heading.dp-in>p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   CARDS — WAVE STAGGER WITH MICRO-ROTATION
+══════════════════════════════════════════════════════════════════ */
+
+.card {
+    opacity: 0;
+    transform: translateY(54px) scale(0.92) rotate(-0.8deg);
+    filter: blur(3px);
+    will-change: transform, opacity, filter;
+    /* keep existing hover transitions merged in */
+    transition:
+        opacity 0.7s var(--ease-out-expo),
+        transform 0.7s var(--ease-out-spring),
+        filter 0.5s ease,
+        border-color 0.32s ease,
+        box-shadow 0.32s ease;
+}
+
+.card.dp-in {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+    filter: blur(0);
+}
+
+.card:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.card:nth-child(2) {
+    transition-delay: 0.09s;
+}
+
+.card:nth-child(3) {
+    transition-delay: 0.18s;
+}
+
+.card:nth-child(4) {
+    transition-delay: 0.27s;
+}
+
+.card:nth-child(5) {
+    transition-delay: 0.36s;
+}
+
+.card:nth-child(6) {
+    transition-delay: 0.45s;
+}
+
+/* Image reveals with a saturation bloom */
+.card.dp-in .card-img-wrap img {
+    animation: dpImgBloom 0.9s var(--ease-out-expo) 0.1s both;
+}
+
+@keyframes dpImgBloom {
+    from {
+        transform: scale(1.14);
+        filter: brightness(0.6) saturate(0.4);
+    }
+
+    to {
+        transform: scale(1);
+        filter: brightness(1) saturate(1);
+    }
+}
+
+/* Card hover — elevated 3D lift */
+.card:hover {
+    transform: translateY(-12px) scale(1.02) rotate(0deg) !important;
+    box-shadow: 0 28px 64px rgba(212, 175, 55, 0.22), 0 8px 22px rgba(94, 17, 14, 0.12) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   CTA BLOCK
+══════════════════════════════════════════════════════════════════ */
+
+.cta-inner {
+    opacity: 0;
+    transform: translateY(50px) scale(0.97);
+    filter: blur(4px);
+    transition: opacity 1s var(--ease-out-expo), transform 1s var(--ease-out-expo), filter 0.7s ease;
+}
+
+.cta-inner.dp-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   BUTTONS — RADIAL RIPPLE + SHIMMER
+══════════════════════════════════════════════════════════════════ */
+
+.cta-btn,
+.donate-btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Radial spotlight that follows hover center */
+.cta-btn::before,
+.donate-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.22) 0%, transparent 65%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cta-btn:hover::before,
+.donate-btn:hover::before {
+    opacity: 1;
+}
+
+/* Diagonal shimmer sweep on hover */
+.cta-btn::after,
+.donate-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+    transform: skewX(-20deg);
+}
+
+.cta-btn:hover::after {
+    animation: dpBtnShimmer 0.6s ease forwards;
+}
+
+.donate-btn:hover::after {
+    animation: dpBtnShimmer 0.55s ease forwards;
+}
+
+@keyframes dpBtnShimmer {
+    to {
+        left: 140%;
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   AMOUNT PILLS — SPRING POP
+══════════════════════════════════════════════════════════════════ */
+
+.amount-pill.active {
+    animation: dpPillPop 0.35s var(--ease-out-spring) both;
+}
+
+@keyframes dpPillPop {
+    0% {
+        transform: scale(0.80) translateY(-2px);
+    }
+
+    55% {
+        transform: scale(1.10) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1) translateY(-2px);
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   QR PANEL — VERTICAL MORPH UNFOLD
+══════════════════════════════════════════════════════════════════ */
+
+.qr-panel {
+    transform-origin: top center;
+    animation: dpQrUnfold 0.55s var(--ease-out-spring) both !important;
+}
+
+@keyframes dpQrUnfold {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.05) translateY(-16px);
+        filter: blur(8px);
+    }
+
+    55% {
+        filter: blur(0);
+    }
+
+    80% {
+        transform: scaleY(1.04) translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1) translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   AMBIENT BACKGROUND EFFECTS
+══════════════════════════════════════════════════════════════════ */
+
+/* Slow golden light column behind everything */
+.donation-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            rgba(212, 175, 55, 0.07) 25%,
+            rgba(212, 175, 55, 0.12) 50%,
+            rgba(212, 175, 55, 0.07) 75%,
+            transparent 100%);
+    transform: translateX(-50%);
+    pointer-events: none;
+    animation: dpBeamPulse 9s ease-in-out infinite alternate;
+}
+
+@keyframes dpBeamPulse {
+    from {
+        opacity: 0.3;
+        width: 1px;
+    }
+
+    to {
+        opacity: 1;
+        width: 260px;
+    }
+}
+
+/* OM watermark slow cosmic drift */
+.donation-section::before {
+    animation: dpOmDrift 24s ease-in-out infinite alternate !important;
+}
+
+@keyframes dpOmDrift {
+    0% {
+        transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
+        opacity: 0.045;
+    }
+
+    33% {
+        transform: translateY(-30px) translateX(15px) rotate(5deg) scale(1.04);
+    }
+
+    66% {
+        transform: translateY(20px) translateX(-10px) rotate(-3deg) scale(0.97);
+    }
+
+    100% {
+        transform: translateY(-15px) translateX(20px) rotate(8deg) scale(1.02);
+        opacity: 0.06;
+    }
+}
+
+/* Gold bar on hero perpetual shimmer */
+.ourheritage::after {
+    background-size: 200% 100% !important;
+    animation: dpBarShimmer 3.5s linear infinite !important;
+}
+
+@keyframes dpBarShimmer {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Form field focus glow */
+.field-group input:focus,
+.field-group select:focus {
+    border-color: var(--saffron-light) !important;
+    box-shadow: 0 0 0 3px rgba(240, 160, 64, 0.16), 0 0 24px rgba(240, 160, 64, 0.12) !important;
+    background: #fff !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   REDUCED MOTION
+══════════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-delay: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+
+    .dp-hero-tag,
+    .dp-hero-title,
+    .dp-hero-sub,
+    .dp-hero-breadcrumb,
+    .donation-form-box,
+    .donation-image-panel,
+    .quote-card,
+    .stat-item,
+    .section-heading,
+    .section-heading .heading-om,
+    .section-heading h3,
+    .section-heading>p,
+    .section-heading .divider span,
+    .card,
+    .cta-inner,
+    .dp-reveal,
+    .dp-reveal-left,
+    .dp-reveal-right,
+    .dp-reveal-scale,
+    .dp-verse-inner,
+    .dp-verse-band .verse-om {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}

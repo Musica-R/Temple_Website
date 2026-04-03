@@ -1,0 +1,760 @@
+/* ═══════════════════════════════════
+   HERO SECTION
+═══════════════════════════════════ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0806;
+  /* Extra height so the parallax BG has room to travel without showing edges */
+  will-change: transform;
+}
+
+/* ═══════════════════════════════════
+   PARALLAX BG WRAPPER
+   GSAP moves this element on scroll.
+   Starts slightly oversized (scale via GSAP)
+   so edges never show during parallax travel.
+═══════════════════════════════════ */
+.hero-bg-layer {
+  position: absolute;
+  inset: -8%;
+  /* pre-expand so scroll-scale never clips */
+  z-index: 1;
+  will-change: transform;
+}
+
+/* SLIDING BACKGROUND IMAGES */
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 2s ease-in-out, transform 8s ease-out;
+}
+
+.hero-bg-img.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* DARK OVERLAY — static, not parallaxed */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.8) 100%);
+  z-index: 2;
+}
+
+/* ═══════════════════════════════════
+   SMOKE EFFECT
+═══════════════════════════════════ */
+.hero-smoke {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+
+.smoke-puff {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.smoke-puff-1 {
+  bottom: 5%;
+  left: 20%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, hsla(0, 0%, 85%, 0.25) 0%, transparent 70%);
+  animation: smokeRise1 8s ease-out infinite, smokeDrift 6s ease-in-out infinite;
+  filter: blur(25px);
+}
+
+.smoke-puff-2 {
+  bottom: 0%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, hsla(0, 0%, 80%, 0.2) 0%, transparent 70%);
+  animation: smokeRise2 10s ease-out infinite 2s, smokeDrift 8s ease-in-out infinite 1s;
+  filter: blur(30px);
+}
+
+.smoke-puff-3 {
+  bottom: 3%;
+  right: 15%;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, hsla(40, 30%, 80%, 0.18) 0%, transparent 70%);
+  animation: smokeRise3 9s ease-out infinite 4s, smokeDrift 7s ease-in-out infinite 3s;
+  filter: blur(28px);
+}
+
+.smoke-puff-4 {
+  bottom: 2%;
+  left: 35%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, hsla(43, 60%, 60%, 0.1) 0%, transparent 70%);
+  animation: smokeRise1 12s ease-out infinite 3s, smokeDrift 9s ease-in-out infinite 2s;
+  filter: blur(35px);
+}
+
+.smoke-puff-5 {
+  bottom: 0%;
+  right: 30%;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, hsla(0, 0%, 90%, 0.22) 0%, transparent 70%);
+  animation: smokeRise2 7s ease-out infinite 5s, smokeDrift 5s ease-in-out infinite;
+  filter: blur(22px);
+}
+
+/* BOTTOM HAZE */
+.hero-haze {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(to top, hsla(0, 0%, 85%, 0.15) 0%, transparent 100%);
+  filter: blur(20px);
+  will-change: transform, opacity;
+}
+
+/* ═══════════════════════════════════
+   CONTENT  (foreground layer — fastest parallax)
+═══════════════════════════════════ */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fffaf0;
+  text-align: center;
+  padding: 20px;
+  will-change: transform, opacity;
+}
+
+/* All entrance animations are now handled by GSAP.
+   Initial opacity:0 is set via inline GSAP fromTo so
+   CSS opacity rules below are only fallbacks. */
+.hero-om {
+  font-size: 60px;
+  color: #d4af37;
+  margin-bottom: 10px;
+  font-family: 'Cinzel', serif;
+  animation: glowPulse 3s ease-in-out infinite;
+  /* GSAP controls initial autoAlpha */
+  opacity: 0;
+}
+
+.hero-divider {
+  width: 80px;
+  height: 3px;
+  background: #d4af37;
+  margin: 10px 0 20px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  transform-origin: center;
+  /* GSAP controls initial autoAlpha */
+  opacity: 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.3;
+  font-family: 'Cinzel', serif;
+  /* GSAP controls initial autoAlpha */
+  opacity: 0;
+}
+
+.hero h1 span {
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #f8e7a1;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+}
+
+.hero-subtitle {
+  margin-top: 15px;
+  font-size: 18px;
+  max-width: 600px;
+  font-family: 'Cormorant Garamond', serif;
+  color: rgba(255, 250, 240, 0.7);
+  opacity: 0;
+}
+
+.hero-ctas {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+}
+
+.btn-gold {
+  background: #d4af37;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #d4af37;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.hero-indicators {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 250, 240, 0.3);
+  transition: all 0.5s ease;
+  padding: 0;
+}
+
+.hero-indicator:hover {
+  background: rgba(255, 250, 240, 0.5);
+}
+
+.hero-indicator.active {
+  background: #d4af37;
+  width: 24px;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+}
+
+/* ═══════════════════════════════════
+   MANDALA LAYER  (counter-scroll via GSAP)
+═══════════════════════════════════ */
+.hero-mandala {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+
+.hero-mandala svg {
+  width: min(90vw, 90vh);
+  height: min(90vw, 90vh);
+  opacity: 0.06;
+}
+
+.mandala-ring-1 {
+  animation: mandalaSpinCW 80s linear infinite;
+  transform-origin: 200px 200px;
+  /* SVG coords — avoids Safari jank */
+}
+
+.mandala-ring-2 {
+  animation: mandalaSpinCCW 55s linear infinite;
+  transform-origin: 200px 200px;
+}
+
+.mandala-ring-3 {
+  animation: mandalaSpinCW 35s linear infinite;
+  transform-origin: 200px 200px;
+}
+
+.mandala-ring-4 {
+  animation: mandalaSpinCCW 20s linear infinite;
+  transform-origin: 200px 200px;
+}
+
+/* ═══════════════════════════════════
+   DIYA ROW
+═══════════════════════════════════ */
+.hero-diyas {
+  display: flex;
+  gap: 32px;
+  align-items: flex-end;
+  margin-top: 28px;
+  opacity: 0;
+}
+
+.diya-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.diya-flame {
+  width: 11px;
+  height: 22px;
+  background: linear-gradient(180deg,
+      #fffde0 0%,
+      #ffd600 28%,
+      #ff8f00 65%,
+      transparent 100%);
+  border-radius: 50% 50% 30% 30%;
+  position: relative;
+  animation: flameFlicker 0.38s ease-in-out infinite;
+  box-shadow:
+    0 0 10px 2px rgba(255, 200, 40, 0.7),
+    0 0 30px 6px rgba(255, 120, 0, 0.35);
+}
+
+.diya-flame::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 10px;
+  background: radial-gradient(ellipse, rgba(255, 200, 60, 0.55) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.diya-bowl {
+  width: 38px;
+  height: 14px;
+  background: linear-gradient(180deg, #b5641e 0%, #7a3d10 60%, #4a2008 100%);
+  border-radius: 50% 50% 40% 40%;
+  margin-top: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
+  position: relative;
+}
+
+.diya-bowl::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  right: 6px;
+  height: 5px;
+  background: radial-gradient(ellipse, rgba(255, 200, 60, 0.3) 0%, transparent 75%);
+  border-radius: 50%;
+}
+
+/* ═══════════════════════════════════
+   RIPPLE RINGS
+═══════════════════════════════════ */
+.hero-ripples {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  will-change: transform, opacity;
+}
+
+.ripple-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  width: 300px;
+  height: 300px;
+  animation: rippleExpand 5s ease-out infinite;
+}
+
+.ripple-ring:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.ripple-ring:nth-child(2) {
+  animation-delay: 1.6s;
+}
+
+.ripple-ring:nth-child(3) {
+  animation-delay: 3.2s;
+}
+
+/* ═══════════════════════════════════
+   FLOATING PETALS  (canvas-driven)
+═══════════════════════════════════ */
+.hero-petals-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  will-change: transform, opacity;
+}
+
+/* ═══════════════════════════════════
+   SCROLL INVITE ARROW
+═══════════════════════════════════ */
+.hero-scroll-invite {
+  position: absolute;
+  bottom: 60px;
+  right: 28px;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  /* GSAP handles initial opacity */
+  opacity: 0;
+}
+
+.hero-scroll-invite span {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  color: rgba(212, 175, 55, 0.55);
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.hero-scroll-arrow {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0) 0%, rgba(212, 175, 55, 0.6) 100%);
+  animation: scrollArrowBob 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════
+   KEYFRAMES
+═══════════════════════════════════ */
+@keyframes mandalaSpinCW {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mandalaSpinCCW {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes flameFlicker {
+
+  0%,
+  100% {
+    transform: scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scaleY(1.09) scaleX(0.93);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scaleY(0.94) scaleX(1.06);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scaleY(1.06) scaleX(0.96);
+    opacity: 0.88;
+  }
+}
+
+@keyframes rippleExpand {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollArrowBob {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+@keyframes smokeRise1 {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translateY(-35vh) translateX(30px) scale(1.8);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translateY(-70vh) translateX(-20px) scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes smokeRise2 {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.3;
+  }
+
+  60% {
+    transform: translateY(-40vh) translateX(-40px) scale(2);
+    opacity: 0.15;
+  }
+
+  100% {
+    transform: translateY(-75vh) translateX(25px) scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes smokeRise3 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.8);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.35;
+  }
+
+  45% {
+    transform: translateY(-30vh) translateX(50px) scale(1.6);
+    opacity: 0.18;
+  }
+
+  100% {
+    transform: translateY(-65vh) translateX(-30px) scale(2.8);
+    opacity: 0;
+  }
+}
+
+@keyframes smokeDrift {
+
+  0%,
+  100% {
+    filter: blur(20px);
+  }
+
+  50% {
+    filter: blur(35px);
+  }
+}
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 20px rgba(212, 175, 55, 0.3),
+      0 0 40px rgba(212, 175, 55, 0.1);
+  }
+
+  50% {
+    text-shadow:
+      0 0 30px rgba(212, 175, 55, 0.5),
+      0 0 60px rgba(212, 175, 55, 0.2);
+  }
+}
+
+/* ═══════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════ */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero h1 span {
+    font-size: 18px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    max-width: 500px;
+  }
+
+  .hero-om {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  .hero h1 span {
+    font-size: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .hero-om {
+    font-size: 40px;
+  }
+
+  .hero-divider {
+    width: 60px;
+    height: 2px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn-gold,
+  .btn-outline {
+    width: 70%;
+    text-align: center;
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .hero-diyas {
+    gap: 20px;
+    margin-top: 18px;
+  }
+
+  .hero-scroll-invite {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .hero-content {
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .hero h1 span {
+    font-size: 14px;
+  }
+
+  .hero-subtitle {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .hero-om {
+    font-size: 32px;
+  }
+
+  .hero-divider {
+    width: 50px;
+  }
+
+  .hero-ctas {
+    width: 100%;
+  }
+
+  .btn-gold,
+  .btn-outline {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .hero-diyas {
+    gap: 14px;
+  }
+
+  .diya-bowl {
+    width: 30px;
+    height: 12px;
+  }
+
+  .diya-flame {
+    width: 9px;
+    height: 18px;
+  }
+}

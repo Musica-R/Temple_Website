@@ -1,0 +1,34 @@
+{
+    "ourHeritage": {
+        "EN": {
+            "heroTag": "Sacred Glimpses",
+            "heroTitle": "Our Heritage",
+            "heroSub": "Where silence speaks, and every stone holds a story.",
+            "breadcrumb": {
+                "home": "HOME",
+                "active": "Our Heritage"
+            },
+            "verse": "\"Where devotion flows, and every moment becomes a blessing.\""
+        },
+        "TA": {
+            "heroTag": "புனித காட்சிகள்",
+            "heroTitle": "எங்கள் பாரம்பரியம்",
+            "heroSub": "மௌனம் பேசுகிறது, ஒவ்வொரு கல்லும் ஒரு கதையை சொல்கிறது.",
+            "breadcrumb": {
+                "home": "முகப்பு",
+                "active": "எங்கள் பாரம்பரியம்"
+            },
+            "verse": "\"பக்தி பாயும் இடத்தில், ஒவ்வொரு தருணமும் ஒரு ஆசீர்வாதமாகிறது.\""
+        },
+        "ML": {
+            "heroTag": "പുണ്യദൃശ്യങ്ങൾ",
+            "heroTitle": "ഞങ്ങളുടെ പൈതൃകം",
+            "heroSub": "മൗനം സംസാരിക്കുന്നിടത്ത്, ഓരോ കല്ലും ഒരു കഥ പറയുന്നു.",
+            "breadcrumb": {
+                "home": "ഹോം",
+                "active": "ഞങ്ങളുടെ പൈതൃകം"
+            },
+            "verse": "\"ഭക്തി ഒഴുകുന്നിടത്ത്, ഓരോ നിമിഷവും ഒരു അനുഗ്രഹമാകുന്നു.\""
+        }
+    }
+}

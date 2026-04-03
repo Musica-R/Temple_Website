@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './Pages/Footer';
+import Header from './Pages/Header';
+import HomePage from './Pages/HomePage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import OurHeritage from './Pages/OurHeritage';
+// import BookPooja from './Pages/BookPooja';
+import DonationPage from './Pages/DonationPage';
+import DivineGallery from './Pages/DivineGallery';
+import ReachUs from './Pages/ReachUs';
+import { LanguageProvider } from "./Context/Languagecontext";
+import ScrollToTop from './Components/ScrollTop';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+       <LanguageProvider>
+        <ScrollToTop />
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/history" element={<OurHeritage />} />
+          {/* <Route path="/booking" element={<BookPooja />} /> */}
+          <Route path="/donation" element={<DonationPage />} />
+          <Route path="/gallery" element={<DivineGallery />} />
+          <Route path="/contact" element={<ReachUs />}/>
+        </Routes>
+        <Footer />
+        </LanguageProvider>
+      </BrowserRouter>
     </div>
+
   );
 }
 
