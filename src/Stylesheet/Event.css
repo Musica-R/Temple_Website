@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+:root {
+    --bg-light: #fffdf7;
+    --cream-soft: #fdf3e3;
+    --cream-mid: #f5e6cc;
+    --brown: #8b5e3c;
+    --brown-light: #b07d55;
+    --gold: #c9982a;
+    --gold-soft: #e8c97a;
+    --gold-pale: #fdf6e0;
+    --text-dark: #3b2a1d;
+    --text-mid: #6b4f3a;
+    --text-light: #9a7a65;
+    --text-history: #5e110e;
+    --shadow-sm: 0 4px 18px rgba(139, 94, 60, 0.09);
+    --shadow-md: 0 10px 32px rgba(139, 94, 60, 0.13);
+    --shadow-hover: 0 16px 40px rgba(139, 94, 60, 0.18);
+    --radius: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream-soft);
+    font-family: 'EB Garamond', serif;
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+/* ── HERO ── */
+.event-hero {
+    background: linear-gradient(160deg, var(--text-history) 0%, #7a1610 40%, #9e2218 70%, #5e110e 100%);
+    padding: 64px 24px 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(201, 152, 42, 0.04) 30px, rgba(201, 152, 42, 0.04) 31px),
+        repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(201, 152, 42, 0.03) 30px, rgba(201, 152, 42, 0.03) 31px);
+    pointer-events: none;
+}
+
+.event-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: var(--cream-soft);
+    clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+.hero-overline {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.45em;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    opacity: 0.9;
+}
+
+.hero-title {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(34px, 8vw, 76px);
+    font-weight: 900;
+    color: var(--gold-soft);
+    line-height: 1.05;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 24px rgba(201, 152, 42, 0.3);
+    letter-spacing: 0.02em;
+}
+
+.hero-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(14px, 3vw, 20px);
+    color: rgba(232, 201, 122, 0.85);
+    letter-spacing: 0.18em;
+    margin-bottom: 28px;
+}
+
+.hero-date-pill {
+    display: inline-block;
+    background: rgba(201, 152, 42, 0.18);
+    border: 1px solid rgba(232, 201, 122, 0.35);
+    padding: 10px 36px;
+    border-radius: 100px;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: var(--gold-soft);
+    margin-bottom: 28px;
+}
+
+.hero-lamps {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 22px;
+}
+
+.lamp-icon {
+    animation: lamp-flicker 2s ease-in-out infinite alternate;
+    display: inline-block;
+}
+
+.lamp-icon:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.lamp-icon:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.lamp-icon:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.lamp-icon:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+@keyframes lamp-flicker {
+    from {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-4px) scaleY(1.1);
+        opacity: 0.75;
+    }
+}
+
+/* ── LAYOUT ── */
+.event-page {
+    background-color: var(--cream-soft);
+    min-height: 100vh;
+}
+
+.event-content {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+}
+
+/* ── SECTION DIVIDER ── */
+.section-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 52px 0 28px;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
+}
+
+.divider-label {
+    font-family: 'Cinzel', serif;
+    font-size: 10.5px;
+    letter-spacing: 0.42em;
+    color: var(--text-history);
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.85;
+}
+
+/* ── EVENT CARD ── */
+.event-card {
+    background: var(--bg-light);
+    border: 1px solid var(--cream-mid);
+    border-left: 4px solid var(--gold);
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border-left-color 0.3s ease, transform 0.25s ease;
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+.event-card.visible {
+    animation: card-enter 0.5s ease forwards;
+}
+
+@keyframes card-enter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+.event-card.event-special {
+    border-left-color: var(--text-history);
+    background: linear-gradient(135deg, #fffaf5 0%, var(--bg-light) 100%);
+}
+
+.event-card.event-finale {
+    border: 2px solid var(--gold);
+    border-left: 5px solid var(--text-history);
+    background: linear-gradient(135deg, #fff8f0 0%, #fffdf7 100%);
+}
+
+/* ── CARD HEADER (click to expand) ── */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 20px 16px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.card-header:hover .event-title {
+    color: var(--text-history);
+}
+
+/* ── DATE BADGE ── */
+.date-badge {
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+}
+
+.date-num {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-history);
+    line-height: 1;
+}
+
+.date-month {
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.date-weekday {
+    font-family: 'EB Garamond', serif;
+    font-size: 11px;
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+
+.card-sep {
+    width: 1px;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, var(--gold-soft), transparent);
+    flex-shrink: 0;
+}
+
+.card-meta {
+    flex: 1;
+}
+
+.event-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(14px, 2.5vw, 17px);
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+    transition: color 0.2s;
+    line-height: 1.35;
+}
+
+.event-card.event-special .event-title,
+.event-card.event-finale .event-title {
+    color: var(--text-history);
+}
+
+.event-time-tag {
+    font-family: 'EB Garamond', serif;
+    font-size: 13.5px;
+    font-style: italic;
+    color: var(--text-light);
+}
+
+.expand-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid var(--cream-mid);
+    background: var(--cream-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.25s, border-color 0.25s, transform 0.35s;
+    color: var(--gold);
+    font-size: 13px;
+}
+
+.event-card.open .expand-btn {
+    transform: rotate(180deg);
+    background: var(--gold-pale);
+    border-color: var(--gold-soft);
+}
+
+/* ── CARD BODY ── */
+.card-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 20px 0 98px;
+}
+
+.event-card.open .card-body {
+    max-height: 600px;
+    padding-bottom: 20px;
+}
+
+.detail-list {
+    list-style: none;
+    padding: 0;
+    border-top: 1px dashed var(--cream-mid);
+    padding-top: 14px;
+}
+
+.detail-list li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--text-mid);
+}
+
+.detail-list li:last-child {
+    margin-bottom: 0;
+}
+
+.detail-dot {
+    color: var(--gold);
+    font-size: 11px;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.detail-list li strong {
+    font-family: 'Cinzel', serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text-history);
+    letter-spacing: 0.04em;
+}
+
+/* ── FINALE BLOCK ── */
+.finale-block {
+    margin-top: 40px;
+    background: linear-gradient(135deg, var(--gold-pale) 0%, #fff8ef 100%);
+    border: 1.5px solid var(--gold-soft);
+    border-top: 4px solid var(--text-history);
+    border-radius: var(--radius);
+    padding: 40px 32px 36px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.finale-block::before {
+    content: '✦';
+    position: absolute;
+    font-size: 160px;
+    color: var(--gold-soft);
+    opacity: 0.12;
+    top: -30px;
+    right: -20px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.finale-overline {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.45em;
+    color: var(--text-history);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    opacity: 0.75;
+}
+
+.finale-date-num {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(22px, 5vw, 38px);
+    font-weight: 900;
+    color: var(--text-history);
+    margin-bottom: 6px;
+    text-shadow: 0 2px 12px rgba(94, 17, 14, 0.12);
+}
+
+.finale-desc {
+    font-size: 16px;
+    color: var(--text-mid);
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.finale-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.finale-tag {
+    background: rgba(94, 17, 14, 0.07);
+    border: 1px solid rgba(94, 17, 14, 0.2);
+    color: var(--text-history);
+    padding: 7px 18px;
+    border-radius: 100px;
+    font-family: 'Cinzel', serif;
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+}
+
+/* ── FOOTER ── */
+.event-footer {
+    text-align: center;
+    padding: 36px 20px;
+    border-top: 1px solid var(--cream-mid);
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    color: var(--text-light);
+    background: var(--cream-soft);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 560px) {
+    .card-body {
+        padding-left: 20px;
+    }
+
+    .card-header {
+        gap: 12px;
+    }
+
+    .date-badge {
+        width: 50px;
+    }
+
+    .date-num {
+        font-size: 22px;
+    }
+
+    .finale-block {
+        padding: 28px 18px;
+    }
+}

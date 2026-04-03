@@ -232,8 +232,8 @@ nav::after {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  
-  .nav-inner{
+
+  .nav-inner {
     padding: 10px;
   }
 
@@ -281,7 +281,7 @@ nav::after {
   .nav-links li {
     width: 100%;
     text-align: center;
-    padding: 14px 0;
+    padding: 6px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
@@ -298,6 +298,10 @@ nav::after {
     display: none;
   }
 
+  .lang-selected {
+    padding: 0px 12px;
+  }
+
   .lang-dropdown {
     width: 100%;
     text-align: center;
@@ -309,6 +313,12 @@ nav::after {
     background: transparent;
     border: none;
     box-shadow: none;
+    color: white;
+    padding: 5px;
+  }
+
+  .nav-inner {
+    align-items: flex-start;
   }
 }
 
