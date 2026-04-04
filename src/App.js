@@ -11,6 +11,7 @@ import ReachUs from './Pages/ReachUs';
 import { LanguageProvider } from "./Context/Languagecontext";
 import ScrollToTop from './Components/ScrollTop';
 import Event from './Pages/Event';
+import MobileArrow from './Components/MobileArrow';
 // import LanguageFontProvider from "./Components/LanguageFontProvider";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/contact" element={<ReachUs />} />
           </Routes>
           <Footer />
+          <MobileArrow />
         </LanguageProvider>
       </BrowserRouter>
     </div>
