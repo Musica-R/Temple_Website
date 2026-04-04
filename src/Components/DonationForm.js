@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "../Stylesheet/Donation.css";
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/Reachustranslations.json";
+import { QRCodeCanvas } from "qrcode.react";
 
 const QUICK_AMOUNTS = [101, 1001, 2001, 5001, 11000];
 const UPI_ID = "musicaramesh31102002@okicici";
@@ -24,7 +25,6 @@ export default function DonationForm() {
   const { language } = useLanguage();
   const t = translations.donation[language] || translations.donation["EN"];
 
-  /* ── Observer: wire dp-in to every animated component ─────── */
   useEffect(() => {
     const targets = [
       '.donation-form-box',
@@ -77,8 +77,7 @@ export default function DonationForm() {
 
   const upiUrl = buildUpiUrl(amount || "0", t.purposeLabels[purpose]);
   const gpayUrl = buildGPayUrl(amount || "0", t.purposeLabels[purpose]);
-  const qrSrc = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(upiUrl)}`;
-
+  
   return (
     <section className="donation-section">
 
@@ -93,14 +92,10 @@ export default function DonationForm() {
           </div>
 
           <div className="form-body">
+
             <div className="amount-pills">
               {QUICK_AMOUNTS.map((v) => (
-                <button
-                  key={v}
-                  type="button"
-                  className={`amount-pill${activeAmount === v ? " active" : ""}`}
-                  onClick={() => handlePill(v)}
-                >
+                <button key={v} type="button" className={`amount-pill${activeAmount === v ? " active" : ""}`} onClick={() => handlePill(v)}>
                   ₹{v.toLocaleString("en-IN")}
                 </button>
               ))}
@@ -108,31 +103,22 @@ export default function DonationForm() {
 
             <div className="field-group">
               <label>{t.formPanel.amountLabel}</label>
-              <input
-                type="number"
-                placeholder={t.formPanel.amountPlaceholder}
-                value={amount}
-                onChange={handleAmountChange}
+              <input type="number" placeholder={t.formPanel.amountPlaceholder} value={amount} onChange={handleAmountChange}
                 style={{ width: "100%", padding: "12px 16px", borderRadius: "10px", border: "1.5px solid rgba(139,94,60,0.15)", background: "var(--bg-light,#fffaf0)", color: "var(--text-dark,#3b2a1d)", fontSize: "15px", fontFamily: "Crimson Text,serif", boxSizing: "border-box" }}
               />
             </div>
 
             <div className="field-group">
               <label>{t.formPanel.purposeLabel}</label>
-              <select
-                value={purpose}
-                onChange={(e) => { setPurpose(e.target.value); setShowQR(false); }}
-                style={{ width: "100%", padding: "12px 40px 12px 16px", borderRadius: "10px", border: "1.5px solid rgba(139,94,60,0.15)", background: "var(--bg-light,#fffaf0)", color: "var(--text-dark,#3b2a1d)", fontSize: "15px", fontFamily: "Crimson Text,serif", cursor: "pointer", appearance: "none", backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238b5e3c' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E\")", backgroundRepeat: "no-repeat", backgroundPosition: "right 14px center", boxSizing: "border-box" }}
-              >
+              <select value={purpose} onChange={(e) => { setPurpose(e.target.value); setShowQR(false); }}
+                style={{ width: "100%", padding: "12px 40px 12px 16px", borderRadius: "10px", border: "1.5px solid rgba(139,94,60,0.15)", background: "var(--bg-light,#fffaf0)", color: "var(--text-dark,#3b2a1d)", fontSize: "15px", fontFamily: "Crimson Text,serif", cursor: "pointer", appearance: "none", backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238b5e3c' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E\")", backgroundRepeat: "no-repeat", backgroundPosition: "right 14px center", boxSizing: "border-box" }}>
                 {Object.entries(t.purposeOptions).map(([key, label]) => (
                   <option key={key} value={key}>{label}</option>
                 ))}
               </select>
             </div>
 
-            <button type="button" className="donate-btn" onClick={handleGenerate}>
-              {t.formPanel.generateBtn}
-            </button>
+            <button type="button" className="donate-btn" onClick={handleGenerate}>{t.formPanel.generateBtn}</button>
 
             {showQR && (
               <div className="qr-panel">
@@ -142,8 +128,7 @@ export default function DonationForm() {
                 </div>
 
                 <div className="qr-box">
-                  <img src={qrSrc} alt="Donation QR Code" width={200} height={200}
-                    style={{ display: "block", borderRadius: "8px" }} />
+                 <QRCodeCanvas value={upiUrl} size={200} style={{ display: "block", borderRadius: "8px" }} />
                   <p className="qr-scan-hint">{t.formPanel.qrScanHint}</p>
                 </div>
 
@@ -164,15 +149,14 @@ export default function DonationForm() {
               </div>
             )}
 
-            <p className="note" style={{ marginTop: showQR ? "0" : "14px" }}>
-              {t.formPanel.acceptsNote}
-            </p>
+            <p className="note" style={{ marginTop: showQR ? "0" : "14px" }}>{t.formPanel.acceptsNote}</p>
 
             <div className="trust-badges">
               <span className="badge">{t.formPanel.badges.secure}</span>
               <span className="badge">{t.formPanel.badges.tax}</span>
               <span className="badge">{t.formPanel.badges.receipt}</span>
             </div>
+            
           </div>
         </div>
 

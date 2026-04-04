@@ -507,11 +507,11 @@
                     "content": {
                         "morning": {
                             "label": "Morning",
-                            "time": "5:30 AM – 12:00 PM"
+                            "time": "5:00 AM – 11:00 AM"
                         },
                         "evening": {
                             "label": "Evening",
-                            "time": "4:30 PM – 9:00 PM"
+                            "time": "5:00 PM – 7:30 PM"
                         }
                     }
                 }

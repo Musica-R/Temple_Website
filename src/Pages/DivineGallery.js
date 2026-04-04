@@ -3,8 +3,12 @@ import { useEffect } from "react";
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/datatranslation.json";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function DivineGallery() {
+
+    const navigate = useNavigate();
+
     const { language } = useLanguage();
     const t = translations.divineGallery[language] || translations.divineGallery["EN"];
 
@@ -102,7 +106,7 @@ export default function DivineGallery() {
                                 <li key={i}>{f}</li>
                             ))}
                         </ul>
-                        <button className="gallery-btn">{t.contentLeft.btn}</button>
+                        <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentLeft.btn}</button>
                     </div>
 
                     {/* RIGHT IMAGES */}
@@ -163,7 +167,7 @@ export default function DivineGallery() {
                                 <li key={i}>{f}</li>
                             ))}
                         </ul>
-                        <button className="gallery-btn">{t.contentRight.btn}</button>
+                        <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentRight.btn}</button>
                     </div>
                 </div>
 
@@ -196,8 +200,8 @@ export default function DivineGallery() {
                             <p>{t.cta.sub}</p>
                         </div>
                         <div className="gcta-btns">
-                            <button className="gcta-btn-primary">{t.cta.btnPrimary}</button>
-                            <button className="gcta-btn-secondary">{t.cta.btnSecondary}</button>
+                            <button className="gcta-btn-primary" onClick={() => navigate("/contact")} >{t.cta.btnPrimary}</button>
+                            <button className="gcta-btn-secondary" onClick={() => navigate("/")}  >{t.cta.btnSecondary}</button>
                         </div>
                     </div>
                 </div>
