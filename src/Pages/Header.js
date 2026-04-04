@@ -20,7 +20,7 @@ export default function Header() {
     };
 
     return (
-        <nav>
+        <nav className={`nav ${language}`}>
             <div className="nav-inner">
 
                 {/* LOGO — translated */}
@@ -67,11 +67,11 @@ export default function Header() {
                         </NavLink>
                     </li>
 
-                    {/* <li>
+                    <li>
                         <NavLink to="/event" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>
-                            Event Page
+                           {t.navLinks.event}
                         </NavLink>
-                    </li> */}
+                    </li>
 
                     <li>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>

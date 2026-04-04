@@ -1,247 +1,284 @@
-import React, { useState, useEffect, useRef } from 'react';
-import '../Stylesheet/Event.css';
+import { useEffect, useRef } from "react";
+import { useLanguage } from "../Context/Languagecontext";
+import translations from "../Json/Event.json";
+import "../Stylesheet/Event.css";
 
-const events = [
-  {
-    day: '11', month: 'Feb', weekday: 'Wednesday',
-    title: 'Kanyaar · Flag Hoisting · Festival Inauguration',
-    time: 'Evening 6:30 onwards',
-    special: false,
-    details: [
-      { label: 'Kanyaar', text: 'Bell Ringing Ceremony (Mani Idal Chandi)' },
-      { label: 'Utsava Kodiyerum', text: 'Festival Flag Hoisting' },
-      { label: null, text: 'Under the chief supervision of Temple Melshanthi Sri A.M. Sreejith Namboothiri' },
-      { label: 'Sarvaiswarya Vilakku Puja', text: 'Special inaugural lamp worship' },
-    ],
-  },
-  {
-    day: '13', month: 'Feb', weekday: 'Friday',
-    title: 'Muthal Vilakk · Aviyal Dal',
-    time: 'First Lamp Ceremony',
-    special: false,
-    details: [
-      { label: 'Muthal Vilakk', text: 'Lighting of the First Lamp' },
-      { label: 'Aviyal Dal', text: 'Traditional offering ceremony' },
-    ],
-  },
-  {
-    day: '14', month: 'Feb', weekday: 'Saturday',
-    title: 'Cultural Inauguration · Ottanthullal · Nrithyarchana',
-    time: '6:30 PM · 7:00 PM · 8:00–9:30 PM',
-    special: false,
-    details: [
-      { label: null, text: 'Cultural Programmes Inauguration' },
-      { label: 'Ottanthullal', text: 'by Kumari Varna Muthethath · Dedicated by Sri. Satish Kumar Muthethath' },
-      { label: 'Nrithyarchana', text: 'Natya Kshetra, Chittur · Kalamandalam Srimathi Jansisanuvum and others' },
-    ],
-  },
-  {
-    day: '15', month: 'Feb', weekday: 'Sunday',
-    title: 'Varivozhuththu · Dance Evening',
-    time: 'Shivarathri Auspicious Time',
-    special: false,
-    details: [
-      { label: 'Varivozhuththu', text: 'During Shivarathri auspicious time — special puja at Shiva Temple at 10 o\'clock' },
-      { label: 'Nrithasandya', text: 'Dance Evening by Chilanka Dance & Art Academy' },
-    ],
-  },
-  {
-    day: '16', month: 'Feb', weekday: 'Monday',
-    title: 'Nritta Nrithyangal – Dance Performances',
-    time: 'Classical & Folk Dance',
-    special: false,
-    details: [
-      { label: null, text: 'Kumari Devanna V. Pothuvaal' },
-      { label: null, text: 'Kumari Gayathri Prasfilith – Dance School, Sas Nritta Peedom' },
-      { label: null, text: 'Mudra School of Dance' },
-      { label: null, text: 'Sreelakshmi Nritta Kalayam, Puthusheri' },
-    ],
-  },
-  {
-    day: '17', month: 'Feb', weekday: 'Tuesday',
-    title: 'Cheriya Kummatti · Devotional Music Evening',
-    time: 'Evening 6:30 – Avataranam',
-    special: false,
-    details: [
-      { label: 'Cheriya Kummatti', text: 'Small Kummatti Procession' },
-      { label: 'Bhakthiganamelam', text: 'Flowers Top Singer Fame (Season 1) Sreebhuvanum and others' },
-      { label: null, text: 'Dedicated by Sri. Narayanan & Srimathi. Shantha Narayanan, Chatham House, Chakkattupaara' },
-    ],
-  },
-  {
-    day: '18', month: 'Feb', weekday: 'Wednesday',
-    title: 'Dance Spectacle · Mohiniattam',
-    time: 'Avataranam',
-    special: false,
-    details: [
-      { label: null, text: 'Kalamandalam Anjali & Krishna Ayush presenting a classical dance spectacle' },
-      { label: 'Mohiniattam', text: 'Performed by Varna Muthethath Puthusheri' },
-    ],
-  },
-  {
-    day: '19', month: 'Feb', weekday: 'Thursday',
-    title: 'Ezhaam Vilakk – Seventh Lamp',
-    time: 'Evening 6:30 – Avataranam',
-    special: false,
-    details: [
-      { label: 'Ezhaam Vilakk', text: 'The Seventh Lamp Ceremony' },
-      { label: null, text: 'Various Cultural Performances by Puthusheri Residents' },
-    ],
-  },
-  {
-    day: '20', month: 'Feb', weekday: 'Friday',
-    title: 'Valiya Kummatti · Grand Procession · Bhagavathi Neeraattal',
-    time: 'Morning 10:00 · Afternoon 2:30 · Evening 6:20 · Night 9:00',
-    special: true,
-    details: [
-      { label: 'Valiya Kummatti', text: 'Grand Kummatti Festival' },
-      { label: 'Bhagavathi Neeraattal', text: 'Kummatti figures from Puthusheri Vekkurushi Bhagavathi Temple and Puthukkulangara Bhagavathi Temple placed in the paddy field' },
-      { label: 'Kudiyarkkol (Eve. 6:20)', text: 'Kummatti figures, Malavilakk, Vannarabhootham, Elephant procession & Melam from Vekkurushi Bhagavathi Temple' },
-      { label: 'Night 9:00', text: 'Grand conclusion with Pandimela at Vadasheri Temple' },
-    ],
-  },
-  {
-    day: '21', month: 'Feb', weekday: 'Saturday',
-    title: 'Malama · Cultural Performances',
-    time: 'Evening 6:30 – Avataranam',
-    special: false,
-    details: [
-      { label: 'Malama', text: 'Sacred Malama Ceremony' },
-      { label: null, text: 'Various Cultural Performances by Puthusheri Residents' },
-    ],
-  },
-  {
-    day: '22', month: 'Feb', weekday: 'Sunday',
-    title: 'Shodana Vela · Double Thayambaka',
-    time: 'Evening 6:30 – Avataranam',
-    special: false,
-    details: [
-      { label: 'Shodana Vela', text: 'Ceremonial Purification Procession' },
-      { label: 'Double Thayambaka', text: 'Percussion Performance by Panamanna Shashi & Cherppulasheri Rajesh' },
-    ],
-  },
-  {
-    day: '23', month: 'Feb', weekday: 'Monday',
-    title: '🔥 Vedi Utsavam – Grand Fireworks Festival',
-    time: 'Morning 4:00 · 5:00 · Evening 4:00 · 6:00 · Night 12:00',
-    special: true,
-    details: [
-      { label: 'Keli Pattu', text: 'Held at Ullattukavil' },
-      { label: 'Shodana Vela', text: 'Begins from Ullattukavil. Ganapathihomam, Special Puja & 101 Coconut Abhishekam under Brahmasri Andiladi Manaykkil Parameshvaran Namboothirippad' },
-      { label: null, text: 'Shodana Vela procession and Chettiarkambu arrive at the temple' },
-      { label: 'Keli (Eve. 4–6)', text: 'Grand procession with Elephants, Panchavatya, Paravadya, Malavilakk, Vannarabhootham, Thattinmel Koothu, Theyyam & Muthalaayavam' },
-      { label: 'Night 12:00', text: 'Procession of Sri Parukancheri & Sri Koottekad Bhagavathi deities' },
-    ],
-  },
-];
+/* ─────────────────────────────────────────────
+   EventRow — explicit grid placement per parity
+   ODD  index → [IMAGE col1] [NODE col2] [TEXT col3]
+   EVEN index → [TEXT col1]  [NODE col2] [IMAGE col3]
+─────────────────────────────────────────────── */
+function EventRow({ event, index }) {
+    const cardRef = useRef(null);
+    const isEven = index % 2 !== 0; // 0-based: index 0 = first = odd row visually
 
-function EventCard({ event, index }) {
-  const [open, setOpen] = useState(false);
-  const cardRef = useRef(null);
+    useEffect(() => {
+        const el = cardRef.current;
+        if (!el) return;
+        const obs = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => el.classList.add("er-visible"), index * 80);
+                    obs.unobserve(el);
+                }
+            },
+            { threshold: 0.06 }
+        );
+        obs.observe(el);
+        return () => obs.disconnect();
+    }, [index]);
 
-  useEffect(() => {
-    const el = cardRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => el.classList.add('visible'), index * 60);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.1 }
+    const imageCell = (
+        <div className="ev-card-img-zone">
+            {event.image ? (
+                <img src={event.image} alt={event.title} loading="lazy" />
+            ) : (
+                <div style={{
+                    width: "100%", height: "100%",
+                    background: "linear-gradient(135deg,#3a0a08 0%,#5e110e 100%)",
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    fontSize: 80, fontFamily: "'Cinzel Decorative',cursive",
+                    color: "rgba(201,152,42,.18)"
+                }}>ॐ</div>
+            )}
+            {/* Date badge */}
+            <div className="ev-card-date">
+                <span className="ev-card-day">{event.day}</span>
+                <span className="ev-card-month">{event.month}</span>
+                <span className="ev-card-weekday">{event.weekday}</span>
+            </div>
+        </div>
     );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [index]);
 
-  const cardClass = [
-    'event-card',
-    event.special ? 'event-special' : '',
-    open ? 'open' : '',
-  ].filter(Boolean).join(' ');
+    const nodeCell = (
+        <div className="ev-card-spine">
+            <div className={`ev-spine-node${event.special ? " ev-spine-node-special" : ""}`}>
+                {event.special ? "✦" : "◆"}
+            </div>
+        </div>
+    );
 
-  return (
-    <div className={cardClass} ref={cardRef}>
-      <div className="card-header" onClick={() => setOpen(!open)}>
-        <div className="date-badge">
-          <div className="date-num">{event.day}</div>
-          <div className="date-month">{event.month}</div>
-          <div className="date-weekday">{event.weekday}</div>
+    const textCell = (
+        <div className="ev-card-panel">
+            {event.special && (
+                <span className="ev-panel-grand-badge">✦ Grand Event</span>
+            )}
+            <div className="ev-panel-header">
+                <h3 className="ev-panel-title">{event.title}</h3>
+                <div className="ev-panel-time">
+                    <span className="ev-panel-time-icon">⏱</span>
+                    {event.time}
+                </div>
+            </div>
+            <div className="ev-panel-divider" />
+            <ul className="ev-panel-details">
+                {event.details.map((d, i) => (
+                    <li key={i} className="ev-panel-detail">
+                        {d.label ? (
+                            <>
+                                <span className="ev-detail-label">{d.label}</span>
+                                <span className="ev-detail-sep">·</span>
+                                <span className="ev-detail-text">{d.text}</span>
+                            </>
+                        ) : (
+                            <>
+                                <span className="ev-detail-dash">—</span>
+                                <span className="ev-detail-text">{d.text}</span>
+                            </>
+                        )}
+                    </li>
+                ))}
+            </ul>
         </div>
-        <div className="card-sep" />
-        <div className="card-meta">
-          <div className="event-title">{event.title}</div>
-          <div className="event-time-tag">{event.time}</div>
+    );
+
+    return (
+        <div
+            className={`ev-card${event.special ? " ev-card-special" : ""}${isEven ? " ev-card-even" : " ev-card-odd"}`}
+            ref={cardRef}
+        >
+            {/* Render in explicit DOM order based on parity.
+                CSS grid-column declarations in the CSS file
+                handle the visual placement — no order tricks. */}
+            {!isEven ? (
+                /* ODD rows: image | node | text  */
+                <>
+                    {imageCell}
+                    {nodeCell}
+                    {textCell}
+                </>
+            ) : (
+                /* EVEN rows: text | node | image */
+                <>
+                    {textCell}
+                    {nodeCell}
+                    {imageCell}
+                </>
+            )}
         </div>
-        <div className="expand-btn" aria-label={open ? 'Collapse' : 'Expand'}>▾</div>
-      </div>
-      <div className="card-body">
-        <ul className="detail-list">
-          {event.details.map((d, i) => (
-            <li key={i}>
-              <span className="detail-dot">◆</span>
-              <span>
-                {d.label && <strong>{d.label} — </strong>}
-                {d.text}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
+    );
 }
 
+/* ─────────────────────────────────────────────
+   Main Event Page
+─────────────────────────────────────────────── */
 export default function Event() {
-  return (
-    <div className="event-page">
-      {/* ── HERO ── */}
-      <header className="event-hero">
-        <p className="hero-overline">Puthusheri Bhagavathi Temple · Kerala</p>
-        <h1 className="hero-title">Vedi Utsavam</h1>
-        <p className="hero-subtitle">14th Annual Temple Festival</p>
-        <div className="hero-date-pill">11 February — 24 February 2026</div>
-        <div className="hero-lamps">
-          {['🪔', '🪔', '🪔', '🪔', '🪔'].map((l, i) => (
-            <span className="lamp-icon" key={i}>{l}</span>
-          ))}
+    const { language } = useLanguage();
+    const t = translations.event[language] || translations.event["EN"];
+
+    const verseBandRef = useRef(null);
+    const scheduleRef = useRef(null);
+    const finaleRef = useRef(null);
+    const statsRef = useRef(null);
+
+    const specialCount = t.events.filter(e => e.special).length;
+
+    useEffect(() => {
+        const obs = new IntersectionObserver(
+            (entries) => entries.forEach((e) => {
+                if (e.isIntersecting) {
+                    e.target.classList.add("oh-visible");
+                    obs.unobserve(e.target);
+                }
+            }),
+            { threshold: 0.07 }
+        );
+        [verseBandRef, scheduleRef, finaleRef, statsRef].forEach(
+            r => r.current && obs.observe(r.current)
+        );
+        return () => obs.disconnect();
+    }, []);
+
+    return (
+        <div className="event-page">
+
+            {/* ══ HERO — unchanged ══ */}
+            <div className="ourheritage">
+                <img src="/assets/about.jpg" alt="Temple" className="hero-img" />
+                <div className="ourheritage-overlay">
+                    <div className="oh-mandala-ring oh-ring-1" />
+                    <div className="oh-mandala-ring oh-ring-2" />
+                    <div className="oh-mandala-ring oh-ring-3" />
+                </div>
+                <div className="ourheritage-content">
+                    <span className="hero-tag oh-anim-tag">{t.heroTag}</span>
+                    <h1 className="oh-anim-title">{t.heroTitle}</h1>
+                    <p className="hero-sub oh-anim-sub">{t.heroSub}</p>
+                    <div className="ourheritage-breadcrumb oh-anim-breadcrumb">
+                        <span>{t.breadcrumb.home}</span>
+                        <span className="ourheritage-dot">ॐ</span>
+                        <span className="ourheritage-active">{t.breadcrumb.active}</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* ══ VERSE BAND — unchanged ══ */}
+            <div className="gallery-verse-band oh-scroll-reveal" ref={verseBandRef}>
+                <div className="verse-inner">
+                    <span className="verse-om">ॐ</span>
+                    <p>{t.verse}</p>
+                </div>
+            </div>
+
+            {/* ══ GOLD STATS STRIP ══ */}
+            {/* <div className="ev-stats oh-scroll-reveal" ref={statsRef}>
+                <div className="ev-stats-om" aria-hidden="true">ॐ</div>
+                <div className="ev-stats-inner">
+                    <div className="ev-stat">
+                        <span className="ev-stat-num">14<sup>th</sup></span>
+                        <span className="ev-stat-label">Annual Edition</span>
+                    </div>
+                    <div className="ev-stat-sep" />
+                    <div className="ev-stat">
+                        <span className="ev-stat-num">{t.events.length}</span>
+                        <span className="ev-stat-label">Sacred Events</span>
+                    </div>
+                    <div className="ev-stat-sep" />
+                    <div className="ev-stat">
+                        <span className="ev-stat-num">{specialCount}</span>
+                        <span className="ev-stat-label">Grand Celebrations</span>
+                    </div>
+                    <div className="ev-stat-sep" />
+                    <div className="ev-stat">
+                        <span className="ev-stat-num">14</span>
+                        <span className="ev-stat-label">Days of Devotion</span>
+                    </div>
+                </div>
+            </div> */}
+
+            {/* ══ BODY ══ */}
+            <div className="ev-body">
+                <main className="ev-schedule oh-scroll-reveal oh-delay-1" ref={scheduleRef}>
+
+                    {/* Section heading */}
+                    <div className="ev-sched-heading">
+                        <span className="ev-heading-eyebrow">Programme of Events</span>
+                        <h2 className="ev-heading-title">{t.scheduleTitle}</h2>
+                        <p className="ev-heading-sub">{t.scheduleSubtitle}</p>
+                        <div className="ev-heading-ornament">
+                            <span className="ev-orn-line" />
+                            <span className="ev-orn-gem">❖</span>
+                            <span className="ev-orn-line" />
+                        </div>
+                    </div>
+
+                    {/* Zigzag Timeline */}
+                    <div className="ev-timeline">
+                        {t.events.map((ev, i) => (
+                            <EventRow key={i} event={ev} index={i} />
+                        ))}
+                    </div>
+
+                    {/* GRAND FINALE */}
+                    <div className="ev-finale oh-scroll-reveal oh-delay-2" ref={finaleRef}>
+                        <div className="ev-finale-header">
+                            <div className="ev-finale-stars">
+                                <span>★</span>
+                                <span className="ev-finale-star-lg">★</span>
+                                <span>★</span>
+                            </div>
+                            <span className="ev-finale-eyebrow">{t.grandFinale.label}</span>
+                        </div>
+                        <div className="ev-finale-body">
+                            <div className="ev-finale-date-block">
+                                <span className="ev-finale-day">24</span>
+                                <span className="ev-finale-month-yr">Feb 2026</span>
+                                <span className="ev-finale-wd">Tuesday</span>
+                            </div>
+                            <div className="ev-finale-divider" />
+                            <div className="ev-finale-detail">
+                                <h3 className="ev-finale-name">{t.grandFinale.date}</h3>
+                                <p className="ev-finale-times">
+                                    <span className="ev-finale-clock">⏰</span>
+                                    {t.grandFinale.times}
+                                </p>
+                                <p className="ev-finale-caption">
+                                    <em>{t.grandFinale.caption}</em>
+                                </p>
+                                <div className="ev-finale-tags">
+                                    {t.grandFinale.tags.map((tag, i) => (
+                                        <span key={i} className="ev-finale-tag">
+                                            <span className="ev-finale-tag-dot">◆</span>
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+
+            {/* FOOTER */}
+            <footer className="ev-footer">
+                <div className="ev-footer-inner">
+                    <span className="ev-footer-om">ॐ</span>
+                    <span className="ev-footer-text">{t.footer}</span>
+                    <span className="ev-footer-om">ॐ</span>
+                </div>
+            </footer>
+
         </div>
-      </header>
-
-      {/* ── SCHEDULE ── */}
-      <main className="event-content">
-        <div className="section-divider">
-          <div className="divider-line" />
-          <span className="divider-label">Programme Schedule</span>
-          <div className="divider-line" />
-        </div>
-
-        {events.map((event, i) => (
-          <EventCard key={i} event={event} index={i} />
-        ))}
-
-        {/* ── GRAND FINALE ── */}
-        <div className="finale-block">
-          <p className="finale-overline">Grand Culmination</p>
-          <div className="finale-date-num">24 February 2026 — Tuesday</div>
-          <p className="finale-desc">
-            Morning 6:00 &nbsp;·&nbsp; Afternoon 1:00 &nbsp;·&nbsp; Evening 7:30<br />
-            Conclusion of the <em>14th Vedi Festival</em>
-          </p>
-          <div className="finale-tags">
-            <span className="finale-tag">Chettiarkambu Kathikkal</span>
-            <span className="finale-tag">Torch Lighting Ceremony</span>
-            <span className="finale-tag">Eedu Vedi – Salute Firing</span>
-            <span className="finale-tag">Festival Valediction</span>
-          </div>
-        </div>
-      </main>
-
-      {/* ── FOOTER ── */}
-      <footer className="event-footer">
-        Puthusheri Bhagavathi Temple &nbsp;·&nbsp; 14th Vedi Utsavam 2026
-      </footer>
-    </div>
-  );
+    );
 }

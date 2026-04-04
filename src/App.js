@@ -11,12 +11,14 @@ import ReachUs from './Pages/ReachUs';
 import { LanguageProvider } from "./Context/Languagecontext";
 import ScrollToTop from './Components/ScrollTop';
 import Event from './Pages/Event';
+// import LanguageFontProvider from "./Components/LanguageFontProvider";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <LanguageProvider>
+          {/* <LanguageFontProvider /> */}
           <ScrollToTop />
           <Header />
           <Routes>

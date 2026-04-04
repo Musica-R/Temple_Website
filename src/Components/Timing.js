@@ -31,6 +31,9 @@ function useSectionReveal(sectionRef) {
           setTimeout(() => s.classList.add("in"), 200 + i * 80);
         });
 
+        /* Special note */
+        setTimeout(() => el.querySelector(".t-special-note")?.classList.add("in"), 350);
+
         obs.disconnect();
       });
     }, { threshold: 0.1 });
@@ -48,24 +51,31 @@ export default function Timing() {
   useSectionReveal(sectionRef);
 
   const labels = {
-    opens:    langKey === "TA" ? "திறக்கும்"     : langKey === "ML" ? "തുറക്കൽ"   : "Opens",
-    closes:   langKey === "TA" ? "மூடும்"         : langKey === "ML" ? "അടയ്ക്കൽ" : "Closes",
-    poojas:   langKey === "TA" ? "பூஜைகள்"        : langKey === "ML" ? "പൂജകൾ"     : "Poojas",
-    sessions: langKey === "TA" ? "தொகுதிகள்"     : langKey === "ML" ? "സെഷനുകൾ"   : "Sessions",
-    amDaily:  langKey === "TA" ? "தினமும் காலை"  : langKey === "ML" ? "രാവിലെ"    : "AM daily",
-    pmDaily:  langKey === "TA" ? "தினமும் மாலை"  : langKey === "ML" ? "വൈകിട്ട്"  : "PM daily",
-    perDay:   langKey === "TA" ? "ஒரு நாள்"      : langKey === "ML" ? "ദിവസം"     : "per day",
-    daily:    langKey === "TA" ? "தினசரி"         : langKey === "ML" ? "ദിവസവും"   : "daily",
-    darshan:  langKey === "TA" ? "கோவில் தரிசனம்" : langKey === "ML" ? "ദർശനം"    : "Temple Darshan",
-    open:     langKey === "TA" ? "தினமும் திறந்திருக்கும்" : langKey === "ML" ? "തുറന്നിരിക്കും" : "Open daily · Darshan by arrangement",
-    heading:  langKey === "TA" ? "கோவில் நேரங்கள் & பூஜைகள்" : langKey === "ML" ? "ക്ഷേത്ര സമയങ്ങളും" : "Temple Timings & Rituals",
-    badge:    langKey === "TA" ? "தினசரி நேரம்"  : langKey === "ML" ? "ദിവസേന"    : "Daily Schedule",
+    opens: langKey === "TA" ? "திறக்கும்" : langKey === "ML" ? "തുറക്കൽ" : "Opens",
+    closes: langKey === "TA" ? "மூடும்" : langKey === "ML" ? "അടയ്ക്കൽ" : "Closes",
+    poojas: langKey === "TA" ? "பூஜைகள்" : langKey === "ML" ? "പൂജകൾ" : "Poojas",
+    sessions: langKey === "TA" ? "தொகுதிகள்" : langKey === "ML" ? "സെഷനുകൾ" : "Sessions",
+    amDaily: langKey === "TA" ? "தினமும் காலை" : langKey === "ML" ? "രാവിലെ" : "AM daily",
+    pmDaily: langKey === "TA" ? "தினமும் மாலை" : langKey === "ML" ? "വൈകിട്ട്" : "PM daily",
+    perDay: langKey === "TA" ? "ஒரு நாள்" : langKey === "ML" ? "ദിവസം" : "per day",
+    daily: langKey === "TA" ? "தினசரி" : langKey === "ML" ? "ദിവസവും" : "daily",
+    darshan: langKey === "TA" ? "கோவில் தரிசனம்" : langKey === "ML" ? "ദർശനം" : "Temple Darshan",
+    open: langKey === "TA" ? "தினமும் திறந்திருக்கும்" : langKey === "ML" ? "തുറന്നിരിക്കും" : "Open daily · Darshan by arrangement",
+    heading: langKey === "TA" ? "கோவில் நேரங்கள் & பூஜைகள்" : langKey === "ML" ? "ക്ഷേത്ര സമയങ്ങളും" : "Temple Timings & Rituals",
+    badge: langKey === "TA" ? "தினசரி நேரம்" : langKey === "ML" ? "ദിവസേന" : "Daily Schedule",
   };
 
+  const noteText =
+    langKey === "TA"
+      ? "சிறப்பு நாட்களில் நேரங்கள் மாறலாம். அமாவாசை, பிரதோஷம் மற்றும் திருவிழா நாட்களில் விரிவான தரிசன நேரங்கள் இருக்கும். மேலும் விவரங்களுக்கு கோவிலை தொடர்பு கொள்ளவும்."
+      : langKey === "ML"
+        ? "പ്രത്യേക ദിവസങ്ങളിൽ സമയം മാറാം. അമാവാസി, പ്രദോഷം, ഉത്സവ ദിവസങ്ങളിൽ ദർശന സമയം വ്യത്യാസപ്പെടും. കൂടുതൽ വിവരങ്ങൾക്ക് ക്ഷേത്രവുമായി ബന്ധപ്പെടുക."
+        : "Timings may vary on Amavasai, Pradosham, festival days & other auspicious occasions. Extended darshan hours will be observed. Please contact the temple for updates.";
+
   const stats = [
-    { label: labels.opens,    val: "5:00",  sub: labels.amDaily },
-    { label: labels.closes,   val: "8:00",  sub: labels.pmDaily },
-    { label: labels.poojas,   val: timingsData.reduce((a, b) => a + b.events.length, 0), sub: labels.perDay },
+    { label: labels.opens, val: "5:00", sub: labels.amDaily },
+    { label: labels.closes, val: "7:30", sub: labels.pmDaily },
+    { label: labels.poojas, val: timingsData.reduce((a, b) => a + b.events.length, 0), sub: labels.perDay },
     { label: labels.sessions, val: timingsData.length, sub: labels.daily },
   ];
 
@@ -85,6 +95,22 @@ export default function Timing() {
         <p className="t-desc">{t.desc}</p>
         <div className="t-rule">
           <span /><span className="t-rule-gem" /><span />
+        </div>
+      </div>
+
+      {/* ── SPECIAL DAYS NOTE ── */}
+      <div className="t-note-wrap">
+        <div className="t-special-note">
+          <div className="t-note-left">
+            <span className="t-note-diya" aria-hidden="true">🪔</span>
+          </div>
+          <div className="t-note-body">
+            <span className="t-note-title">
+              {langKey === "TA" ? "சிறப்பு நாட்கள்" : langKey === "ML" ? "പ്രത്യേക ദിവസങ്ങൾ" : "Special Days Notice"}
+            </span>
+            <span className="t-note-text">{noteText}</span>
+          </div>
+          <div className="t-note-accent" aria-hidden="true" />
         </div>
       </div>
 
