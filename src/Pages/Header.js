@@ -69,7 +69,7 @@ export default function Header() {
 
                     <li>
                         <NavLink to="/event" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>
-                           {t.navLinks.event}
+                            {t.navLinks.event}
                         </NavLink>
                     </li>
 
@@ -90,9 +90,9 @@ export default function Header() {
 
                         {langOpen && (
                             <ul className="lang-menu">
+                                <li onClick={() => handleLanguageChange("ML")}>{t.languages.ML}</li>
                                 <li onClick={() => handleLanguageChange("EN")}>{t.languages.EN}</li>
                                 <li onClick={() => handleLanguageChange("TA")}>{t.languages.TA}</li>
-                                <li onClick={() => handleLanguageChange("ML")}>{t.languages.ML}</li>
                             </ul>
                         )}
                     </li>

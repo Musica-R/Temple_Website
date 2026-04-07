@@ -2,6 +2,7 @@ import "../Stylesheet/Section.css";
 import { useEffect, useRef } from "react";
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/datatranslation.json";
+import { useNavigate } from "react-router-dom";
 
 /* Decorative SVG ornament between sections */
 function GoldOrnament() {
@@ -21,6 +22,7 @@ export default function Section() {
   const sectionRef = useRef(null);
   const { language } = useLanguage();
   const t = translations.section[language] || translations.section["EN"];
+  const navigate = useNavigate();
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -43,9 +45,9 @@ export default function Section() {
 
   const facts = [
     { label: t.facts.location.label, value: t.facts.location.value, glyph: "📍" },
-    { label: t.facts.deity.label,    value: t.facts.deity.value,    glyph: "🪷" },
-    { label: t.facts.phone.label,    value: t.facts.phone.value,    glyph: "📞" },
-    { label: t.facts.mobile.label,   value: t.facts.mobile.value,   glyph: "📱" },
+    { label: t.facts.deity.label, value: t.facts.deity.value, glyph: "🪷" },
+    { label: t.facts.phone.label, value: t.facts.phone.value, glyph: "📞" },
+    { label: t.facts.mobile.label, value: t.facts.mobile.value, glyph: "📱" },
   ];
 
   return (
@@ -122,17 +124,17 @@ export default function Section() {
                   <span className="abt-fact-glyph">{f.glyph}</span>
                   <div className="abt-fact-body">
                     <strong className="abt-fact-label">{f.label}</strong>
-                    <span  className="abt-fact-value">{f.value}</span>
+                    <span className="abt-fact-value">{f.value}</span>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* CTA */}
-            <a href="/about" className="abt-cta abt-animate" style={{ animationDelay: ".4s" }}>
-              <span>Explore the Temple</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </a>
+            {/* <a href="/gallery" className="abt-cta abt-animate" style={{ animationDelay: ".4s" }}>
+              <span onClick={() => navigate("/gallery")}>Explore the Temple</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </a> */}
           </div>
 
         </div>

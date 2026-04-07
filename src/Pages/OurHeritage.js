@@ -4,6 +4,7 @@ import TempleHistory from "../Components/TempleHistory";
 import "../Stylesheet/OurHeritage.css";
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/Ourheritage.json";
+import { useNavigate } from "react-router-dom";
 
 export default function OurHeritage() {
     const { language } = useLanguage();
@@ -12,6 +13,9 @@ export default function OurHeritage() {
     const verseBandRef = useRef(null);
     const templeRef = useRef(null);
     const historyRef = useRef(null);
+
+     const navigate = useNavigate();
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -46,9 +50,9 @@ export default function OurHeritage() {
                 <div className="ourheritage-content">
                     <span className="hero-tag oh-anim-tag">{t.heroTag}</span>
                     <h1 className="oh-anim-title">{t.heroTitle}</h1>
-                    <p className="hero-sub oh-anim-sub">{t.heroSub}</p>
+                    {/* <p className="hero-sub oh-anim-sub">{t.heroSub}</p> */}
                     <div className="ourheritage-breadcrumb oh-anim-breadcrumb">
-                        <span>{t.breadcrumb.home}</span>
+                        <span onClick={() => navigate("/")} style={{cursor:"pointer"}}>{t.breadcrumb.home}</span>
                         <span className="ourheritage-dot">ॐ</span>
                         <span className="ourheritage-active">{t.breadcrumb.active}</span>
                     </div>

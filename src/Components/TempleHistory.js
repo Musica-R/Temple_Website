@@ -71,15 +71,15 @@ export default function TempleHistory() {
         window.addEventListener("scroll", onScroll, { passive: true });
 
         /* ── 2. Heading: split + stagger chars ── */
-        const h1 = document.querySelector(".history-heading h1");
-        splitHeadingChars(h1);
-        const heading = document.querySelector(".history-heading");
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-                heading?.classList.add("heading-show");
-                revealChars(h1, 80);
-            }, 200);
-        });
+        // const h1 = document.querySelector(".history-heading h1");
+        // splitHeadingChars(h1);
+        // const heading = document.querySelector(".history-heading");
+        // requestAnimationFrame(() => {
+        //     setTimeout(() => {
+        //         heading?.classList.add("heading-show");
+        //         revealChars(h1, 80);
+        //     }, 200);
+        // });
 
         /* ── 3. Wrap h2 words for each block ── */
         document.querySelectorAll(".history-block .history-text h2").forEach(wrapWords);
@@ -193,10 +193,10 @@ export default function TempleHistory() {
 
             {/* ===== HEADING ===== */}
             <div className="history-heading">
-                <h1>
-                    {language === "ML" ? "ഞങ്ങളുടെ പുണ്യ പൈതൃകം" :
+                <h1 style={{color:"brown"}}>
+                    {language === "ML" ? "ഞങ്ങളുടെ പൈതൃകം" :
                         language === "TA" ? "எங்கள் புனித பாரம்பரியம்" :
-                            "Our Sacred Heritage"}
+                            "Our Heritage"}
                 </h1>
                 <div className="divider" />
                 <p>

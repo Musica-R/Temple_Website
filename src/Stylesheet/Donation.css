@@ -2,24 +2,18 @@
 
 /* ===== COLOR SYSTEM ===== */
 :root {
-  /* original vars — unchanged */
   --bg-light: #fffaf0;
   --cream-soft: #f9ecd2;
   --brown: #8b5e3c;
   --gold: #d4af37;
   --text-dark: #3b2a1d;
   --text-history: #5e110e;
-
-  /* light-mode extensions */
   --gold-pale: #fdf0b0;
   --gold-tint: #fef7dc;
-  /* very pale gold wash */
   --gold-border: rgba(212, 175, 55, 0.30);
   --gold-glow: rgba(212, 175, 55, 0.18);
   --saffron-light: #f0a040;
-  /* softer saffron */
   --rose-tint: #fff0ee;
-  /* faint warm rose for dark-swap sections */
   --rose-mid: #fce8e5;
   --text-soft: rgba(59, 42, 29, 0.55);
   --border-light: rgba(139, 94, 60, 0.15);
@@ -159,7 +153,6 @@
   overflow: hidden;
 }
 
-/* faint lotus watermark */
 .donation-section::before {
   content: '☸';
   position: absolute;
@@ -173,43 +166,161 @@
 }
 
 
-/* ===== INTRO BAND — light saffron wash, not dark ===== */
-.donation-intro-band {
-  background: linear-gradient(135deg, var(--rose-mid) 0%, var(--cream-soft) 100%);
-  border-bottom: 2px solid var(--gold-border);
-  padding: 40px 40px;
+/* ===== HOW TO DONATE ===== */
+.how-to-donate-section {
+  padding: 52px 30px 56px;
+  background: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--gold-border);
+}
+
+.how-to-donate-section::before {
+  content: 'ॐ';
+  position: absolute;
+  right: -30px;
+  top: -20px;
+  font-size: 220px;
+  color: rgba(212, 175, 55, 0.07);
+  font-family: 'Cinzel', serif;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.htd-label {
   text-align: center;
+  margin-bottom: 36px;
+}
+
+.htd-label-tag {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--saffron-light);
+  background: rgba(240, 160, 64, 0.10);
+  border: 1px solid rgba(240, 160, 64, 0.25);
+  padding: 5px 18px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+.htd-label h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-history);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.htd-label p {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--text-soft);
+}
+
+.htd-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
   position: relative;
 }
 
-.donation-intro-band::after {
+.htd-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 12px;
+  position: relative;
+}
+
+.htd-card:not(:last-child)::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--saffron-light), var(--gold), transparent);
+  top: 34px;
+  right: -18px;
+  width: 36px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.4), rgba(240, 160, 64, 0.6));
+  z-index: 2;
 }
 
-.donation-intro-band .band-om {
+.htd-card:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 29px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid rgba(240, 160, 64, 0.6);
+  z-index: 3;
+}
+
+.htd-icon-wrap {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.12);
+}
+
+.htd-step-num {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--saffron-light), var(--gold));
+  color: #fff;
   font-family: 'Cinzel', serif;
-  font-size: 28px;
-  color: var(--saffron-light);
-  display: block;
-  margin-bottom: 8px;
-  letter-spacing: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.donation-intro-band p {
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-size: 18px;
+.htd-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.htd-card-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  font-weight: 700;
   color: var(--text-history);
-  opacity: 0.85;
-  max-width: 680px;
-  margin: 0 auto;
-  line-height: 1.75;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.htd-gold-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto 12px;
+}
+
+.htd-card-desc {
+  font-family: 'Crimson Text', serif;
+  font-size: 14.5px;
+  color: var(--text-soft);
+  line-height: 1.55;
 }
 
 
@@ -234,7 +345,6 @@
   border: 1px solid var(--gold-border);
 }
 
-/* form header — pale gold wash, not dark */
 .form-header {
   background: linear-gradient(135deg, var(--gold-tint) 0%, var(--cream-soft) 100%);
   padding: 28px 36px 26px;
@@ -281,7 +391,7 @@
 }
 
 
-/* ===== QUICK AMOUNT PILLS ===== */
+/* ===== AMOUNT PILLS ===== */
 .amount-pills {
   display: flex;
   flex-wrap: wrap;
@@ -366,7 +476,7 @@
 }
 
 
-/* ===== SUBMIT BUTTON ===== */
+/* ===== GENERATE BUTTON ===== */
 .donate-btn {
   width: 100%;
   padding: 14px;
@@ -382,12 +492,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 6px;
-}
-
-.donate-btn::before {
-  content: '';
-  margin-right: 10px;
-  font-size: 15px;
 }
 
 .donate-btn:hover {
@@ -464,7 +568,7 @@
 }
 
 
-/* ===== QUOTE CARD — warm rose-cream, stays light ===== */
+/* ===== QUOTE CARD ===== */
 .quote-card {
   background: linear-gradient(135deg, var(--rose-tint) 0%, var(--cream-soft) 100%);
   border-radius: 16px;
@@ -543,6 +647,851 @@
 }
 
 
+/* ===== QR PANEL ===== */
+.qr-panel {
+  margin-top: 22px;
+  background: linear-gradient(135deg, var(--gold-tint) 0%, var(--cream-soft) 100%);
+  border: 1.5px solid var(--gold-border);
+  border-radius: 16px;
+  padding: 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.qr-label {
+  text-align: center;
+}
+
+.qr-amount {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-history);
+  letter-spacing: 1px;
+}
+
+.qr-purpose {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 10.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--brown);
+  opacity: 0.75;
+  margin-top: 3px;
+}
+
+.qr-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1.5px solid var(--gold-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.10);
+}
+
+.qr-scan-hint {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--brown);
+  opacity: 0.65;
+  margin: 0;
+}
+
+.qr-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.qr-divider span {
+  flex: 1;
+  height: 1px;
+  background: var(--gold-border);
+}
+
+.qr-divider i {
+  font-style: normal;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  color: var(--brown);
+  opacity: 0.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.gpay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #4285F4;
+  border-radius: 50px;
+  padding: 11px 28px;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #1a73e8;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 10px rgba(66, 133, 244, 0.15);
+}
+
+.gpay-btn:hover {
+  background: #e8f0fe;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(66, 133, 244, 0.25);
+}
+
+
+/* ===== PAID BUTTON — Premium Transparent ===== */
+.paid-btn {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(46, 125, 50, 0.45);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 -1px 0 rgba(46, 125, 50, 0.12);
+  animation: paidRingPulse 2.4s ease-in-out infinite;
+}
+
+.paid-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.22) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: shimmerSweep 2.8s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.paid-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  pointer-events: none;
+}
+
+@keyframes paidRingPulse {
+
+  0%,
+  100% {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 -1px 0 rgba(46, 125, 50, 0.12);
+  }
+
+  50% {
+    box-shadow: 0 0 18px rgba(46, 125, 50, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 -1px 0 rgba(46, 125, 50, 0.12);
+    border-color: rgba(46, 125, 50, 0.7);
+  }
+}
+
+@keyframes shimmerSweep {
+  0% {
+    background-position: -100% 0;
+  }
+
+  60%,
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.paid-btn:hover {
+  background: rgba(46, 125, 50, 0.12);
+  border-color: rgba(46, 125, 50, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  animation: none;
+}
+
+.paid-btn:hover .paid-btn-arrow {
+  transform: translateX(4px);
+}
+
+.paid-btn-checkmark {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(46, 125, 50, 0.15);
+  border: 1.5px solid rgba(46, 125, 50, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 15px;
+  color: #2e7d32;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.paid-btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+}
+
+.paid-btn-main {
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #1b5e20;
+  line-height: 1.3;
+}
+
+.paid-btn-sub {
+  font-family: 'Crimson Text', serif;
+  font-size: 12.5px;
+  color: rgba(27, 94, 32, 0.72);
+  font-style: italic;
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+.paid-btn-arrow {
+  flex-shrink: 0;
+  color: rgba(27, 94, 32, 0.6);
+  transition: transform 0.25s ease;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ══════════════════════════════════════════════
+   WHATSAPP MODAL — full-screen overlay + popup
+══════════════════════════════════════════════ */
+
+/* Overlay backdrop */
+.wf-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(59, 42, 29, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: overlayFadeIn 0.25s ease;
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal card */
+.wf-modal {
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  background: var(--bg-light);
+  border-radius: 22px;
+  border: 1.5px solid var(--gold-border);
+  box-shadow:
+    0 24px 60px rgba(59, 42, 29, 0.28),
+    0 0 0 1px rgba(212, 175, 55, 0.18);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalSlideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Modal header */
+.wf-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 24px 18px;
+  background: linear-gradient(135deg, var(--cream-soft) 0%, var(--gold-tint) 100%);
+  flex-shrink: 0;
+}
+
+.wf-modal-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wf-modal-temple-icon {
+  font-size: 28px;
+  line-height: 1;
+  width: 48px;
+  height: 48px;
+  background: rgba(212, 175, 55, 0.18);
+  border: 1.5px solid var(--gold-border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wf-modal-title {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-history);
+  letter-spacing: 0.8px;
+}
+
+.wf-modal-subtitle {
+  font-family: 'Crimson Text', serif;
+  font-size: 13.5px;
+  color: var(--brown);
+  font-style: italic;
+  margin-top: 3px;
+  opacity: 0.85;
+}
+
+.wf-modal-close {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(139, 94, 60, 0.10);
+  border: 1px solid var(--border-light);
+  color: var(--brown);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.wf-modal-close:hover {
+  background: rgba(94, 17, 14, 0.12);
+  border-color: rgba(94, 17, 14, 0.25);
+  color: var(--text-history);
+  transform: scale(1.08);
+}
+
+/* Gold accent line under header */
+.wf-modal-gold-line {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--saffron-light), var(--gold), var(--saffron-light), transparent);
+  flex-shrink: 0;
+}
+
+/* Step row */
+.wf-modal-step-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 16px 24px 12px;
+  background: var(--bg-light);
+  border-bottom: 1px solid var(--gold-border);
+  flex-shrink: 0;
+}
+
+.wf-modal-step-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.wf-modal-step-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--gold-tint);
+  border: 1px solid var(--gold-border);
+  border-radius: 50px;
+  padding: 5px 13px;
+}
+
+.wf-modal-step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--saffron-light), var(--gold));
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wf-modal-step-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+.wf-modal-step-connector {
+  font-size: 18px;
+  color: rgba(212, 175, 55, 0.55);
+  padding: 0 8px;
+  line-height: 1;
+}
+
+/* Scrollable body */
+.wf-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wf-modal-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wf-modal-body::-webkit-scrollbar-track {
+  background: var(--gold-tint);
+}
+
+.wf-modal-body::-webkit-scrollbar-thumb {
+  background: var(--gold-border);
+  border-radius: 4px;
+}
+
+/* Fields */
+.wf-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wf-modal-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+.wf-modal-input,
+.wf-modal-textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border-light);
+  background: #fff;
+  color: var(--text-dark);
+  font-family: 'Crimson Text', serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wf-modal-input::placeholder,
+.wf-modal-textarea::placeholder {
+  color: rgba(59, 42, 29, 0.38);
+}
+
+.wf-modal-input:focus,
+.wf-modal-textarea:focus {
+  outline: none;
+  border-color: var(--saffron-light);
+  box-shadow: 0 0 0 3px rgba(240, 160, 64, 0.14);
+  background: #fffdf5;
+}
+
+.wf-modal-textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+/* Upload zone */
+.wf-modal-upload {
+  border: 2px dashed var(--gold-border);
+  border-radius: 12px;
+  background: var(--gold-tint);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wf-modal-upload:hover {
+  border-color: var(--saffron-light);
+  background: var(--cream-soft);
+}
+
+.wf-modal-upload-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.wf-modal-upload-title {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-history);
+  letter-spacing: 0.5px;
+}
+
+.wf-modal-upload-hint {
+  font-family: 'Crimson Text', serif;
+  font-size: 13px;
+  color: var(--text-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Preview */
+.wf-modal-preview {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.5px solid var(--gold-border);
+  background: #fff;
+}
+
+.wf-modal-preview img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.wf-modal-preview-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--gold-tint);
+  border-top: 1px solid var(--gold-border);
+}
+
+.wf-modal-preview-label {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+.wf-modal-remove {
+  background: rgba(94, 17, 14, 0.10);
+  border: 1px solid rgba(94, 17, 14, 0.20);
+  color: var(--text-history);
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wf-modal-remove:hover {
+  background: rgba(94, 17, 14, 0.18);
+}
+
+/* Info note */
+.wf-modal-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--rose-tint);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 10px;
+  padding: 11px 13px;
+}
+
+.wf-modal-info-icon {
+  font-size: 15px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.wf-modal-info-text {
+  font-family: 'Crimson Text', serif;
+  font-size: 13px;
+  color: var(--text-history);
+  line-height: 1.55;
+  font-style: italic;
+  opacity: 0.88;
+}
+
+.wf-modal-info-text strong {
+  font-style: normal;
+  color: var(--brown);
+}
+
+/* Required guard */
+.wf-modal-required {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 16px;
+  border-radius: 10px;
+  background: var(--gold-tint);
+  border: 1.5px dashed rgba(212, 175, 55, 0.5);
+  font-family: 'Crimson Text', serif;
+  font-size: 14px;
+  color: var(--brown);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Send flow container */
+.wf-modal-send-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wf-modal-send-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Crimson Text', serif;
+  font-size: 13.5px;
+  color: var(--text-dark);
+  font-style: italic;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--cream-soft);
+  border: 1px solid var(--gold-border);
+  line-height: 1.4;
+}
+
+.wf-modal-send-note--ready {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.wf-modal-send-badge {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--gold-tint);
+  border: 1px solid var(--gold-border);
+  color: var(--brown);
+  padding: 3px 9px;
+  border-radius: 50px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.wf-modal-send-badge--gold {
+  background: linear-gradient(135deg, var(--saffron-light), var(--gold));
+  border-color: var(--gold);
+  color: #fff;
+}
+
+/* Step 1 — View screenshot button */
+.wf-modal-screenshot-btn {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 13px;
+  border: 1.5px solid var(--gold-border);
+  background: linear-gradient(135deg, var(--gold-tint) 0%, var(--cream-soft) 100%);
+  color: var(--text-history);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  transition: all 0.25s ease;
+}
+
+.wf-modal-screenshot-btn:hover {
+  border-color: var(--saffron-light);
+  background: linear-gradient(135deg, var(--cream-soft) 0%, var(--gold-tint) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.22);
+}
+
+.wf-modal-screenshot-btn span:first-child {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Step 2 — WhatsApp send button */
+.wf-modal-whatsapp-btn {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 13px;
+  border: none;
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  transition: all 0.25s ease;
+}
+
+.wf-modal-whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  filter: brightness(1.05);
+}
+
+.wf-modal-whatsapp-btn span:first-child {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Shared button text content */
+.wf-btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wf-btn-main {
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.wf-btn-sub {
+  font-family: 'Crimson Text', serif;
+  font-size: 12px;
+  opacity: 0.82;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* Success banner */
+.wf-modal-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 24px 20px;
+  background: linear-gradient(135deg, var(--gold-tint) 0%, var(--cream-soft) 100%);
+  border: 1.5px solid var(--gold-border);
+  border-radius: 14px;
+}
+
+.wf-modal-success-icon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.wf-modal-success-title {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-history);
+  letter-spacing: 1px;
+}
+
+.wf-modal-success-desc {
+  font-family: 'Crimson Text', serif;
+  font-size: 14.5px;
+  color: var(--text-dark);
+  opacity: 0.82;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.wf-modal-success-desc strong {
+  font-style: normal;
+  color: var(--brown);
+}
+
+.wf-modal-success-close {
+  margin-top: 6px;
+  padding: 11px 32px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--saffron-light), var(--gold));
+  border: none;
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+}
+
+.wf-modal-success-close:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.38);
+  filter: brightness(1.06);
+}
+
+
 /* ===== DONATION TYPE SECTION ===== */
 .donation-types {
   max-width: 1160px;
@@ -604,7 +1553,7 @@
 }
 
 
-/* ===== CARDS ===== */
+/* ===== DONATION CARDS ===== */
 .donation-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -715,7 +1664,7 @@
 }
 
 
-/* ===== BOTTOM CTA — stays light now ===== */
+/* ===== BOTTOM CTA ===== */
 .donation-cta {
   max-width: 1160px;
   margin: 70px auto 0;
@@ -742,7 +1691,7 @@
   right: -24px;
   top: -36px;
   font-size: 220px;
-  color: rgba(212, 175, 55, 0.1);
+  color: rgba(212, 175, 55, 0.10);
   line-height: 1;
   pointer-events: none;
 }
@@ -798,135 +1747,56 @@
   filter: brightness(1.06);
 }
 
+/* ===== SCREENSHOT NOTICE (WhatsApp Modal) ===== */
+.wf-modal-screenshot-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  background: #fff8e7;
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
 
-/* ===== QR DONATION PANEL ===== */
-/* Append these rules to your existing Donation.css */
+.wf-modal-notice-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
 
-.qr-panel {
-  margin-top: 22px;
-  background: linear-gradient(135deg, var(--gold-tint) 0%, var(--cream-soft) 100%);
-  border: 1.5px solid var(--gold-border);
-  border-radius: 16px;
-  padding: 24px 20px 20px;
+.wf-modal-notice-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  animation: fadeUp 0.35s ease;
+  gap: 4px;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.qr-label {
-  text-align: center;
-}
-
-.qr-amount {
-  display: block;
-  font-family: 'Cinzel', serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--text-history);
-  letter-spacing: 1px;
-}
-
-.qr-purpose {
-  display: block;
-  font-family: 'Cinzel', serif;
-  font-size: 10.5px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--brown);
-  opacity: 0.75;
-  margin-top: 3px;
-}
-
-.qr-box {
-  background: #fff;
-  border-radius: 14px;
-  padding: 16px;
-  border: 1.5px solid var(--gold-border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.10);
-}
-
-.qr-scan-hint {
-  font-family: 'Cinzel', serif;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--brown);
-  opacity: 0.65;
-  margin: 0;
-}
-
-.qr-divider {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-}
-
-.qr-divider span {
-  flex: 1;
-  height: 1px;
-  background: var(--gold-border);
-}
-
-.qr-divider i {
-  font-style: normal;
+.wf-modal-notice-heading {
   font-family: 'Cinzel', serif;
   font-size: 11px;
-  color: var(--brown);
-  opacity: 0.5;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-/* GPay button */
-.gpay-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: #fff;
-  border: 2px solid #4285F4;
-  border-radius: 50px;
-  padding: 11px 28px;
-  font-family: 'Cinzel', serif;
-  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 1.2px;
-  color: #1a73e8;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 2px 10px rgba(66, 133, 244, 0.15);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8b5e3c;
 }
 
-.gpay-btn:hover {
-  background: #e8f0fe;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(66, 133, 244, 0.25);
+.wf-modal-notice-desc {
+  font-family: 'Crimson Text', serif;
+  font-size: 13.5px;
+  color: #5e110e;
+  line-height: 1.55;
+  font-style: italic;
+  opacity: 0.88;
+}
+
+.wf-modal-notice-desc strong {
+  font-style: normal;
+  color: #8b5e3c;
 }
 
 /* ═══════════════════════════════════
-   1024px (Tablet / Small Laptop)
+   1024px — Tablet / Small Laptop
 ═══════════════════════════════════ */
 @media (max-width: 1024px) {
-
   .ourheritage {
     height: 420px;
   }
@@ -957,10 +1827,9 @@
 
 
 /* ═══════════════════════════════════
-   768px (Tablet / Large Mobile)
+   768px — Tablet / Large Mobile
 ═══════════════════════════════════ */
 @media (max-width: 768px) {
-
   .ourheritage {
     height: 340px;
   }
@@ -979,14 +1848,6 @@
     padding: 8px 18px;
   }
 
-  .donation-intro-band {
-    padding: 30px 20px;
-  }
-
-  .donation-intro-band p {
-    font-size: 16px;
-  }
-
   .donation-container {
     padding: 50px 20px 0;
   }
@@ -997,12 +1858,6 @@
 
   .form-body {
     padding: 22px;
-  }
-
-  .donation-form input,
-  .donation-form select {
-    font-size: 14px;
-    padding: 11px 14px;
   }
 
   .donate-btn {
@@ -1030,14 +1885,54 @@
   .cta-btn {
     width: 100%;
   }
+
+  .htd-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 0;
+  }
+
+  .htd-card:nth-child(2)::after,
+  .htd-card:nth-child(2)::before,
+  .htd-card:nth-child(4)::after,
+  .htd-card:nth-child(4)::before {
+    display: none;
+  }
+
+  .gpay-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  /* Modal responsive */
+  .wf-overlay {
+    padding: 12px;
+    align-items: flex-end;
+  }
+
+  .wf-modal {
+    max-height: 95vh;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .wf-modal-step-row {
+    padding: 12px 16px 10px;
+    gap: 4px;
+  }
+
+  .wf-modal-step-label {
+    display: none;
+  }
+
+  .wf-modal-body {
+    padding: 16px 18px 20px;
+  }
 }
 
 
 /* ═══════════════════════════════════
-   420px (Mobile Phones)
+   420px — Mobile Phones
 ═══════════════════════════════════ */
 @media (max-width: 420px) {
-
   .ourheritage {
     height: 280px;
   }
@@ -1060,14 +1955,6 @@
 
   .donation-section {
     padding-bottom: 70px;
-  }
-
-  .donation-intro-band {
-    padding: 25px 15px;
-  }
-
-  .donation-intro-band p {
-    font-size: 14px;
   }
 
   .donation-container {
@@ -1094,12 +1981,6 @@
 
   .field-group label {
     font-size: 9px;
-  }
-
-  .donation-form input,
-  .donation-form select {
-    font-size: 13px;
-    padding: 10px 12px;
   }
 
   .donate-btn {
@@ -1178,5 +2059,83 @@
     justify-content: center;
     font-size: 12px;
     padding: 10px;
+  }
+
+  .paid-btn {
+    padding: 13px 14px;
+    gap: 10px;
+  }
+
+  .paid-btn-main {
+    font-size: 11.5px;
+  }
+
+  .paid-btn-sub {
+    font-size: 11px;
+  }
+
+  .paid-btn-checkmark {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .htd-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .htd-card::after,
+  .htd-card::before {
+    display: none !important;
+  }
+
+  .htd-card {
+    /* flex-direction: row; */
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .htd-icon-wrap {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .htd-gold-line {
+    margin: 6px 0 8px;
+  }
+
+  /* Modal mobile */
+  .wf-modal-header {
+    padding: 16px 18px 14px;
+  }
+
+  .wf-modal-temple-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+
+  .wf-modal-title {
+    font-size: 14px;
+  }
+
+  .wf-modal-body {
+    padding: 14px 16px 18px;
+    gap: 12px;
+  }
+
+  .wf-modal-screenshot-btn,
+  .wf-modal-whatsapp-btn {
+    padding: 13px 15px;
+  }
+
+  .wf-btn-main {
+    font-size: 12px;
+  }
+
+  .wf-btn-sub {
+    font-size: 11px;
   }
 }

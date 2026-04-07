@@ -39,7 +39,7 @@ export default function MobileArrow() {
           right: 24px;
           width: 38px;
           height: 38px;
-          background-color: #671310;
+          background-color: #8f261d;
           color: #ffffff;
           border-radius: 50%;
           display: flex;
@@ -52,7 +52,7 @@ export default function MobileArrow() {
         }
 
         .scroll-top-arrow:hover {
-          background-color: #0ef;
+          background-color:  #671310;
           transform: translateY(-4px);
         }
 

@@ -24,17 +24,18 @@
   transform: translateX(-50%);
   width: 800px;
   height: 400px;
-  background: radial-gradient(ellipse, rgba(212,175,55,0.05) 0%, transparent 65%);
+  background: radial-gradient(ellipse, rgba(212, 175, 55, 0.05) 0%, transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
+
 .tv-glow-bottom {
   position: absolute;
   bottom: -100px;
   right: -100px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(212,175,55,0.04) 0%, transparent 65%);
+  background: radial-gradient(ellipse, rgba(212, 175, 55, 0.04) 0%, transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
@@ -44,8 +45,9 @@
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
 .tv-fade.tv-in {
   opacity: 1;
   transform: translateY(0);
@@ -72,6 +74,7 @@
   color: var(--gold, #d4af37);
   margin-bottom: 16px;
 }
+
 .tv-label-dot {
   display: inline-block;
   width: 5px;
@@ -129,11 +132,13 @@
   pointer-events: none;
   z-index: 2;
 }
+
 .tv-frame-corner {
   position: absolute;
   width: 26px;
   height: 26px;
 }
+
 .tv-frame-corner::before,
 .tv-frame-corner::after {
   content: '';
@@ -141,18 +146,82 @@
   background: var(--gold, #d4af37);
   opacity: 0.55;
 }
-.tv-fc--tl { top: 0;    left: 0;  }
-.tv-fc--tl::before { top:0; left:0; width:100%; height:1.5px; }
-.tv-fc--tl::after  { top:0; left:0; width:1.5px; height:100%; }
-.tv-fc--tr { top: 0;    right: 0; }
-.tv-fc--tr::before { top:0; right:0; width:100%; height:1.5px; }
-.tv-fc--tr::after  { top:0; right:0; width:1.5px; height:100%; }
-.tv-fc--bl { bottom: 0; left: 0;  }
-.tv-fc--bl::before { bottom:0; left:0; width:100%; height:1.5px; }
-.tv-fc--bl::after  { bottom:0; left:0; width:1.5px; height:100%; }
-.tv-fc--br { bottom: 0; right: 0; }
-.tv-fc--br::before { bottom:0; right:0; width:100%; height:1.5px; }
-.tv-fc--br::after  { bottom:0; right:0; width:1.5px; height:100%; }
+
+.tv-fc--tl {
+  top: 0;
+  left: 0;
+}
+
+.tv-fc--tl::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+}
+
+.tv-fc--tl::after {
+  top: 0;
+  left: 0;
+  width: 1.5px;
+  height: 100%;
+}
+
+.tv-fc--tr {
+  top: 0;
+  right: 0;
+}
+
+.tv-fc--tr::before {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1.5px;
+}
+
+.tv-fc--tr::after {
+  top: 0;
+  right: 0;
+  width: 1.5px;
+  height: 100%;
+}
+
+.tv-fc--bl {
+  bottom: 0;
+  left: 0;
+}
+
+.tv-fc--bl::before {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+}
+
+.tv-fc--bl::after {
+  bottom: 0;
+  left: 0;
+  width: 1.5px;
+  height: 100%;
+}
+
+.tv-fc--br {
+  bottom: 0;
+  right: 0;
+}
+
+.tv-fc--br::before {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1.5px;
+}
+
+.tv-fc--br::after {
+  bottom: 0;
+  right: 0;
+  width: 1.5px;
+  height: 100%;
+}
 
 /* Glowing halo behind video */
 .tv-halo {
@@ -160,8 +229,8 @@
   inset: 10px 30px;
   border-radius: 8px;
   background: transparent;
-  box-shadow: 0 0 60px 10px rgba(212,175,55,0.1),
-              0 40px 100px rgba(0,0,0,0.6);
+  /* box-shadow: 0 0 60px 10px rgba(212,175,55,0.1),
+              0 40px 100px rgba(0,0,0,0.6); */
   pointer-events: none;
   z-index: 0;
 }
@@ -170,9 +239,9 @@
   position: relative;
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid rgba(212,175,55,0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   z-index: 1;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
 }
 
 .tv-video {
@@ -190,7 +259,7 @@
   font-family: var(--font-body, 'Cormorant Garamond', serif);
   font-size: 0.95rem;
   letter-spacing: 0.12em;
-  color: rgba(212,175,55,0.5);
+  color: rgba(212, 175, 55, 0.5);
   font-style: italic;
   margin: 0 auto 64px;
   padding: 0 40px;
@@ -198,6 +267,7 @@
   position: relative;
   z-index: 1;
 }
+
 .tv-cap-deco {
   font-size: 0.8rem;
   margin: 0 10px;
@@ -228,7 +298,7 @@
 .tv-gallery-sub {
   font-family: var(--font-body, 'Cormorant Garamond', serif);
   font-size: 1rem;
-  color: rgba(255,250,240,0.42);
+  color: rgba(255, 250, 240, 0.42);
   margin: 0 0 18px;
 }
 
@@ -242,27 +312,32 @@
   position: relative;
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid rgba(212,175,55,0.12);
+  border: 1px solid rgba(212, 175, 55, 0.12);
   aspect-ratio: 3/4;
   cursor: pointer;
   transition: border-color 0.3s, transform 0.4s;
 }
+
 .tv-gallery-item:hover {
-  border-color: rgba(212,175,55,0.35);
+  border-color: rgba(212, 175, 55, 0.35);
   transform: translateY(-4px);
 }
+
 .tv-gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.55s ease;
 }
-.tv-gallery-item:hover img { transform: scale(1.07); }
+
+.tv-gallery-item:hover img {
+  transform: scale(1.07);
+}
 
 .tv-gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(8,6,10,0.75) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(8, 6, 10, 0.75) 0%, transparent 55%);
   transition: opacity 0.3s;
 }
 
@@ -274,7 +349,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(212,175,55,0.75);
+  color: rgba(212, 175, 55, 0.75);
 }
 
 /* ── FOOTER BLESSING ── */
@@ -286,8 +361,8 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 36px 40px;
-  border-top: 1px solid rgba(212,175,55,0.1);
-  border-bottom: 1px solid rgba(212,175,55,0.1);
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
   position: relative;
   z-index: 1;
 }
@@ -312,12 +387,31 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  .tv-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .tv-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 600px) {
-  .tv-section { padding: 70px 0; }
-  .tv-header, .tv-player, .tv-caption,
-  .tv-gallery, .tv-footer { padding: 0 20px; }
-  .tv-footer { flex-direction: column; gap: 12px; }
-  .tv-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .tv-section {
+    padding: 70px 0;
+  }
+
+  .tv-header,
+  .tv-player,
+  .tv-caption,
+  .tv-gallery,
+  .tv-footer {
+    padding: 0 20px;
+  }
+
+  .tv-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tv-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 }

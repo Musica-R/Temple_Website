@@ -65,12 +65,12 @@ export default function Timing() {
     badge: langKey === "TA" ? "தினசரி நேரம்" : langKey === "ML" ? "ദിവസേന" : "Daily Schedule",
   };
 
-  const noteText =
-    langKey === "TA"
-      ? "சிறப்பு நாட்களில் நேரங்கள் மாறலாம். அமாவாசை, பிரதோஷம் மற்றும் திருவிழா நாட்களில் விரிவான தரிசன நேரங்கள் இருக்கும். மேலும் விவரங்களுக்கு கோவிலை தொடர்பு கொள்ளவும்."
-      : langKey === "ML"
-        ? "പ്രത്യേക ദിവസങ്ങളിൽ സമയം മാറാം. അമാവാസി, പ്രദോഷം, ഉത്സവ ദിവസങ്ങളിൽ ദർശന സമയം വ്യത്യാസപ്പെടും. കൂടുതൽ വിവരങ്ങൾക്ക് ക്ഷേത്രവുമായി ബന്ധപ്പെടുക."
-        : "Timings may vary on Amavasai, Pradosham, festival days & other auspicious occasions. Extended darshan hours will be observed. Please contact the temple for updates.";
+ const noteText =
+  langKey === "TA"
+    ? "ஒவ்வொரு மலையாள மாதத்தின் முதல் நாளிலும், மேலும் ஞாயிறு, செவ்வாய் மற்றும் வெள்ளிக்கிழமைகளிலும், கோவில் காலை 5:00 மணி முதல் 11:30 மணி வரை திறந்திருக்கும்."
+    : langKey === "ML"
+      ? "ഓരോ മലയാള മാസത്തിന്റെ ആദ്യ ദിവസത്തിലും, കൂടാതെ ഞായർ, ചൊവ്വ, വെള്ളി ദിവസങ്ങളിലും, ക്ഷേത്രം രാവിലെ 5:00 മുതൽ 11:30 വരെ തുറന്നിരിക്കും."
+      : "On the first day of every Malayalam month, as well as on Sundays, Tuesdays, and Fridays, the temple will remain open from 5:00 AM to 11:30 AM.";
 
   const stats = [
     { label: labels.opens, val: "5:00", sub: labels.amDaily },

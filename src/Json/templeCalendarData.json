@@ -1,0 +1,116 @@
+{
+  "temple": {
+    "nameML": "ശ്രീ തിരുപുരായ്ക്കൽ ഭഗവതി ക്ഷേത്രം",
+    "locationML": "പാലക്കാട് പുത്തൂർ",
+    "calendarTitle": "വാർഷിക കലണ്ടർ",
+    "calendarYear": "കൊല്ലവർഷം 1198 (2022 – 2023)",
+    "regNo": "രജി. നം. 21/67",
+    "address": "പുത്തൂർ, പാലക്കാട് – 678 001.",
+    "phone": "0491 2531712",
+    "mobile": "8547731712",
+    "website": "www.puthurtemple.org"
+  },
+
+  "poojas": [
+    { "id": 1,  "name": "Pooja",                        "nameML": "പൂജ",                       "icon": "🙏",  "price": 5,    "priceLabel": "₹5",    "desc": "Basic daily pooja performed at the temple." },
+    { "id": 2,  "name": "Garland Offering (Mala)",       "nameML": "മാല",                       "icon": "🌸",  "price": 5,    "priceLabel": "₹5",    "desc": "Flower garland offering to the deity." },
+    { "id": 3,  "name": "Pushpanjali",                   "nameML": "പുഷ്പാഞ്ജലി",              "icon": "🌸",  "price": 8,    "priceLabel": "₹8",    "desc": "Offering of flowers with prayers." },
+    { "id": 4,  "name": "Ghee Lamp (Ney Vilakku)",       "nameML": "നെയ്യ് വിളക്ക്",           "icon": "🪔",  "price": 10,   "priceLabel": "₹10",   "desc": "Lighting a lamp using ghee." },
+    { "id": 5,  "name": "Garland Pooja (Malayidal)",     "nameML": "മാലയിടൽ",                  "icon": "🌼",  "price": 10,   "priceLabel": "₹10",   "desc": "Ritual offering of garlands with prayers." },
+    { "id": 6,  "name": "Offering Bundle (Kettunira)",   "nameML": "കെട്ടുനിറ",                "icon": "🎁",  "price": 10,   "priceLabel": "₹10",   "desc": "Symbolic offering tied and presented to the deity." },
+    { "id": 7,  "name": "Raktha Pushpanjali",            "nameML": "രക്ത പുഷ്പാഞ്ജലി",        "icon": "🌺",  "price": 10,   "priceLabel": "₹10",   "desc": "Special red flower offering for divine blessings." },
+    { "id": 8,  "name": "Firecracker Offering",          "nameML": "കഥിന",                     "icon": "🎆",  "price": 10,   "priceLabel": "₹10",   "desc": "Traditional firecracker offering in temple rituals." },
+    { "id": 9,  "name": "First Rice Feeding (Choroonu)", "nameML": "ചോറൂണ്",                  "icon": "👶",  "price": 25,   "priceLabel": "₹25",   "desc": "Sacred ceremony marking a child's first solid food." },
+    { "id": 10, "name": "Thrimadhuram",                  "nameML": "ത്രിമധുരം",                "icon": "🍬",  "price": 25,   "priceLabel": "₹25",   "desc": "Offering made from three sweet ingredients." },
+    { "id": 11, "name": "Palm Jaggery Payasam",          "nameML": "പനപ്പായസം",                "icon": "🍯",  "price": 30,   "priceLabel": "₹30",   "desc": "Traditional sweet made with palm jaggery." },
+    { "id": 12, "name": "Sooktha Pushpanjali",           "nameML": "സൂക്ത പുഷ്പാഞ്ജലി",      "icon": "📿",  "price": 40,   "priceLabel": "₹40",   "desc": "Pushpanjali performed with Vedic hymns." },
+    { "id": 13, "name": "Thulabharam Slip",              "nameML": "തുലാഭാരം ശീട്ട്",         "icon": "⚖️",  "price": 50,   "priceLabel": "₹50",   "desc": "Token slip for Thulabharam — weight-equal offering." },
+    { "id": 14, "name": "Adiya Chanth",                  "nameML": "ആദിയ ചാന്ത്",             "icon": "📿",  "price": 50,   "priceLabel": "₹50",   "desc": "Traditional chanting ritual invoking divine energy." },
+    { "id": 15, "name": "Ghee Payasam (Ney Payasam)",   "nameML": "നെയ്യ് പായസം",             "icon": "🥣",  "price": 50,   "priceLabel": "₹50",   "desc": "Sweet offering prepared with ghee." },
+    { "id": 16, "name": "Mixed Payasam (Koottupayasam)","nameML": "കൂട്ടുപായസം",              "icon": "🍮",  "price": 50,   "priceLabel": "₹50",   "desc": "Combination of different payasams offered to deity." },
+    { "id": 17, "name": "Thada",                         "nameML": "തട",                       "icon": "🛕",  "price": 60,   "priceLabel": "₹60",   "desc": "Special ritual offering at the temple." },
+    { "id": 18, "name": "Milk Payasam (Palpayasam)",    "nameML": "പാൽ പായസം",                "icon": "🥛",  "price": 60,   "priceLabel": "₹60",   "desc": "Sweet offering made with milk and rice." },
+    { "id": 19, "name": "Jaggery Payasam",              "nameML": "കടുമധുര പായസം",            "icon": "🍯",  "price": 70,   "priceLabel": "₹70",   "desc": "Sweet offering made with jaggery and rice." },
+    { "id": 20, "name": "Ganapathy Homam",              "nameML": "ഗണപതി ഹോമം",              "icon": "🔥",  "price": 70,   "priceLabel": "₹70",   "desc": "Fire ritual dedicated to Lord Ganesha." },
+    { "id": 21, "name": "Bhagavathy Seva",              "nameML": "ഭഗവതി സേവ",               "icon": "🪔",  "price": 100,  "priceLabel": "₹100",  "desc": "Special offering to Goddess Bhagavathy." },
+    { "id": 22, "name": "Lamp Tower Lighting",          "nameML": "ദീപസ്തംഭം തെളിയിക്കൽ",   "icon": "🔥",  "price": 200,  "priceLabel": "₹200",  "desc": "Lighting the sacred lamp pillar in the temple." },
+    { "id": 23, "name": "Thrikala Pooja",               "nameML": "ത്രികാല പൂജ",              "icon": "🛕",  "price": 251,  "priceLabel": "₹251",  "desc": "Pooja performed three times in a day." },
+    { "id": 24, "name": "Navarathri Lamp Ritual",       "nameML": "നവരാത്രി പൂജ വിളക്ക്",    "icon": "✨",  "price": 300,  "priceLabel": "₹300",  "desc": "Special lamp offering during Navarathri festival." },
+    { "id": 25, "name": "Mandala Lamp Ritual",          "nameML": "മണ്ഡല പൂജ വിളക്ക്",       "icon": "🪔",  "price": 300,  "priceLabel": "₹300",  "desc": "Lamp lighting ritual during Mandala season." },
+    { "id": 26, "name": "Lamp Offering (Chuttuvilakku)","nameML": "ചുറ്റുവിളക്ക്",           "icon": "🪔",  "price": 401,  "priceLabel": "₹401",  "desc": "Lighting rows of lamps around the temple." },
+    { "id": 27, "name": "Niramala Chuttuvilakku",       "nameML": "നിരമാല ചുറ്റുവിളക്ക്",   "icon": "✨",  "price": 1000, "priceLabel": "₹1000", "desc": "Decorative lamp illumination around the temple." },
+    { "id": 28, "name": "Chanthabishekam",              "nameML": "ചാന്താഭിഷേകം",            "icon": "🪔",  "price": 1250, "priceLabel": "₹1250", "desc": "Sacred abhishekam ritual with sandalwood paste." },
+    { "id": 29, "name": "Full Day Pooja",               "nameML": "ഒരു ദിവസത്തെ പൂജ",        "icon": "🙏",  "price": 1251, "priceLabel": "₹1251", "desc": "Complete day-long pooja in the devotee's name." }
+  ],
+
+  "monthlyEvents": [
+    {
+      "id": "chingam",
+      "monthEN": "Chingam",
+      "monthML": "ചിങ്ങം",
+      "period": "Aug 17 – Sep 16",
+      "kollavarsha": "1198",
+      "rows": [
+        { "date": "Chingam 1 – Aug 17 – Wed",  "dateML": "ചിങ്ങം 1 – ആഗസ്ത് 17 – ബുധൻ",  "event": "New Year Pooja (Kollavarasham), Vedajapam, Sooktha Pushpanjali, Niramala, Vilakku", "vazhi": "Sooktha Pushpanjali" },
+        { "date": "Chingam 2 – Aug 18 – Thu",  "dateML": "ചിങ്ങം 2 – ആഗസ്ത് 18 – വ്യാഴം", "event": "Sri Krishna Jayanti – Akhanda Namajapam, Vishesha Pooja, Satsangam",               "vazhi": "Venna, Panchsara, Namajapa Upasana" },
+        { "date": "Chingam 15 – Aug 31 – Wed", "dateML": "ചിങ്ങം 15 – ആഗസ്ത് 31 – ബുധൻ", "event": "Vinayaka Chaturthi – Ganapathi Bhagavan Vishesha Pooja, Niramala, Vilakku",         "vazhi": "Appam, Appam Mudal" },
+        { "date": "Chingam 22 – Sep 7 – Wed",  "dateML": "ചിങ്ങം 22 – സെപ്തംബർ 7 – ബുധൻ", "event": "Thriputhri Nivedyam – Uthradom Kazhchakkula Samarppanam",                          "vazhi": "Puthiri Payasam" },
+        { "date": "Chingam 23 – Sep 8 – Thu",  "dateML": "ചിങ്ങം 23 – സെപ്തംബർ 8 – വ്യാഴം", "event": "Vamana Avatara Dinam, Niramala, Thiruvonam Vilakku",                              "vazhi": "Panchsara Payasam, Chuttuvilaakku, Niramala" }
+      ]
+    },
+    {
+      "id": "kanni",
+      "monthEN": "Kanni",
+      "monthML": "കന്നി",
+      "period": "Sep 17 – Oct 17",
+      "kollavarsha": "1198",
+      "rows": [
+        { "date": "Kanni 6 – Sep 22 – Thu",   "dateML": "കന്നി 6 – സെപ്തംബർ 22 – വ്യാഴം", "event": "Kanni month Ayilyam – Sarppam Prathishta Special Pooja",                            "vazhi": "Vishesha Pooja, Ada Nivedyam" },
+        { "date": "Kanni 8 – Sep 24 – Sat",   "dateML": "കന്നി 8 – സെപ്തംബർ 24 – ശനി",   "event": "Devi Bhagavata Navahayagnam + Mahatmya Parayanam, Sthala Shuddhi begins",           "vazhi": "" },
+        { "date": "Kanni 9 – Sep 25 – Sun",   "dateML": "കന്നി 9 – സെപ്തംബർ 25 – ഞായർ",  "event": "Devi Bhagavata Navahayagnam, Bimbha Shuddhi – Kalasabhishekam",                    "vazhi": "Annadanam" },
+        { "date": "Kanni 10 – Sep 26 – Mon",  "dateML": "കന്നി 10 – സെപ്തംബർ 26 – തിങ്കൾ", "event": "Navarathri begins – 10 Days Special Poojas",                                      "vazhi": "Navarathri Vilakku, Navarathri Nadathu" },
+        { "date": "Kanni 17 – Oct 3 – Mon",   "dateML": "കന്നി 17 – ഒക്ടോബർ 3 – തിങ്കൾ", "event": "Devi Bhagavata Navahayagnam completion, Granthapooja begins, Durgashtami Vilakku",  "vazhi": "Granthapooja, Saraswatha Pushpanjali" },
+        { "date": "Kanni 18 – Oct 4 – Tue",   "dateML": "കന്നി 18 – ഒക്ടോബർ 4 – ചൊവ്വ",  "event": "Maha Navami Vilakku",                                                               "vazhi": "" },
+        { "date": "Kanni 19 – Oct 5 – Wed",   "dateML": "കന്നി 19 – ഒക്ടോബർ 5 – ബുധൻ",   "event": "Vijayadasami, Pooja pickup, Vidyarambham – Dasami Vilakku",                        "vazhi": "Vidyarambham Kurikkal" }
+      ]
+    },
+    {
+      "id": "thulam",
+      "monthEN": "Thulam",
+      "monthML": "തുലാം",
+      "period": "Oct 18 – Nov 16",
+      "kollavarsha": "1198",
+      "rows": [
+        { "date": "Thulam 5 – Oct 22 – Sat",  "dateML": "തുലാം 5 – ഒക്ടോബർ 22 – ശനി",   "event": "Dhanvantari Jayanthi – Satsangam",                                                  "vazhi": "Chuttuvilaakku, Niramala" },
+        { "date": "Thulam 7 – Oct 24 – Mon",  "dateML": "തുലാം 7 – ഒക്ടോബർ 24 – തിങ്കൾ", "event": "Deepavali – Niramala, Vilakku",                                                     "vazhi": "Chuttuvilaakku, Niramala" },
+        { "date": "Thulam 8 – Oct 25 – Tue",  "dateML": "തുലാം 8 – ഒക്ടോബർ 25 – ചൊവ്വ", "event": "Thulavaav – Tilahomam, Surya Grahanam; Temple Nada opens 6:30am",                   "vazhi": "Tilahomam" },
+        { "date": "Thulam 22 – Nov 8 – Tue",  "dateML": "തുലാം 22 – നവംബർ 8 – ചൊവ്വ",  "event": "Chandra Grahanam; Temple Nada opens 6:30am",                                         "vazhi": "" },
+        { "date": "Thulam 27 – Nov 13 – Sun", "dateML": "തുലാം 27 – നവംബർ 13 – ഞായർ",  "event": "Lalitha Sahasranama Laksarchan, Mangalyapooja (Upadeva Ganapathi Bhagavan)",          "vazhi": "Laksarchan, Mangalyapooja" },
+        { "date": "Thulam 29 – Nov 15 – Tue", "dateML": "തുലാം 29 – നവംബർ 15 – ചൊവ്വ", "event": "Mandala Shuddhi begins, Prasada Shuddhi, Sthala Shuddhi",                            "vazhi": "" },
+        { "date": "Thulam 30 – Nov 16 – Wed", "dateML": "തുലാം 30 – നവംബർ 16 – ബുധൻ",  "event": "Bimbha Shuddhi, 25 Kalasabhishekam",                                                 "vazhi": "Brahma Kalasam" }
+      ]
+    }
+  ],
+
+  "karkidakamEvents": {
+    "monthEN": "Karkidakam",
+    "monthML": "കർക്കിടകം",
+    "period": "July 17 – August 16",
+    "kollavarsha": "1198",
+    "rows": [
+      { "date": "Karkidakam 1 – Jul 17 – Mon",  "dateML": "കർക്കിടകം 1 – ജൂലായ് 17 – തിങ്കൾ", "event": "Eeswaraseva begins, Ramayana Parayana Yagnam begins — 31 days special",       "vazhi": "Eeswaraseva" },
+      { "date": "Karkidakam 1 – Jul 17 – Mon",  "dateML": "കർക്കിടകം 1 – ജൂലായ് 17 – തിങ്കൾ", "event": "Karkidaka Vaav – Tilahomam",                                                  "vazhi": "Tilahomam" },
+      { "date": "Karkidakam 7 – Jul 23 – Sun",  "dateML": "കർക്കിടകം 7 – ജൂലായ് 23 – ഞായർ",  "event": "Illamnira",                                                                   "vazhi": "" },
+      { "date": "Karkidakam 26 – Aug 11 – Fri", "dateML": "കർക്കിടകം 26 – ആഗസ്ത് 11 – വെള്ളി", "event": "Maha Ganapathi Homam, Gajapooja, Aanayuttu",                                 "vazhi": "Maha Ganapathi Homam, Gajapooja" },
+      { "date": "Karkidakam 31 – Aug 16 – Wed", "dateML": "കർക്കിടകം 31 – ആഗസ്ത് 16 – ബുധൻ", "event": "Eeswaraseva completion – Special Vilakku, Namajapa Pradakshinam",             "vazhi": "Kalabhishekam, Chuttuvilaakku, Niramala" }
+    ],
+    "noteML": "ഇവ കൂടാതെ മാസത്തിൽ ഒരു ദിവസം ക്ഷേത്രം തന്ത്രിവര്യന്റെ കാർമ്മികത്വത്തിൽ വിശേഷോൽപൂജയും, എല്ലാ മാസങ്ങളിലും 3 ദിവസം വേദപാരായണവും, എല്ലാ മുപ്പടു വ്യാഴാഴ്ചയും സമ്പൂർണ്ണ നാരായണീയ പാരായണവും, മുപ്പടുചൊവ്വാഴ്ചകളിൽ ദേവീമഹാത്മ്യ പാരായണവും, വിവിധ വേളകളിലായി ഭക്തി–ആദ്ധ്യാത്മിക സദസ്സുകളും ഉണ്ടായിരിക്കുന്നതാണ്."
+  },
+
+  "featuredEvents": [
+    { "id": 1, "dateML": "മീനം 21 (ഏപ്രിൽ 4) ചൊവ്വ",   "nameML": "ഷോഷനിറമാല",                     "nameEN": "Shoshana Niramala",              "isBig": false },
+    { "id": 2, "dateML": "മീനം 22 (ഏപ്രിൽ 5) ബുധൻ",    "nameML": "വലിയവിളക്ക്",                   "nameEN": "Valiya Vilakku",                 "isBig": false },
+    { "id": 3, "dateML": "മീനം 23 (ഏപ്രിൽ 6) വ്യാഴം",  "nameML": "ശോധനവേല",                       "nameEN": "Shodhana Vela",                  "isBig": false },
+    { "id": 4, "dateML": "മീനം 24 (ഏപ്രിൽ 7) വെള്ളി",  "nameML": "കുത്തഭിഷേകം – താലപ്പൊലി (വേല)", "nameEN": "Kuthabhishekam – Thalapoli (Vela)", "isBig": true }
+  ]
+}

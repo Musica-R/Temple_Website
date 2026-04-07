@@ -45,6 +45,7 @@ export default function Footer() {
                         {/* <li><Link to="/booking">{t.navLinks.booking}</Link></li> */}
                         <li><Link to="/donation">{t.navLinks.donation}</Link></li>
                         <li><Link to="/gallery">{t.navLinks.gallery}</Link></li>
+                        <li><Link to="/event">{t.navLinks.event}</Link></li>
                         <li><Link to="/contact">{t.navLinks.contact}</Link></li>
                     </ul>
                 </div>
@@ -76,21 +77,22 @@ export default function Footer() {
                         </div>
                         <div className="contact-item">
                             <span className="contact-icon"><FaPhoneAlt /></span>
-                            <span>+91 98765 43210</span>
+                            <span>+91 9037092183</span>
                         </div>
                         <div className="contact-item">
                             <span className="contact-icon"><MdEmail /></span>
-                            <span>temple@email.com</span>
+                            <span>Puthusserrysreekurumba@gmail.com</span>
                         </div>
                     </div>
 
                     {/* Social icons */}
-                    <div className="social-row">
+                    {/* <div className="social-row">
                         <a href="#facebook" className="social-btn" aria-label="Facebook"><FaFacebookF /></a>
                         <a href="#youtube" className="social-btn" aria-label="YouTube"><FaYoutube /></a>
                         <a href="#instagram" className="social-btn" aria-label="Instagram"><FaInstagram /></a>
-                    </div>
+                    </div> */}
                 </div>
+                
 
             </div>
 

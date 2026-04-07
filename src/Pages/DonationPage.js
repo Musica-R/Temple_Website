@@ -3,6 +3,7 @@ import DonationForm from '../Components/DonationForm';
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/datatranslation.json";
 import '../Stylesheet/DonationPage.css';   // ← import the animation layer
+import { useNavigate } from "react-router-dom";
 
 export default function DonationPage() {
   const { language } = useLanguage();
@@ -11,6 +12,8 @@ export default function DonationPage() {
   const heroImgRef = useRef(null);
   const heroContentRef = useRef(null);
   const bandRef = useRef(null);
+  
+   const navigate = useNavigate();
 
   /* ── Parallax scroll handler ─────────────────────────────────── */
   useEffect(() => {
@@ -103,9 +106,9 @@ export default function DonationPage() {
         <div className="ourheritage-content dp-hero-content" ref={heroContentRef}>
           <span className="dp-hero-tag">{t.heroTag}</span>
           <h1 className="dp-hero-title">{t.heroTitle}</h1>
-          <p className="hero-sub dp-hero-sub">{t.heroSub}</p>
+          {/* <p className="hero-sub dp-hero-sub">{t.heroSub}</p> */}
           <div className="ourheritage-breadcrumb dp-hero-breadcrumb">
-            <span>{t.breadcrumb.home}</span>
+            <span onClick={() => navigate("/")} style={{cursor:"pointer"}}>{t.breadcrumb.home}</span>
             <span className="ourheritage-dot">ॐ</span>
             <span className="ourheritage-active">{t.breadcrumb.active}</span>
           </div>

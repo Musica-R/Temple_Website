@@ -153,7 +153,7 @@ export default function Hero() {
           trigger: section,
           start: "top top",
           end: "bottom top",
-          scrub: 1.4,          // silky scrub — higher = more lag / cinematic
+          scrub: 1.4,         
         },
       };
 
@@ -353,7 +353,7 @@ export default function Hero() {
           <span>{t.subtitle}</span>
         </h1>
 
-        <p className="hero-subtitle" ref={subtitleRef}>{t.description}</p>
+        {/* <p className="hero-subtitle" ref={subtitleRef}>{t.description}</p> */}
 
         {/* Diya lamps */}
         <div className="hero-diyas" ref={diyasRef} aria-hidden="true">

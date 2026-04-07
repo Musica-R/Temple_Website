@@ -3,8 +3,11 @@ import { useState } from 'react';
 import '../Stylesheet/ReachUs.css';
 import { useLanguage } from '../Context/Languagecontext';
 import translations from "../Json/Reachustranslations.json";
+import { useNavigate } from "react-router-dom";
 
 export default function ReachUs() {
+     const navigate = useNavigate();
+
     const infoCardsRef = useRef([]);
     const rightRef = useRef(null);
     const headerRef = useRef(null);
@@ -118,9 +121,9 @@ export default function ReachUs() {
                 <div className="ourheritage-content">
                     <span className="hero-tag">{t.heroBanner.tag}</span>
                     <h1>{t.heroBanner.title}</h1>
-                    <p className="hero-sub">{t.heroBanner.subtitle}</p>
+                    {/* <p className="hero-sub">{t.heroBanner.subtitle}</p> */}
                     <div className="ourheritage-breadcrumb">
-                        <span>{t.heroBanner.breadcrumb.home}</span>
+                        <span onClick={() => navigate("/")} style={{cursor:"pointer"}}>{t.heroBanner.breadcrumb.home}</span>
                         <span className="ourheritage-dot">{t.heroBanner.breadcrumb.separator}</span>
                         <span className="ourheritage-active">{t.heroBanner.breadcrumb.current}</span>
                     </div>

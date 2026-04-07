@@ -3,7 +3,7 @@
     "EN": {
       "bannerSub": "Established Since Ancient Times",
       "bannerTitle": "Sri Kurumba Bhagavathy Temple",
-      "bannerLocation": "Puthussery, Palakkad, Kerala",
+      "bannerLocation": "Pudussery , Palakkad, Kerala",
       "desc": "Experience divine blessings, sacred rituals, and spiritual peace at one of Kerala's most revered shrines.",
       "exploreHeading": "Explore",
       "timingsHeading": "Pooja Timings",
@@ -14,15 +14,20 @@
         "booking": "Book Seva",
         "donation": "Donation",
         "gallery": "Gallery",
+        "event": "Event",
         "contact": "Contact"
       },
       "timings": [
-        { "label": "Morning Pooja", "time": "5:30 AM – 11:00 AM" },
-        { "label": "Afternoon",     "time": "12:00 PM – 1:00 PM" },
-        { "label": "Evening Pooja", "time": "5:00 PM – 8:30 PM" },
-        { "label": "Night Deeparadhana", "time": "8:00 PM – 8:30 PM" }
+        {
+          "label": "Morning Pooja",
+          "time": "5:30 AM – 11:00 AM"
+        },
+        {
+          "label": "Evening Pooja",
+          "time": "5:00 PM – 7:30 PM"
+        }
       ],
-      "address": "Puthussery, Palakkad, Kerala – 678 XXX",
+      "address": "Pudussery , Palakkad, Kerala – 678623",
       "copyright": "© {year} Sri Kurumba Bhagavathy Temple. All rights reserved.",
       "bottomNote": "Dedicated with devotion."
     },
@@ -40,15 +45,20 @@
         "booking": "சேவை பதிவு",
         "donation": "தானம்",
         "gallery": "தொகுப்பு",
+        "event": "நிகழ்வு",
         "contact": "தொடர்பு"
       },
       "timings": [
-        { "label": "காலை பூஜை",     "time": "காலை 5:30 – 11:00" },
-        { "label": "மதிய வேளை",     "time": "மதியம் 12:00 – 1:00" },
-        { "label": "மாலை பூஜை",     "time": "மாலை 5:00 – 8:30" },
-        { "label": "இரவு தீபாராதனை", "time": "இரவு 8:00 – 8:30" }
+        {
+          "label": "காலை பூஜை",
+          "time": "காலை 5:30 – 11:00"
+        },
+        {
+          "label": "மாலை பூஜை",
+          "time": "மாலை 5:00 – 7:30"
+        }
       ],
-      "address": "புதுசேரி, பாலக்காடு, கேரளா – 678 XXX",
+      "address": "புதுசேரி, பாலக்காடு, கேரளா – 678623",
       "copyright": "© {year} ஸ்ரீ குரும்பா பகவதி கோயில். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
       "bottomNote": "பக்தியோடு அர்பணிக்கப்பட்டது."
     },
@@ -66,18 +76,22 @@
         "booking": "സേവ ബുക്ക് ചെയ്യുക",
         "donation": "സംഭാവന",
         "gallery": "ഗ്യാലറി",
+        "event": "പരിപാടി",
         "contact": "ബന്ധപ്പെടുക"
       },
       "timings": [
-        { "label": "രാവിലെ പൂജ",    "time": "5:30 AM – 11:00 AM" },
-        { "label": "ഉച്ചനേരം",       "time": "12:00 PM – 1:00 PM" },
-        { "label": "വൈകുന്നേരം പൂജ", "time": "5:00 PM – 8:30 PM" },
-        { "label": "രാത്രി ദീപാരാധന", "time": "8:00 PM – 8:30 PM" }
+        {
+          "label": "രാവിലെ പൂജ",
+          "time": "5:30 AM – 11:00 AM"
+        },
+        {
+          "label": "വൈകുന്നേരം പൂജ",
+          "time": "5:00 PM – 7:30 PM"
+        }
       ],
-      "address": "പുതുശ്ശേരി, പാലക്കാട്, കേരളം – 678 XXX",
+      "address": "പുതുശ്ശേരി, പാലക്കാട്, കേരളം – 678623",
       "copyright": "© {year} ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തമാണ്.",
       "bottomNote": "ഭക്തിയോടെ സമർപ്പിച്ചത്."
     }
   }
 }
- 

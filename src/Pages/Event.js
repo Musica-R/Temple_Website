@@ -2,13 +2,15 @@ import { useEffect, useRef } from "react";
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/Event.json";
 import "../Stylesheet/Event.css";
-
+import { useNavigate } from "react-router-dom";
 /* ─────────────────────────────────────────────
    EventRow — explicit grid placement per parity
    ODD  index → [IMAGE col1] [NODE col2] [TEXT col3]
    EVEN index → [TEXT col1]  [NODE col2] [IMAGE col3]
 ─────────────────────────────────────────────── */
+
 function EventRow({ event, index }) {
+
     const cardRef = useRef(null);
     const isEven = index % 2 !== 0; // 0-based: index 0 = first = odd row visually
 
@@ -125,6 +127,7 @@ function EventRow({ event, index }) {
 export default function Event() {
     const { language } = useLanguage();
     const t = translations.event[language] || translations.event["EN"];
+    const navigate = useNavigate();
 
     const verseBandRef = useRef(null);
     const scheduleRef = useRef(null);
@@ -163,9 +166,9 @@ export default function Event() {
                 <div className="ourheritage-content">
                     <span className="hero-tag oh-anim-tag">{t.heroTag}</span>
                     <h1 className="oh-anim-title">{t.heroTitle}</h1>
-                    <p className="hero-sub oh-anim-sub">{t.heroSub}</p>
+                    {/* <p className="hero-sub oh-anim-sub">{t.heroSub}</p> */}
                     <div className="ourheritage-breadcrumb oh-anim-breadcrumb">
-                        <span>{t.breadcrumb.home}</span>
+                        <span onClick={() => navigate("/")} style={{ cursor: "pointer" }}>{t.breadcrumb.home}</span>
                         <span className="ourheritage-dot">ॐ</span>
                         <span className="ourheritage-active">{t.breadcrumb.active}</span>
                     </div>

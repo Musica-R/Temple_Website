@@ -8,13 +8,13 @@
                 "heritage": "Our Heritage",
                 "donation": "Donation",
                 "gallery": "Divine Gallery",
-                "event": "Event",
+                "event": "Annual Festival",
                 "contact": "Reach Us"
             },
             "languages": {
+                 "ML": "Malayalam",
                 "EN": "English",
-                "TA": "Tamil",
-                "ML": "Malayalam"
+                "TA": "Tamil"
             }
         },
         "TA": {
@@ -25,30 +25,30 @@
                 "heritage": "எங்கள் பாரம்பரியம்",
                 "donation": "நன்கொடை",
                 "gallery": "தெய்வீக தொகுப்பு",
-                "event": "நிகழ்வு",
+                "event": "வருடாந்திர திருவிழா",
                 "contact": "எங்களை தொடர்பு கொள்ளுங்கள்"
             },
             "languages": {
+                "ML": "മലയാളം",
                 "EN": "English",
-                "TA": "தமிழ்",
-                "ML": "മലയാളം"
+                "TA": "தமிழ்"
             }
         },
         "ML": {
-            "logoName": "ശ്രീ കുരുംബ ഭഗവതി ക്ഷേത്രം",
+            "logoName": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം",
             "logoSubtitle": "പുതുശ്ശേരി പാലക്കാട്",
             "navLinks": {
                 "home": "ഹോം",
                 "heritage": "ഞങ്ങളുടെ പൈതൃകം",
                 "donation": "സംഭാവന",
                 "gallery": "ദൈവിക ഗാലറി",
-                "event": "പരിപാടി",
+                "event": "വാർഷിക ഉത്സവം",
                 "contact": "ഞങ്ങളെ ബന്ധപ്പെടുക"
             },
             "languages": {
+                "ML": "മലയാളം",
                 "EN": "English",
-                "TA": "തമിഴ്",
-                "ML": "മലയാളം"
+                "TA": "தமிழ்"
             }
         }
     },
@@ -77,6 +77,37 @@
     },
     "donation": {
         "EN": {
+            "howToDonate": {
+                "tag": "Simple Steps",
+                "title": "How to Donate",
+                "subtitle": "Your offering reaches the deity in four simple steps",
+                "steps": [
+                    {
+                        "num": 1,
+                        "icon": "🪙",
+                        "title": "Choose Amount",
+                        "desc": "Enter your desired amount or pick a quick-select offering"
+                    },
+                    {
+                        "num": 2,
+                        "icon": "🙏",
+                        "title": "Select Purpose",
+                        "desc": "Choose Annadanam, Abhishekam, Lamp or any seva"
+                    },
+                    {
+                        "num": 3,
+                        "icon": "📲",
+                        "title": "Scan & Pay",
+                        "desc": "Scan the QR code or tap GPay to complete your payment"
+                    },
+                    {
+                        "num": 4,
+                        "icon": "💬",
+                        "title": "Send Screenshot",
+                        "desc": "WhatsApp your payment proof for instant confirmation"
+                    }
+                ]
+            },
             "formPanel": {
                 "icon": "🙏",
                 "title": "Make a Sacred Offering",
@@ -98,14 +129,11 @@
             },
             "purposeOptions": {
                 "general": "🛕 General Temple Fund",
-                "annadanam": "🍛 Annadanam — Feed the Devotees",
                 "festival": "🎊 Festival & Utsavam",
-                "lamp": "🪔 Nithyadeepam — Daily Lamp",
+                "lamp": "🪔 Chuttuvilakku",
                 "renovation": "🏗️ Temple Renovation",
-                "abhishekam": "🌸 Abhishekam Sponsorship",
                 "vastra": "👘 Vastram — Deity Garments",
-                "pushpam": "🌺 Pushpam — Daily Flowers",
-                "kalyana": "💛 Kalyana Utsavam"
+                "pushpam": "🌺 Pushpam — Daily Flowers"
             },
             "purposeLabels": {
                 "general": "General Temple Fund",
@@ -200,9 +228,91 @@
                 "title": "Together, We Keep the Flame Alive",
                 "description": "Your generosity sustains daily rituals, feeds thousands, and preserves centuries of spiritual tradition. Be part of this divine mission.",
                 "button": "Donate Now"
+            },
+            "whatsappModal": {
+                "title": "Send Payment Confirmation",
+                "steps": [
+                    {
+                        "n": 1,
+                        "label": "Your Details"
+                    },
+                    {
+                        "n": 2,
+                        "label": "Confirm"
+                    },
+                    {
+                        "n": 3,
+                        "label": "Send"
+                    }
+                ],
+                "fields": {
+                    "name": {
+                        "label": "Your Name",
+                        "placeholder": "e.g. Rajesh Kumar"
+                    },
+                    "mobile": {
+                        "label": "Mobile Number",
+                        "placeholder": "e.g. 9037092183"
+                    },
+                    "address": {
+                        "label": "Your Address",
+                        "placeholder": "Door No, Street, City..."
+                    },
+                    "amount": {
+                        "label": "Amount (₹)"
+                    },
+                    "purpose": {
+                        "label": "Purpose"
+                    }
+                },
+                "screenshotNotice": {
+                    "heading": "Must attach screenshot for confirmation",
+                    "desc": "After WhatsApp opens, attach your payment screenshot using the 📎 attachment icon in the chat before tapping Send."
+                },
+                "sendBtn": {
+                    "main": "Open WhatsApp & Send",
+                    "sub": "Details pre-filled — attach screenshot & send"
+                },
+                "paidBtn": {
+                    "main": "Payment Done? Tap to Confirm",
+                    "sub": "Share your payment proof via WhatsApp"
+                },
+                "validationAlert": "Please fill in your name, mobile number, and address before sending.",
+                "whatsappMessage": "Temple Donation Details"
             }
         },
         "TA": {
+            "howToDonate": {
+                "tag": "எளிய படிகள்",
+                "title": "நன்கொடை வழங்குவது எப்படி",
+                "subtitle": "உங்கள் காணிக்கை நான்கு எளிய படிகளில் தெய்வத்தை சென்றடையும்",
+                "steps": [
+                    {
+                        "num": 1,
+                        "icon": "🪙",
+                        "title": "தொகை தேர்வு",
+                        "desc": "விரும்பிய தொகையை உள்ளிடுங்கள் அல்லது முன்னமைக்கப்பட்ட தொகையை தேர்ந்தெடுங்கள்"
+                    },
+                    {
+                        "num": 2,
+                        "icon": "🙏",
+                        "title": "நோக்கம் தேர்வு",
+                        "desc": "அன்னதானம், அபிஷேகம், தீபம் அல்லது வேறு ஏதேனும் சேவையை தேர்ந்தெடுங்கள்"
+                    },
+                    {
+                        "num": 3,
+                        "icon": "📲",
+                        "title": "QR ஸ்கேன் & பணம்",
+                        "desc": "QR குறியீட்டை ஸ்கேன் செய்யுங்கள் அல்லது GPay மூலம் கட்டணம் செலுத்துங்கள்"
+                    },
+                    {
+                        "num": 4,
+                        "icon": "💬",
+                        "title": "ஸ்கிரீன்ஷாட் அனுப்பு",
+                        "desc": "உறுதிப்படுத்தலுக்காக WhatsApp வழியாக பணம் செலுத்திய சான்றை அனுப்புங்கள்"
+                    }
+                ]
+            },
             "formPanel": {
                 "icon": "🙏",
                 "title": "புனித காணிக்கை செலுத்துங்கள்",
@@ -224,14 +334,12 @@
             },
             "purposeOptions": {
                 "general": "🛕 பொது கோயில் நிதி",
-                "annadanam": "🍛 அன்னதானம் — பக்தர்களுக்கு உணவு",
                 "festival": "🎊 திருவிழா & உத்சவம்",
-                "lamp": "🪔 நித்யதீபம் — தினசரி விளக்கு",
+                "lamp": "🪔 சுற்றுவிளக்கு",
                 "renovation": "🏗️ கோயில் புனரமைப்பு",
                 "abhishekam": "🌸 அபிஷேக ஸ்பான்சர்ஷிப்",
                 "vastra": "👘 வஸ்திரம் — தெய்வ ஆடைகள்",
-                "pushpam": "🌺 புஷ்பம் — தினசரி மலர்கள்",
-                "kalyana": "💛 கல்யாண உத்சவம்"
+                "pushpam": "🌺 புஷ்பம் — தினசரி மலர்கள்"
             },
             "purposeLabels": {
                 "general": "பொது கோயில் நிதி",
@@ -326,9 +434,91 @@
                 "title": "ஒன்றாக, நாம் சுடரை நிலைநிறுத்துவோம்",
                 "description": "உங்கள் தாராள மனம் தினசரி சடங்குகளை நிலைநிறுத்தி, ஆயிரக்கணக்கானவர்களுக்கு உணவளித்து, நூற்றாண்டு கால ஆன்மீக மரபை பாதுகாக்கிறது. இந்த தெய்வீக பணியின் ஒரு பகுதியாக இருங்கள்.",
                 "button": "இப்போதே நன்கொடை வழங்குக"
+            },
+            "whatsappModal": {
+                "title": "பணம் செலுத்திய உறுதிப்படுத்தலை அனுப்புங்கள்",
+                "steps": [
+                    {
+                        "n": 1,
+                        "label": "உங்கள் விவரங்கள்"
+                    },
+                    {
+                        "n": 2,
+                        "label": "உறுதிப்படுத்து"
+                    },
+                    {
+                        "n": 3,
+                        "label": "அனுப்பு"
+                    }
+                ],
+                "fields": {
+                    "name": {
+                        "label": "உங்கள் பெயர்",
+                        "placeholder": "எ.கா. ராஜேஷ் குமார்"
+                    },
+                    "mobile": {
+                        "label": "கைபேசி எண்",
+                        "placeholder": "எ.கா. 9037092183"
+                    },
+                    "address": {
+                        "label": "உங்கள் முகவரி",
+                        "placeholder": "கதவு எண், தெரு, நகரம்..."
+                    },
+                    "amount": {
+                        "label": "தொகை (₹)"
+                    },
+                    "purpose": {
+                        "label": "நோக்கம்"
+                    }
+                },
+                "screenshotNotice": {
+                    "heading": "உறுதிப்படுத்தலுக்கு ஸ்கிரீன்ஷாட் இணைக்கவும்",
+                    "desc": "WhatsApp திறந்த பின், அனுப்பு என்று தட்டுவதற்கு முன் 📎 இணைப்பு ஐகான் மூலம் உங்கள் பணம் செலுத்திய ஸ்கிரீன்ஷாட்டை இணைக்கவும்."
+                },
+                "sendBtn": {
+                    "main": "WhatsApp திறந்து அனுப்பு",
+                    "sub": "விவரங்கள் நிரப்பப்பட்டன — ஸ்கிரீன்ஷாட் இணைத்து அனுப்பவும்"
+                },
+                "paidBtn": {
+                    "main": "பணம் செலுத்தியாகிவிட்டதா? உறுதிப்படுத்த தட்டுங்கள்",
+                    "sub": "WhatsApp மூலம் உங்கள் பணம் செலுத்திய சான்றை பகிருங்கள்"
+                },
+                "validationAlert": "அனுப்புவதற்கு முன் உங்கள் பெயர், கைபேசி எண் மற்றும் முகவரியை நிரப்பவும்.",
+                "whatsappMessage": "கோயில் நன்கொடை விவரங்கள்"
             }
         },
         "ML": {
+            "howToDonate": {
+                "tag": "ലളിതമായ ഘട്ടങ്ങൾ",
+                "title": "എങ്ങനെ സംഭാവന ചെയ്യാം",
+                "subtitle": "നിങ്ങളുടെ വഴിപാട് നാലു ലളിതമായ ഘട്ടങ്ങളിൽ ദേവതയിൽ എത്തിച്ചേരും",
+                "steps": [
+                    {
+                        "num": 1,
+                        "icon": "🪙",
+                        "title": "തുക തിരഞ്ഞെടുക്കുക",
+                        "desc": "ആവശ്യമുള്ള തുക നൽകുക അല്ലെങ്കിൽ മുൻകൂട്ടി നിശ്ചയിച്ച തുക തിരഞ്ഞെടുക്കുക"
+                    },
+                    {
+                        "num": 2,
+                        "icon": "🙏",
+                        "title": "ഉദ്ദേശ്യം തിരഞ്ഞെടുക്കുക",
+                        "desc": "അന്നദാനം, അഭിഷേകം, വിളക്ക് അല്ലെങ്കിൽ മറ്റേതെങ്കിലും സേവ തിരഞ്ഞെടുക്കുക"
+                    },
+                    {
+                        "num": 3,
+                        "icon": "📲",
+                        "title": "സ്കാൻ ചെയ്ത് പണം നൽകുക",
+                        "desc": "QR കോഡ് സ്കാൻ ചെയ്യുക അല്ലെങ്കിൽ GPay വഴി പേയ്‌മെന്റ് പൂർത്തിയാക്കുക"
+                    },
+                    {
+                        "num": 4,
+                        "icon": "💬",
+                        "title": "സ്ക്രീൻഷോട്ട് അയക്കുക",
+                        "desc": "സ്ഥിരീകരണത്തിനായി WhatsApp വഴി പേയ്‌മെന്റ് തെളിവ് അയക്കുക"
+                    }
+                ]
+            },
             "formPanel": {
                 "icon": "🙏",
                 "title": "പുണ്യ വഴിപാട് അർപ്പിക്കൂ",
@@ -350,14 +540,12 @@
             },
             "purposeOptions": {
                 "general": "🛕 പൊതു ക്ഷേത്ര ഫണ്ട്",
-                "annadanam": "🍛 അന്നദാനം — ഭക്തർക്ക് ഭക്ഷണം",
                 "festival": "🎊 ഉത്സവം & ആഘോഷം",
-                "lamp": "🪔 നിത്യദീപം — ദൈനംദിന വിളക്ക്",
+                "lamp": "🪔 ചുറ്റുവിളക്ക്",
                 "renovation": "🏗️ ക്ഷേത്ര നവീകരണം",
                 "abhishekam": "🌸 അഭിഷേക സ്പോൺസർഷിപ്പ്",
                 "vastra": "👘 വസ്ത്രം — ദേവതയ്ക്കുള്ള വസ്ത്രം",
-                "pushpam": "🌺 പുഷ്പം — ദൈനംദിന പൂക്കൾ",
-                "kalyana": "💛 കല്യാണ ഉത്സവം"
+                "pushpam": "🌺 പുഷ്പം — ദൈനംദിന പൂക്കൾ"
             },
             "purposeLabels": {
                 "general": "പൊതു ക്ഷേത്ര ഫണ്ട്",
@@ -452,6 +640,57 @@
                 "title": "ഒന്നിച്ച്, നമ്മൾ ദീപം നിലനിർത്തും",
                 "description": "നിങ്ങളുടെ ഔദാര്യം ദൈനംദിന ചടങ്ങുകൾ നിലനിർത്തുകയും ആയിരങ്ങൾക്ക് ഭക്ഷണം നൽകുകയും നൂറ്റാണ്ടുകൾ പഴക്കമുള്ള ആദ്ധ്യാത്മിക പാരമ്പര്യം സംരക്ഷിക്കുകയും ചെയ്യുന്നു. ഈ ദൈവിക ദൗത്യത്തിന്റെ ഭാഗമാകൂ.",
                 "button": "ഇപ്പോൾ സംഭാവന ചെയ്യൂ"
+            },
+            "whatsappModal": {
+                "title": "പേയ്‌മെന്റ് സ്ഥിരീകരണം അയക്കൂ",
+                "steps": [
+                    {
+                        "n": 1,
+                        "label": "നിങ്ങളുടെ വിവരങ്ങൾ"
+                    },
+                    {
+                        "n": 2,
+                        "label": "സ്ഥിരീകരിക്കുക"
+                    },
+                    {
+                        "n": 3,
+                        "label": "അയക്കുക"
+                    }
+                ],
+                "fields": {
+                    "name": {
+                        "label": "നിങ്ങളുടെ പേര്",
+                        "placeholder": "ഉദാ. രാജേഷ് കുമാർ"
+                    },
+                    "mobile": {
+                        "label": "മൊബൈൽ നമ്പർ",
+                        "placeholder": "ഉദാ. 9037092183"
+                    },
+                    "address": {
+                        "label": "നിങ്ങളുടെ വിലാസം",
+                        "placeholder": "വാതിൽ നമ്പർ, തെരുവ്, നഗരം..."
+                    },
+                    "amount": {
+                        "label": "തുക (₹)"
+                    },
+                    "purpose": {
+                        "label": "ഉദ്ദേശ്യം"
+                    }
+                },
+                "screenshotNotice": {
+                    "heading": "സ്ഥിരീകരണത്തിന് സ്ക്രീൻഷോട്ട് അറ്റാച്ച് ചെയ്യണം",
+                    "desc": "WhatsApp തുറന്ന ശേഷം, Send അമർത്തുന്നതിന് മുമ്പ് 📎 അറ്റാച്ച്‌മെന്റ് ഐക്കൺ ഉപയോഗിച്ച് പേയ്‌മെന്റ് സ്ക്രീൻഷോട്ട് അറ്റാച്ച് ചെയ്യൂ."
+                },
+                "sendBtn": {
+                    "main": "WhatsApp തുറന്ന് അയക്കൂ",
+                    "sub": "വിവരങ്ങൾ നിറഞ്ഞിട്ടുണ്ട് — സ്ക്രീൻഷോട്ട് അറ്റാച്ച് ചെയ്ത് അയക്കൂ"
+                },
+                "paidBtn": {
+                    "main": "പണം അടച്ചോ? സ്ഥിരീകരിക്കാൻ ടാപ്പ് ചെയ്യൂ",
+                    "sub": "WhatsApp വഴി പേയ്‌മെന്റ് തെളിവ് പങ്കുവെക്കൂ"
+                },
+                "validationAlert": "അയക്കുന്നതിന് മുമ്പ് നിങ്ങളുടെ പേര്, മൊബൈൽ നമ്പർ, വിലാസം എന്നിവ നൽകൂ.",
+                "whatsappMessage": "ക്ഷേത്ര സംഭാവന വിവരങ്ങൾ"
             }
         }
     },
@@ -480,25 +719,24 @@
                     "icon": "📍",
                     "label": "Address",
                     "content": {
-                        "line1": "Arulmigu Sri Temple,",
-                        "line2": "Main Road, Chennai,",
-                        "line3": "Tamil Nadu – 600001"
+                        "line1": "Sree Kurumba Bhagavathy Temple,",
+                        "line2": "23/663, Kailas Nagar,",
+                        "line3": "Pudussery West, Kerala – 678623"
                     }
                 },
                 {
                     "icon": "📞",
                     "label": "Phone",
                     "content": {
-                        "phone1": "+91 98765 43210",
-                        "phone2": "044 1234 5678"
+                        "phone1": "+91 9037092183",
+                        "phone2": "0491-2567812"
                     }
                 },
                 {
                     "icon": "✉️",
                     "label": "Email",
                     "content": {
-                        "email1": "temple@email.com",
-                        "email2": "info@temple.org"
+                        "email1": "Puthusserrysreekurumba@gmail.com"
                     }
                 },
                 {
@@ -563,25 +801,24 @@
                     "icon": "📍",
                     "label": "முகவரி",
                     "content": {
-                        "line1": "அருள்மிகு ஸ்ரீ கோயில்,",
-                        "line2": "பிரதான சாலை, சென்னை,",
-                        "line3": "தமிழ்நாடு – 600001"
+                        "line1": "ஸ்ரீ குரும்பா பகவதி கோவில்,",
+                        "line2": "23/663, கைலாஸ் நகர்,",
+                        "line3": "புதுச்சேரி வெஸ்ட், கேரளா – 678623"
                     }
                 },
                 {
                     "icon": "📞",
                     "label": "தொலைபேசி",
                     "content": {
-                        "phone1": "+91 98765 43210",
-                        "phone2": "044 1234 5678"
+                        "phone1": "+91 9037092183",
+                        "phone2": "0491-2567812"
                     }
                 },
                 {
                     "icon": "✉️",
                     "label": "மின்னஞ்சல்",
                     "content": {
-                        "email1": "temple@email.com",
-                        "email2": "info@temple.org"
+                        "email1": "Puthusserrysreekurumba@gmail.com"
                     }
                 },
                 {
@@ -646,25 +883,24 @@
                     "icon": "📍",
                     "label": "വിലാസം",
                     "content": {
-                        "line1": "അരുൾമിഗു ശ്രീ ക്ഷേത്രം,",
-                        "line2": "മെയിൻ റോഡ്, ചെന്നൈ,",
-                        "line3": "തമിഴ്‌നാട് – 600001"
+                        "line1": "ശ്രീ കുരുംബാ ഭഗവതി ക്ഷേത്രം,",
+                        "line2": "23/663, കൈലാസ് നഗർ,",
+                        "line3": "പുതുസ്സേരി വെസ്റ്റ്, കേരളം – 678623"
                     }
                 },
                 {
                     "icon": "📞",
                     "label": "ഫോൺ",
                     "content": {
-                        "phone1": "+91 98765 43210",
-                        "phone2": "044 1234 5678"
+                        "phone1": "+91 9037092183",
+                        "phone2": "0491-2567812"
                     }
                 },
                 {
                     "icon": "✉️",
                     "label": "ഇമെയിൽ",
                     "content": {
-                        "email1": "temple@email.com",
-                        "email2": "info@temple.org"
+                        "email1": "Puthusserrysreekurumba@gmail.com"
                     }
                 },
                 {

@@ -64,9 +64,9 @@ export default function DivineGallery() {
                 <div className="ourheritage-content">
                     <span className="hero-tag oh-anim-tag">{t.heroTag}</span>
                     <h1 className="oh-anim-title">{t.heroTitle}</h1>
-                    <p className="hero-sub oh-anim-sub">{t.heroSub}</p>
+                    {/* <p className="hero-sub oh-anim-sub">{t.heroSub}</p> */}
                     <div className="ourheritage-breadcrumb oh-anim-breadcrumb">
-                        <span>{t.breadcrumb.home}</span>
+                        <span onClick={() => navigate("/")} style={{cursor:"pointer"}}>{t.breadcrumb.home}</span>
                         <span className="ourheritage-dot">ॐ</span>
                         <span className="ourheritage-active">{t.breadcrumb.active}</span>
                     </div>
