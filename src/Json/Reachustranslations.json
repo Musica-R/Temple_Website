@@ -9,10 +9,11 @@
                 "donation": "Donation",
                 "gallery": "Divine Gallery",
                 "event": "Annual Festival",
+                "ren": "Temple renovation",
                 "contact": "Reach Us"
             },
             "languages": {
-                 "ML": "Malayalam",
+                "ML": "Malayalam",
                 "EN": "English",
                 "TA": "Tamil"
             }
@@ -26,6 +27,7 @@
                 "donation": "நன்கொடை",
                 "gallery": "தெய்வீக தொகுப்பு",
                 "event": "வருடாந்திர திருவிழா",
+                "ren": "கோவில் புதுப்பிப்பு",
                 "contact": "எங்களை தொடர்பு கொள்ளுங்கள்"
             },
             "languages": {
@@ -43,6 +45,7 @@
                 "donation": "സംഭാവന",
                 "gallery": "ദൈവിക ഗാലറി",
                 "event": "വാർഷിക ഉത്സവം",
+                "ren": "ക്ഷേത്ര പുതുക്കൽ",
                 "contact": "ഞങ്ങളെ ബന്ധപ്പെടുക"
             },
             "languages": {

@@ -6,7 +6,7 @@ const historyData = {
       content: [
         `Sreekurumba Kaavu, located in Pudussery about 6 kilometres east of Palakkad town, is a sacred temple with a history spanning more than 500 years. It is one of the prominent Bhagavathy temples in South Malabar and holds deep cultural and spiritual importance in the region.`,
         `Managed by the Malabar Devaswam Board, the temple continues to be a vibrant center of devotion, attracting thousands of devotees every year. The temple is not only a place of worship but also a symbol of tradition, heritage, and community faith passed down through generations.`,
-        `Pudussery Veti, the temple's annual festival, is considered the beginning of the grand temple festival season in Palakkad district, which eventually culminates with the famous Pooram celebrations in nearby regions.`
+        `Pudussery vedi, the temple's annual festival, is considered the beginning of the grand temple festival season in Palakkad district, which eventually culminates with the famous Pooram celebrations in nearby regions.`
       ]
     },
     {
@@ -90,7 +90,7 @@ const historyData = {
       content: [
         `പാലക്കാട് നഗരത്തിൽ നിന്ന് ഏകദേശം 6 കിലോമീറ്റർ കിഴക്ക് പുതുശ്ശേരിയിൽ സ്ഥിതി ചെയ്യുന്ന ശ്രീ കുറുമ്പ കാവ്, 500 വർഷത്തിലേറെ പഴക്കമുള്ള ഒരു പുണ്യക്ഷേത്രമാണ്. ദക്ഷിണ മലബാറിലെ പ്രമുഖ ഭഗവതി ക്ഷേത്രങ്ങളിൽ ഒന്നായ ഈ ക്ഷേത്രം ഈ പ്രദേശത്ത് ആഴമായ സാംസ്കാരിക ആത്മീയ പ്രാധാന്യം വഹിക്കുന്നു.`,
         `മലബാർ ദേവസ്വം ബോർഡ് നിർവഹിക്കുന്ന ഈ ക്ഷേത്രം വർഷം തോറും ആയിരക്കണക്കിന് ഭക്തരെ ആകർഷിക്കുന്ന ഒരു ഭക്തി കേന്ദ്രമായി തുടരുന്നു. ഇത് ആരാധനാ കേന്ദ്രം മാത്രമല്ല, തലമുറകളായി കൈമാറിവരുന്ന പാരമ്പര്യം, ഐതിഹ്യം, സാമൂഹ്യ വിശ്വാസം എന്നിവയുടെ പ്രതീകം കൂടിയാണ്.`,
-        `ക്ഷേത്രത്തിന്റെ വാർഷിക ഉത്സവമായ പുതുശ്ശേരി വേടി, പാലക്കാട് ജില്ലയിലെ ക്ഷേത്ര ഉത്സവ സീസണിന്റെ ആരംഭമായി കണക്കാക്കപ്പെടുന്നു, ഇത് ആത്യന്തികമായി സമീപ പ്രദേശങ്ങളിലെ പ്രസിദ്ധമായ പൂരം ആഘോഷങ്ങളിൽ കലാശിക്കുന്നു.`
+        `ക്ഷേത്രത്തിന്റെ വാർഷിക ഉത്സവമായ പുതുശ്ശേരി വെടി, പാലക്കാട് ജില്ലയിലെ ക്ഷേത്ര ഉത്സവ സീസണിന്റെ ആരംഭമായി കണക്കാക്കപ്പെടുന്നു, ഇത് ആത്യന്തികമായി സമീപ പ്രദേശങ്ങളിലെ പ്രസിദ്ധമായ പൂരം ആഘോഷങ്ങളിൽ കലാശിക്കുന്നു.`
       ]
     },
     {
@@ -104,11 +104,11 @@ const historyData = {
       ]
     },
     {
-      title: "പുതുശ്ശേരി വേടി ഉത്സവം",
+      title: "പുതുശ്ശേരി വെടി ഉത്സവം",
       image: "/assets/vedifestival.jpeg",
       content: [
-        `ശ്രീ കുറുമ്പ കാവിന്റെ വാർഷിക ഉത്സവമായ പുതുശ്ശേരി വേടി, മലയാള മാസം കുംഭം (ഫെബ്രുവരി–മാർച്ച്) 14 ദിവസം ആഘോഷിക്കപ്പെടുന്നു. "വേടി" എന്നത് പടക്കത്തെ സൂചിപ്പിക്കുന്നു, ഇത് ആഘോഷത്തിന്റെ പ്രധാന ആകർഷണമാണ്.`,
-        `കതിന വേടി (പരമ്പരാഗത വെടിക്കെട്ട്) എന്ന അത്ഭുതകരമായ കാഴ്ച കാണാൻ ആയിരക്കണക്കിന് ഭക്തർ ഒത്തുകൂടുന്നു. ഇത് ദക്ഷിണ മലബാറിലെ ഏറ്റവും വലുതും ഉത്സാഹഭരിതവുമായ ആഘോഷങ്ങളിൽ ഒന്നാണ്.`,
+        `ശ്രീ കുറുമ്പ കാവിന്റെ വാർഷിക ഉത്സവമായ പുതുശ്ശേരി വെടി, മലയാള മാസം കുംഭം (ഫെബ്രുവരി–മാർച്ച്) 14 ദിവസം ആഘോഷിക്കപ്പെടുന്നു. "വെടി" എന്നത് പടക്കത്തെ സൂചിപ്പിക്കുന്നു, ഇത് ആഘോഷത്തിന്റെ പ്രധാന ആകർഷണമാണ്.`,
+        `കതിന വെടി (പരമ്പരാഗത വെടിക്കെട്ട്) എന്ന അത്ഭുതകരമായ കാഴ്ച കാണാൻ ആയിരക്കണക്കിന് ഭക്തർ ഒത്തുകൂടുന്നു. ഇത് ദക്ഷിണ മലബാറിലെ ഏറ്റവും വലുതും ഉത്സാഹഭരിതവുമായ ആഘോഷങ്ങളിൽ ഒന്നാണ്.`,
         `വെടിക്കെട്ട് കൂടാതെ, ആനയേറ്റം, പകൽ വേല, പഞ്ചവാദ്യം, തായമ്പക, കുടമാറ്റം, കുമ്മാട്ടി എന്നിവ ഉൾപ്പെടെ നിരവധി പരമ്പരാഗത കലകളും ചടങ്ങുകളും ഉത്സവത്തിൽ അരങ്ങേറുന്നു.`,
         `ദേവിയുടെ മൂലസ്ഥാനമായി കണക്കാക്കപ്പെടുന്ന ഉള്ളാട്ട്കാവിലും പ്രത്യേക ചടങ്ങുകൾ നടത്തപ്പെടുന്നു, ഇത് ക്ഷേത്രത്തിന്റെ ആത്മീയ പ്രാധാന്യം കൂടുതൽ ശക്തിപ്പെടുത്തുന്നു.`
       ]

@@ -67,6 +67,12 @@ export default function Header() {
                         </NavLink>
                     </li>
 
+                     <li>
+                        <NavLink to="/ren" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>
+                            {t.navLinks.ren}
+                        </NavLink>
+                    </li>
+
                     <li>
                         <NavLink to="/event" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>
                             {t.navLinks.event}

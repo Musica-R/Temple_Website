@@ -167,6 +167,77 @@
                     "desc": "Devotees entering the holy premises",
                     "img": "/assets/vedifestival.jpeg"
                 }
+            ],
+            "chapter3": {
+                "number": "03",
+                "title": "Upadevathas",
+                "sub": "The divine guardians who bless and protect"
+            },
+            "chapter4": {
+                "number": "04",
+                "title": "Lakshadeepam",
+                "sub": "A thousand flames, a thousand prayers",
+                "intro": "Lakshadeepam — the festival of a thousand lamps — transforms the entire temple into a river of golden flame. Each lamp lit by a devotee carries a silent prayer, a heartfelt wish, and an offering of light to the divine mother. As the oil burns and the wicks glow, the darkness retreats and the sacred grounds shimmer with an otherworldly radiance."
+            },
+            "upadevathas": [
+                {
+                    "name": "Sri Kurumba Bhagavathy",
+                    "desc": "The presiding goddess, the eternal mother who protects all devotees with her divine grace.",
+                    "tag": "Main Deity",
+                    "img": "/assets/maingod.jpeg"
+                },
+                {
+                    "name": "Ganapathy",
+                    "desc": "The remover of obstacles, invoked at every sacred beginning with devotion.",
+                    "tag": "Vighna Naashaka",
+                    "img": "/assets/vina.jpg"
+                },
+                {
+                    "name": "Vasoorimala",
+                    "desc": "The fierce yet compassionate goddess who guards devotees from pestilence and ill-fate.",
+                    "tag": "Raksha Devi",
+                    "img": "/assets/vas.jpg"
+                },
+                {
+                    "name": "Siva Temple",
+                    "desc": "The abode of Mahadeva, where Shiva's infinite presence pervades with stillness and power.",
+                    "tag": "Mahadeva",
+                    "img": "/assets/siva.jpg"
+                },
+                {
+                    "name": "Velu Panikker",
+                    "desc": "The valiant warrior deity, protector of the temple's sacred grounds and traditions.",
+                    "tag": "Kshetra Paala",
+                    "img": "/assets/maingod.jpeg"
+                },
+                {
+                    "name": "Naagangal",
+                    "desc": "The sacred serpent deities, guardians of fertility, prosperity, and ancestral blessings.",
+                    "tag": "Naga Devatha",
+                    "img": "/assets/naa.jpg"
+                }
+            ],
+            "lakshadeepam": [
+                {
+                    "title": "Thousand Lamps",
+                    "caption": "A sea of flames lit in devotion",
+                    "img": "/ass1/1.jpeg"
+                },
+                {
+                    "title": "Sacred Illumination",
+                    "caption": "Each flame carries a prayer",
+                    "img": "/ass1/2.jpeg"
+                },
+                {
+                    "title": "Divine Glow",
+                    "caption": "The sanctum aglow with golden light",
+                    "img": "/ass1/4.jpeg"
+                },
+                {
+                    "title": "Evening Deepam",
+                    "caption": "Twilight aarti in divine splendour",
+                    "img": "/ass1/3.jpeg"
+                }
             ]
         },
         "TA": {
@@ -336,6 +407,77 @@
                     "desc": "பக்தர்கள் புனித வளாகத்தில் நுழைகின்றனர்",
                     "img": "/assets/vedifestival.jpeg"
                 }
+            ],
+            "chapter3": {
+                "number": "03",
+                "title": "உப தெய்வங்கள்",
+                "sub": "ஆசீர்வதிக்கும் தெய்வீக காவலர்கள்"
+            },
+            "chapter4": {
+                "number": "04",
+                "title": "லக்ஷதீபம்",
+                "sub": "ஆயிரம் சுடர்கள், ஆயிரம் பிரார்த்தனைகள்",
+                "intro": "லக்ஷதீபம் — ஆயிரம் விளக்குகளின் திருவிழா — முழு கோயிலையும் பொன்னொளியின் நதியாக மாற்றுகிறது. ஒவ்வொரு பக்தரும் ஏற்றும் விளக்கு ஒரு மௌன பிரார்த்தனையை, ஆழமான விருப்பத்தை, தெய்வீக அன்னைக்கு ஒளியின் அர்ப்பணத்தை சுமக்கிறது. எண்ணெய் எரிய எரிய, திரிகள் ஒளிர ஒளிர, இருள் விலகி புனித வளாகம் அலௌகீக பிரகாசத்தில் மின்னுகிறது."
+            },
+            "upadevathas": [
+                {
+                    "name": "ஸ்ரீ குறும்ப பகவதி",
+                    "desc": "பிரதான தெய்வம், தன் தெய்வீக அருளால் அனைத்து பக்தர்களையும் காக்கும் நித்திய அன்னை.",
+                    "tag": "முதன்மை தெய்வம்",
+                    "img": "/assets/maingod.jpeg"
+                },
+                {
+                    "name": "கணபதி",
+                    "desc": "தடைகளை நீக்குபவர், ஒவ்வொரு புனித தொடக்கத்திலும் பக்தியுடன் வணங்கப்படுபவர்.",
+                    "tag": "விக்ன நாசகன்",
+                    "img": "/assets/vina.jpg"
+                },
+                {
+                    "name": "வசூரிமாலா",
+                    "desc": "கடுமையான ஆனால் கருணையுள்ள தேவி, பக்தர்களை தொற்று நோய்கள் மற்றும் தீய விதியிலிருந்து காக்கிறாள்.",
+                    "tag": "ரக்ஷா தேவி",
+                    "img": "/assets/vas.jpg"
+                },
+                {
+                    "name": "சிவன் கோயில்",
+                    "desc": "மகாதேவரின் வாசம், சிவனின் எல்லையற்ற சாந்நித்தியம் அமைதியுடன் நிறைந்திருக்கும் இடம்.",
+                    "tag": "மகாதேவன்",
+                    "img": "/assets/siva.jpg"
+                },
+                {
+                    "name": "வேலு பணிக்கர்",
+                    "desc": "வீரமிக்க போர்த் தெய்வம், கோயிலின் புனித தளங்கள் மற்றும் பாரம்பரியத்தைப் பாதுகாப்பவர்.",
+                    "tag": "க்ஷேத்ர பாலகன்",
+                    "img": "/assets/maingod.jpeg"
+                },
+                {
+                    "name": "நாகங்கள்",
+                    "desc": "புனித நாக தெய்வங்கள், வளம், செழிப்பு மற்றும் மூதாதையரின் ஆசீர்வாதங்களின் காவலர்கள்.",
+                    "tag": "நாக தேவதா",
+                    "img": "/assets/naa.jpg"
+                }
+            ],
+            "lakshadeepam": [
+                {
+                    "title": "ஆயிரம் விளக்குகள்",
+                    "caption": "பக்தியில் ஏற்றப்பட்ட சுடர்களின் கடல்",
+                     "img": "/ass1/1.jpeg"
+                },
+                {
+                    "title": "புனித ஒளி",
+                    "caption": "ஒவ்வொரு சுடரும் ஒரு பிரார்த்தனை சுமக்கிறது",
+                      "img": "/ass1/2.jpeg"
+                },
+                {
+                    "title": "தெய்வீக பிரகாசம்",
+                    "caption": "பொன்னொளியில் மின்னும் சந்நிதி",
+                    "img": "/ass1/4.jpeg"
+                },
+                {
+                    "title": "மாலை தீபம்",
+                    "caption": "தெய்வீக ஆடம்பரத்தில் சந்தியா ஆரத்தி",
+                     "img": "/ass1/3.jpeg"
+                }
             ]
         },
         "ML": {
@@ -504,6 +646,77 @@
                     "title": "ക്ഷേത്ര നടപ്പുര",
                     "desc": "ഭക്തർ പുണ്യ വളപ്പിൽ പ്രവേശിക്കുന്നു",
                     "img": "/assets/vedifestival.jpeg"
+                }
+            ],
+            "chapter3": {
+                "number": "03",
+                "title": "ഉപദേവതകൾ",
+                "sub": "അനുഗ്രഹിക്കുന്ന ദൈവിക കാവൽക്കാർ"
+            },
+            "chapter4": {
+                "number": "04",
+                "title": "ലക്ഷദീപം",
+                "sub": "ആയിരം ദീപങ്ങൾ, ആയിരം പ്രാർഥനകൾ",
+                "intro": "ലക്ഷദീപം — ആയിരം ദീപങ്ങളുടെ ഉത്സവം — മുഴുവൻ ക്ഷേത്രത്തെയും സ്വർണ്ണ ജ്വാലകളുടെ നദിയാക്കി മാറ്റുന്നു. ഓരോ ഭക്തനും കൊളുത്തുന്ന ദീപം ഒരു നിശ്ശബ്ദ പ്രാർഥനയും ഹൃദയത്തിന്റെ ആഗ്രഹവും ദൈവിക അമ്മയ്ക്കുള്ള പ്രകാശ ദർശനവും സുമഗ്നമാണ്. എണ്ണ കത്തുമ്പോൾ, തിരികൾ ജ്വലിക്കുമ്പോൾ, ഇരുൾ നീങ്ങി പുണ്യ ഭൂമി അലൗകിക പ്രകാശത്തിൽ തിളങ്ങുന്നു."
+            },
+            "upadevathas": [
+                {
+                    "name": "ശ്രീ കുറുമ്പ ഭഗവതി",
+                    "desc": "പ്രതിഷ്ഠ ദേവത, തന്റെ ദൈവിക കൃപയാൽ എല്ലാ ഭക്തരെയും കാക്കുന്ന നിത്യ അമ്മ.",
+                    "tag": "മുഖ്യ ദേവത",
+                     "img": "/assets/maingod.jpeg"
+                },
+                {
+                    "name": "ഗണപതി",
+                    "desc": "വിഘ്നങ്ങൾ നീക്കുന്നവൻ, ഓരോ പുണ്യ ആരംഭത്തിലും ഭക്തിയോടെ ആരാധിക്കപ്പെടുന്നവൻ.",
+                    "tag": "വിഘ്ന നാശകൻ",
+                    "img": "/assets/vina.jpg"
+                },
+                {
+                    "name": "വസൂരിമാല",
+                    "desc": "കഠിനവും എന്നാൽ കരുണയുള്ളതുമായ ദേവി, ഭക്തരെ മഹാമാരിയിൽ നിന്നും ദുർഭാഗ്യത്തിൽ നിന്നും കാക്കുന്നു.",
+                    "tag": "രക്ഷാ ദേവി",
+                    "img": "/assets/vas.jpg"
+                },
+                {
+                    "name": "ശിവ ക്ഷേത്രം",
+                    "desc": "മഹാദേവന്റെ ആവാസം, ശിവന്റെ അനന്തമായ സാന്നിദ്ധ്യം നിശ്ശബ്ദതയോടും ശക്തിയോടും കൂടി നിറഞ്ഞിരിക്കുന്ന ഇടം.",
+                    "tag": "മഹാദേവൻ",
+                    "img": "/assets/siva.jpg"
+                },
+                {
+                    "name": "വേലു പണിക്കർ",
+                    "desc": "വീരനായ യോദ്ധൃ ദേവത, ക്ഷേത്രത്തിന്റെ പുണ്യ ഭൂമിയും പാരമ്പര്യങ്ങളും സംരക്ഷിക്കുന്നവൻ.",
+                    "tag": "ക്ഷേത്ര പാലൻ",
+                   "img": "/assets/maingod.jpeg"
+                },
+                {
+                    "name": "നാഗങ്ങൾ",
+                    "desc": "പുണ്യ സർപ്പ ദേവതകൾ, ഫലഭൂയിഷ്ഠത, സമൃദ്ധി, പൂർവ്വജ അനുഗ്രഹങ്ങളുടെ കാവൽക്കാർ.",
+                    "tag": "നാഗ ദേവത",
+                    "img": "/assets/naa.jpg"
+                }
+            ],
+            "lakshadeepam": [
+                {
+                    "title": "ആയിരം ദീപങ്ങൾ",
+                    "caption": "ഭക്തിയിൽ തെളിഞ്ഞ ജ്വാലകളുടെ കടൽ",
+                     "img": "/ass1/1.jpeg"
+                },
+                {
+                    "title": "പുണ്യ പ്രകാശം",
+                    "caption": "ഓരോ ദീപവും ഒരു പ്രാർഥന വഹിക്കുന്നു",
+                    "img": "/ass1/2.jpeg"
+                },
+                {
+                    "title": "ദൈവിക ആഭ",
+                    "caption": "സ്വർണ്ണ ഒളിയിൽ തിളങ്ങുന്ന ശ്രീകോവിൽ",
+                    "img": "/ass1/4.jpeg"
+                },
+                {
+                    "title": "സന്ധ്യ ദീപം",
+                    "caption": "ദൈവിക പ്രൗഢിയിൽ സന്ധ്യാ ആരതി",
+                     "img": "/ass1/3.jpeg"
                 }
             ]
         }

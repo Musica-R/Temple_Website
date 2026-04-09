@@ -28,6 +28,7 @@ export default function DivineGallery() {
         return () => observer.disconnect();
     }, []);
     const verseBandRef = useRef(null);
+    const upadevathaRef = useRef(null);
     const templeRef = useRef(null);
     const historyRef = useRef(null);
     useEffect(() => {
@@ -43,7 +44,7 @@ export default function DivineGallery() {
             { threshold: 0.15 }
         );
 
-        [verseBandRef, templeRef, historyRef].forEach((ref) => {
+        [verseBandRef, templeRef, historyRef, upadevathaRef].forEach((ref) => {
             if (ref.current) observer.observe(ref.current);
         });
 
@@ -66,7 +67,7 @@ export default function DivineGallery() {
                     <h1 className="oh-anim-title">{t.heroTitle}</h1>
                     {/* <p className="hero-sub oh-anim-sub">{t.heroSub}</p> */}
                     <div className="ourheritage-breadcrumb oh-anim-breadcrumb">
-                        <span onClick={() => navigate("/")} style={{cursor:"pointer"}}>{t.breadcrumb.home}</span>
+                        <span onClick={() => navigate("/")} style={{ cursor: "pointer" }}>{t.breadcrumb.home}</span>
                         <span className="ourheritage-dot">ॐ</span>
                         <span className="ourheritage-active">{t.breadcrumb.active}</span>
                     </div>
@@ -170,6 +171,109 @@ export default function DivineGallery() {
                         <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentRight.btn}</button>
                     </div>
                 </div>
+
+
+                {/* ══ CHAPTER THREE — UPADEVATAS ══ */}
+
+                <div className="shrine-root">
+
+                    {/* ── Chapter Header ── */}
+                    <div className="chapter-header">
+                        <span className="chapter-number">{t.chapter3.number}</span>
+                        <div className="chapter-lines">
+                            <span></span><i>🔱</i><span></span>
+                        </div>
+                        <h2 className="chapter-title">{t.chapter3.title}</h2>
+                        <p className="chapter-sub">{t.chapter3.sub}</p>
+                    </div>
+
+                    {/* ── Section Header ── */}
+                    <div className="shrine-header">
+                        <span className="shrine-eyebrow">Divine Gallery</span>
+                        <div className="shrine-divider">
+                            <div className="shrine-divider-line"></div>
+                            <div className="shrine-divider-diamond"></div>
+                            <div className="shrine-divider-diamond small"></div>
+                            <div className="shrine-divider-diamond"></div>
+                            <div className="shrine-divider-line right"></div>
+                        </div>
+                    </div>
+
+                    {/* ── Main Deity Hero ── */}
+                    <div className="main-deity-hero">
+                        <div className="main-deity-frame">
+                            <img
+                                className="main-deity-img"
+                                src={t.upadevathas[0].img}
+                                alt={t.upadevathas[0].name}
+                            />
+                            <div className="main-deity-overlay">
+                                <span className="main-deity-tag">{t.upadevathas[0].tag}</span>
+                                <h3 className="main-deity-name">{t.upadevathas[0].name}</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* ── Sub Deity Label ── */}
+                    <div className="sub-deities-label">
+                        <span>&#9670; Sub Deities &#9670;</span>
+                    </div>
+
+                    {/* ── 5 Sub Deities Strip ── */}
+                    <div className="sub-deities-strip">
+                        {t.upadevathas.slice(1, 6).map((deity, i) => (
+                            <div key={i} className="sub-shrine">
+                                <div className="sub-shrine-inner">
+                                    <div className="sub-shrine-img-wrap">
+                                        <img
+                                            className="sub-shrine-img"
+                                            src={deity.img}
+                                            alt={deity.name}
+                                        />
+                                        <div className="sub-shrine-num-badge">0{i + 1}</div>
+                                    </div>
+                                    <div className="sub-shrine-footer">
+                                        <span className="sub-shrine-name">{deity.name}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+
+
+
+                {/* ══ CHAPTER FOUR — LAKSHADEEPAM ══ */}
+                <div className="chapter-header" style={{ marginTop: "90px" }}>
+                    <span className="chapter-number">{t.chapter4.number}</span>
+                    <div className="chapter-lines">
+                        <span></span><i>🪔</i><span></span>
+                    </div>
+                    <h2 className="chapter-title">{t.chapter4.title}</h2>
+                    <p className="chapter-sub">{t.chapter4.sub}</p>
+                </div>
+
+                <div className="laksha-section">
+                    <div className="laksha-intro">
+                        <p>{t.chapter4.intro}</p>
+                    </div>
+                    <div className="laksha-grid">
+                        {t.lakshadeepam.map((item, i) => (
+                            <div className="laksha-card" key={i}>
+                                <div className="laksha-img-wrap">
+                                    <img src={item.img} alt={item.title} />
+                                    <div className="laksha-overlay">
+                                        <span className="laksha-title">{item.title}</span>
+                                        <span className="laksha-caption">{item.caption}</span>
+                                    </div>
+                                    <div className="laksha-flame">🪔</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
 
                 {/* ── TESTIMONIALS BAND ── */}
                 <div className="gallery-testimonials">

@@ -12,6 +12,8 @@ import { LanguageProvider } from "./Context/Languagecontext";
 import ScrollToTop from './Components/ScrollTop';
 import Event from './Pages/Event';
 import MobileArrow from './Components/MobileArrow';
+import RenovationPage from './Pages/RenovationPage';
+import FooterCredit from './Pages/FooterCredit';
 // import LanguageFontProvider from "./Components/LanguageFontProvider";
 
 function App() {
@@ -28,10 +30,12 @@ function App() {
             {/* <Route path="/booking" element={<BookPooja />} /> */}
             <Route path="/donation" element={<DonationPage />} />
             <Route path="/gallery" element={<DivineGallery />} />
+            <Route path="/ren" element={<RenovationPage />} />
             <Route path="/event" element={<Event />} />
             <Route path="/contact" element={<ReachUs />} />
           </Routes>
           <Footer />
+          <FooterCredit />
           <MobileArrow />
         </LanguageProvider>
       </BrowserRouter>

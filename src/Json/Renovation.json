@@ -1,0 +1,385 @@
+{
+    "renovation": {
+        "EN": {
+            "mainTitle": "Various Renovation Activities at Sree Kurumba Bhagavathi Temple",
+            "tantriLabel": "Temple Tantri",
+            "tantri": "Brahmashree Andaladi A.M. Parameswaran (Unni) Namboothiripad",
+            "images": [
+                {
+                    "src": "/assets/ren1.jpeg",
+                    "title": "Sree Kurumba Bhagavathi Temple",
+                    "desc": "Sreekovil chembola covering, Nalambalam and Pradakshina path renovation"
+                },
+                {
+                    "src": "/assets/ren2.jpeg",
+                    "title": "Ganapathi Sreekovil",
+                    "desc": "Construction of new Sreekovil"
+                },
+                {
+                    "src": "/assets/ren3.jpeg",
+                    "title": "Shiva Temple",
+                    "desc": "Construction of Chuttambalam, Namaskara Mandapam, Pradakshina path, Nadappura and compound wall"
+                },
+                {
+                    "src": "/assets/ren4.jpeg",
+                    "title": "Vekkurushi Bhagavathi Temple",
+                    "desc": "Sreekovil renovation and Pradakshina path construction"
+                }
+            ],
+            "trustee": {
+                "heading": "Trust Board Members",
+                "chairman": "Mathatthil Sri. Gopalan Nair (Chairman)",
+                "manager": "Temple Manager: Sri A. Anand",
+                "members": [
+                    {
+                        "place": "Parakkal",
+                        "name": "Sri. Mohanan"
+                    },
+                    {
+                        "place": "Ulladin",
+                        "name": "Srimathi. Ponnamma"
+                    },
+                    {
+                        "place": "Moothettath",
+                        "name": "Sri. Suresh"
+                    },
+                    {
+                        "place": "Kollaykkal",
+                        "name": "Sri. Lakshmi Narayanan"
+                    },
+                    {
+                        "place": "Kulukkath",
+                        "name": "Sri. Babu"
+                    }
+                ]
+            },
+            "renovation": {
+                "heading": "Renovation Committee",
+                "subheading": "Patrons",
+                "members": [
+                    "Sri. V. Bijoy",
+                    "Sri. C. Prasanth",
+                    "Sri. A. Sashidharan"
+                ]
+            },
+            "office": {
+                "heading": "Office Bearers",
+                "president": {
+                    "label": "President",
+                    "name": "Sri. Ajeesh K."
+                },
+                "secretary": {
+                    "label": "Secretary",
+                    "name": "Sri. Sathish K."
+                },
+                "treasurer": {
+                    "label": "Treasurer",
+                    "name": "Temple Manager"
+                },
+                "jt_treasurer": {
+                    "label": "Jt. Treasurer",
+                    "name": "Sri. Muralidharan Pillai"
+                },
+                "vicePresidents": {
+                    "label": "Vice Presidents",
+                    "names": [
+                        "Sri. Venugopaal",
+                        "Sri. Chinnan Ezhuthachan",
+                        "Sri. Shivadasan",
+                        "Sri. Jayesh"
+                    ]
+                },
+                "jt_secretaries": {
+                    "label": "Jt. Secretaries",
+                    "names": [
+                        "Sri. K. Shivadasan",
+                        "Sri. Unmesh",
+                        "Sri. V. Sukumaran",
+                        "Sri. Radhakrishnan P."
+                    ]
+                },
+                "executives": {
+                    "label": "Executive Members",
+                    "names": [
+                        "Sri. Swaroop",
+                        "Sri. Neelakandan",
+                        "Sri. Krishnakumar",
+                        "Sri. Kalidasan",
+                        "Sri. Arumukhan",
+                        "Sri. Radhakrishnan V.",
+                        "Sri. Murukaraj",
+                        "Sri. Guruvayoorppan",
+                        "Sri. Subrahmanyam",
+                        "Sri. Gireeshkumar"
+                    ]
+                }
+            },
+            "donation": {
+                "heading": "DONATION MAY PLEASE BE SENT TO",
+                "committee": "SREE KURUMBA BAGAVATHI KSHETHRA NAVEEKARANA COMMITTEE",
+                "account": "4287000100043975",
+                "ifsc": "PUNB0428700",
+                "upi": "9037092183m@pnb",
+                "bank": "Punjab National Bank, Kanjikode",
+                "accountLabel": "A/C No.",
+                "ifscLabel": "IFSC",
+                "upiLabel": "UPI ID",
+                "scanLabel": "Scan to Pay"
+            }
+        },
+        "TA": {
+            "mainTitle": "ஸ்ரீ குறும்பா பகவதி கோவிலில் பல்வேறு புனரமைப்பு நடவடிக்கைகள்",
+            "tantriLabel": "கோவில் தந்திரி",
+            "tantri": "பிரஹ்மஸ்ரீ அண்டலாடி ஏ.எம். பரமேஸ்வரன் (உண்ணி) நம்பூதிரிப்பாட்",
+            "images": [
+                {
+                    "src": "/assets/ren1.jpeg",
+                    "title": "ஸ்ரீ குறும்பா பகவதி கோவில்",
+                    "desc": "ஸ்ரீகோவில் செம்போல மூடுதல், நாலம்பலம் மற்றும் பிரதக்ஷிண பாதை புனரமைப்பு"
+                },
+                {
+                    "src": "/assets/ren2.jpeg",
+                    "title": "கணபதி ஸ்ரீகோவில்",
+                    "desc": "புதிய ஸ்ரீகோவில் கட்டுமானம்"
+                },
+                {
+                    "src": "/assets/ren3.jpeg",
+                    "title": "சிவ கோவில்",
+                    "desc": "சுற்றம்பலம், நமஸ்காரமண்டபம், பிரதக்ஷிண வழி, நடப்புரை மற்றும் சுற்றுச்சுவர் கட்டுமானம்"
+                },
+                {
+                    "src": "/assets/ren4.jpeg",
+                    "title": "வேக்குருஷி பகவதி கோவில்",
+                    "desc": "ஸ்ரீகோவில் புனரமைப்பு மற்றும் பிரதக்ஷிண பாதை கட்டுமானம்"
+                }
+            ],
+            "trustee": {
+                "heading": "அறக்கட்டளை வாரிய உறுப்பினர்கள்",
+                "chairman": "மடத்தில் ஸ்ரீ. கோபாலன் நாயர் (தலைவர்)",
+                "manager": "கோவில் மேலாளர்: ஸ்ரீ ஏ. ஆனந்த்",
+                "members": [
+                    {
+                        "place": "பாறக்கல்",
+                        "name": "ஸ்ரீ. மோகனன்"
+                    },
+                    {
+                        "place": "உள்ளாடில்",
+                        "name": "ஸ்ரீமதி. பொன்னம்மாள்"
+                    },
+                    {
+                        "place": "மூத்தேடத்த்",
+                        "name": "ஸ்ரீ. சுரேஷ்"
+                    },
+                    {
+                        "place": "கொல்லாய்க்கல்",
+                        "name": "ஸ்ரீ. லக்ஷ்மி நாராயணன்"
+                    },
+                    {
+                        "place": "குலூக்கத்த்",
+                        "name": "ஸ்ரீ. பாபு"
+                    }
+                ]
+            },
+            "renovation": {
+                "heading": "புனரமைப்பு குழு",
+                "subheading": "ஆதரவாளர்கள்",
+                "members": [
+                    "ஸ்ரீ. வி. பிஜோய்",
+                    "ஸ்ரீ. சி. பிரசாந்த்",
+                    "ஸ்ரீ. ஏ. சசிதரன்"
+                ]
+            },
+            "office": {
+                "heading": "பொறுப்பாளர்கள்",
+                "president": {
+                    "label": "தலைவர்",
+                    "name": "ஸ்ரீ. அஜீஷ் கே."
+                },
+                "secretary": {
+                    "label": "செயலாளர்",
+                    "name": "ஸ்ரீ. சதீஷ் கே."
+                },
+                "treasurer": {
+                    "label": "பொருளாளர்",
+                    "name": "கோவில் மேலாளர்"
+                },
+                "jt_treasurer": {
+                    "label": "இணை பொருளாளர்",
+                    "name": "ஸ்ரீ. முரளீதரன் பிள்ளை"
+                },
+                "vicePresidents": {
+                    "label": "துணைத் தலைவர்கள்",
+                    "names": [
+                        "ஸ்ரீ. வேணுகோபால்",
+                        "ஸ்ரீ. சின்னன் எழுத்தச்சன்",
+                        "ஸ்ரீ. சிவதாசன்",
+                        "ஸ்ரீ. ஜயேஷ்"
+                    ]
+                },
+                "jt_secretaries": {
+                    "label": "இணை செயலாளர்கள்",
+                    "names": [
+                        "ஸ்ரீ. கே. சிவதாசன்",
+                        "ஸ்ரீ. உன்மேஷ்",
+                        "ஸ்ரீ. வி. சுகுமாரன்",
+                        "ஸ்ரீ. ராதாகிருஷ்ணன் பி."
+                    ]
+                },
+                "executives": {
+                    "label": "நிர்வாக உறுப்பினர்கள்",
+                    "names": [
+                        "ஸ்ரீ. ஸ்வரூப்",
+                        "ஸ்ரீ. நீலகண்டன்",
+                        "ஸ்ரீ. கிருஷ்ணகுமார்",
+                        "ஸ்ரீ. காளிதாசன்",
+                        "ஸ்ரீ. ஆறுமுகன்",
+                        "ஸ்ரீ. ராதாகிருஷ்ணன் வி.",
+                        "ஸ்ரீ. முருகராஜ்",
+                        "ஸ்ரீ. குருவாயூர்ப்பன்",
+                        "ஸ்ரீ. சுப்பிரமண்யன்",
+                        "ஸ்ரீ. கிரீஷ்குமார்"
+                    ]
+                }
+            },
+            "donation": {
+                "heading": "நன்கொடை அனுப்ப வேண்டிய முகவரி",
+                "committee": "ஸ்ரீ குறும்பா பகவதி க்ஷேத்ர நவீகரண கமிட்டி",
+                "account": "4287000100043975",
+                "ifsc": "PUNB0428700",
+                "upi": "9037092183m@pnb",
+                "bank": "பஞ்சாப் நேஷனல் வங்கி, கஞ்சிக்கோட்",
+                "accountLabel": "கணக்கு எண்",
+                "ifscLabel": "IFSC குறியீடு",
+                "upiLabel": "UPI ID",
+                "scanLabel": "ஸ்கேன் செய்து பணம் அனுப்பவும்"
+            }
+        },
+        "ML": {
+            "mainTitle": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രത്തിലെ വിവിധ നവീകരണ പ്രവർത്തനങ്ങൾ",
+            "tantriLabel": "ക്ഷേത്രം തന്ത്രി",
+            "tantri": "ബ്രഹ്മശ്രീ അണ്ടലാടി എ.എം.പരമേശ്വരൻ (ഉണ്ണി) നമ്പൂതിരിപ്പാട്",
+            "images": [
+                {
+                    "src": "/assets/ren1.jpeg",
+                    "title": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം",
+                    "desc": "ശ്രീകോവിൽ ചെമ്പോല പൊതിയൽ നാലമ്പലം, പ്രദക്ഷിണ വഴി നവീകരിക്കൽ"
+                },
+                {
+                    "src": "/assets/ren2.jpeg",
+                    "title": "ഗണപതി ശ്രീകോവിൽ",
+                    "desc": "പുതിയ ശ്രീകോവിൽ നിർമ്മാണം"
+                },
+                {
+                    "src": "/assets/ren3.jpeg",
+                    "title": "ശിവക്ഷേത്രം",
+                    "desc": "ചുറ്റമ്പലം, നമസ്കാര മണ്ഡപം, പ്രദക്ഷിണവഴി, നടപ്പുര, ചുറ്റുമതിൽ എന്നിവയുടെ നിർമ്മാണം"
+                },
+                {
+                    "src": "/assets/ren4.jpeg",
+                    "title": "വേക്കുറുശ്ശി ഭഗവതി ക്ഷേത്രം",
+                    "desc": "ശ്രീകോവിൽ നവീകരിക്കൽ, പ്രദക്ഷിണ വഴി നിർമ്മാണം"
+                }
+            ],
+            "trustee": {
+                "heading": "ട്രസ്റ്റി ബോർഡ് അംഗങ്ങൾ",
+                "chairman": "മഠത്തിൽ ശ്രീ. ഗോപാലൻ നായർ (ചെയർമാൻ)",
+                "manager": "ക്ഷേത്രം മാനേജർ: ശ്രീ എ. ആനന്ദ്",
+                "members": [
+                    {
+                        "place": "പാറക്കൽ",
+                        "name": "ശ്രീ. മോഹനൻ"
+                    },
+                    {
+                        "place": "ഉള്ളാടിൽ",
+                        "name": "ശ്രീമതി. പൊന്നമ്മാൾ"
+                    },
+                    {
+                        "place": "മൂത്തേടത്ത്",
+                        "name": "ശ്രീ. സുരേഷ്"
+                    },
+                    {
+                        "place": "കൊല്ലായ്ക്കൽ",
+                        "name": "ശ്രീ. ലക്ഷ്മി നാരായണൻ"
+                    },
+                    {
+                        "place": "കൂലൂക്കത്ത്",
+                        "name": "ശ്രീ. ബാബു"
+                    }
+                ]
+            },
+            "renovation": {
+                "heading": "നവീകരണ കമ്മിറ്റി",
+                "subheading": "രക്ഷാധികാരികൾ",
+                "members": [
+                    "ശ്രീ. വി. ബിജോയ്",
+                    "ശ്രീ. സി. പ്രശാന്ത്",
+                    "ശ്രീ. എ. ശശിധരൻ"
+                ]
+            },
+            "office": {
+                "heading": "ഭാരവാഹികൾ",
+                "president": {
+                    "label": "പ്രസിഡന്റ്",
+                    "name": "ശ്രീ. അജീഷ് കെ."
+                },
+                "secretary": {
+                    "label": "സെക്രട്ടറി",
+                    "name": "ശ്രീ. സതീഷ് കെ."
+                },
+                "treasurer": {
+                    "label": "ട്രഷറർ",
+                    "name": "ക്ഷേത്രം മാനേജർ"
+                },
+                "jt_treasurer": {
+                    "label": "ജോ. ട്രഷറർ",
+                    "name": "ശ്രീ. മുരളീധരൻ പിള്ള"
+                },
+                "vicePresidents": {
+                    "label": "വൈസ് പ്രസിഡന്റ്",
+                    "names": [
+                        "ശ്രീ. വേണുഗോപാൽ",
+                        "ശ്രീ. ചിന്നൻ എഴുത്തച്ഛൻ",
+                        "ശ്രീ. ശിവദാസൻ",
+                        "ശ്രീ. ജയേഷ്"
+                    ]
+                },
+                "jt_secretaries": {
+                    "label": "ജോ. സെക്രട്ടറി",
+                    "names": [
+                        "ശ്രീ. കെ. ശിവദാസൻ",
+                        "ശ്രീ. ഉൺമേഷ്",
+                        "ശ്രീ. വി. സുകുമാരൻ",
+                        "ശ്രീ. രാധാകൃഷ്ണൻ പി."
+                    ]
+                },
+                "executives": {
+                    "label": "എക്സിക്യൂട്ടിവ് അംഗങ്ങൾ",
+                    "names": [
+                        "ശ്രീ. സ്വരൂപ്",
+                        "ശ്രീ. നീലകണ്ഠൻ",
+                        "ശ്രീ. കൃഷ്ണകുമാർ",
+                        "ശ്രീ. കാളിദാസൻ",
+                        "ശ്രീ. ആറുമുഖൻ",
+                        "ശ്രീ. രാധാകൃഷ്ണൻ വി.",
+                        "ശ്രീ. മുരുകരാജ്",
+                        "ശ്രീ. ഗുരുവായൂർപ്പൻ",
+                        "ശ്രീ. സുബ്രഹ്മണ്യൻ",
+                        "ശ്രീ. ഗിരീഷ്കുമാർ"
+                    ]
+                }
+            },
+            "donation": {
+                "heading": "സംഭാവന അയക്കേണ്ട വിലാസം",
+                "committee": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്ര നവീകരണ കമ്മിറ്റി",
+                "account": "4287000100043975",
+                "ifsc": "PUNB0428700",
+                "upi": "9037092183m@pnb",
+                "bank": "പഞ്ചാബ് നാഷണൽ ബാങ്ക്, കഞ്ചിക്കോട്",
+                "accountLabel": "അക്കൗണ്ട് നം.",
+                "ifscLabel": "IFSC കോഡ്",
+                "upiLabel": "UPI ID",
+                "scanLabel": "സ്കാൻ ചെയ്ത് അടയ്ക്കുക"
+            }
+        }
+    }
+}

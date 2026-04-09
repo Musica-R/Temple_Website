@@ -72,33 +72,10 @@
                     ]
                 },
                 {
-                    "day": "14",
-                    "month": "Feb",
-                    "weekday": "Saturday",
-                    "title": "Cultural Inauguration · Ottanthullal · Nrithyarchana",
-                    "time": "6:30 PM · 7:00 PM · 8:00–9:30 PM",
-                    "special": false,
-                    "image": "/assets/dance.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "Cultural Programmes Inauguration"
-                        },
-                        {
-                            "label": "Ottanthullal",
-                            "text": "by Kumari Varna Muthethath · Dedicated by Sri. Satish Kumar Muthethath"
-                        },
-                        {
-                            "label": "Nrithyarchana",
-                            "text": "Natya Kshetra, Chittur · Kalamandalam Srimathi Jansisanuvum and others"
-                        }
-                    ]
-                },
-                {
                     "day": "15",
                     "month": "Feb",
                     "weekday": "Sunday",
-                    "title": "Varivozhuththu · Dance Evening",
+                    "title": "Varivozhuththu",
                     "time": "Shivarathri Auspicious Time",
                     "special": false,
                     "image": "/assets/dan.jpg",
@@ -114,37 +91,10 @@
                     ]
                 },
                 {
-                    "day": "16",
-                    "month": "Feb",
-                    "weekday": "Monday",
-                    "title": "Nritta Nrithyangal – Dance Performances",
-                    "time": "Classical & Folk Dance",
-                    "special": false,
-                    "image": "/assets/schooldance.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "Kumari Devanna V. Pothuvaal"
-                        },
-                        {
-                            "label": null,
-                            "text": "Kumari Gayathri Prasfilith – Dance School, Sas Nritta Peedom"
-                        },
-                        {
-                            "label": null,
-                            "text": "Mudra School of Dance"
-                        },
-                        {
-                            "label": null,
-                            "text": "Sreelakshmi Nritta Kalayam, Puthusheri"
-                        }
-                    ]
-                },
-                {
                     "day": "17",
                     "month": "Feb",
                     "weekday": "Tuesday",
-                    "title": "Cheriya Kummatti · Devotional Music Evening",
+                    "title": "Cheriya Kummatti",
                     "time": "Evening 6:30 – Avataranam",
                     "special": false,
                     "image": "/assets/music.jpg",
@@ -160,25 +110,6 @@
                         {
                             "label": null,
                             "text": "Dedicated by Sri. Narayanan & Srimathi. Shantha Narayanan, Chatham House, Chakkattupaara"
-                        }
-                    ]
-                },
-                {
-                    "day": "18",
-                    "month": "Feb",
-                    "weekday": "Wednesday",
-                    "title": "Dance Spectacle · Mohiniattam",
-                    "time": "Avataranam",
-                    "special": false,
-                    "image": "/assets/mok.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "Kalamandalam Anjali & Krishna Ayush presenting a classical dance spectacle"
-                        },
-                        {
-                            "label": "Mohiniattam",
-                            "text": "Performed by Varna Muthethath Puthusheri"
                         }
                     ]
                 },
@@ -367,33 +298,10 @@
                     ]
                 },
                 {
-                    "day": "14",
-                    "month": "பிப்",
-                    "weekday": "சனிக்கிழமை",
-                    "title": "கலை தொடக்கம் · ஒட்டன் துள்ளல் · நிருத்யார்ச்சனை",
-                    "time": "6:30 மா.பி · 7:00 மா.பி · 8:00–9:30 மா.பி",
-                    "special": false,
-                    "image": "/assets/dance.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "கலை நிகழ்ச்சிகளின் தொடக்க விழா"
-                        },
-                        {
-                            "label": "ஒட்டன் துள்ளல்",
-                            "text": "குமாரி வர்ணா முதேதத் அவர்களால் · ஸ்ரீ சதீஷ் குமார் முதேதத் அர்ப்பணம்"
-                        },
-                        {
-                            "label": "நிருத்யார்ச்சனை",
-                            "text": "நாட்ய க்ஷேத்ர, சிட்டூர் · கலாமண்டலம் ஸ்ரீமதி ஜன்சிசனுவும் மற்றவர்களும்"
-                        }
-                    ]
-                },
-                {
                     "day": "15",
                     "month": "பிப்",
                     "weekday": "ஞாயிற்றுக்கிழமை",
-                    "title": "வரிவொழுத்து · நடன மாலை",
+                    "title": "வரிவொழுத்து",
                     "time": "சிவராத்திரி புனிதமான நேரம்",
                     "special": false,
                     "image": "/assets/dan.jpg",
@@ -409,37 +317,10 @@
                     ]
                 },
                 {
-                    "day": "16",
-                    "month": "பிப்",
-                    "weekday": "திங்கட்கிழமை",
-                    "title": "நிருத்த நிருத்யங்கள் – நடன நிகழ்ச்சிகள்",
-                    "time": "செவ்விய மற்றும் நாட்டார் நடனம்",
-                    "special": false,
-                    "image": "/assets/schooldance.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "குமாரி தேவன்னா வி. போதுவால்"
-                        },
-                        {
-                            "label": null,
-                            "text": "குமாரி காயத்ரி பிரஸ்ஃபிலித் – நடன பள்ளி, சாஸ் நிருத்த பீடம்"
-                        },
-                        {
-                            "label": null,
-                            "text": "முத்ரா நடன பள்ளி"
-                        },
-                        {
-                            "label": null,
-                            "text": "ஸ்ரீலக்ஷ்மி நிருத்த கலாயம், புதுஷேரி"
-                        }
-                    ]
-                },
-                {
                     "day": "17",
                     "month": "பிப்",
                     "weekday": "செவ்வாய்க்கிழமை",
-                    "title": "சேரிய கும்மட்டி · பக்தி இசை மாலை",
+                    "title": "சேரிய கும்மட்டி",
                     "time": "மாலை 6:30 – அவதரணம்",
                     "special": false,
                     "image": "/assets/music.jpg",
@@ -455,25 +336,6 @@
                         {
                             "label": null,
                             "text": "ஸ்ரீ. நாராயணன் & ஸ்ரீமதி. சாந்தா நாராயணன், சாதம் ஹவுஸ், சக்காட்டுப்பாரா அர்ப்பணம்"
-                        }
-                    ]
-                },
-                {
-                    "day": "18",
-                    "month": "பிப்",
-                    "weekday": "புதன்கிழமை",
-                    "title": "நடன மகோத்சவம் · மோகினியாட்டம்",
-                    "time": "அவதரணம்",
-                    "special": false,
-                    "image": "/assets/mok.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "கலாமண்டலம் அஞ்சலி & கிருஷ்ண ஆயுஷ் செவ்விய நடன நிகழ்ச்சி"
-                        },
-                        {
-                            "label": "மோகினியாட்டம்",
-                            "text": "வர்ணா முதேதத் புதுஷேரி அவர்களால் நிகழ்த்தப்படும்"
                         }
                     ]
                 },
@@ -592,7 +454,7 @@
         },
         "ML": {
             "heroTag": "വാർഷിക ഉത്സവം",
-            "heroTitle": "വേടി ഉത്സവം 2026",
+            "heroTitle": "വെടി ഉത്സവം 2026",
             "heroSub": "പുതുശ്ശേരി ഭഗവതി ക്ഷേത്രത്തിൽ ഭക്തി, കല, പാരമ്പര്യത്തിന്റെ പവിത്ര ആഘോഷം",
             "breadcrumb": {
                 "home": "ഹോം",
@@ -605,15 +467,15 @@
                 "label": "മഹത്തായ സമാപനം",
                 "date": "24 ഫെബ്രുവരി 2026 — ചൊവ്വാഴ്ച",
                 "times": "രാവിലെ 6:00 · ഉച്ചക്ക് 1:00 · വൈകിട്ട് 7:30",
-                "caption": "14-ആം വേടി ഉത്സവത്തിന്റെ സമാപനം",
+                "caption": "14-ആം വെടി ഉത്സവത്തിന്റെ സമാപനം",
                 "tags": [
                     "ചെട്ടിയാർകമ്പ് കത്തിക്കൽ",
                     "പന്തം കൊളുത്തൽ ചടങ്ങ്",
-                    "ഈടു വേടി – ആദരവ് വെടി",
+                    "ഈടു വെടി – ആദരവ് വെടി",
                     "ഉത്സവ വിടവാങ്ങൽ"
                 ]
             },
-            "footer": "പുതുശ്ശേരി ഭഗവതി ക്ഷേത്രം · 14-ആം വേടി ഉത്സവം 2026",
+            "footer": "പുതുശ്ശേരി ഭഗവതി ക്ഷേത്രം · 14-ആം വെടി ഉത്സവം 2026",
             "events": [
                 {
                     "day": "11",
@@ -662,33 +524,10 @@
                     ]
                 },
                 {
-                    "day": "14",
-                    "month": "ഫെബ്",
-                    "weekday": "ശനിയാഴ്ച",
-                    "title": "കലാ ഉദ്ഘാടനം · ഒട്ടന്തുള്ളൽ · നൃത്യാർച്ചന",
-                    "time": "6:30 PM · 7:00 PM · 8:00–9:30 PM",
-                    "special": false,
-                    "image": "/assets/dance.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "കലാ പരിപാടികളുടെ ഉദ്ഘാടനം"
-                        },
-                        {
-                            "label": "ഒട്ടന്തുള്ളൽ",
-                            "text": "കുമാരി വർണ മുതേതത് അവതരിപ്പിക്കുന്നു · ശ്രീ. സതീഷ് കുമാർ മുതേതത് സമർപ്പിക്കുന്നു"
-                        },
-                        {
-                            "label": "നൃത്യാർച്ചന",
-                            "text": "നാട്യ ക്ഷേത്ര, ചിറ്റൂർ · കലാമണ്ഡലം ശ്രീമതി ജൻസിസനുവും മറ്റുള്ളവരും"
-                        }
-                    ]
-                },
-                {
                     "day": "15",
                     "month": "ഫെബ്",
                     "weekday": "ഞായറാഴ്ച",
-                    "title": "വരിവൊഴുത്ത് · നൃത്ത സന്ധ്യ",
+                    "title": "വരിവൊഴുത്ത്",
                     "time": "ശിവരാത്രി ശുഭ സമയം",
                     "special": false,
                     "image": "/assets/dan.jpg",
@@ -704,37 +543,10 @@
                     ]
                 },
                 {
-                    "day": "16",
-                    "month": "ഫെബ്",
-                    "weekday": "തിങ്കളാഴ്ച",
-                    "title": "നൃത്ത നൃത്യങ്ങൾ – നൃത്ത അവതരണങ്ങൾ",
-                    "time": "ശാസ്ത്രീയ & നാടൻ നൃത്തം",
-                    "special": false,
-                    "image": "/assets/schooldance.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "കുമാരി ദേവന്ന V. പോതുവാൽ"
-                        },
-                        {
-                            "label": null,
-                            "text": "കുമാരി ഗായത്രി പ്രസ്‌ഫിലിത് – ഡാൻസ് സ്കൂൾ, സാസ് നൃത്ത പീഡം"
-                        },
-                        {
-                            "label": null,
-                            "text": "മുദ്ര ഡാൻസ് സ്കൂൾ"
-                        },
-                        {
-                            "label": null,
-                            "text": "ശ്രീലക്ഷ്മി നൃത്ത കലായം, പുതുശ്ശേരി"
-                        }
-                    ]
-                },
-                {
                     "day": "17",
                     "month": "ഫെബ്",
                     "weekday": "ചൊവ്വാഴ്ച",
-                    "title": "ചെറിയ കുമ്മാട്ടി · ഭക്തി സംഗീത സന്ധ്യ",
+                    "title": "ചെറിയ കുമ്മാട്ടി",
                     "time": "വൈകിട്ട് 6:30 – അവതരണം",
                     "special": false,
                     "image": "/assets/music.jpg",
@@ -750,25 +562,6 @@
                         {
                             "label": null,
                             "text": "ശ്രീ. നാരായണൻ & ശ്രീമതി. ശാന്ത നാരായണൻ, ചാതം ഹൌസ്, ചക്കാട്ടുപ്പാറ സമർപ്പിക്കുന്നു"
-                        }
-                    ]
-                },
-                {
-                    "day": "18",
-                    "month": "ഫെബ്",
-                    "weekday": "ബുധനാഴ്ച",
-                    "title": "നൃത്ത മഹോത്സവം · മോഹിനിയാട്ടം",
-                    "time": "അവതരണം",
-                    "special": false,
-                    "image": "/assets/mok.jpg",
-                    "details": [
-                        {
-                            "label": null,
-                            "text": "കലാമണ്ഡലം അഞ്ജലി & കൃഷ്ണ ആയുഷ് ശാസ്ത്രീയ നൃത്ത അവതരണം"
-                        },
-                        {
-                            "label": "മോഹിനിയാട്ടം",
-                            "text": "വർണ മുതേതത് പുതുശ്ശേരി അവതരിപ്പിക്കുന്നു"
                         }
                     ]
                 },
@@ -860,7 +653,7 @@
                     "day": "23",
                     "month": "ഫെബ്",
                     "weekday": "തിങ്കളാഴ്ച",
-                    "title": "വേടി ഉത്സവം – മഹാ വെടിക്കെട്ട് ഉത്സവം",
+                    "title": "വെടി ഉത്സവം – മഹാ വെടിക്കെട്ട് ഉത്സവം",
                     "time": "രാവിലെ 4:00 · 5:00 · വൈകിട്ട് 4:00 · 6:00 · രാത്രി 12:00",
                     "special": true,
                     "image": "/assets/vedi.jpg",

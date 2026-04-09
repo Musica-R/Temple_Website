@@ -91,7 +91,7 @@ nav {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: white;
-  font-size: 14.5px;
+  font-size: 13.5px;
   font-weight: 400;
   letter-spacing: 0.5px;
 
@@ -216,13 +216,13 @@ nav::after {
 }
 
 .nav.TA .nav-links li a {
-  font-size: 11.5px;
+  font-size: 9px;
   font-family: 'Noto Sans Tamil', sans-serif;
 }
 
 /* Malayalam */
 .nav.ML .nav-links li a {
-  font-size: 14.5px;
+  font-size: 10.5px;
   font-family: 'Noto Sans Malayalam', sans-serif;
 }
 
@@ -292,7 +292,7 @@ nav::after {
   .nav-links li {
     width: 100%;
     text-align: center;
-    padding: 6px 0;
+    padding: 1px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
@@ -309,9 +309,9 @@ nav::after {
     display: none;
   }
 
-  .lang-selected {
-    padding: 0px 12px;
-  }
+  /* .lang-selected {
+    padding: 1px 12px;
+  } */
 
   .lang-dropdown {
     width: 100%;
