@@ -4,6 +4,8 @@ import { useLanguage } from "../Context/Languagecontext";
 import heroTranslations from "../Data/HeroTranslations";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lottie from 'react-lottie';
+import animationData from '../Json/Lightening Diya (Oil Lamp).json';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +20,7 @@ const AARTI_TIMES = [
   { label: "Morning Aarti", time: "05:30 AM" },
   { label: "Madhyan Aarti", time: "12:00 PM" },
   { label: "Evening Aarti", time: "07:00 PM" },
-  { label: "Shayan Aarti",  time: "09:00 PM" },
+  { label: "Shayan Aarti", time: "09:00 PM" },
 ];
 
 function getNextAarti() {
@@ -41,7 +43,7 @@ function usePetalCanvas(canvasRef) {
     const ctx = canvas.getContext("2d");
 
     const resize = () => {
-      canvas.width  = canvas.offsetWidth;
+      canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
     };
     resize();
@@ -58,21 +60,21 @@ function usePetalCanvas(canvasRef) {
     class Petal {
       constructor() { this.reset(true); }
       reset(init = false) {
-        this.x     = Math.random() * canvas.width;
-        this.y     = init ? Math.random() * canvas.height : -20;
-        this.size  = Math.random() * 7 + 5;
-        this.vy    = Math.random() * 1.2 + 0.5;
-        this.vx    = (Math.random() - 0.5) * 0.6;
+        this.x = Math.random() * canvas.width;
+        this.y = init ? Math.random() * canvas.height : -20;
+        this.size = Math.random() * 7 + 5;
+        this.vy = Math.random() * 1.2 + 0.5;
+        this.vx = (Math.random() - 0.5) * 0.6;
         this.angle = Math.random() * Math.PI * 2;
-        this.spin  = (Math.random() - 0.5) * 0.04;
-        this.sway  = Math.random() * 0.015 + 0.005;
+        this.spin = (Math.random() - 0.5) * 0.04;
+        this.sway = Math.random() * 0.015 + 0.005;
         this.swayT = Math.random() * Math.PI * 2;
         this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
       }
       update() {
         this.swayT += this.sway;
-        this.x     += this.vx + Math.sin(this.swayT) * 0.5;
-        this.y     += this.vy;
+        this.x += this.vx + Math.sin(this.swayT) * 0.5;
+        this.y += this.vy;
         this.angle += this.spin;
         if (this.y > canvas.height + 20) this.reset();
       }
@@ -113,20 +115,20 @@ export default function Hero() {
   const t = heroTranslations[language] || heroTranslations["EN"];
 
   /* ── Refs for GSAP parallax targets ── */
-  const sectionRef     = useRef(null);
-  const bgLayerRef     = useRef(null);      // slides — moves slowest (background)
-  const smokeRef       = useRef(null);      // smoke — mid layer
-  const hazeRef        = useRef(null);      // haze
-  const mandalaRef     = useRef(null);      // mandala — counter-scroll for depth
-  const ripplesRef     = useRef(null);      // ripples
-  const contentRef     = useRef(null);      // hero text — moves fastest (foreground)
-  const omRef          = useRef(null);
-  const dividerRef     = useRef(null);
-  const h1Ref          = useRef(null);
-  const subtitleRef    = useRef(null);
-  const diyasRef       = useRef(null);
-  const ctasRef        = useRef(null);
-  const scrollInvRef   = useRef(null);
+  const sectionRef = useRef(null);
+  const bgLayerRef = useRef(null);      // slides — moves slowest (background)
+  const smokeRef = useRef(null);      // smoke — mid layer
+  const hazeRef = useRef(null);      // haze
+  const mandalaRef = useRef(null);      // mandala — counter-scroll for depth
+  const ripplesRef = useRef(null);      // ripples
+  const contentRef = useRef(null);      // hero text — moves fastest (foreground)
+  const omRef = useRef(null);
+  const dividerRef = useRef(null);
+  const h1Ref = useRef(null);
+  const subtitleRef = useRef(null);
+  const diyasRef = useRef(null);
+  const ctasRef = useRef(null);
+  const scrollInvRef = useRef(null);
   const petalCanvasRef = useRef(null);
 
   usePetalCanvas(petalCanvasRef);
@@ -153,7 +155,7 @@ export default function Hero() {
           trigger: section,
           start: "top top",
           end: "bottom top",
-          scrub: 1.4,         
+          scrub: 1.4,
         },
       };
 
@@ -214,36 +216,36 @@ export default function Hero() {
         { autoAlpha: 0, y: -40 },
         { autoAlpha: 1, y: 0, duration: 1 }
       )
-      .fromTo(dividerRef.current,
-        { autoAlpha: 0, scaleX: 0 },
-        { autoAlpha: 1, scaleX: 1, duration: 0.6 },
-        "-=0.4"
-      )
-      .fromTo(h1Ref.current,
-        { autoAlpha: 0, y: 40 },
-        { autoAlpha: 1, y: 0, duration: 0.9 },
-        "-=0.3"
-      )
-      .fromTo(subtitleRef.current,
-        { autoAlpha: 0, y: 30 },
-        { autoAlpha: 1, y: 0, duration: 0.8 },
-        "-=0.5"
-      )
-      .fromTo(diyasRef.current,
-        { autoAlpha: 0, y: 20 },
-        { autoAlpha: 1, y: 0, duration: 0.7 },
-        "-=0.4"
-      )
-      .fromTo(ctasRef.current,
-        { autoAlpha: 0, y: 20 },
-        { autoAlpha: 1, y: 0, duration: 0.7 },
-        "-=0.4"
-      )
-      .fromTo(scrollInvRef.current,
-        { autoAlpha: 0 },
-        { autoAlpha: 1, duration: 1 },
-        "-=0.2"
-      );
+        .fromTo(dividerRef.current,
+          { autoAlpha: 0, scaleX: 0 },
+          { autoAlpha: 1, scaleX: 1, duration: 0.6 },
+          "-=0.4"
+        )
+        .fromTo(h1Ref.current,
+          { autoAlpha: 0, y: 40 },
+          { autoAlpha: 1, y: 0, duration: 0.9 },
+          "-=0.3"
+        )
+        .fromTo(subtitleRef.current,
+          { autoAlpha: 0, y: 30 },
+          { autoAlpha: 1, y: 0, duration: 0.8 },
+          "-=0.5"
+        )
+        .fromTo(diyasRef.current,
+          { autoAlpha: 0, y: 20 },
+          { autoAlpha: 1, y: 0, duration: 0.7 },
+          "-=0.4"
+        )
+        .fromTo(ctasRef.current,
+          { autoAlpha: 0, y: 20 },
+          { autoAlpha: 1, y: 0, duration: 0.7 },
+          "-=0.4"
+        )
+        .fromTo(scrollInvRef.current,
+          { autoAlpha: 0 },
+          { autoAlpha: 1, duration: 1 },
+          "-=0.2"
+        );
 
     }, sectionRef); // scoped context — auto-cleaned
 
@@ -251,6 +253,15 @@ export default function Hero() {
   }, []);
 
   const nextAarti = getNextAarti();
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
 
   return (
     <section className="hero" ref={sectionRef}>
@@ -288,7 +299,7 @@ export default function Hero() {
           <g className="mandala-ring-1">
             <circle cx="200" cy="200" r="185" fill="none" stroke="#d4af37" strokeWidth="0.6" strokeDasharray="4 6" />
             <circle cx="200" cy="200" r="175" fill="none" stroke="#d4af37" strokeWidth="0.3" />
-            {[0,30,60,90,120,150,180,210,240,270,300,330].map(a => {
+            {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map(a => {
               const rad = (a * Math.PI) / 180;
               const x = 200 + 185 * Math.cos(rad);
               const y = 200 + 185 * Math.sin(rad);
@@ -304,7 +315,7 @@ export default function Hero() {
           </g>
           <g className="mandala-ring-3">
             <circle cx="200" cy="200" r="90" fill="none" stroke="#d4af37" strokeWidth="0.6" />
-            {[0,45,90,135].map(a => {
+            {[0, 45, 90, 135].map(a => {
               const rad = (a * Math.PI) / 180;
               const x1 = 200 + 90 * Math.cos(rad);
               const y1 = 200 + 90 * Math.sin(rad);
@@ -316,7 +327,7 @@ export default function Hero() {
           <g className="mandala-ring-4">
             <circle cx="200" cy="200" r="44" fill="none" stroke="#d4af37" strokeWidth="0.8" />
             <circle cx="200" cy="200" r="28" fill="none" stroke="#d4af37" strokeWidth="0.4" strokeDasharray="3 3" />
-            {[0,60,120,180,240,300].map(a => {
+            {[0, 60, 120, 180, 240, 300].map(a => {
               const rad = (a * Math.PI) / 180;
               const x = 200 + 44 * Math.cos(rad);
               const y = 200 + 44 * Math.sin(rad);
@@ -357,17 +368,21 @@ export default function Hero() {
 
         {/* Diya lamps */}
         <div className="hero-diyas" ref={diyasRef} aria-hidden="true">
-          {[0, 0.12, 0.24].map((delay, i) => (
+          {/* {[0, 0.12, 0.24].map((delay, i) => (
             <div className="diya-unit" key={i}>
               <div className="diya-flame" style={{ animationDelay: `${delay}s` }} />
               <div className="diya-bowl" />
             </div>
-          ))}
+          ))} */}
+          <Lottie options={defaultOptions} height={50} width={50} />
+          <Lottie options={defaultOptions} height={50} width={50} />
+          <Lottie options={defaultOptions} height={50} width={50} />
         </div>
+        {/* <Lottie options={defaultOptions} height={70} width={70} /> */}
 
         {/* CTA buttons */}
         <div className="hero-ctas" ref={ctasRef}>
-          <a href="/contact"  className="btn-gold">    {t.contact}  </a>
+          <a href="/contact" className="btn-gold">    {t.contact}  </a>
           <a href="/donation" className="btn-outline">  {t.donation} </a>
         </div>
 
