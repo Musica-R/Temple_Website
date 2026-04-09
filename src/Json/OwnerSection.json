@@ -1,0 +1,16 @@
+{
+  "ownerSection": {
+    "EN": {
+      "name": "Temple Thantri",
+      "description": "Temple Thantri (Brahmasree Alolam A.M. Parameswaran (Unni)) offers prayers."
+    },
+    "TA": {
+      "name": "கோவில் தந்திரி",
+      "description": "கோவில் தந்திரி (பிரஹ்மஸ்ரீ ஆலோலம் ஏ.எம். பரமேஸ்வரன் (உண்ணி)) வணங்குகிறார்."
+    },
+    "ML": {
+      "name": "ക്ഷേത്ര തന്ത്രി",
+      "description": "ക്ഷേത്ര തന്ത്രി (ബ്രഹ്മശ്രീ ആലോലം എ.എം. പരമേശ്വരൻ (ഉണ്ണി)) നമസ്കരിക്കുന്നു."
+    }
+  }
+}

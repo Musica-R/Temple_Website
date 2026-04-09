@@ -1,0 +1,173 @@
+:root {
+  --bg-light: #fffaf0;
+  --cream-soft: #f9ecd2;
+  --brown: #8b5e3c;
+  --gold: #d4af37;
+  --text-dark: #3b2a1d;
+  --text-history: #5e110e;
+  --gold-pale: #fdf0b0;
+  --gold-tint: #fef7dc;
+  --gold-border: rgba(212, 175, 55, 0.30);
+  --gold-glow: rgba(212, 175, 55, 0.18);
+}
+
+/* Section */
+.owner-section {
+  background: var(--cream-soft);
+  padding-bottom: 60px;
+}
+
+/* Banner */
+.owner-banner img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--gold);
+}
+
+/* Card */
+.owner-card {
+  background: var(--cream-soft);
+  max-width: 600px;
+  margin: -60px auto 0;
+  padding: 70px 20px 30px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border: 1px solid var(--gold-border);
+  position: relative;
+}
+
+/* Image */
+.owner-image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.owner-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--gold);
+  object-fit: cover;
+  background: white;
+}
+
+/* Name */
+.owner-name {
+  margin-top: 10px;
+  font-size: 22px;
+  color: var(--brown);
+  font-weight: 600;
+}
+
+/* Description */
+.owner-description {
+  margin-top: 10px;
+  font-size: 15px;
+  color: var(--text-history);
+  line-height: 1.6;
+}
+
+/* ─────────────────────────────────────────
+   ✅ 1024px (Tablet Landscape)
+───────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  .owner-banner img {
+    height: 160px;
+  }
+
+  .owner-card {
+    max-width: 500px;
+    padding: 65px 18px 28px;
+  }
+
+  .owner-image img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .owner-name {
+    font-size: 20px;
+  }
+
+  .owner-description {
+    font-size: 14px;
+  }
+}
+
+
+/* ─────────────────────────────────────────
+   ✅ 768px (Tablet)
+───────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  .owner-banner img {
+    height: 140px;
+  }
+
+  .owner-card {
+    max-width: 90%;
+    margin: -50px auto 0;
+    padding: 60px 16px 25px;
+    border-radius: 14px;
+  }
+
+  .owner-image {
+    top: -45px;
+  }
+
+  .owner-image img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .owner-name {
+    font-size: 18px;
+  }
+
+  .owner-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+
+/* ─────────────────────────────────────────
+   ✅ 420px (Mobile)
+───────────────────────────────────────── */
+@media (max-width: 420px) {
+
+  .owner-banner img {
+    height: 120px;
+  }
+
+  .owner-card {
+    max-width: 92%;
+    margin: -45px auto 0;
+    padding: 55px 14px 20px;
+    border-radius: 12px;
+  }
+
+  .owner-image {
+    top: -40px;
+  }
+
+  .owner-image img {
+    width: 75px;
+    height: 75px;
+    border-width: 3px;
+  }
+
+  .owner-name {
+    font-size: 16px;
+  }
+
+  .owner-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}

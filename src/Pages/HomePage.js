@@ -1,4 +1,5 @@
 import Hero from '../Components/Hero'
+import OwnerSection from '../Components/Owner'
 import Pooja from '../Components/Pooja'
 import Section from '../Components/Section'
 // import TempleCalendarSwiper from '../Components/TempleSection'
@@ -15,6 +16,7 @@ export default function HomePage() {
             <Pooja />
             <Timing />
             <TempleVideo />
+            <OwnerSection />
            {/* <TempleCalendarSwiper /> */}
         </div>
     )
