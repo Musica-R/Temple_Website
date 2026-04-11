@@ -1,16 +1,16 @@
 {
   "ownerSection": {
     "EN": {
-      "name": "Temple Thantri",
+      "name": "Temple Tantri (Chief Priest)",
       "description": "Temple Thantri (Brahmasree Alolam A.M. Parameswaran (Unni)) offers prayers."
     },
     "TA": {
-      "name": "கோவில் தந்திரி",
-      "description": "கோவில் தந்திரி (பிரஹ்மஸ்ரீ ஆலோலம் ஏ.எம். பரமேஸ்வரன் (உண்ணி)) வணங்குகிறார்."
+      "name": "கோவில் தந்திரி (முதன்மை அர்ச்சகர்)",
+      "description": "பிரஹ்மஸ்ரீ ஆண்டலாடி A.M. பரமேஸ்வரன் (உண்ணி) நம்பூதிரிப்பாடு."
     },
     "ML": {
-      "name": "ക്ഷേത്ര തന്ത്രി",
-      "description": "ക്ഷേത്ര തന്ത്രി (ബ്രഹ്മശ്രീ ആലോലം എ.എം. പരമേശ്വരൻ (ഉണ്ണി)) നമസ്കരിക്കുന്നു."
+      "name": "ക്ഷേത്രം തന്ത്രി",
+      "description": "ബ്രഹ്മശ്രീ അണ്ടലാടി എ.എം.പരമേശ്വരൻ (ഉണ്ണി) നമ്പൂതിരിപ്പാട്"
     }
   }
 }

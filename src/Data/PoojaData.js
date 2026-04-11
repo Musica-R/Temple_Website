@@ -142,7 +142,7 @@ const poojaData = {
       icon: "🥛",
       price: "₹60",
       desc: "Sweet offering made with milk and rice.",
-      image: "/assets/18.jpg"
+      image: "/assets/188.jpg"
     },
     {
       id: 19,
@@ -377,7 +377,7 @@ const poojaData = {
       icon: "🥛",
       price: "₹60",
       desc: "பால் மற்றும் அரிசியால் தயாரிக்கப்படும் இனிப்பு.",
-      image: "/assets/18.jpg"
+      image: "/assets/188.jpg"
     },
     {
       id: 19,
@@ -612,7 +612,7 @@ const poojaData = {
       icon: "🥛",
       price: "₹60",
       desc: "പാൽയും അരിയും ചേർത്ത് തയ്യാറാക്കുന്ന പായസം.",
-      image: "/assets/18.jpg"
+      image: "/assets/188.jpg"
     },
     {
       id: 19,

@@ -163,11 +163,13 @@ export default function DivineGallery() {
                         <div className="gallery-divider">ॐ</div>
                         <p>{t.contentRight.p1}</p>
                         <p>{t.contentRight.p2}</p>
-                        <ul className="content-features">
+
+                        {/* <ul className="content-features">
                             {t.contentRight.features.map((f, i) => (
                                 <li key={i}>{f}</li>
                             ))}
-                        </ul>
+                        </ul> */}
+                        
                         <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentRight.btn}</button>
                     </div>
                 </div>
@@ -263,10 +265,6 @@ export default function DivineGallery() {
                             <div className="laksha-card" key={i}>
                                 <div className="laksha-img-wrap">
                                     <img src={item.img} alt={item.title} />
-                                    <div className="laksha-overlay">
-                                        <span className="laksha-title">{item.title}</span>
-                                        <span className="laksha-caption">{item.caption}</span>
-                                    </div>
                                     <div className="laksha-flame">🪔</div>
                                 </div>
                             </div>

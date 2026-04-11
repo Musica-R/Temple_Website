@@ -69,7 +69,7 @@ export default function Section() {
             {/* Large portrait */}
             <div className="abt-img-main">
               <div className="abt-img-frame">
-                <img src="/assets/img.jpg" alt="Temple main view" />
+                <img src="/assets/maingod.jpeg" alt="Temple main view" />
                 <div className="abt-img-shimmer" />
               </div>
               {/* floating badge */}

@@ -68,8 +68,8 @@ export default function Renovation() {
               <div className="reno-member-list">
                 {d.trustee.members.map((m, i) => (
                   <div className="reno-member-row" key={i}>
-                    <span className="reno-member-place">{m.place}</span>
-                    <span className="reno-member-sep">—</span>
+                    <span className="reno-member-name">{m.place}</span>
+                    {/* <span className="reno-member-sep">—</span> */}
                     <span className="reno-member-name">{m.name}</span>
                   </div>
                 ))}

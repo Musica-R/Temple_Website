@@ -61,7 +61,7 @@ export default function Timing() {
     daily: langKey === "TA" ? "தினசரி" : langKey === "ML" ? "ദിവസവും" : "daily",
     darshan: langKey === "TA" ? "கோவில் தரிசனம்" : langKey === "ML" ? "ദർശനം" : "Temple Darshan",
     open: langKey === "TA" ? "தினமும் திறந்திருக்கும்" : langKey === "ML" ? "തുറന്നിരിക്കും" : "Open daily · Darshan by arrangement",
-    heading: langKey === "TA" ? "கோவில் நேரங்கள் & பூஜைகள்" : langKey === "ML" ? "ക്ഷേത്ര സമയങ്ങളും" : "Temple Timings & Rituals",
+    heading: langKey === "TA" ? "கோவில் நேரங்கள் & பூஜைகள்" : langKey === "ML" ? " ക്ഷേത്ര സമയവും അനുഷ്ഠാനങ്ങളും" : "Temple Timings & Rituals",
     badge: langKey === "TA" ? "தினசரி நேரம்" : langKey === "ML" ? "ദിവസേന" : "Daily Schedule",
   };
 

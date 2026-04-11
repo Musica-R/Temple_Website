@@ -2,8 +2,8 @@
     "renovation": {
         "EN": {
             "mainTitle": "Various Renovation Activities at Sree Kurumba Bhagavathi Temple",
-            "tantriLabel": "Temple Tantri",
-            "tantri": "Brahmashree Andaladi A.M. Parameswaran (Unni) Namboothiripad",
+            "tantriLabel": "Temple Tantri (Chief Priest)",
+            "tantri": "Brahmasri Andaladi A.M. Parameshwaran (Unni) Namboothiripad",
             "images": [
                 {
                     "src": "/assets/ren1.jpeg",
@@ -129,8 +129,8 @@
         },
         "TA": {
             "mainTitle": "ஸ்ரீ குறும்பா பகவதி கோவிலில் பல்வேறு புனரமைப்பு நடவடிக்கைகள்",
-            "tantriLabel": "கோவில் தந்திரி",
-            "tantri": "பிரஹ்மஸ்ரீ அண்டலாடி ஏ.எம். பரமேஸ்வரன் (உண்ணி) நம்பூதிரிப்பாட்",
+            "tantriLabel": "கோவில் தந்திரி (முதன்மை அர்ச்சகர்)",
+            "tantri": "பிரஹ்மஸ்ரீ ஆண்டலாடி A.M. பரமேஸ்வரன் (உண்ணி) நம்பூதிரிப்பாடு",
             "images": [
                 {
                     "src": "/assets/ren1.jpeg",
