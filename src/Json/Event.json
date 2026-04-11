@@ -9,8 +9,8 @@
                 "active": "Events"
             },
             "verse": "May the Divine Mother bless all who gather in Her presence",
-            "scheduleTitle": "Programme Schedule",
-            "scheduleSubtitle": "11 February — 24 February 2026",
+            "scheduleTitle": "",
+            "scheduleSubtitle": "",
             "grandFinale": {
                 "label": "Grand Culmination",
                 "date": "24 February 2026 — Tuesday",
@@ -76,7 +76,7 @@
                     "month": "Feb",
                     "weekday": "Sunday",
                     "title": "Varivozhuththu",
-                    "time": "Shivarathri Auspicious Time",
+                    "time": "",
                     "special": false,
                     "image": "/assets/dan.jpg",
                     "details": [
@@ -164,7 +164,7 @@
                     "month": "Feb",
                     "weekday": "Saturday",
                     "title": "Malama · Cultural Performances",
-                    "time": "Evening 6:30 – Avataranam",
+                    "time": "",
                     "special": false,
                     "image": "/assets/cul.jpg",
                     "details": [
@@ -174,7 +174,7 @@
                         },
                         {
                             "label": null,
-                            "text": "Various Cultural Performances by Puthusheri Residents"
+                            "text": ""
                         }
                     ]
                 },
@@ -182,8 +182,8 @@
                     "day": "22",
                     "month": "Feb",
                     "weekday": "Sunday",
-                    "title": "Shodana Vela · Double Thayambaka",
-                    "time": "Evening 6:30 – Avataranam",
+                    "title": "Shodana Vela",
+                    "time": "",
                     "special": false,
                     "image": "/assets/Procession.jpg",
                     "details": [
@@ -192,8 +192,8 @@
                             "text": "Ceremonial Purification Procession"
                         },
                         {
-                            "label": "Double Thayambaka",
-                            "text": "Percussion Performance by Panamanna Shashi & Cherppulasheri Rajesh"
+                            "label": "",
+                            "text": ""
                         }
                     ]
                 },
@@ -201,7 +201,7 @@
                     "day": "23",
                     "month": "Feb",
                     "weekday": "Monday",
-                    "title": "Vedi Utsavam – Grand Fireworks Festival",
+                    "title": "Vedi Utsavam",
                     "time": "Morning 4:00 · 5:00 · Evening 4:00 · 6:00 · Night 12:00",
                     "special": true,
                     "image": "/assets/vedi.jpg",
@@ -235,8 +235,8 @@
                 "active": "நிகழ்வுகள்"
             },
             "verse": "திருவம்பாடியில் கூடும் அனைவரையும் தெய்வீக அன்னை ஆசீர்வதிக்கட்டும்",
-            "scheduleTitle": "நிகழ்ச்சி அட்டவணை",
-            "scheduleSubtitle": "பிப்ரவரி 11 — பிப்ரவரி 24, 2026",
+            "scheduleTitle": "",
+            "scheduleSubtitle": "",
             "grandFinale": {
                 "label": "மகத்தான நிறைவு",
                 "date": "24 பிப்ரவரி 2026 — செவ்வாய்க்கிழமை",
@@ -302,7 +302,7 @@
                     "month": "பிப்",
                     "weekday": "ஞாயிற்றுக்கிழமை",
                     "title": "வரிவொழுத்து",
-                    "time": "சிவராத்திரி புனிதமான நேரம்",
+                    "time": "",
                     "special": false,
                     "image": "/assets/dan.jpg",
                     "details": [
@@ -390,7 +390,7 @@
                     "month": "பிப்",
                     "weekday": "சனிக்கிழமை",
                     "title": "மாலமா · கலை நிகழ்ச்சிகள்",
-                    "time": "மாலை 6:30 – அவதரணம்",
+                    "time": "",
                     "special": false,
                     "image": "/assets/cul.jpg",
                     "details": [
@@ -400,7 +400,7 @@
                         },
                         {
                             "label": null,
-                            "text": "புதுஷேரி குடியிருப்பினரால் பல்வேறு கலை நிகழ்ச்சிகள்"
+                            "text": ""
                         }
                     ]
                 },
@@ -408,8 +408,8 @@
                     "day": "22",
                     "month": "பிப்",
                     "weekday": "ஞாயிற்றுக்கிழமை",
-                    "title": "ஷோதன வேல · இரட்டை தாயம்பகா",
-                    "time": "மாலை 6:30 – அவதரணம்",
+                    "title": "ஷோதன வேல",
+                    "time": "",
                     "special": false,
                     "image": "/assets/Procession.jpg",
                     "details": [
@@ -418,8 +418,8 @@
                             "text": "சடங்கு சுத்திகரிப்பு ஊர்வலம்"
                         },
                         {
-                            "label": "இரட்டை தாயம்பகா",
-                            "text": "பணமண்ண சாஷி & செர்ப்புளாஷேரி ராஜேஷ் அவர்களால் தாள வாத்திய நிகழ்ச்சி"
+                            "label": "",
+                            "text": ""
                         }
                     ]
                 },
@@ -427,7 +427,7 @@
                     "day": "23",
                     "month": "பிப்",
                     "weekday": "திங்கட்கிழமை",
-                    "title": "வேடி உத்சவம் – மகா வெடி விழா",
+                    "title": "வேடி உத்சவம்",
                     "time": "காலை 4:00 · 5:00 · மாலை 4:00 · 6:00 · இரவு 12:00",
                     "special": true,
                     "image": "/assets/vedi.jpg",
@@ -461,8 +461,8 @@
                 "active": "ഇവന്റുകൾ"
             },
             "verse": "ദൈവീകമായ അമ്മ തന്റെ സന്നിധിയിൽ ഒരുമിക്കുന്ന എല്ലാവരെയും അനുഗ്രഹിക്കട്ടെ",
-            "scheduleTitle": "പ്രോഗ്രാം ഷെഡ്യൂൾ",
-            "scheduleSubtitle": "ഫെബ്രുവരി 11 — ഫെബ്രുവരി 24, 2026",
+            "scheduleTitle": "",
+            "scheduleSubtitle": "",
             "grandFinale": {
                 "label": "മഹത്തായ സമാപനം",
                 "date": "24 ഫെബ്രുവരി 2026 — ചൊവ്വാഴ്ച",
@@ -481,13 +481,13 @@
                     "day": "11",
                     "month": "ഫെബ്",
                     "weekday": "ബുധനാഴ്ച",
-                    "title": "കന്യാർ · കൊടിയേറ്റം · ഉത്സവ ഉദ്ഘാടനം",
+                    "title": "കണ്ണ്യാർ  · കൊടിയേറ്റം · ഉത്സവ ഉദ്ഘാടനം",
                     "time": "വൈകിട്ട് 6:30 മുതൽ",
                     "special": false,
                     "image": "/assets/flag.jpeg",
                     "details": [
                         {
-                            "label": "കന്യാർ",
+                            "label": "കണ്ണ്യാർ ",
                             "text": "മണി ഇടൽ ചടങ്ങ് (മണി ഇടൽ ചണ്ടി)"
                         },
                         {
@@ -508,7 +508,7 @@
                     "day": "13",
                     "month": "ഫെബ്",
                     "weekday": "വെള്ളിയാഴ്ച",
-                    "title": "മുതൽ വിളക്ക് · അവിയൽ ദാൽ",
+                    "title": "മുതൽ വിളക്ക് · അവി ഇsൽ",
                     "time": "ആദ്യ ദീപ ചടങ്ങ്",
                     "special": false,
                     "image": "/assets/lam.jpg",
@@ -518,7 +518,7 @@
                             "text": "ആദ്യ ദീപം കൊളുത്തൽ"
                         },
                         {
-                            "label": "അവിയൽ ദാൽ",
+                            "label": "അവി ഇsൽ",
                             "text": "പരമ്പരാഗത നിവേദ്യ ചടങ്ങ്"
                         }
                     ]
@@ -527,13 +527,13 @@
                     "day": "15",
                     "month": "ഫെബ്",
                     "weekday": "ഞായറാഴ്ച",
-                    "title": "വരിവൊഴുത്ത്",
-                    "time": "ശിവരാത്രി ശുഭ സമയം",
+                    "title": " വരി എഴുത്ത്",
+                    "time": "",
                     "special": false,
                     "image": "/assets/dan.jpg",
                     "details": [
                         {
-                            "label": "വരിവൊഴുത്ത്",
+                            "label": " വരി എഴുത്ത്",
                             "text": "ശിവരാത്രി ശുഭ സമയത്ത് ശിവ ക്ഷേത്രത്തിൽ പ്രത്യേക പൂജ"
                         },
                         {
@@ -588,7 +588,7 @@
                     "day": "20",
                     "month": "ഫെബ്",
                     "weekday": "വെള്ളിയാഴ്ച",
-                    "title": "വലിയ കുമ്മാട്ടി · മഹാ ഘോഷയാത്ര · ഭഗവതി നീരാട്ടൽ",
+                    "title": "വലിയ കുമ്മാട്ടി · മഹാ ഘോഷയാത്ര · ഭഗവതി നീരാടൽ",
                     "time": "രാവിലെ 10:00 · ഉച്ചക്ക് 2:30 · വൈകിട്ട് 6:20 · രാത്രി 9:00",
                     "special": true,
                     "image": "/assets/kum.jpg",
@@ -598,7 +598,7 @@
                             "text": "മഹാ കുമ്മാട്ടി ഉത്സവം"
                         },
                         {
-                            "label": "ഭഗവതി നീരാട്ടൽ",
+                            "label": "ഭഗവതി നീരാടൽ",
                             "text": "പുതുശ്ശേരി വേക്കൂരൂഷി ഭഗവതി ക്ഷേത്രത്തിൽ നിന്നും പുതുക്കുളങ്ങര ഭഗവതി ക്ഷേത്രത്തിൽ നിന്നുമുള്ള കുമ്മാട്ടി രൂപങ്ങൾ നെൽവയലിൽ സ്ഥാപിക്കും"
                         },
                         {
@@ -615,18 +615,18 @@
                     "day": "21",
                     "month": "ഫെബ്",
                     "weekday": "ശനിയാഴ്ച",
-                    "title": "മാലമ · കലാ അവതരണങ്ങൾ",
-                    "time": "വൈകിട്ട് 6:30 – അവതരണം",
+                    "title": " മലമ  · കലാ അവതരണങ്ങൾ",
+                    "time": "",
                     "special": false,
                     "image": "/assets/cul.jpg",
                     "details": [
                         {
-                            "label": "മാലമ",
-                            "text": "പവിത്രമായ മാലമ ചടങ്ങ്"
+                            "label": " മലമ ",
+                            "text": "പവിത്രമായ  മലമ  ചടങ്ങ്"
                         },
                         {
                             "label": null,
-                            "text": "പുതുശ്ശേരി നിവാസികൾ അവതരിപ്പിക്കുന്ന വിവിധ കലാ പരിപാടികൾ"
+                            "text": ""
                         }
                     ]
                 },
@@ -634,8 +634,8 @@
                     "day": "22",
                     "month": "ഫെബ്",
                     "weekday": "ഞായറാഴ്ച",
-                    "title": "ശോധന വേല · ഇരട്ട തായമ്പക",
-                    "time": "വൈകിട്ട് 6:30 – അവതരണം",
+                    "title": "ശോധന വേല",
+                    "time": "",
                     "special": false,
                     "image": "/assets/Procession.jpg",
                     "details": [
@@ -644,8 +644,8 @@
                             "text": "ചടങ്ങ് ശുദ്ധീകരണ ഘോഷയാത്ര"
                         },
                         {
-                            "label": "ഇരട്ട തായമ്പക",
-                            "text": "പനമണ്ണ ശശിയും ചെർപ്പുളാശ്ശേരി രാജേഷും ചേർന്ന് താള വാദ്യ അവതരണം"
+                            "label": "",
+                            "text": ""
                         }
                     ]
                 },
@@ -653,7 +653,7 @@
                     "day": "23",
                     "month": "ഫെബ്",
                     "weekday": "തിങ്കളാഴ്ച",
-                    "title": "വെടി ഉത്സവം – മഹാ വെടിക്കെട്ട് ഉത്സവം",
+                    "title": "വെടി ഉത്സവം",
                     "time": "രാവിലെ 4:00 · 5:00 · വൈകിട്ട് 4:00 · 6:00 · രാത്രി 12:00",
                     "special": true,
                     "image": "/assets/vedi.jpg",
@@ -672,7 +672,7 @@
                         },
                         {
                             "label": "രാത്രി 12:00",
-                            "text": "ശ്രീ പറുക്കഞ്ചേരി & ശ്രീ കൂട്ടേക്കാട് ഭഗവതി ദേവതകളുടെ ഘോഷയാത്ര"
+                            "text": "ശ്രീ പരുക്കഞ്ചേരി  &  കൊട്ടേക്കാട് ഭഗവതി ദേവതകളുടെ ഘോഷയാത്ര"
                         }
                     ]
                 }
