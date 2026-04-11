@@ -115,10 +115,10 @@ export default function DivineGallery() {
                         {t.galleryData.slice(0, 6).map((item) => (
                             <div className="gallery-item" key={item.id} data-title={item.title} data-desc={item.desc}>
                                 <img src={item.img} alt={item.title} />
-                                <div className="item-overlay">
+                                {/* <div className="item-overlay">
                                     <span className="item-title">{item.title}</span>
                                     <span className="item-desc">{item.desc}</span>
-                                </div>
+                                </div> */}
                             </div>
                         ))}
                     </div>
@@ -149,10 +149,10 @@ export default function DivineGallery() {
                         {t.galleryData.slice(7, 13).map((item) => (
                             <div className="gallery-item" key={item.id} data-title={item.title} data-desc={item.desc}>
                                 <img src={item.img} alt={item.title} />
-                                <div className="item-overlay">
+                                {/* <div className="item-overlay">
                                     <span className="item-title">{item.title}</span>
                                     <span className="item-desc">{item.desc}</span>
-                                </div>
+                                </div> */}
                             </div>
                         ))}
                     </div>

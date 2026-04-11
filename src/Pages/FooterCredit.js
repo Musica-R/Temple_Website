@@ -23,7 +23,21 @@ export default function FooterCredit() {
             {/* Content */}
             <div className="footer-credit-container">
                 <img src="/assets/mp.jpg" alt="Mpeoples Logo" />
-                <p>{content[language] || content.EN}</p>
+                <a
+                    href="https://mpeoples.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+
+                    style={{
+                        textDecoration: "none",
+                        color: "inherit",
+                        cursor: "pointer"
+                    }}
+                >
+                    <p style={{ cursor: "pointer" }}>
+                        {content[language] || content.EN}
+                    </p>
+                </a>
             </div>
 
         </div>

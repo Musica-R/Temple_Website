@@ -67,10 +67,10 @@ function EventRow({ event, index }) {
             )}
             <div className="ev-panel-header">
                 <h3 className="ev-panel-title">{event.title}</h3>
-                <div className="ev-panel-time">
+                {/* <div className="ev-panel-time">
                     <span className="ev-panel-time-icon">⏱</span>
                     {event.time}
-                </div>
+                </div> */}
             </div>
             <div className="ev-panel-divider" />
             <ul className="ev-panel-details">
