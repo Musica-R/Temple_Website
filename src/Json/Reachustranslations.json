@@ -209,14 +209,6 @@
                         "from": "From ₹5,001"
                     },
                     {
-                        "key": "abhishekam",
-                        "icon": "🌸",
-                        "imgAlt": "Abhishekam",
-                        "title": "Abhishekam",
-                        "description": "Sponsor the sacred bathing ritual of the deity with milk, honey, rose water and more.",
-                        "from": "From ₹501"
-                    },
-                    {
                         "key": "vastra",
                         "icon": "👘",
                         "imgAlt": "Vastram",
@@ -415,14 +407,6 @@
                         "from": "₹5,001 முதல்"
                     },
                     {
-                        "key": "abhishekam",
-                        "icon": "🌸",
-                        "imgAlt": "அபிஷேகம்",
-                        "title": "அபிஷேகம்",
-                        "description": "பாலும் தேனும் ரோஜாஜலமும் கொண்டு தெய்வத்தின் திருமஞ்சன சடங்கை ஸ்பான்சர் செய்யுங்கள்.",
-                        "from": "₹501 முதல்"
-                    },
-                    {
                         "key": "vastra",
                         "icon": "👘",
                         "imgAlt": "வஸ்திரம்",
@@ -619,14 +603,6 @@
                         "title": "ഗോപുര നവീകരണം",
                         "description": "ക്ഷേത്ര പുനരുദ്ധാരണം പിന്തുണച്ച് ഈ പുണ്യ പൈതൃകം ഭാവി തലമുറയ്ക്കായി സംരക്ഷിക്കൂ.",
                         "from": "₹5,001 മുതൽ"
-                    },
-                    {
-                        "key": "abhishekam",
-                        "icon": "🌸",
-                        "imgAlt": "അഭിഷേകം",
-                        "title": "അഭിഷേകം",
-                        "description": "പാൽ, തേൻ, റോസ് വെള്ളം എന്നിവ കൊണ്ട് ദേവതയ്ക്കുള്ള പുണ്യ അഭിഷേക ചടങ്ങ് സ്പോൺസർ ചെയ്യൂ.",
-                        "from": "₹501 മുതൽ"
                     },
                     {
                         "key": "vastra",

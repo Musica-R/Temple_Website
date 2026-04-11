@@ -300,7 +300,6 @@ export default function DonationForm() {
                   src={`/assets/${card.key === "annadanam" ? "annadhanam" :
                     card.key === "lamp" ? "deepaam" :
                       card.key === "renovation" ? "ren" :
-                        card.key === "abhishekam" ? "amman" :
                           card.key === "vastra" ? "dress" : card.key}.jpg`}
                   alt={card.imgAlt}
                 />
