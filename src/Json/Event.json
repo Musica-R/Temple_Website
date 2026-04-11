@@ -106,10 +106,6 @@
                         {
                             "label": "Bhakthiganamelam",
                             "text": "Flowers Top Singer Fame (Season 1) Sreebhuvanum and others"
-                        },
-                        {
-                            "label": null,
-                            "text": "Dedicated by Sri. Narayanan & Srimathi. Shantha Narayanan, Chatham House, Chakkattupaara"
                         }
                     ]
                 },
@@ -163,7 +159,7 @@
                     "day": "21",
                     "month": "Feb",
                     "weekday": "Saturday",
-                    "title": "Malama · Cultural Performances",
+                    "title": "Malama",
                     "time": "",
                     "special": false,
                     "image": "/assets/cul.jpg",
@@ -332,10 +328,6 @@
                         {
                             "label": "பக்திகணமேளம்",
                             "text": "ஃப்ளவர்ஸ் டாப் சிங்கர் ஸீஸன் 1 புகழ் ஸ்ரீபுவனும் மற்றவர்களும்"
-                        },
-                        {
-                            "label": null,
-                            "text": "ஸ்ரீ. நாராயணன் & ஸ்ரீமதி. சாந்தா நாராயணன், சாதம் ஹவுஸ், சக்காட்டுப்பாரா அர்ப்பணம்"
                         }
                     ]
                 },
@@ -389,7 +381,7 @@
                     "day": "21",
                     "month": "பிப்",
                     "weekday": "சனிக்கிழமை",
-                    "title": "மாலமா · கலை நிகழ்ச்சிகள்",
+                    "title": "மாலமா",
                     "time": "",
                     "special": false,
                     "image": "/assets/cul.jpg",
@@ -558,10 +550,6 @@
                         {
                             "label": "ഭക്തിഗാനമേളം",
                             "text": "ഫ്ലവേഴ്സ് ടോപ് സിംഗർ ഫെയ്‌ം (സീസൺ 1) ശ്രീഭുവനും മറ്റുള്ളവരും"
-                        },
-                        {
-                            "label": null,
-                            "text": "ശ്രീ. നാരായണൻ & ശ്രീമതി. ശാന്ത നാരായണൻ, ചാതം ഹൌസ്, ചക്കാട്ടുപ്പാറ സമർപ്പിക്കുന്നു"
                         }
                     ]
                 },
@@ -615,7 +603,7 @@
                     "day": "21",
                     "month": "ഫെബ്",
                     "weekday": "ശനിയാഴ്ച",
-                    "title": " മലമ  · കലാ അവതരണങ്ങൾ",
+                    "title": " മലമ",
                     "time": "",
                     "special": false,
                     "image": "/assets/cul.jpg",

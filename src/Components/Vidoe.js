@@ -106,8 +106,8 @@ export default function TempleVideo() {
           <video
             ref={videoRef}
             className="tv-video"
-            src="assets/videoplayback.mp4"
-            poster="assets/fire.jpg"
+            src="assets/sri.mp4"
+            poster="assets/vedifestival.jpeg"
             loop
             playsInline
             controls

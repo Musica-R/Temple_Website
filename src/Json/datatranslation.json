@@ -33,9 +33,9 @@
             },
             "contentRight": {
                 "badge": "Festival Chronicles",
-                "title": "Temple Corridor",
-                "p1": "The ancient corridors of the temple carry the echo of ten thousand prayers. Carved pillars, oil lamps, and the scent of sandalwood define these sacred walkways.",
-                "p2": "Festivals transform these spaces into rivers of colour, sound, and devotion — a living testament to an unbroken spiritual heritage.",
+                "title": "Visual Journey",
+                "p1": "Step into a visual journey of sacred traditions, divine rituals, and grand celebrations. These glimpses capture the living spirit of the temple and the devotion of its people.",
+                "p2": "",
                 "features": [
                     "🎊 Grand Brahmotsavam annually",
                     "🥁 Traditional nadaswaram performances",
@@ -190,7 +190,7 @@
                     "name": "Ganapathy",
                     "desc": "The remover of obstacles, invoked at every sacred beginning with devotion.",
                     "tag": "Vighna Naashaka",
-                    "img": "/assets/vina.jpg"
+                    "img": "/assets/gan.jpeg"
                 },
                 {
                     "name": "Vasoorimala",
@@ -202,7 +202,7 @@
                     "name": "Siva Temple",
                     "desc": "The abode of Mahadeva, where Shiva's infinite presence pervades with stillness and power.",
                     "tag": "Mahadeva",
-                    "img": "/assets/siva.jpg"
+                    "img": "/assets/si.jpeg"
                 },
                 {
                     "name": "Velu Panikker",
@@ -272,10 +272,10 @@
                 "sub": "தெய்வம் பக்தருடன் நடனமாடும் நேரம்"
             },
             "contentRight": {
-                "badge": "திருவிழா வரலாறு",
-                "title": "கோயில் மண்டபம்",
-                "p1": "கோயிலின் பண்டைய மண்டபங்கள் பத்தாயிரம் பிரார்த்தனைகளின் எதிரொலியை சுமந்துள்ளன. செதுக்கப்பட்ட தூண்கள், எண்ணெய் விளக்குகள், சந்தன வாசனை இந்த புனித நடைவழிகளை வரையறுக்கின்றன.",
-                "p2": "திருவிழாக்கள் இந்த இடங்களை வண்ணம், ஒலி, பக்தியின் நதியாக மாற்றுகின்றன — ஒரு தொடர்ச்சியான ஆன்மீக பாரம்பரியத்தின் சான்று.",
+                "badge": "திருவிழா",
+                "title": "காட்சிப் பயணம்",
+                "p1": "ஆன்மீக மரபுகள், திருவிழாக்கள் மற்றும் பக்தியின் அழகிய தருணங்களை காணும் காட்சிப் பயணம் இது.",
+                "p2": "",
                 "features": [
                     "🎊 ஆண்டு தோறும் மகா பிரம்மோத்சவம்",
                     "🥁 பாரம்பரிய நாதஸ்வர இசை",
@@ -430,7 +430,7 @@
                     "name": "கணபதி",
                     "desc": "தடைகளை நீக்குபவர், ஒவ்வொரு புனித தொடக்கத்திலும் பக்தியுடன் வணங்கப்படுபவர்.",
                     "tag": "விக்ன நாசகன்",
-                    "img": "/assets/vina.jpg"
+                    "img": "/assets/gan.jpeg"
                 },
                 {
                     "name": "வசூரிமாலா",
@@ -442,7 +442,7 @@
                     "name": "சிவன் கோயில்",
                     "desc": "மகாதேவரின் வாசம், சிவனின் எல்லையற்ற சாந்நித்தியம் அமைதியுடன் நிறைந்திருக்கும் இடம்.",
                     "tag": "மகாதேவன்",
-                    "img": "/assets/siva.jpg"
+                    "img": "/assets/si.jpeg"
                 },
                 {
                     "name": "வேலு பணிக்கர்",
@@ -513,9 +513,9 @@
             },
             "contentRight": {
                 "badge": "ഉത്സവ ചരിത്രം",
-                "title": "ക്ഷേത്ര ഇടനാഴി",
-                "p1": "ക്ഷേത്രത്തിന്റെ പുരാതന ഇടനാഴികൾ പതിനായിരം പ്രാർഥനകളുടെ പ്രതിധ്വനി ഉൾക്കൊള്ളുന്നു. കൊത്തുപണി ചെയ്ത തൂണുകൾ, എണ്ണ വിളക്കുകൾ, ചന്ദനത്തിന്റെ സൗരഭ്യം ഈ പുണ്യ നടവഴികളെ നിർവചിക്കുന്നു.",
-                "p2": "ഉത്സവങ്ങൾ ഈ ഇടങ്ങളെ നിറങ്ങളുടെയും ശബ്ദങ്ങളുടെയും ഭക്തിയുടെയും നദിയാക്കി മാറ്റുന്നു — ഒരു അഖണ്ഡ ആത്മീയ പൈതൃകത്തിന്റെ സാക്ഷ്യം.",
+                "title": "ദൃശ്യ യാത്ര",
+                "p1": "ആചാരങ്ങളുടെയും ഉത്സവങ്ങളുടെയും ദൈവിക അനുഭവങ്ങളുടെയും ദൃശ്യയാത്രയിലേക്ക് സ്വാഗതം. ഈ ചിത്രങ്ങൾ ക്ഷേത്രത്തിന്റെ ജീവനുള്ള ആത്മീയതയും ഭക്തിയുടെ ആഴവും അവതരിപ്പിക്കുന്നു.",
+                "p2": "",
                 "features": [
                     "🎊 വാർഷിക മഹാ ബ്രഹ്മോത്സവം",
                     "🥁 പാരമ്പരിക നാദസ്വര അവതരണം",
@@ -670,7 +670,7 @@
                     "name": "ഗണപതി",
                     "desc": "വിഘ്നങ്ങൾ നീക്കുന്നവൻ, ഓരോ പുണ്യ ആരംഭത്തിലും ഭക്തിയോടെ ആരാധിക്കപ്പെടുന്നവൻ.",
                     "tag": "വിഘ്ന നാശകൻ",
-                    "img": "/assets/vina.jpg"
+                    "img": "/assets/gan.jpeg"
                 },
                 {
                     "name": "വസൂരിമാല",
@@ -682,7 +682,7 @@
                     "name": "ശിവ ക്ഷേത്രം",
                     "desc": "മഹാദേവന്റെ ആവാസം, ശിവന്റെ അനന്തമായ സാന്നിദ്ധ്യം നിശ്ശബ്ദതയോടും ശക്തിയോടും കൂടി നിറഞ്ഞിരിക്കുന്ന ഇടം.",
                     "tag": "മഹാദേവൻ",
-                    "img": "/assets/siva.jpg"
+                    "img": "/assets/si.jpeg"
                 },
                 {
                     "name": "വേലു പണിക്കർ",

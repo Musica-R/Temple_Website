@@ -82,11 +82,11 @@ export default function Section() {
             {/* Two smaller images stacked */}
             <div className="abt-img-stack">
               <div className="abt-img-sm abt-animate" style={{ animationDelay: ".1s" }}>
-                <img src="/assets/vin.jpg" alt="Temple side" />
+                <img src="/assets/gan.jpeg" alt="Temple side" />
                 <div className="abt-img-shimmer" />
               </div>
               <div className="abt-img-sm abt-animate" style={{ animationDelay: ".2s" }}>
-                <img src="/assets/siva4.jpg" alt="Temple tower" />
+                <img src="/assets/si.jpeg" alt="Temple tower" />
                 <div className="abt-img-shimmer" />
               </div>
             </div>
