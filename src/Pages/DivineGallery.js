@@ -4,6 +4,7 @@ import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/datatranslation.json";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import galleryImages from "../Data/Gallery";
 
 export default function DivineGallery() {
 
@@ -169,11 +170,10 @@ export default function DivineGallery() {
                                 <li key={i}>{f}</li>
                             ))}
                         </ul> */}
-                        
+
                         <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentRight.btn}</button>
                     </div>
                 </div>
-
 
                 {/* ══ CHAPTER THREE — UPADEVATAS ══ */}
 
@@ -191,24 +191,24 @@ export default function DivineGallery() {
 
                     {/* ── Section Header ── */}
                     <div className="shrine-header">
-                        <span className="shrine-eyebrow">Divine Gallery</span>
-                        <div className="shrine-divider">
+                        {/* <span className="shrine-eyebrow">Divine Gallery</span> */}
+                        {/* <div className="shrine-divider">
                             <div className="shrine-divider-line"></div>
                             <div className="shrine-divider-diamond"></div>
                             <div className="shrine-divider-diamond small"></div>
                             <div className="shrine-divider-diamond"></div>
                             <div className="shrine-divider-line right"></div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* ── Main Deity Hero ── */}
                     <div className="main-deity-hero">
-                        <div className="main-deity-frame">
-                            <img
+                        <div >
+                            {/* <img
                                 className="main-deity-img"
                                 src={t.upadevathas[0].img}
                                 alt={t.upadevathas[0].name}
-                            />
+                            /> */}
                             <div className="main-deity-overlay">
                                 <span className="main-deity-tag">{t.upadevathas[0].tag}</span>
                                 <h3 className="main-deity-name">{t.upadevathas[0].name}</h3>
@@ -270,6 +270,90 @@ export default function DivineGallery() {
                             </div>
                         ))}
                     </div>
+                </div>
+
+                <div className="mid-gallery-section">
+
+                    <div className="chapter-header">
+                        <div className="chapter-lines">
+                            <span></span><i>📸</i><span></span>
+                        </div>
+                        <h2 className="chapter-title">
+                            {language === "TA"
+                                ? "தெய்வீக தருணங்கள்"
+                                : language === "ML"
+                                    ? "ദിവ്യ നിമിഷങ്ങൾ"
+                                    : "Divine Moments"}
+                        </h2>
+
+                        <p className="chapter-sub">
+                            {language === "TA"
+                                ? "கோவில் அரங்கில் இருந்து புனித தரிசனங்கள்"
+                                : language === "ML"
+                                    ? "ക്ഷേത്ര ഗാലറിയിൽ നിന്നുള്ള വിശുദ്ധ ദൃശ്യങ്ങൾ"
+                                    : "Sacred glimpses from the temple gallery"}
+                        </p>
+                    </div>
+
+                    <div className="mid-gallery-grid">
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[0].img} alt={galleryImages[0].title} />
+                            {/* <div className="mid-overlay"><span>{galleryImages[0].title}</span></div> */}
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[1].img} alt={galleryImages[1].title} />
+                            {/* <div className="mid-overlay"><span>{galleryImages[1].title}</span></div> */}
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[2].img} alt={galleryImages[2].title} />
+                            {/* <div className="mid-overlay"><span>{galleryImages[2].title}</span></div> */}
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[3].img} alt={galleryImages[3].title} />
+                            {/* <div className="mid-overlay"><span>{galleryImages[3].title}</span></div> */}
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[4].img} alt={galleryImages[4].title} />
+                            {/* <div className="mid-overlay"><span>{galleryImages[4].title}</span></div> */}
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[5].img} alt={galleryImages[5].title} />
+
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[6].img} alt={galleryImages[6].title} />
+
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[7].img} alt={galleryImages[7].title} />
+                        </div>
+
+                        {/* <div className="mid-gallery-item">
+                            <img src={galleryImages[8].img} alt={galleryImages[8].title} />
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[9].img} alt={galleryImages[9].title} />
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[10].img} alt={galleryImages[10].title} />
+                        </div>
+
+                        <div className="mid-gallery-item">
+                            <img src={galleryImages[11].img} alt={galleryImages[11].title} />
+                        </div> */}
+
+                    </div>
+
                 </div>
 
 

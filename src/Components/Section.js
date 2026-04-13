@@ -118,7 +118,7 @@ export default function Section() {
             <p className="abt-para abt-para--dim">{t.p2}</p>
 
             {/* fact grid */}
-            <div className="abt-facts abt-animate" style={{ animationDelay: ".3s" }}>
+            {/* <div className="abt-facts abt-animate" style={{ animationDelay: ".3s" }}>
               {facts.map((f, i) => (
                 <div className="abt-fact" key={i}>
                   <span className="abt-fact-glyph">{f.glyph}</span>
@@ -128,7 +128,7 @@ export default function Section() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* CTA */}
             {/* <a href="/gallery" className="abt-cta abt-animate" style={{ animationDelay: ".4s" }}>
