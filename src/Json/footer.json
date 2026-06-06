@@ -1,7 +1,7 @@
 {
   "footer": {
     "EN": {
-      "bannerSub": "Established Since Ancient Times",
+      "bannerSub": "Amme Sharanam Devi Sharanam",
       "bannerTitle": "Sri Kurumba Bhagavathy Temple",
       "bannerLocation": "Pudussery , Palakkad, Kerala",
       "desc": "Experience divine blessings, sacred rituals, and spiritual peace at one of Kerala's most revered shrines.",
@@ -32,7 +32,7 @@
       "bottomNote": "Dedicated with devotion."
     },
     "TA": {
-      "bannerSub": "பண்டைய காலத்திலிருந்து நிறுவப்பட்டது",
+      "bannerSub": "அம்மா சரணம் தேவி சரணம்",
       "bannerTitle": "ஸ்ரீ குரும்பா பகவதி கோயில்",
       "bannerLocation": "புதுசேரி, பாலக்காடு, கேரளா",
       "desc": "கேரளாவின் மிகவும் மதிப்பிற்குரிய கோயில்களில் ஒன்றில் தெய்வீக ஆசி, புனித சடங்குகள் மற்றும் ஆன்மீக அமைதியை அனுபவியுங்கள்.",
@@ -63,7 +63,7 @@
       "bottomNote": "பக்தியோடு அர்பணிக்கப்பட்டது."
     },
     "ML": {
-      "bannerSub": "പുരാതന കാലം മുതൽ സ്ഥാപിതമായത്",
+      "bannerSub": "അമ്മേ ശരണം ദേവി ശരണം",
       "bannerTitle": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം",
       "bannerLocation": "പുതുശ്ശേരി, പാലക്കാട്, കേരളം",
       "desc": "കേരളത്തിലെ ഏറ്റവും പ്രശസ്തമായ ക്ഷേത്രങ്ങളിൽ ഒന്നിൽ ദൈവിക അനുഗ്രഹവും പവിത്രമായ ആചാരങ്ങളും ആത്മീയ ശാന്തിയും അനുഭവിക്കൂ.",
@@ -81,7 +81,7 @@
       },
       "timings": [
         {
-          "label": "രാവിലെ പൂജ",
+          "label": "പ്രഭാത പൂജ",
           "time": "5:30 AM – 11:00 AM"
         },
         {

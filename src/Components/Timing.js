@@ -92,7 +92,7 @@ export default function Timing() {
           <span className="t-badge-dot" />
         </div>
         <h2 className="t-title">{labels.heading}</h2>
-        <p className="t-desc">{t.desc}</p>
+        {/* <p className="t-desc">{t.desc}</p> */}
         <div className="t-rule">
           <span /><span className="t-rule-gem" /><span />
         </div>

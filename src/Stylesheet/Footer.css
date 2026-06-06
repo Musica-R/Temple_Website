@@ -105,7 +105,7 @@
     letter-spacing: 2px;
     color: #ffe88d;
     opacity: 0.6;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
 }
 
 .footer-desc {
@@ -125,7 +125,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
     max-width: 1000px;
-    margin: 0 auto 8px;
+    margin: 0 auto 0px;
     border-top: 1px solid rgba(212,175,55,0.15);
     border-bottom: 1px solid rgba(212,175,55,0.15);
 }

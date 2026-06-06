@@ -1,29 +1,28 @@
 /* ═══════════════════════════════════
    TICKER
-   Dark obsidian bar with gilded marquee
+   Crimson & Gold Temple Marquee
 ═══════════════════════════════════ */
 
-:root {
-  --gold:        #d4af37;
-  --gold-light:  #f0d060;
-  --gold-dim:    rgba(212, 175, 55, 0.18);
-  --obsidian:    #08060a;
-  --deep:        #0f0c10;
-  --ink:         #1a1520;
-  --cream:       #fffaf0;
-  --cream-dim:   rgba(255, 250, 240, 0.55);
-  --font-display: 'Cinzel', serif;
-  --font-body:    'Cormorant Garamond', serif;
-}
-
 .ticker-wrap {
-  position: relative;
+  --tkr-gold:        #FFD700;
+  --tkr-gold-light:  #FFE84D;
+  --tkr-gold-dim:    rgba(255, 215, 0, 0.25);
+  --tkr-bg:          #4A0F0F;
+  --tkr-deep:        #3a0c0c;
+  --tkr-ink:         #5a1515;
+  --tkr-cream:       #F5D67A;
+  --tkr-cream-dim:   rgba(245, 214, 122, 0.90);
+  --tkr-font-display: 'Cinzel', serif;
+  --tkr-font-body:    'Cormorant Garamond', serif;
+
+  position: sticky;
+  top: 0;
+  z-index: 1001;
   width: 100%;
-  background: var(--obsidian);
-  border-top:    1px solid var(--gold-dim);
-  border-bottom: 1px solid var(--gold-dim);
+  background: var(--tkr-bg);
+  border-top:    1px solid var(--tkr-gold-dim);
+  border-bottom: 1px solid var(--tkr-gold-dim);
   overflow: hidden;
-  z-index: 10;
   padding: 0;
 }
 
@@ -37,8 +36,14 @@
   z-index: 2;
   pointer-events: none;
 }
-.ticker-glow-left  { left:  0; background: linear-gradient(to right, var(--obsidian) 0%, transparent 100%); }
-.ticker-glow-right { right: 0; background: linear-gradient(to left,  var(--obsidian) 0%, transparent 100%); }
+.ticker-glow-left  {
+  left: 0;
+  background: linear-gradient(to right, var(--tkr-bg) 0%, transparent 100%);
+}
+.ticker-glow-right {
+  right: 0;
+  background: linear-gradient(to left, var(--tkr-bg) 0%, transparent 100%);
+}
 
 .ticker-inner {
   display: flex;
@@ -71,23 +76,23 @@
 }
 
 .ticker-sep {
-  color: var(--gold);
+  color: var(--tkr-gold);
   font-size: 0.75rem;
   opacity: 0.7;
   flex-shrink: 0;
 }
 
 .ticker-text {
-  font-family: var(--font-display);
+  font-family: var(--tkr-font-display);
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--cream-dim);
+  color: var(--tkr-cream-dim);
   transition: color 0.3s;
 }
 
 .ticker-item:hover .ticker-text {
-  color: var(--gold-light);
+  color: var(--tkr-gold-light);
 }
 
 @keyframes tickerScroll {

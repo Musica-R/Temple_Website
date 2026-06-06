@@ -71,7 +71,7 @@ export default function Pooja() {
             <span className="pj-eyebrow-deco">✦</span>
           </p>
           <h2 className="pj-title">{sectionTitle}</h2>
-          <p className="pj-desc">{sectionDesc}</p>
+          {/* <p className="pj-desc">{sectionDesc}</p> */}
           <div className="pj-divider">
             <span /><span className="pj-div-gem" /><span />
           </div>

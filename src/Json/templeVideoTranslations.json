@@ -1,7 +1,7 @@
 {
   "templeVideo": {
     "EN": {
-      "sectionLabel": "Sacred Darshan",
+      "sectionLabel": "Temple Video",
       "title": "Experience the Divine",
       "subtitle": "Temple Live Darshan",
       "description": "Witness the sacred rituals and timeless traditions of our temple. Let the divine energy flow through your screen and bless your home.",
@@ -13,7 +13,7 @@
       "footerNote": "May the blessings of the divine be with you always."
     },
     "TA": {
-      "sectionLabel": "புனித தரிசனம்",
+      "sectionLabel": "கோயில் காணொளி",
       "title": "தெய்வீகத்தை உணருங்கள்",
       "subtitle": "கோவில் நேரடி தரிசனம்",
       "description": "நமது கோவிலின் புனித சடங்குகளையும் நித்திய பாரம்பரியங்களையும் காணுங்கள். தெய்வீக சக்தி உங்கள் திரையில் பாய்ந்து உங்கள் இல்லத்தை ஆசீர்வதிக்கட்டும்.",
@@ -25,10 +25,10 @@
       "footerNote": "தெய்வீக ஆசீர்வாதம் என்றும் உங்களுடன் இருக்கட்டும்."
     },
     "ML": {
-      "sectionLabel": "പവിത്ര ദർശനം",
+      "sectionLabel": "ക്ഷേത്ര വീഡിയോ",
       "title": "ദൈവികത അനുഭവിക്കുക",
       "subtitle": "ക്ഷേത്ര ലൈവ് ദർശനം",
-      "description": "ഞങ്ങളുടെ ക്ഷേത്രത്തിലെ പവിത്ര ചടങ്ങുകളും നിത്യ പാരമ്പര്യങ്ങളും കാണൂ. ദൈവിക ശക്തി നിങ്ങളുടെ സ്ക്രീൻ വഴി ഒഴുകി നിങ്ങളുടെ വീട്നെ അനുഗ്രഹിക്കട്ടെ.",
+      "description": "ക്ഷേത്രത്തിലെ പവിത്ര ചടങ്ങുകളും നിത്യ പാരമ്പര്യങ്ങളും കാണൂ. ദൈവിക ശക്തി നിങ്ങളുടെ സ്ക്രീൻ വഴി ഒഴുകി നിങ്ങളുടെ വീട്നെ അനുഗ്രഹിക്കട്ടെ.",
       "watchLabel": "ഇപ്പോൾ കാണുക",
       "volumeHint": "പവിത്ര മന്ത്രങ്ങൾക്കായി ശബ്ദം ഓണാക്കുക",
       "galleryTitle": "ക്ഷേത്ര ഗാലറി",

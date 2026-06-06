@@ -1,5 +1,5 @@
 import "../Stylesheet/Footer.css";
-import { FaMapMarkerAlt, FaPhoneAlt, FaOm, FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaOm } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../Context/Languagecontext";
@@ -28,7 +28,7 @@ export default function Footer() {
                 <p className="banner-sub">{t.bannerSub}</p>
                 <h2 className="banner-title">{t.bannerTitle}</h2>
                 <p className="banner-location">{t.bannerLocation}</p>
-                <p className="footer-desc">{t.desc}</p>
+                {/* <p className="footer-desc">{t.desc}</p> */}
             </div>
 
             {/* Main grid */}
@@ -77,7 +77,7 @@ export default function Footer() {
                         </div>
                         <div className="contact-item">
                             <span className="contact-icon"><FaPhoneAlt /></span>
-                            <span>+91 9037092183</span>
+                            <span>+91 9895949381</span>
                         </div>
                         <div className="contact-item">
                             <span className="contact-icon"><MdEmail /></span>

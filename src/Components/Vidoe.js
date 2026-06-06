@@ -48,6 +48,7 @@ export default function TempleVideo() {
   const t = translations.templeVideo[language] || translations.templeVideo["EN"];
 
   const [playing, setPlaying] = useState(false);
+  
   const videoRef   = useRef(null);
   const headerRef  = useRef(null);
   const playerRef  = useRef(null);
@@ -84,7 +85,7 @@ export default function TempleVideo() {
           <span className="tv-label-dot" />
         </p>
         <h2 className="tv-title">{t.title}</h2>
-        <p className="tv-subtitle">{t.subtitle}</p>
+        {/* <p className="tv-subtitle">{t.subtitle}</p> */}
         <LotusDivider />
         <p className="tv-description">{t.description}</p>
       </header>
@@ -119,9 +120,9 @@ export default function TempleVideo() {
 
       {/* ── CAPTION ── */}
       <p className="tv-caption tv-fade" ref={captionRef}>
-        <span className="tv-cap-deco">🪔</span>
+        {/* <span className="tv-cap-deco">🪔</span>
         {t.videoCaption}
-        <span className="tv-cap-deco">🪔</span>
+        <span className="tv-cap-deco">🪔</span> */}
       </p>
 
       {/* ── GALLERY ── */}

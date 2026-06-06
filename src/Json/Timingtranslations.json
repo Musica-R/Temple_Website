@@ -27,7 +27,7 @@
             }
         },
         "ML": {
-            "morning": "രാവിലെ പൂജ",
+            "morning": "പ്രഭാത പൂജ",
             "evening": "വൈകുന്നേര പൂജ",
             "desc": "ക്ഷേത്രം കർശനമായ ദിനചര്യ പാലിക്കുന്നു.",
             "events": {
@@ -42,19 +42,19 @@
     },
     "ticker": {
         "EN": {
-            "darshan": "🪔 Morning Darshan: 5:00 AM – 11:00 AM",
+            "darshan": "🪔 Morning Darshan: 5:30 AM – 11:00 AM",
             "evening": "✨ Evening Darshan: 5:00 PM – 7:30 PM",
             "prayer": "🙏 Morning Prayer: 7:00 AM",
             "deeparadhana": "🪔 Deeparadhana: 6:30 PM"
         },
         "TA": {
-            "darshan": "🪔 காலை தரிசனம்: 5:00 AM – 11:00 AM",
+            "darshan": "🪔 காலை தரிசனம்: 5:30 AM – 11:00 AM",
             "evening": "✨ மாலை தரிசனம்: 5:00 PM – 7:30 PM",
             "prayer": "🙏 காலை பூஜை: 7:00 AM",
             "deeparadhana": "🪔 தீபாராதனை: 6:30 PM"
         },
         "ML": {
-            "darshan": "🪔 രാവിലെ ദർശനം: 5:00 AM – 11:00 AM",
+            "darshan": "🪔 രാവിലെ ദർശനം: 5:30 AM – 11:00 AM",
             "evening": "✨ വൈകുന്നേര ദർശനം: 5:00 PM – 7:30 PM",
             "prayer": "🙏 പ്രഭാത പൂജ: 7:00 AM",
             "deeparadhana": "🪔 ദീപാരാധന: 6:30 PM"

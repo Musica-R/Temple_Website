@@ -64,7 +64,7 @@ export default function DivineGallery() {
                     <div className="oh-mandala-ring oh-ring-3" />
                 </div>
                 <div className="ourheritage-content">
-                    <span className="hero-tag oh-anim-tag">{t.heroTag}</span>
+                    {/* <span className="hero-tag oh-anim-tag">{t.heroTag}</span> */}
                     <h1 className="oh-anim-title">{t.heroTitle}</h1>
                     {/* <p className="hero-sub oh-anim-sub">{t.heroSub}</p> */}
                     <div className="ourheritage-breadcrumb oh-anim-breadcrumb">

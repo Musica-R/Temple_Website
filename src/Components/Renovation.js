@@ -184,7 +184,7 @@ export default function Renovation() {
         {/* Footer */}
         <footer className="reno-footer">
           <span>✦</span>
-          <span>OM NAMAH SHIVAYA</span>
+          <span>{d.donation.don}</span>
           <span>✦</span>
         </footer>
 

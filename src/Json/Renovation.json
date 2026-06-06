@@ -124,7 +124,8 @@
                 "accountLabel": "A/C No.",
                 "ifscLabel": "IFSC",
                 "upiLabel": "UPI ID",
-                "scanLabel": "Scan to Pay"
+                "scanLabel": "Scan to Pay",
+                "don":"Amme Narayana, Devi Narayana"
             }
         },
         "TA": {
@@ -251,7 +252,8 @@
                 "accountLabel": "கணக்கு எண்",
                 "ifscLabel": "IFSC குறியீடு",
                 "upiLabel": "UPI ID",
-                "scanLabel": "ஸ்கேன் செய்து பணம் அனுப்பவும்"
+                "scanLabel": "ஸ்கேன் செய்து பணம் அனுப்பவும்",
+                "don":"அம்மே நாராயணா, தேவி நாராயணா"
             }
         },
         "ML": {
@@ -290,7 +292,7 @@
                         "name": "ശ്രീ. മോഹനൻ"
                     },
                     {
-                        "place": "ഉള്ളാടിൽ",
+                        "place": "ഉള്ളാട്ടിൽ", 
                         "name": "ശ്രീമതി. പൊന്നമ്മാൾ"
                     },
                     {
@@ -302,7 +304,7 @@
                         "name": "ശ്രീ. ലക്ഷ്മി നാരായണൻ"
                     },
                     {
-                        "place": "കൂലൂക്കത്ത്",
+                        "place": "കൂളക്കത്ത്",
                         "name": "ശ്രീ. ബാബു"
                     }
                 ]
@@ -378,7 +380,8 @@
                 "accountLabel": "അക്കൗണ്ട് നം.",
                 "ifscLabel": "IFSC കോഡ്",
                 "upiLabel": "UPI ID",
-                "scanLabel": "സ്കാൻ ചെയ്ത് അടയ്ക്കുക"
+                "scanLabel": "സ്കാൻ ചെയ്ത് അടയ്ക്കുക",
+                "don": "അമ്മേ നാരായണ ദേവി നാരായണ"
             }
         }
     }

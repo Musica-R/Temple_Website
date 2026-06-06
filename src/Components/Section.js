@@ -2,7 +2,7 @@ import "../Stylesheet/Section.css";
 import { useEffect, useRef } from "react";
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/datatranslation.json";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 /* Decorative SVG ornament between sections */
 function GoldOrnament() {
@@ -22,7 +22,7 @@ export default function Section() {
   const sectionRef = useRef(null);
   const { language } = useLanguage();
   const t = translations.section[language] || translations.section["EN"];
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const el = sectionRef.current;

@@ -134,7 +134,7 @@ export default function Event() {
     const finaleRef = useRef(null);
     const statsRef = useRef(null);
 
-    const specialCount = t.events.filter(e => e.special).length;
+    // const specialCount = t.events.filter(e => e.special).length;
 
     useEffect(() => {
         const obs = new IntersectionObserver(
@@ -164,7 +164,7 @@ export default function Event() {
                     <div className="oh-mandala-ring oh-ring-3" />
                 </div>
                 <div className="ourheritage-content">
-                    <span className="hero-tag oh-anim-tag">{t.heroTag}</span>
+                    {/* <span className="hero-tag oh-anim-tag">{t.heroTag}</span> */}
                     <h1 className="oh-anim-title">{t.heroTitle}</h1>
                     {/* <p className="hero-sub oh-anim-sub">{t.heroSub}</p> */}
                     <div className="ourheritage-breadcrumb oh-anim-breadcrumb">

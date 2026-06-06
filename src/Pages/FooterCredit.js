@@ -5,9 +5,9 @@ export default function FooterCredit() {
     const { language } = useLanguage();
 
     const content = {
-        EN: <>Developed by <span>Mpeoples Business Solutions Private Limited </span></>,
-        TA: <>இந்த இணையதளம் <span>Mpeoples Business Solutions Private Limited</span> நிறுவனத்தால் உருவாக்கப்பட்டது.</>,
-        ML: <>ഈ വെബ്സൈറ്റ് <span>Mpeoples Business Solutions Private Limited</span> നിർമ്മിച്ചതാണ്.</>
+        EN: <>Developed by <span>Mpeoples</span></>,
+        TA: <>இந்த இணையதளம் <span>Mpeoples </span> நிறுவனத்தால் உருவாக்கப்பட்டது.</>,
+        ML: <>ഈ വെബ്സൈറ്റ് <span>Mpeoples</span> നിർമ്മിച്ചതാണ്.</>
     };
 
     return (

@@ -14,6 +14,7 @@ import Event from './Pages/Event';
 import MobileArrow from './Components/MobileArrow';
 import RenovationPage from './Pages/RenovationPage';
 import FooterCredit from './Pages/FooterCredit';
+import Ticker from './Components/Ticker';
 // import LanguageFontProvider from "./Components/LanguageFontProvider";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <LanguageProvider>
           {/* <LanguageFontProvider /> */}
           <ScrollToTop />
+          <Ticker />
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />

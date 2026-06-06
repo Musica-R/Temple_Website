@@ -141,13 +141,13 @@ export default function OlaiRealBook() {
 
                     {page.type === "cover" && (
                       <div className="cover-page">
-                        <h1>{page.title}</h1>
+                        <h1 style={{color:" #5e110e"}}>{page.title}</h1>
                       </div>
                     )}
 
                     {page.type === "end" && (
                       <div className="end-page">
-                        <h2>{page.title}</h2>
+                        <h2 style={{color:" #5e110e"}}>{page.title}</h2>
                       </div>
                     )}
 

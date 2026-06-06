@@ -30,6 +30,7 @@
 .footer-credit-container img {
     height: 22px;
     filter: brightness(1.2) drop-shadow(0 0 6px rgba(212,175,55,0.5));
+    border-radius: 50%;
 }
 
 /* text */

@@ -16,6 +16,27 @@
   z-index: 0;
 }
 
+.ticker-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 1100;   /* above navbar (1000) */
+  /* keep all your existing styles below */
+  width: 100%;
+  background: var(--obsidian);
+  border-top:    1px solid var(--gold-dim);
+  border-bottom: 1px solid var(--gold-dim);
+  overflow: hidden;
+  padding: 0;
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.ticker-wrap.ticker-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+}
+
 /* Ambient glow blobs */
 .tv-glow-top {
   position: absolute;

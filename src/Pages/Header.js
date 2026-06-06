@@ -25,6 +25,7 @@ export default function Header() {
 
                 {/* LOGO — translated */}
                 <div className="nav-logo">
+                    <img src="/assets/maingod.jpeg" alt="Logo" className="logo-img" />
                     <div className="logo-text">
                         {t.logoName}
                         <span>{t.logoSubtitle}</span>
@@ -67,7 +68,7 @@ export default function Header() {
                         </NavLink>
                     </li>
 
-                     <li>
+                    <li>
                         <NavLink to="/ren" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>
                             {t.navLinks.ren}
                         </NavLink>

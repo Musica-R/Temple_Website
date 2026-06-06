@@ -22,9 +22,9 @@
 /* NAVBAR */
 nav {
   background: linear-gradient(90deg, var(--brown-dark), var(--brown-main));
-  padding: 14px 60px;
+  padding: 5px 50px;
   position: sticky;
-  top: 0;
+  top: 46px;
   z-index: 1000;
 
   backdrop-filter: blur(8px);
@@ -48,7 +48,7 @@ nav {
 .logo-text {
   font-family: 'Cinzel', serif;
   color: var(--gold-light);
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1.2px;
   line-height: 1.4;
@@ -148,7 +148,6 @@ nav::after {
   text-align: center;
   font-size: 10px;
   letter-spacing: 6px;
-  margin-top: 8px;
   color: var(--gold-main);
   opacity: 0.5;
 }
@@ -222,9 +221,25 @@ nav::after {
 
 /* Malayalam */
 .nav.ML .nav-links li a {
-  font-size: 10.5px;
+  font-size: 12px;
   font-family: 'Noto Sans Malayalam', sans-serif;
 }
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
 
 /* TABLET */
 @media (max-width: 1024px) {
@@ -245,7 +260,7 @@ nav::after {
 @media (max-width: 768px) {
 
   .nav-inner {
-    padding: 10px;
+    padding: 5px;
   }
 
   nav {
@@ -331,6 +346,11 @@ nav::after {
   .nav-inner {
     align-items: flex-start;
   }
+
+  .logo-img {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 /* SMALL MOBILE */
@@ -341,7 +361,7 @@ nav::after {
   }
 
   .logo-text {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
   }
 
@@ -356,5 +376,10 @@ nav::after {
   nav::after {
     font-size: 8px;
     letter-spacing: 4px;
+  }
+
+  .logo-img {
+    width: 30px;
+    height: 30px;
   }
 }

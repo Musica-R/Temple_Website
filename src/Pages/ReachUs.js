@@ -119,7 +119,7 @@ export default function ReachUs() {
                 <img src="/assets/about.jpg" alt="Temple" className="hero-img" />
                 <div className="ourheritage-overlay"></div>
                 <div className="ourheritage-content">
-                    <span className="hero-tag">{t.heroBanner.tag}</span>
+                    {/* <span className="hero-tag">{t.heroBanner.tag}</span> */}
                     <h1>{t.heroBanner.title}</h1>
                     {/* <p className="hero-sub">{t.heroBanner.subtitle}</p> */}
                     <div className="ourheritage-breadcrumb">
@@ -146,11 +146,11 @@ export default function ReachUs() {
 
                 {/* Section Header */}
                 <div className="reachus-header" ref={headerRef}>
-                    <div className="section-tag">
+                    {/* <div className="section-tag">
                         <span>✦</span> {t.sectionHeader.tag} <span>✦</span>
-                    </div>
+                    </div> */}
                     <h2>{t.sectionHeader.title}</h2>
-                    <p>{t.sectionHeader.subtitle}</p>
+                    {/* <p>{t.sectionHeader.subtitle}</p> */}
                 </div>
 
                 <div className="reachus-wrapper">
@@ -180,7 +180,7 @@ export default function ReachUs() {
                         {/* Map */}
                         <div className="map-box">
                             <div className="map-label">
-                                <span>📍</span> {t.mapBox.label}
+                                {/* <span>📍</span> {t.mapBox.label} */}
                             </div>
                             <iframe
                                 title="Sree Kurumba Bhagavathy Temple Map"
@@ -198,7 +198,7 @@ export default function ReachUs() {
                         <div className="form-box">
                             <div className="form-header">
                                 <h3>{t.form.title}</h3>
-                                <p>{t.form.subtitle}</p>
+                                {/* <p>{t.form.subtitle}</p> */}
                             </div>
 
                             <div className="form-body">

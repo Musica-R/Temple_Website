@@ -104,7 +104,7 @@ export default function DonationPage() {
         </div>
 
         <div className="ourheritage-content dp-hero-content" ref={heroContentRef}>
-          <span className="dp-hero-tag">{t.heroTag}</span>
+          {/* <span className="dp-hero-tag">{t.heroTag}</span> */}
           <h1 className="dp-hero-title">{t.heroTitle}</h1>
           {/* <p className="hero-sub dp-hero-sub">{t.heroSub}</p> */}
           <div className="ourheritage-breadcrumb dp-hero-breadcrumb">

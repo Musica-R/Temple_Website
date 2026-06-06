@@ -361,7 +361,7 @@ export default function Hero() {
 
         <h1 ref={h1Ref}>
           {t.title}
-          <span>{t.subtitle}</span>
+          {/* <span>{t.subtitle}</span> */}
         </h1>
 
         {/* <p className="hero-subtitle" ref={subtitleRef}>{t.description}</p> */}
