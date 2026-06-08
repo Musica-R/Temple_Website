@@ -75,7 +75,7 @@ export default function Section() {
               {/* floating badge */}
               <div className="abt-img-badge">
                 <span className="abt-badge-om">ॐ</span>
-                <span className="abt-badge-text">Est. 108 CE</span>
+                {/* <span className="abt-badge-text">Est. 108 CE</span> */}
               </div>
             </div>
 

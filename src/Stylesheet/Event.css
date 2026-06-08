@@ -263,7 +263,7 @@
     text-shadow: 0 2px 0 rgba(58, 10, 8, .07);
 }
 
-.ev-heading-title::after {
+/* .ev-heading-title::after {
     content: '';
     display: block;
     width: 110px;
@@ -271,7 +271,7 @@
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     margin: 14px auto 0;
     border-radius: 2px;
-}
+} */
 
 .ev-heading-sub {
     font-family: var(--font-body);

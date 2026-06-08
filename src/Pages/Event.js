@@ -215,7 +215,7 @@ export default function Event() {
 
                     {/* Section heading */}
                     <div className="ev-sched-heading">
-                        <span className="ev-heading-eyebrow">Programme of Events</span>
+                        {/* <span className="ev-heading-eyebrow">Programme of Events</span> */}
                         <h2 className="ev-heading-title">{t.scheduleTitle}</h2>
                         <p className="ev-heading-sub">{t.scheduleSubtitle}</p>
                         <div className="ev-heading-ornament">

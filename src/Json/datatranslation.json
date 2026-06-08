@@ -8,7 +8,7 @@
                 "home": "HOME",
                 "active": "Divine Gallery"
             },
-            "verse": "\"Where the lamp burns eternal, where fragrance rises with the dawn, where stone speaks in silence — this is the house of the divine.\"",
+            "verse": "\"Ya Devi Sarva Bhuteshu Mathru Rupena Samsthita Namastasyai Namastasyai Namastasyai Namo Namaha.\"",
             "chapter1": {
                 "number": "01",
                 "title": "Sanctum & Entrance",
@@ -248,7 +248,7 @@
                 "home": "முகப்பு",
                 "active": "தெய்வீக தொகுப்பு"
             },
-            "verse": "\"விளக்கு என்றும் எரிகிறது, விடியலில் மணம் கமழ்கிறது, கல் மௌனமாகப் பேசுகிறது — இதுவே இறைவனின் இல்லம்.\"",
+            "verse": "\"யா தேவி சர்வ பூதேஷு மாத்ரு ரூபேண சம்ஸ்திதா நமஸ்தஸ்யை நமஸ்தஸ்யை நமஸ்தஸ்யை நமோ நமஃ.\"",
             "chapter1": {
                 "number": "01",
                 "title": "கருவறை & நுழைவு",
@@ -488,7 +488,7 @@
                 "home": "ഹോം",
                 "active": "ദൈവിക ഗ്യാലറി"
             },
-            "verse": "\"വിളക്ക് നിത്യം കത്തുന്നിടത്ത്, പ്രഭാതത്തിൽ സൗരഭ്യം ഉയരുന്നിടത്ത്, കല്ല് മൗനത്തിൽ സംസാരിക്കുന്നിടത്ത് — ഇതാണ് ദൈവത്തിന്റെ ഭവനം.\"",
+            "verse": "\"യാ ദേവി സർവഭൂതേഷു മാതൃരൂപേണ സംസ്ഥിതാ നമസ്തസ്യൈ നമസ്തസ്യൈ നമസ്തസ്യൈ നമോ നമഃ.\"",
             "chapter1": {
                 "number": "01",
                 "title": "ശ്രീകോവിലും നടപ്പുരയും",
@@ -723,7 +723,7 @@
     },
     "section": {
         "EN": {
-            "tag": "Our Sacred Temple",
+            "tag": "Amme Sharanam Devi Sharanam",
             "titlePre": "The Divine Presence of",
             "titleHighlight": "Kurumba Bhagavathy",
             "p1": "Sri Kurumba Bhagavathy Temple at Puthussery, Palakkad is a revered Shakti kshetram of ancient origins. The presiding deity blesses devotees with protection and prosperity.",
@@ -748,7 +748,7 @@
             }
         },
         "TA": {
-            "tag": "எங்கள் புனித கோயில்",
+            "tag": "அம்மா சரணம் தேவி சரணம்",
             "titlePre": "தெய்வீக சாந்நித்தியம்",
             "titleHighlight": "குறும்ப பகவதி",
             "p1": "பாலக்காட்டில் உள்ள புத்துச்சேரி ஸ்ரீ குறும்ப பகவதி கோயில், பண்டைய காலத்தில் தோன்றிய ஒரு வணக்கத்திற்குரிய சக்தி க்ஷேத்திரம். பிரதான தெய்வம் பக்தர்களுக்கு பாதுகாப்பும் செழிப்பும் அருள்கிறது.",
@@ -773,7 +773,7 @@
             }
         },
         "ML": {
-            "tag": "പുണ്യ ക്ഷേത്രം",
+            "tag": "അമ്മേ ശരണം ദേവി ശരണം",
             "titlePre": "ദൈവിക സാന്നിദ്ധ്യം",
             "titleHighlight": " ശ്രീ കുറുമ്പ ഭഗവതി",
             "p1": "പാലക്കാട് പുതുശ്ശേരിയിലുള്ള ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം, പ്രാചീന ഉത്ഭവമുള്ള ഒരു ആദരണീയ ശക്തി ക്ഷേത്രമാണ്. പ്രതിഷ്ഠ ദേവത ഭക്തർക്ക് സംരക്ഷണവും സമൃദ്ധിയും നൽകുന്നു.",
@@ -807,7 +807,7 @@
                 "home": "HOME",
                 "active": "Donation"
             },
-            "verse": "\"Every moment captured here becomes a timeless blessing, preserving the beauty, faith, and sacred spirit of the divine.\""
+            "verse": "\"Sarva Mangala Mangalye Shive Sarvartha Sadhike Sharanye Tryambake Gauri Narayani Namo'stu Te.\""
         },
         "TA": {
             "heroTag": "புனித காட்சிகள்",
@@ -817,7 +817,7 @@
                 "home": "முகப்பு",
                 "active": "நன்கொடை"
             },
-            "verse": "\"இங்கு பதிவாகும் ஒவ்வொரு தருணமும் ஒரு நிரந்தர ஆசீர்வாதமாகிறது, தெய்வத்தின் அழகு, நம்பிக்கை மற்றும் புனித ஆவியை பாதுகாக்கிறது.\""
+            "verse": "\"சர்வ மங்கள மாங்கல்யே சிவே சர்வார்த்த சாதிகே சரண்யே த்ரியம்பகே கௌரி நாராயணி நமோஸ்துதே.\""
         },
         "ML": {
             "heroTag": "പുണ്യദൃശ്യങ്ങൾ",
@@ -827,7 +827,7 @@
                 "home": "ഹോം",
                 "active": "സംഭാവന"
             },
-            "verse": "\"ഇവിടെ പകർത്തുന്ന ഓരോ നിമിഷവും ഒരു ശാശ്വത അനുഗ്രഹമാകുന്നു, ദൈവത്തിന്റെ സൗന്ദര്യവും വിശ്വാസവും പുണ്യ ആത്മാവും സംരക്ഷിക്കുന്നു.\""
+            "verse": "\"സർവ മംഗള മാംഗല്യേ ശിവേ സർവാർത്ഥ സാധികേ ശരണ്യേ ത്ര്യംബകേ ഗൗരി നാരായണി നമോസ്തുതേ.\""
         }
     }
 }

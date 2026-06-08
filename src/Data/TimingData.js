@@ -6,7 +6,7 @@ const timingsData = [
         session: "morning",
         icon: WiSunrise,
         events: [
-            { key: "open", time: "5:00 AM" },
+            { key: "open", time: "5:30 AM" },
             { key: "morningPrayer", time: "7:00 AM" },
             { key: "closeMorning", time: "11:00 AM" },
         ],
