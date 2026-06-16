@@ -5,9 +5,10 @@ import translations from "../Json/Reachustranslations.json";
 import { QRCodeCanvas } from "qrcode.react";
 
 const QUICK_AMOUNTS = [101, 1001, 2001, 5001, 11000];
-const UPI_ID = "musicaramesh31102002@okicici";
+
+const UPI_ID = "9446658711m@pnb";
 const PAYEE_NAME = "Temple Trust";
-const WHATSAPP_NUMBER = "918610766168";
+const WHATSAPP_NUMBER = "9037092183";
 
 function buildGPayUrl(amount, purpose) {
   return `gpay://upi/pay?pa=${UPI_ID}&pn=${encodeURIComponent(PAYEE_NAME)}&am=${amount}&cu=INR&tn=${encodeURIComponent(`Donation - ${purpose}`)}`;

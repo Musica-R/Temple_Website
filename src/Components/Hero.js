@@ -2,12 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import "../Stylesheet/Hero.css";
 import { useLanguage } from "../Context/Languagecontext";
 import heroTranslations from "../Data/HeroTranslations";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lottie from 'react-lottie';
 import animationData from '../Json/Lightening Diya (Oil Lamp).json';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const temple1 = "/assets/background1.png";
 const temple2 = "/assets/download1.jpg";
@@ -114,21 +110,6 @@ export default function Hero() {
   const { language } = useLanguage();
   const t = heroTranslations[language] || heroTranslations["EN"];
 
-  /* ── Refs for GSAP parallax targets ── */
-  const sectionRef = useRef(null);
-  const bgLayerRef = useRef(null);      // slides — moves slowest (background)
-  const smokeRef = useRef(null);      // smoke — mid layer
-  const hazeRef = useRef(null);      // haze
-  const mandalaRef = useRef(null);      // mandala — counter-scroll for depth
-  const ripplesRef = useRef(null);      // ripples
-  const contentRef = useRef(null);      // hero text — moves fastest (foreground)
-  const omRef = useRef(null);
-  const dividerRef = useRef(null);
-  const h1Ref = useRef(null);
-  const subtitleRef = useRef(null);
-  const diyasRef = useRef(null);
-  const ctasRef = useRef(null);
-  const scrollInvRef = useRef(null);
   const petalCanvasRef = useRef(null);
 
   usePetalCanvas(petalCanvasRef);
@@ -139,117 +120,6 @@ export default function Hero() {
       setCurrentSlide((prev) => (prev + 1) % images.length);
     }, SLIDE_DURATION);
     return () => clearInterval(interval);
-  }, []);
-
-  /* ════════════════════════════════════
-     GSAP PARALLAX SETUP
-     Uses ScrollTrigger scrub so every
-     element drifts at its own depth.
-  ════════════════════════════════════ */
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const section = sectionRef.current;
-      const defaults = {
-        ease: "none",
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: "bottom top",
-          scrub: 1.4,
-        },
-      };
-
-      /* ── Layer 1: BG images — slowest, drifts up 20% ── */
-      gsap.to(bgLayerRef.current, {
-        yPercent: -20,
-        scale: 1.12,
-        ...defaults,
-      });
-
-      /* ── Layer 2: Smoke — slightly faster than BG ── */
-      gsap.to(smokeRef.current, {
-        yPercent: -35,
-        opacity: 0,
-        ...defaults,
-      });
-
-      /* ── Layer 3: Haze ── */
-      gsap.to(hazeRef.current, {
-        yPercent: -30,
-        opacity: 0,
-        ...defaults,
-      });
-
-      /* ── Layer 4: Mandala — counter-scroll creates depth illusion ── */
-      gsap.to(mandalaRef.current, {
-        yPercent: 15,          // rises as you scroll DOWN (reverse parallax)
-        rotation: 25,          // slow tilt amplifies spin
-        opacity: 0,
-        ...defaults,
-      });
-
-      /* ── Layer 5: Ripples — mid ── */
-      gsap.to(ripplesRef.current, {
-        yPercent: -45,
-        opacity: 0,
-        ...defaults,
-      });
-
-      /* ── Layer 6: Content — fastest (close to viewer) ── */
-      gsap.to(contentRef.current, {
-        yPercent: -55,
-        opacity: 0,
-        ...defaults,
-      });
-
-      /* ── Petal canvas ── */
-      gsap.to(petalCanvasRef.current, {
-        yPercent: -40,
-        opacity: 0,
-        ...defaults,
-      });
-
-      /* ── ENTRANCE animations (timeline, plays once on load) ── */
-      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-      tl.fromTo(omRef.current,
-        { autoAlpha: 0, y: -40 },
-        { autoAlpha: 1, y: 0, duration: 1 }
-      )
-        .fromTo(dividerRef.current,
-          { autoAlpha: 0, scaleX: 0 },
-          { autoAlpha: 1, scaleX: 1, duration: 0.6 },
-          "-=0.4"
-        )
-        .fromTo(h1Ref.current,
-          { autoAlpha: 0, y: 40 },
-          { autoAlpha: 1, y: 0, duration: 0.9 },
-          "-=0.3"
-        )
-        .fromTo(subtitleRef.current,
-          { autoAlpha: 0, y: 30 },
-          { autoAlpha: 1, y: 0, duration: 0.8 },
-          "-=0.5"
-        )
-        .fromTo(diyasRef.current,
-          { autoAlpha: 0, y: 20 },
-          { autoAlpha: 1, y: 0, duration: 0.7 },
-          "-=0.4"
-        )
-        .fromTo(ctasRef.current,
-          { autoAlpha: 0, y: 20 },
-          { autoAlpha: 1, y: 0, duration: 0.7 },
-          "-=0.4"
-        )
-        .fromTo(scrollInvRef.current,
-          { autoAlpha: 0 },
-          { autoAlpha: 1, duration: 1 },
-          "-=0.2"
-        );
-
-    }, sectionRef); // scoped context — auto-cleaned
-
-    return () => ctx.revert();
   }, []);
 
   const nextAarti = getNextAarti();
@@ -264,10 +134,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero" ref={sectionRef}>
+    <section className="hero">
 
-      {/* ── BACKGROUND SLIDES (Layer 1 — slowest) ── */}
-      <div className="hero-bg-layer" ref={bgLayerRef}>
+      {/* ── BACKGROUND SLIDES (Layer 1) ── */}
+      <div className="hero-bg-layer">
         {images.map((src, i) => (
           <img
             key={i}
@@ -282,7 +152,7 @@ export default function Hero() {
       <div className="hero-overlay" />
 
       {/* ── SMOKE (Layer 2) ── */}
-      <div className="hero-smoke" ref={smokeRef}>
+      <div className="hero-smoke">
         <div className="smoke-puff smoke-puff-1" />
         <div className="smoke-puff smoke-puff-2" />
         <div className="smoke-puff smoke-puff-3" />
@@ -291,10 +161,10 @@ export default function Hero() {
       </div>
 
       {/* ── HAZE (Layer 2b) ── */}
-      <div className="hero-haze" ref={hazeRef} />
+      <div className="hero-haze" />
 
-      {/* ── MANDALA (Layer 3 — counter-scroll) ── */}
-      <div className="hero-mandala" ref={mandalaRef}>
+      {/* ── MANDALA (Layer 3) ── */}
+      <div className="hero-mandala">
         <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <g className="mandala-ring-1">
             <circle cx="200" cy="200" r="185" fill="none" stroke="#d4af37" strokeWidth="0.6" strokeDasharray="4 6" />
@@ -338,50 +208,42 @@ export default function Hero() {
       </div>
 
       {/* ── RIPPLES (Layer 3b) ── */}
-      <div className="hero-ripples" ref={ripplesRef}>
+      <div className="hero-ripples">
         <div className="ripple-ring" />
         <div className="ripple-ring" />
         <div className="ripple-ring" />
       </div>
 
       {/* ── FLOATING PETALS (Layer 4) ── */}
-
       {/* <canvas ref={petalCanvasRef} className="hero-petals-canvas"/> */}
 
-      {/* ── SCROLL INVITE (static position, fades with content) ── */}
-      <a href="#ticker" className="hero-scroll-invite" ref={scrollInvRef} aria-label="Scroll down">
+      {/* ── SCROLL INVITE ── */}
+      <a href="#ticker" className="hero-scroll-invite" aria-label="Scroll down">
         <span>Scroll</span>
         <div className="hero-scroll-arrow" />
       </a>
 
-      {/* ── MAIN CONTENT (Layer 5 — fastest / foreground) ── */}
-      <div className="hero-content" ref={contentRef}>
-        <div className="hero-om" ref={omRef}>ॐ</div>
-        <div className="hero-divider" ref={dividerRef} />
+      {/* ── MAIN CONTENT ── */}
+      <div className="hero-content">
+        <div className="hero-om">ॐ</div>
+        <div className="hero-divider" />
 
-        <h1 ref={h1Ref}>
+        <h1>
           {t.title}
           {/* <span>{t.subtitle}</span> */}
         </h1>
 
-        {/* <p className="hero-subtitle" ref={subtitleRef}>{t.description}</p> */}
+        {/* <p className="hero-subtitle">{t.description}</p> */}
 
         {/* Diya lamps */}
-        <div className="hero-diyas" ref={diyasRef} aria-hidden="true">
-          {/* {[0, 0.12, 0.24].map((delay, i) => (
-            <div className="diya-unit" key={i}>
-              <div className="diya-flame" style={{ animationDelay: `${delay}s` }} />
-              <div className="diya-bowl" />
-            </div>
-          ))} */}
+        <div className="hero-diyas" aria-hidden="true">
           <Lottie options={defaultOptions} height={50} width={50} />
           <Lottie options={defaultOptions} height={50} width={50} />
           <Lottie options={defaultOptions} height={50} width={50} />
         </div>
-        {/* <Lottie options={defaultOptions} height={70} width={70} /> */}
 
         {/* CTA buttons */}
-        <div className="hero-ctas" ref={ctasRef}>
+        <div className="hero-ctas">
           <a href="/contact" className="btn-gold">    {t.contact}  </a>
           <a href="/donation" className="btn-outline">  {t.donation} </a>
         </div>
@@ -400,4 +262,4 @@ export default function Hero() {
       </div>
     </section>
   );
-} 
+}

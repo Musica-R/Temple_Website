@@ -194,7 +194,7 @@ export default function TempleHistory() {
             {/* ===== HEADING ===== */}
             <div className="history-heading">
                 <h1 style={{color:"brown"}}>
-                    {language === "ML" ? "ഞങ്ങളുടെ പൈതൃകം" :
+                    {language === "ML" ? "പൈതൃകം" :
                         language === "TA" ? "எங்கள் புனித பாரம்பரியம்" :
                             "Our Heritage"}
                 </h1>

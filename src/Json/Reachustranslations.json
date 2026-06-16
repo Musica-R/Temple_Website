@@ -247,7 +247,7 @@
                     },
                     "mobile": {
                         "label": "Mobile Number",
-                        "placeholder": "e.g. 9895949381"
+                        "placeholder": "e.g. 9037092183"
                     },
                     "address": {
                         "label": "Your Address",
@@ -445,7 +445,7 @@
                     },
                     "mobile": {
                         "label": "கைபேசி எண்",
-                        "placeholder": "எ.கா. 9895949381"
+                        "placeholder": "எ.கா. 9037092183"
                     },
                     "address": {
                         "label": "உங்கள் முகவரி",
@@ -643,7 +643,7 @@
                     },
                     "mobile": {
                         "label": "മൊബൈൽ നമ്പർ",
-                        "placeholder": "ഉദാ. 9895949381"
+                        "placeholder": "ഉദാ. 9037092183"
                     },
                     "address": {
                         "label": "നിങ്ങളുടെ വിലാസം",
@@ -707,7 +707,7 @@
                     "icon": "📞",
                     "label": "Phone",
                     "content": {
-                        "phone1": "+91 9895949381"
+                        "phone1": "+91 9037092183"
                     }
                 },
                 {
@@ -788,7 +788,7 @@
                     "icon": "📞",
                     "label": "தொலைபேசி",
                     "content": {
-                        "phone1": "+91 9895949381"
+                        "phone1": "+91 9037092183"
                     }
                 },
                 {
@@ -869,7 +869,7 @@
                     "icon": "📞",
                     "label": "ഫോൺ",
                     "content": {
-                        "phone1": "+91 9895949381"
+                        "phone1": "+91 9037092183"
                     }
                 },
                 {

@@ -7,20 +7,15 @@
   height: 100vh;
   overflow: hidden;
   background: #0a0806;
-  /* Extra height so the parallax BG has room to travel without showing edges */
   will-change: transform;
 }
 
 /* ═══════════════════════════════════
    PARALLAX BG WRAPPER
-   GSAP moves this element on scroll.
-   Starts slightly oversized (scale via GSAP)
-   so edges never show during parallax travel.
 ═══════════════════════════════════ */
 .hero-bg-layer {
   position: absolute;
   inset: -8%;
-  /* pre-expand so scroll-scale never clips */
   z-index: 1;
   will-change: transform;
 }
@@ -66,7 +61,6 @@
   z-index: 3;
   pointer-events: none;
   overflow: hidden;
-  will-change: transform, opacity;
 }
 
 .smoke-puff {
@@ -135,11 +129,10 @@
   pointer-events: none;
   background: linear-gradient(to top, hsla(0, 0%, 85%, 0.15) 0%, transparent 100%);
   filter: blur(20px);
-  will-change: transform, opacity;
 }
 
 /* ═══════════════════════════════════
-   CONTENT  (foreground layer — fastest parallax)
+   CONTENT
 ═══════════════════════════════════ */
 .hero-content {
   position: relative;
@@ -152,20 +145,15 @@
   color: #fffaf0;
   text-align: center;
   padding: 20px;
-  will-change: transform, opacity;
 }
 
-/* All entrance animations are now handled by GSAP.
-   Initial opacity:0 is set via inline GSAP fromTo so
-   CSS opacity rules below are only fallbacks. */
 .hero-om {
   font-size: 60px;
   color: #d4af37;
   margin-bottom: 10px;
   font-family: 'Cinzel', serif;
   animation: glowPulse 3s ease-in-out infinite;
-  /* GSAP controls initial autoAlpha */
-  opacity: 0;
+  opacity: 1; /* was 0 for GSAP — restored */
 }
 
 .hero-divider {
@@ -175,8 +163,7 @@
   margin: 10px 0 20px;
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
   transform-origin: center;
-  /* GSAP controls initial autoAlpha */
-  opacity: 0;
+  opacity: 1; /* was 0 for GSAP — restored */
 }
 
 .hero h1 {
@@ -184,8 +171,7 @@
   font-weight: bold;
   line-height: 1.3;
   font-family: 'Cinzel', serif;
-  /* GSAP controls initial autoAlpha */
-  opacity: 0;
+  opacity: 1; /* was 0 for GSAP — restored */
 }
 
 .hero h1 span {
@@ -203,14 +189,14 @@
   max-width: 600px;
   font-family: 'Cormorant Garamond', serif;
   color: rgba(255, 250, 240, 0.7);
-  opacity: 0;
+  opacity: 1; /* was 0 for GSAP — restored */
 }
 
 .hero-ctas {
   margin-top: 25px;
   display: flex;
   gap: 15px;
-  opacity: 0;
+  opacity: 1; /* was 0 for GSAP — restored */
 }
 
 .btn-gold {
@@ -280,7 +266,7 @@
 }
 
 /* ═══════════════════════════════════
-   MANDALA LAYER  (counter-scroll via GSAP)
+   MANDALA LAYER
 ═══════════════════════════════════ */
 .hero-mandala {
   position: absolute;
@@ -291,7 +277,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  will-change: transform, opacity;
 }
 
 .hero-mandala svg {
@@ -303,7 +288,6 @@
 .mandala-ring-1 {
   animation: mandalaSpinCW 80s linear infinite;
   transform-origin: 200px 200px;
-  /* SVG coords — avoids Safari jank */
 }
 
 .mandala-ring-2 {
@@ -329,7 +313,7 @@
   gap: 32px;
   align-items: flex-end;
   margin-top: 28px;
-  opacity: 0;
+  opacity: 1; /* was 0 for GSAP — restored */
 }
 
 .diya-unit {
@@ -400,7 +384,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  will-change: transform, opacity;
 }
 
 .ripple-ring {
@@ -434,7 +417,6 @@
   pointer-events: none;
   width: 100%;
   height: 100%;
-  will-change: transform, opacity;
 }
 
 /* ═══════════════════════════════════
@@ -451,8 +433,7 @@
   gap: 6px;
   cursor: pointer;
   text-decoration: none;
-  /* GSAP handles initial opacity */
-  opacity: 0;
+  opacity: 1; /* was 0 for GSAP — restored */
 }
 
 .hero-scroll-invite span {

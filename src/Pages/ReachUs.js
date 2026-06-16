@@ -73,7 +73,7 @@ export default function ReachUs() {
             label: t.infoCards[2].label,
             content: (
                 <>
-                    <a href="mailto:temple@email.com">{t.infoCards[2].content.email1}</a><br />
+                    <a href="mailto:Puthusserrysreekurumba@gmail.com">{t.infoCards[2].content.email1}</a><br />
                     <a href="mailto:info@temple.org">{t.infoCards[2].content.email2}</a>
                 </>
             ),

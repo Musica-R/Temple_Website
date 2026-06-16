@@ -87,12 +87,12 @@ export default function DivineGallery() {
 
                 {/* ══ CHAPTER ONE ══ */}
                 <div className="chapter-header">
-                    <span className="chapter-number">{t.chapter1.number}</span>
+                    {/* <span className="chapter-number">{t.chapter1.number}</span> */}
                     <div className="chapter-lines">
                         <span></span><i>🪔</i><span></span>
                     </div>
                     <h2 className="chapter-title">{t.chapter1.title}</h2>
-                    <p className="chapter-sub">{t.chapter1.sub}</p>
+                    {/* <p className="chapter-sub">{t.chapter1.sub}</p> */}
                 </div>
 
                 <div className="gallery-layout">
@@ -137,12 +137,12 @@ export default function DivineGallery() {
 
                 {/* ══ CHAPTER TWO ══ */}
                 <div className="chapter-header">
-                    <span className="chapter-number">{t.chapter2.number}</span>
+                    {/* <span className="chapter-number">{t.chapter2.number}</span> */}
                     <div className="chapter-lines">
                         <span></span><i>🌸</i><span></span>
                     </div>
                     <h2 className="chapter-title">{t.chapter2.title}</h2>
-                    <p className="chapter-sub">{t.chapter2.sub}</p>
+                    {/* <p className="chapter-sub">{t.chapter2.sub}</p> */}
                 </div>
 
                 <div className="gallery-layout gallery-layout-reverse">
@@ -181,7 +181,7 @@ export default function DivineGallery() {
 
                     {/* ── Chapter Header ── */}
                     <div className="chapter-header">
-                        <span className="chapter-number">{t.chapter3.number}</span>
+                        {/* <span className="chapter-number">{t.chapter3.number}</span> */}
                         <div className="chapter-lines">
                             <span></span><i>🔱</i><span></span>
                         </div>
@@ -248,7 +248,7 @@ export default function DivineGallery() {
 
                 {/* ══ CHAPTER FOUR — LAKSHADEEPAM ══ */}
                 <div className="chapter-header" style={{ marginTop: "90px" }}>
-                    <span className="chapter-number">{t.chapter4.number}</span>
+                    {/* <span className="chapter-number">{t.chapter4.number}</span> */}
                     <div className="chapter-lines">
                         <span></span><i>🪔</i><span></span>
                     </div>

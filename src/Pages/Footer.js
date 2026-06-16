@@ -77,7 +77,7 @@ export default function Footer() {
                         </div>
                         <div className="contact-item">
                             <span className="contact-icon"><FaPhoneAlt /></span>
-                            <span>+91 9895949381</span>
+                            <span>+91 9037092183</span>
                         </div>
                         <div className="contact-item">
                             <span className="contact-icon"><MdEmail /></span>
@@ -100,7 +100,7 @@ export default function Footer() {
             <div className="footer-divider">
                 <span className="divider-line" />
                 <span className="divider-icon">❖</span>
-                <span className="divider-icon main">☸</span>
+                <span className="divider-icon main">ॐ</span>
                 <span className="divider-icon">❖</span>
                 <span className="divider-line" />
             </div>

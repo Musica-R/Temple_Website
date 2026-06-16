@@ -4,8 +4,12 @@ import { useState } from "react";
 import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/Reachustranslations.json";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+
+     const navigate = useNavigate();
+
     const [menuOpen, setMenuOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
     const { language, setLanguage } = useLanguage();
@@ -24,9 +28,9 @@ export default function Header() {
             <div className="nav-inner">
 
                 {/* LOGO — translated */}
-                <div className="nav-logo">
+                <div className="nav-logo" onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
                     <img src="/assets/maingod.jpeg" alt="Logo" className="logo-img" />
-                    <div className="logo-text">
+                    <div className="logo-text" >
                         {t.logoName}
                         <span>{t.logoSubtitle}</span>
                     </div>
