@@ -102,7 +102,7 @@ export default function Pooja() {
 
                 <div className="pj-featured-rule" />
 
-                <p className="pj-featured-desc">{activeItem.desc}</p>
+                {/* <p className="pj-featured-desc">{activeItem.desc}</p> */}
 
                 <div className="pj-featured-price">
                   <span className="pj-price-label">From</span>

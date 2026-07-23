@@ -154,7 +154,7 @@ export default function Timing() {
           {/* Image card */}
           <div className="t-img-card">
             <div className="t-img-wrap">
-              <img src="/assets/banner.webp" alt="Temple" />
+              <img src="/assets/img2.png" alt="Temple" />
               <div className="t-img-veil" />
               <div className="t-img-corner t-img-corner--tl" />
               <div className="t-img-corner t-img-corner--tr" />

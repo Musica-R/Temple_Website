@@ -28,7 +28,7 @@ export default function Footer() {
                 <p className="banner-sub">{t.bannerSub}</p>
                 <h2 className="banner-title">{t.bannerTitle}</h2>
                 <p className="banner-location">{t.bannerLocation}</p>
-                {/* <p className="footer-desc">{t.desc}</p> */}
+                <p className="footer-desc" style={{paddingTop:"5px"}}>{t.desc}</p>
             </div>
 
             {/* Main grid */}

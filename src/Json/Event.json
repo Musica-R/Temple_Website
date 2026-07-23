@@ -56,7 +56,7 @@
                     "day": "13",
                     "month": "Feb",
                     "weekday": "Friday",
-                    "title": "Muthal Vilakk · Aviyal Dal",
+                    "title": "Muthal Vilakk · Aviyidal",
                     "time": "First Lamp Ceremony",
                     "special": false,
                     "image": "/assets/lam.jpg",
@@ -66,7 +66,7 @@
                             "text": "Lighting of the First Lamp"
                         },
                         {
-                            "label": "Aviyal Dal",
+                            "label": "Aviyidal",
                             "text": "Traditional offering ceremony"
                         }
                     ]
@@ -75,13 +75,13 @@
                     "day": "15",
                     "month": "Feb",
                     "weekday": "Sunday",
-                    "title": "Varivozhuththu",
+                    "title": "VARIYEZHUTH",
                     "time": "",
                     "special": false,
                     "image": "/assets/dan.jpg",
                     "details": [
                         {
-                            "label": "Varivozhuththu",
+                            "label": "VARIYEZHUTH",
                             "text": "Special puja at Shiva Temple during Shivarathri auspicious hour"
                         },
                         {
@@ -113,7 +113,7 @@
                     "day": "19",
                     "month": "Feb",
                     "weekday": "Thursday",
-                    "title": "Ezhaam Vilakk – Seventh Lamp",
+                    "title": "Ezhaam Vilakk",
                     "time": "Evening 6:30 – Avataranam",
                     "special": false,
                     "image": "/assets/sevenlamp.jpg",
@@ -132,7 +132,7 @@
                     "day": "20",
                     "month": "Feb",
                     "weekday": "Friday",
-                    "title": "Valiya Kummatti · Grand Procession · Bhagavathi Neeraattal",
+                    "title": "Valiya Kummatti · Grand Procession · Bhagavathi Neeradal",
                     "time": "Morning 10:00 · Afternoon 2:30 · Evening 6:20 · Night 9:00",
                     "special": true,
                     "image": "/assets/kum.jpg",
@@ -142,7 +142,7 @@
                             "text": "Grand Kummatti Festival"
                         },
                         {
-                            "label": "Bhagavathi Neeraattal",
+                            "label": "Bhagavathi Neeradal",
                             "text": "Kummatti figures from Puthusheri Vekkurushi Bhagavathi Temple and Puthukkulangara Bhagavathi Temple placed in the paddy field"
                         },
                         {

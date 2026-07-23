@@ -363,7 +363,7 @@
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(212, 175, 55, 0.18);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  /* box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55); */
 }
 
 .t-img-wrap {

@@ -385,7 +385,7 @@
   font-weight: 500;
   color: var(--brown);
   margin-bottom: 16px;
-  text-align: justify;
+  /* text-align: justify; */
   line-height: 1.7;
 }
 

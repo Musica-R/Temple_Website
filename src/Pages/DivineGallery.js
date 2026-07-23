@@ -103,11 +103,11 @@ export default function DivineGallery() {
                         <div className="gallery-divider">ॐ</div>
                         <p>{t.contentLeft.p1}</p>
                         <p>{t.contentLeft.p2}</p>
-                        <ul className="content-features">
+                        {/* <ul className="content-features">
                             {t.contentLeft.features.map((f, i) => (
                                 <li key={i}>{f}</li>
                             ))}
-                        </ul>
+                        </ul> */}
                         <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentLeft.btn}</button>
                     </div>
 

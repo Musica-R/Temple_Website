@@ -613,7 +613,7 @@
   font-family: "EB Garamond", serif;
   font-size: 15px;
   line-height: 1.85;
-  text-align: justify;
+  text-align:start;
   color: var(--text-body);
   hyphens: auto;
   flex: 1;
