@@ -89,7 +89,7 @@
   align-items: center;
   gap: 10px;
   font-family: var(--font-display, 'Cinzel', serif);
-  font-size: 0.62rem;
+  font-size: 0.87rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--gold, #d4af37);
@@ -415,7 +415,7 @@
 
 @media (max-width: 600px) {
   .tv-section {
-    padding: 70px 0;
+    padding: 40px 0;
   }
 
   .tv-header,

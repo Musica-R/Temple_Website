@@ -584,7 +584,7 @@
 
 .ev-panel-title {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
     color: var(--maroon);
     line-height: 1.4;
@@ -640,7 +640,7 @@
 
 .ev-detail-label {
     font-family: var(--font-display);
-    font-size: 9px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--maroon-light);
     white-space: nowrap;
@@ -661,7 +661,7 @@
 
 .ev-detail-text {
     color: var(--text-mid);
-    font-size: 12.5px;
+    font-size: 14px;
 }
 
 /* ════════════════════════════════════════
@@ -973,9 +973,13 @@
     .ev-card-img-zone,
     .ev-card:nth-child(even) .ev-card-img-zone {
         width: 100%;
-        height: 220px;
+        height: 260px;
         order: 0;
         grid-column: unset;
+    }
+
+    .ev-card-img-zone img {
+        object-position: top center;
     }
 
     /* Reset even-row fade to bottom fade */
@@ -1021,6 +1025,10 @@
 
     .ev-card:nth-child(even) .ev-panel-detail {
         flex-direction: row;
+    }
+
+    .ev-panel-detail{
+        display: block;
     }
 
     .ev-card:nth-child(even) .ev-panel-time {
@@ -1105,4 +1113,13 @@
     .ev-stat-num {
         font-size: 26px;
     }
+
+    .ev-detail-text {
+        font-size: 10px;
+    }
+
+    .ev-detail-label {
+        font-size: 10px;
+    }
+
 }

@@ -393,7 +393,7 @@
   font-family: var(--font-body, 'Cormorant Garamond', serif);
   font-size: 0.95rem;
   font-weight: 600;
-  color: rgba(212,175,55,0.5);
+  color: #d4af37;
   flex-shrink: 0;
   transition: color 0.25s;
 }
@@ -532,7 +532,7 @@
 @media (max-width: 420px) {
 
   .pj-section {
-    padding: 70px 0 80px;
+    padding: 40px 0 80px;
   }
 
   .pj-container {

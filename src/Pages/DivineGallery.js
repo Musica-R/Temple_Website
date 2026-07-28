@@ -4,7 +4,8 @@ import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/datatranslation.json";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import galleryImages from "../Data/Gallery";
+import galleryImages, { gallery } from "../Data/Gallery";
+import GallerySection from "./GallerySection";
 
 export default function DivineGallery() {
 
@@ -52,6 +53,48 @@ export default function DivineGallery() {
         return () => observer.disconnect();
     }, []);
 
+    // Add this near your other refs at the top of the component
+    const ch2GridRef = useRef(null);
+
+    // Add this near your other useEffects
+    useEffect(() => {
+        const resizeGridItems = () => {
+            const grid = ch2GridRef.current;
+            if (!grid) return;
+            const rowHeight = 10;
+            const rowGap = 18;
+            const items = grid.querySelectorAll(".gallery-item-ch2");
+            items.forEach((item) => {
+                const rowSpan = Math.ceil(
+                    (item.getBoundingClientRect().height + rowGap) / (rowHeight + rowGap)
+                );
+                item.style.gridRowEnd = `span ${rowSpan}`;
+            });
+        };
+
+        const grid = ch2GridRef.current;
+        const images = grid ? grid.querySelectorAll("img") : [];
+        let loadedCount = 0;
+
+        if (images.length === 0) return;
+
+        images.forEach((img) => {
+            if (img.complete) {
+                loadedCount++;
+            } else {
+                img.addEventListener("load", () => {
+                    loadedCount++;
+                    if (loadedCount === images.length) resizeGridItems();
+                });
+            }
+        });
+
+        if (loadedCount === images.length) resizeGridItems();
+
+        window.addEventListener("resize", resizeGridItems);
+        return () => window.removeEventListener("resize", resizeGridItems);
+    }, []);
+
     return (
         <div>
 
@@ -85,41 +128,27 @@ export default function DivineGallery() {
 
             <section className="divine-gallerys">
 
-                {/* ══ CHAPTER ONE ══ */}
+                {/* ══ CHAPTER ONE ══ (unchanged) */}
                 <div className="chapter-header">
-                    {/* <span className="chapter-number">{t.chapter1.number}</span> */}
                     <div className="chapter-lines">
                         <span></span><i>🪔</i><span></span>
                     </div>
                     <h2 className="chapter-title">{t.chapter1.title}</h2>
-                    {/* <p className="chapter-sub">{t.chapter1.sub}</p> */}
                 </div>
 
                 <div className="gallery-layout">
-                    {/* LEFT CONTENT */}
-                    <div className="gallery-content">
-                        <div className="content-badge">{t.contentLeft.badge}</div>
-                        <h2>{t.contentLeft.title}</h2>
-                        <div className="gallery-divider">ॐ</div>
-                        <p>{t.contentLeft.p1}</p>
-                        <p>{t.contentLeft.p2}</p>
-                        {/* <ul className="content-features">
-                            {t.contentLeft.features.map((f, i) => (
-                                <li key={i}>{f}</li>
-                            ))}
-                        </ul> */}
-                        <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentLeft.btn}</button>
+                    <div className="gallery-grid-new">
+                        {t.galleryData.slice(7, 13).map((item) => (
+                            <div className="gallery-item" key={item.id} data-title={item.title} data-desc={item.desc}>
+                                <img src={item.img} alt={item.title} />
+                            </div>
+                        ))}
                     </div>
 
-                    {/* RIGHT IMAGES */}
                     <div className="gallery-grid-new">
                         {t.galleryData.slice(0, 6).map((item) => (
                             <div className="gallery-item" key={item.id} data-title={item.title} data-desc={item.desc}>
                                 <img src={item.img} alt={item.title} />
-                                {/* <div className="item-overlay">
-                                    <span className="item-title">{item.title}</span>
-                                    <span className="item-desc">{item.desc}</span>
-                                </div> */}
                             </div>
                         ))}
                     </div>
@@ -135,53 +164,22 @@ export default function DivineGallery() {
                     ))}
                 </div>
 
+                {/* ══ CHAPTER TWO ══ (updated gallery layout only) */}
                 {/* ══ CHAPTER TWO ══ */}
                 <div className="chapter-header">
-                    {/* <span className="chapter-number">{t.chapter2.number}</span> */}
                     <div className="chapter-lines">
                         <span></span><i>🌸</i><span></span>
                     </div>
                     <h2 className="chapter-title">{t.chapter2.title}</h2>
-                    {/* <p className="chapter-sub">{t.chapter2.sub}</p> */}
                 </div>
 
-                <div className="gallery-layout gallery-layout-reverse">
-                    <div className="gallery-grid-new">
-                        {t.galleryData.slice(7, 13).map((item) => (
-                            <div className="gallery-item" key={item.id} data-title={item.title} data-desc={item.desc}>
-                                <img src={item.img} alt={item.title} />
-                                {/* <div className="item-overlay">
-                                    <span className="item-title">{item.title}</span>
-                                    <span className="item-desc">{item.desc}</span>
-                                </div> */}
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="gallery-content">
-                        <div className="content-badge">{t.contentRight.badge}</div>
-                        <h2>{t.contentRight.title}</h2>
-                        <div className="gallery-divider">ॐ</div>
-                        <p>{t.contentRight.p1}</p>
-                        <p>{t.contentRight.p2}</p>
-
-                        {/* <ul className="content-features">
-                            {t.contentRight.features.map((f, i) => (
-                                <li key={i}>{f}</li>
-                            ))}
-                        </ul> */}
-
-                        <button className="gallery-btn" onClick={() => navigate("/history")} >{t.contentRight.btn}</button>
-                    </div>
-                </div>
+               <GallerySection />
 
                 {/* ══ CHAPTER THREE — UPADEVATAS ══ */}
 
                 <div className="shrine-root">
 
-                    {/* ── Chapter Header ── */}
                     <div className="chapter-header">
-                        {/* <span className="chapter-number">{t.chapter3.number}</span> */}
                         <div className="chapter-lines">
                             <span></span><i>🔱</i><span></span>
                         </div>
@@ -189,26 +187,10 @@ export default function DivineGallery() {
                         <p className="chapter-sub">{t.chapter3.sub}</p>
                     </div>
 
-                    {/* ── Section Header ── */}
-                    <div className="shrine-header">
-                        {/* <span className="shrine-eyebrow">Divine Gallery</span> */}
-                        {/* <div className="shrine-divider">
-                            <div className="shrine-divider-line"></div>
-                            <div className="shrine-divider-diamond"></div>
-                            <div className="shrine-divider-diamond small"></div>
-                            <div className="shrine-divider-diamond"></div>
-                            <div className="shrine-divider-line right"></div>
-                        </div> */}
-                    </div>
+                    <div className="shrine-header"></div>
 
-                    {/* ── Main Deity Hero ── */}
                     <div className="main-deity-hero">
-                        <div >
-                            {/* <img
-                                className="main-deity-img"
-                                src={t.upadevathas[0].img}
-                                alt={t.upadevathas[0].name}
-                            /> */}
+                        <div>
                             <div className="main-deity-overlay">
                                 <span className="main-deity-tag">{t.upadevathas[0].tag}</span>
                                 <h3 className="main-deity-name">{t.upadevathas[0].name}</h3>
@@ -216,12 +198,10 @@ export default function DivineGallery() {
                         </div>
                     </div>
 
-                    {/* ── Sub Deity Label ── */}
                     <div className="sub-deities-label">
                         <span>&#9670; Sub Deities &#9670;</span>
                     </div>
 
-                    {/* ── 5 Sub Deities Strip ── */}
                     <div className="sub-deities-strip">
                         {t.upadevathas.slice(1, 6).map((deity, i) => (
                             <div key={i} className="sub-shrine">
@@ -244,11 +224,8 @@ export default function DivineGallery() {
 
                 </div>
 
-
-
                 {/* ══ CHAPTER FOUR — LAKSHADEEPAM ══ */}
                 <div className="chapter-header" style={{ marginTop: "90px" }}>
-                    {/* <span className="chapter-number">{t.chapter4.number}</span> */}
                     <div className="chapter-lines">
                         <span></span><i>🪔</i><span></span>
                     </div>
@@ -285,77 +262,17 @@ export default function DivineGallery() {
                                     ? "ദിവ്യ നിമിഷങ്ങൾ"
                                     : "Divine Moments"}
                         </h2>
-
-                        <p className="chapter-sub">
-                            {language === "TA"
-                                ? "கோவில் அரங்கில் இருந்து புனித தரிசனங்கள்"
-                                : language === "ML"
-                                    ? "ക്ഷേത്ര ഗാലറിയിൽ നിന്നുള്ള വിശുദ്ധ ദൃശ്യങ്ങൾ"
-                                    : "Sacred glimpses from the temple gallery"}
-                        </p>
                     </div>
 
                     <div className="mid-gallery-grid">
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[0].img} alt={galleryImages[0].title} />
-                            {/* <div className="mid-overlay"><span>{galleryImages[0].title}</span></div> */}
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[1].img} alt={galleryImages[1].title} />
-                            {/* <div className="mid-overlay"><span>{galleryImages[1].title}</span></div> */}
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[2].img} alt={galleryImages[2].title} />
-                            {/* <div className="mid-overlay"><span>{galleryImages[2].title}</span></div> */}
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[3].img} alt={galleryImages[3].title} />
-                            {/* <div className="mid-overlay"><span>{galleryImages[3].title}</span></div> */}
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[4].img} alt={galleryImages[4].title} />
-                            {/* <div className="mid-overlay"><span>{galleryImages[4].title}</span></div> */}
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[5].img} alt={galleryImages[5].title} />
-
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[6].img} alt={galleryImages[6].title} />
-
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[7].img} alt={galleryImages[7].title} />
-                        </div>
-
-                        {/* <div className="mid-gallery-item">
-                            <img src={galleryImages[8].img} alt={galleryImages[8].title} />
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[9].img} alt={galleryImages[9].title} />
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[10].img} alt={galleryImages[10].title} />
-                        </div>
-
-                        <div className="mid-gallery-item">
-                            <img src={galleryImages[11].img} alt={galleryImages[11].title} />
-                        </div> */}
-
+                        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+                            <div className="mid-gallery-item" key={i}>
+                                <img src={galleryImages[i].img} alt={galleryImages[i].title} />
+                            </div>
+                        ))}
                     </div>
 
                 </div>
-
 
                 {/* ── TESTIMONIALS BAND ── */}
                 <div className="gallery-testimonials">
@@ -386,8 +303,8 @@ export default function DivineGallery() {
                             <p>{t.cta.sub}</p>
                         </div>
                         <div className="gcta-btns">
-                            <button className="gcta-btn-primary" onClick={() => navigate("/contact")} >{t.cta.btnPrimary}</button>
-                            <button className="gcta-btn-secondary" onClick={() => navigate("/")}  >{t.cta.btnSecondary}</button>
+                            <button className="gcta-btn-primary" onClick={() => navigate("/contact")}>{t.cta.btnPrimary}</button>
+                            <button className="gcta-btn-secondary" onClick={() => navigate("/")}>{t.cta.btnSecondary}</button>
                         </div>
                     </div>
                 </div>

@@ -99,7 +99,7 @@ export default function DonationForm() {
 
   const handleSendWhatsApp = () => {
     if (!donorName.trim() || !mobile.trim() || !address.trim()) {
-     alert(t.whatsappModal.validationAlert);
+      alert(t.whatsappModal.validationAlert);
       return;
     }
 
@@ -233,8 +233,8 @@ export default function DonationForm() {
                 <button className="paid-btn" onClick={() => setShowWhatsAppForm(true)}>
                   <span className="paid-btn-checkmark">✓</span>
                   <span className="paid-btn-text">
-                   <span className="paid-btn-main">{t.whatsappModal.paidBtn.main}</span>
-                   <span className="paid-btn-sub">{t.whatsappModal.paidBtn.sub}</span>
+                    <span className="paid-btn-main">{t.whatsappModal.paidBtn.main}</span>
+                    <span className="paid-btn-sub">{t.whatsappModal.paidBtn.sub}</span>
                   </span>
                   <span className="paid-btn-arrow">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -301,7 +301,7 @@ export default function DonationForm() {
                   src={`/assets/${card.key === "annadanam" ? "annadhanam" :
                     card.key === "lamp" ? "deepaam" :
                       card.key === "renovation" ? "ren" :
-                          card.key === "vastra" ? "dress" : card.key}.jpg`}
+                        card.key === "vastra" ? "dress" : card.key}.jpg`}
                   alt={card.imgAlt}
                 />
                 <span className="card-icon">{card.icon}</span>
@@ -389,7 +389,10 @@ export default function DonationForm() {
                   type="text"
                   placeholder={t.whatsappModal.fields.name.placeholder}
                   value={donorName}
-                  onChange={(e) => setDonorName(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/[^a-zA-Z\s]/g, "");
+                    setDonorName(value);
+                  }}
                 />
               </div>
 
@@ -459,8 +462,8 @@ export default function DonationForm() {
               <button className="wf-modal-whatsapp-btn" onClick={handleSendWhatsApp}>
                 <span>💬</span>
                 <span className="wf-btn-content">
-                 <span className="wf-btn-main">{t.whatsappModal.sendBtn.main}</span>
-                 <span className="wf-btn-sub">{t.whatsappModal.sendBtn.sub}</span>
+                  <span className="wf-btn-main">{t.whatsappModal.sendBtn.main}</span>
+                  <span className="wf-btn-sub">{t.whatsappModal.sendBtn.sub}</span>
                 </span>
               </button>
 

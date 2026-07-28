@@ -228,7 +228,7 @@
   align-items: center;
   gap: 12px;
   font-family: var(--font-display, 'Cinzel', serif);
-  font-size: 0.65rem;
+  font-size: 1rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--gold, #d4af37);
@@ -250,7 +250,6 @@
   font-size: clamp(1.8rem, 3vw, 2.8rem);
   font-weight: 600;
   line-height: 1.25;
-  /* color: var(--cream, #fffaf0); */
   margin: 0 0 22px;
 }
 
@@ -407,9 +406,11 @@
   .abt-section {
     padding: 30px 0;
   }
-  .abt-top-rule{
+
+  .abt-top-rule {
     margin-bottom: 30px;
   }
+
   .abt-container {
     padding: 0 24px;
   }
@@ -429,6 +430,10 @@
 
   .abt-img-main .abt-img-frame {
     height: 300px;
+  }
+
+  .abt-heading {
+    font-size: 24px;
   }
 
   .abt-img-sm {

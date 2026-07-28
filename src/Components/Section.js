@@ -106,8 +106,7 @@ export default function Section() {
             </p>
 
             <h2 className="abt-heading">
-              {t.titlePre}{" "}
-              <em>{t.titleHighlight}</em>
+              {t.titlePre}  <em>{t.titleHighlight}</em>
             </h2>
 
             <div className="abt-rule">

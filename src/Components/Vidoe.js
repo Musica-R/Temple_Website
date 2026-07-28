@@ -142,7 +142,7 @@ export default function TempleVideo() {
             >
               <img src={img.src} alt={img.alt} loading="lazy" />
               <div className="tv-gallery-overlay" />
-              <span className="tv-gallery-label">{img.alt}</span>
+              {/* <span className="tv-gallery-label">{img.alt}</span> */}
             </div>
           ))}
         </div>

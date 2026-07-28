@@ -22,7 +22,7 @@ export default function Pooja() {
   const data = poojaData[language] || poojaData["EN"];
   const [activeIndex, setActiveIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const itemsPerPage = 5;
+  const itemsPerPage = 7;
   const totalPages = Math.ceil(data.length / itemsPerPage);
   const currentPage = Math.floor(activeIndex / itemsPerPage);
 
@@ -65,11 +65,11 @@ export default function Pooja() {
 
         {/* ── HEADER ── */}
         <div className="pj-header">
-          <p className="pj-eyebrow">
+          {/* <p className="pj-eyebrow">
             <span className="pj-eyebrow-deco">✦</span>
             {sectionTag}
             <span className="pj-eyebrow-deco">✦</span>
-          </p>
+          </p> */}
           <h2 className="pj-title">{sectionTitle}</h2>
           {/* <p className="pj-desc">{sectionDesc}</p> */}
           <div className="pj-divider">
@@ -153,7 +153,7 @@ export default function Pooja() {
 
                     <div className="pj-list-body">
                       <h4 className="pj-list-name">{pooja.name}</h4>
-                      <p className="pj-list-desc">{pooja.desc}</p>
+                      {/* <p className="pj-list-desc">{pooja.desc}</p> */}
                     </div>
 
                     <span className={`pj-list-price ${isActive ? "active" : ""}`}>

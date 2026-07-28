@@ -6,7 +6,7 @@ import translations from "../Json/Reachustranslations.json";
 import { useNavigate } from "react-router-dom";
 
 export default function ReachUs() {
-     const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const infoCardsRef = useRef([]);
     const rightRef = useRef(null);
@@ -20,14 +20,51 @@ export default function ReachUs() {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+
+        if (name === "name") {
+            // allow only letters and spaces
+            const filteredValue = value.replace(/[^a-zA-Z\s]/g, '');
+            setFormData((prev) => ({
+                ...prev,
+                [name]: filteredValue
+            }));
+            return;
+        }
+
         setFormData((prev) => ({
             ...prev,
             [name]: value
         }));
     };
-    const handleSubmit = () => {
-        const phoneNumber = "8610766168"; // temple WhatsApp number (with country code)
 
+    const [errors, setErrors] = useState({});
+
+    const isValidEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    const handleSubmit = () => {
+        const newErrors = {};
+
+        if (!formData.name.trim()) {
+            newErrors.name = "Name is required";
+        }
+
+        if (!formData.email.trim()) {
+            newErrors.email = "Email is required";
+        } else if (!isValidEmail(formData.email)) {
+            newErrors.email = "Please enter a valid email address";
+        }
+
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            return; // stop here — don't open WhatsApp
+        }
+
+        setErrors({});
+
+        const phoneNumber = "9037092183";
         const message = ` *New Prayer Request from Temple Website*
 
  Name: ${formData.name}
@@ -35,7 +72,6 @@ export default function ReachUs() {
  Message: ${formData.message}`;
 
         const encodedMessage = encodeURIComponent(message);
-
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
         window.open(whatsappURL, "_blank");
@@ -123,7 +159,7 @@ export default function ReachUs() {
                     <h1>{t.heroBanner.title}</h1>
                     {/* <p className="hero-sub">{t.heroBanner.subtitle}</p> */}
                     <div className="ourheritage-breadcrumb">
-                        <span onClick={() => navigate("/")} style={{cursor:"pointer"}}>{t.heroBanner.breadcrumb.home}</span>
+                        <span onClick={() => navigate("/")} style={{ cursor: "pointer" }}>{t.heroBanner.breadcrumb.home}</span>
                         <span className="ourheritage-dot">{t.heroBanner.breadcrumb.separator}</span>
                         <span className="ourheritage-active">{t.heroBanner.breadcrumb.current}</span>
                     </div>
@@ -203,6 +239,7 @@ export default function ReachUs() {
 
                             <div className="form-body">
                                 <div className="form-row">
+
                                     <div className="form-group">
                                         <label>{t.form.fields.name.label}</label>
                                         <input
@@ -213,8 +250,9 @@ export default function ReachUs() {
                                             placeholder={t.form.fields.name.placeholder}
                                             required
                                         />
-
+                                        {errors.name && <span className="error-text">{errors.name}</span>}
                                     </div>
+
                                     <div className="form-group">
                                         <label>{t.form.fields.email.label}</label>
                                         <input
@@ -225,6 +263,7 @@ export default function ReachUs() {
                                             placeholder={t.form.fields.email.placeholder}
                                             required
                                         />
+                                        {errors.email && <span className="error-text">{errors.email}</span>}
                                     </div>
                                 </div>
 
