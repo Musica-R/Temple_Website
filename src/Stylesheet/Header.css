@@ -256,16 +256,16 @@ nav::after {
   }
 
   .nav-links li a {
-  font-size: 9px;
-}
+    font-size: 9px;
+  }
 
-.nav.ML .nav-links li a{
-  font-size: 9px;
-}
+  .nav.ML .nav-links li a {
+    font-size: 9px;
+  }
 
-.nav.TA .nav-links li a{
-  font-size: 7px;
-}
+  .nav.TA .nav-links li a {
+    font-size: 7px;
+  }
 
 }
 
@@ -376,13 +376,14 @@ nav::after {
   nav {
     padding: 10px 0px;
   }
-  .lang-menu{
+
+  .lang-menu {
     gap: 4px;
     display: flex;
     flex-direction: column;
   }
 
-  .lang-selected{
+  .lang-selected {
     padding: 0px;
   }
 
@@ -404,11 +405,23 @@ nav::after {
   }
 
   .logo-img {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
   }
 
   .logo-text {
     text-align: start;
+  }
+
+  .nav-links li a {
+    font-size: 11px;
+  }
+
+  .nav.ML .nav-links li a {
+    font-size: 11px;
+  }
+
+  .nav.TA .nav-links li a {
+    font-size: 11px;
   }
 }
