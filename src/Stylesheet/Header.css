@@ -260,7 +260,7 @@ nav::after {
 @media (max-width: 768px) {
 
   .nav-inner {
-    padding: 5px;
+    padding: 9px;
   }
 
   nav {
@@ -356,13 +356,25 @@ nav::after {
 /* SMALL MOBILE */
 @media (max-width: 420px) {
 
+  .nav-links {
+    gap: 15px;
+  }
+
   nav {
     padding: 10px 0px;
+  }
+  .lang-menu{
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lang-selected{
+    padding: 0px;
   }
 
   .logo-text {
     font-size: 12px;
-    text-align: center;
   }
 
   .logo-text span {
@@ -381,5 +393,9 @@ nav::after {
   .logo-img {
     width: 30px;
     height: 30px;
+  }
+
+  .logo-text {
+    text-align: start;
   }
 }

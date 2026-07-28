@@ -107,7 +107,8 @@
 
 .tv-title {
   font-family: var(--font-display, 'Cinzel', serif);
-  font-size: clamp(1.9rem, 3.2vw, 2.9rem);
+  /* font-size: clamp(1.9rem, 3.2vw, 2.9rem); */
+  font-size: 33px;
   font-weight: 600;
   /* color: var(--cream, #fffaf0); */
   margin: 0 0 14px;
@@ -434,5 +435,9 @@
   .tv-gallery-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+  
+  .tv-description{
+    font-size: 0.9rem;
   }
 }

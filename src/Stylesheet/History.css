@@ -1054,4 +1054,8 @@
     line-height: 0.85;
     margin: 3px 4px 0 0;
   }
+
+  .book-heading h1{
+    font-size: 28px;
+  }
 }

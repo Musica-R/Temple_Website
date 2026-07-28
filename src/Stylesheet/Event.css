@@ -1121,5 +1121,7 @@
     .ev-detail-label {
         font-size: 10px;
     }
-
+   .ev-panel-title {
+    font-size: 15px;
+   }
 }

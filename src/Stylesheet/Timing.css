@@ -4,7 +4,7 @@
 .t-section {
   position: relative;
   background-color: #f9ecd2;
-  padding: 100px 0 110px;
+  padding: 40px 0 40px;
   overflow: hidden;
 }
 
@@ -815,9 +815,9 @@
     font-size: 1.3rem;
   }
 
-  .t-stat-label {
+  /* .t-stat-label {
     font-size: 0.5rem;
-  }
+  } */
 
   .t-stat-sub {
     font-size: 0.7rem;
