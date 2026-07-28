@@ -324,9 +324,9 @@ nav::after {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  .nav-links li:last-child {
+  /* .nav-links li:last-child {
     border-bottom: none;
-  }
+  } */
 
   .nav-links li a {
     display: block;
@@ -378,9 +378,12 @@ nav::after {
   }
 
   .lang-menu {
-    gap: 4px;
+    gap: 8px;
     display: flex;
-    flex-direction: column;
+  }
+
+  .lang-menu li{
+    font-size: 13px;
   }
 
   .lang-selected {
