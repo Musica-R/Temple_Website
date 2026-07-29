@@ -108,6 +108,16 @@
     /* margin-bottom: 18px; */
 }
 
+.contact-email {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
 .footer-desc {
     max-width: 520px;
     margin: 0 auto;

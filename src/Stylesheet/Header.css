@@ -204,7 +204,7 @@ nav::after {
   background: #fff;
   border: 1px solid #eee;
   border-radius: 6px;
-  width: 120px;
+  width: 130px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   z-index: 1000;
 }

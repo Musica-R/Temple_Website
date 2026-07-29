@@ -8,8 +8,8 @@ import translations from "../Json/footer.json";
 export default function Footer() {
     const { language } = useLanguage();
     const t = translations.footer?.[language] || translations.footer?.["EN"];
-   
-    
+
+
     return (
         <footer className="footer">
 
@@ -28,7 +28,7 @@ export default function Footer() {
                 <p className="banner-sub">{t.bannerSub}</p>
                 <h2 className="banner-title">{t.bannerTitle}</h2>
                 <p className="banner-location">{t.bannerLocation}</p>
-                <p className="footer-desc" style={{paddingTop:"5px"}}>{t.desc}</p>
+                <p className="footer-desc" style={{ paddingTop: "5px" }}>{t.desc}</p>
             </div>
 
             {/* Main grid */}
@@ -80,8 +80,15 @@ export default function Footer() {
                             <span>+91 9037092183</span>
                         </div>
                         <div className="contact-item">
-                            <span className="contact-icon"><MdEmail /></span>
-                            <span>Puthusserrysreekurumba@gmail.com</span>
+                            <span className="contact-icon">
+                                <MdEmail />
+                            </span>
+                            <a
+                                href="mailto:Puthusserrysreekurumba@gmail.com"
+                                className="contact-email"
+                            >
+                                Puthusserrysreekurumba@gmail.com
+                            </a>
                         </div>
                     </div>
 
@@ -92,7 +99,7 @@ export default function Footer() {
                         <a href="#instagram" className="social-btn" aria-label="Instagram"><FaInstagram /></a>
                     </div> */}
                 </div>
-                
+
 
             </div>
 

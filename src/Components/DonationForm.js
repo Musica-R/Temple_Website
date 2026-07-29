@@ -63,9 +63,29 @@ export default function DonationForm() {
     setShowQR(false); setShowWhatsAppForm(false);
   };
 
+  // ── Prevent negative values in the amount field ──
   const handleAmountChange = (e) => {
-    setAmount(e.target.value); setActiveAmount(null);
-    setShowQR(false); setShowWhatsAppForm(false);
+    let value = e.target.value;
+
+    // Strip any minus signs / non-numeric characters (allow empty string so user can clear/retype)
+    value = value.replace(/-/g, "");
+
+    // Guard against a value that evaluates to negative (e.g. pasted "-50")
+    if (value !== "" && Number(value) < 0) {
+      value = "";
+    }
+
+    setAmount(value);
+    setActiveAmount(null);
+    setShowQR(false);
+    setShowWhatsAppForm(false);
+  };
+
+  // Block typing/pasting the "-" or "e" (exponent) keys in the number input
+  const handleAmountKeyDown = (e) => {
+    if (e.key === "-" || e.key === "e" || e.key === "+") {
+      e.preventDefault();
+    }
   };
 
   const handleGenerate = () => {
@@ -98,7 +118,21 @@ export default function DonationForm() {
   // };
 
   const handleSendWhatsApp = () => {
-    if (!donorName.trim() || !mobile.trim() || !address.trim()) {
+    // Name required
+    if (!donorName.trim()) {
+      alert(t.whatsappModal.validationAlert);
+      return;
+    }
+
+    // Mobile required + must be a valid 10-digit Indian mobile number (starts with 6-9)
+    const mobileRegex = /^[6-9]\d{9}$/;
+    if (!mobile.trim() || !mobileRegex.test(mobile.trim())) {
+      alert("Please enter a valid 10-digit mobile number.");
+      return;
+    }
+
+    // Address required
+    if (!address.trim()) {
       alert(t.whatsappModal.validationAlert);
       return;
     }
@@ -167,8 +201,8 @@ export default function DonationForm() {
 
             <div className="field-group">
               <label>{t.formPanel.amountLabel}</label>
-              <input type="number" placeholder={t.formPanel.amountPlaceholder}
-                value={amount} onChange={handleAmountChange}
+              <input type="number" min="1" step="1" placeholder={t.formPanel.amountPlaceholder}
+                value={amount} onChange={handleAmountChange} onKeyDown={handleAmountKeyDown}
                 style={{
                   width: "100%", padding: "12px 16px", borderRadius: "10px",
                   border: "1.5px solid rgba(139,94,60,0.15)",
@@ -405,7 +439,7 @@ export default function DonationForm() {
                   placeholder={t.whatsappModal.fields.mobile.placeholder}
                   value={mobile}
                   maxLength={10}
-                  pattern="[0-9]{10}"
+                  pattern="[6-9]{1}[0-9]{9}"
                   onChange={(e) => {
                     const value = e.target.value.replace(/\D/g, "");
                     if (value.length <= 10) {
@@ -428,6 +462,7 @@ export default function DonationForm() {
                   <input
                     className="wf-modal-input"
                     type="number"
+                    min="1"
                     readOnly
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}

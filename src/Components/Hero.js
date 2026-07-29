@@ -4,6 +4,7 @@ import { useLanguage } from "../Context/Languagecontext";
 import heroTranslations from "../Data/HeroTranslations";
 import Lottie from 'react-lottie';
 import animationData from '../Json/Lightening Diya (Oil Lamp).json';
+import { Link } from "react-router-dom";
 
 const temple1 = "/assets/background1.png";
 const temple2 = "/assets/download1.jpg";
@@ -244,8 +245,13 @@ export default function Hero() {
 
         {/* CTA buttons */}
         <div className="hero-ctas">
-          <a href="/contact" className="btn-gold">    {t.contact}  </a>
-          <a href="/donation" className="btn-outline">  {t.donation} </a>
+          <Link to="/contact" className="btn-gold">
+            {t.contact}
+          </Link>
+
+          <Link to="/donation" className="btn-outline">
+            {t.donation}
+          </Link>
         </div>
 
         {/* Slide indicators */}
