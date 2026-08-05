@@ -32,7 +32,9 @@ function useSectionReveal(sectionRef) {
         });
 
         /* Special note */
-        setTimeout(() => el.querySelector(".t-special-note")?.classList.add("in"), 350);
+        el.querySelectorAll(".t-special-note").forEach((n, i) => {
+          setTimeout(() => n.classList.add("in"), 350 + i * 100);
+        });
 
         obs.disconnect();
       });
@@ -63,20 +65,41 @@ export default function Timing() {
     open: langKey === "TA" ? "தினமும் திறந்திருக்கும்" : langKey === "ML" ? "തുറന്നിരിക്കും" : "Open daily · Darshan by arrangement",
     heading: langKey === "TA" ? "கோவில் நேரங்கள் & பூஜைகள்" : langKey === "ML" ? " ക്ഷേത്ര സമയവും അനുഷ്ഠാനങ്ങളും" : "Temple Timings & Rituals",
     badge: langKey === "TA" ? "தினசரி நேரம்" : langKey === "ML" ? "ദിവസേന" : "Daily Schedule",
+    ritualTitle: langKey === "TA" ? "வழிபாட்டு முறைகள்" : langKey === "ML" ? "അനുഷ്ഠാന വിവരണം" : "Ritual Details",
+    poojaTimingsTitle: langKey === "TA" ? "பூஜை நேரங்கள்" : langKey === "ML" ? "പൂജാ സമയങ്ങൾ" : "Pooja Timings",
   };
 
- const noteText =
-  langKey === "TA"
-    ? "ஒவ்வொரு மலையாள மாதத்தின் முதல் நாளிலும், மேலும் ஞாயிறு, செவ்வாய் மற்றும் வெள்ளிக்கிழமைகளிலும், கோவில் காலை 5:00 மணி முதல் 11:30 மணி வரை திறந்திருக்கும்."
-    : langKey === "ML"
-      ? "ഓരോ മലയാള മാസത്തിന്റെ ആദ്യ ദിവസത്തിലും, കൂടാതെ ഞായർ, ചൊവ്വ, വെള്ളി ദിവസങ്ങളിലും, ക്ഷേത്രം രാവിലെ 5:00 മുതൽ 11:30 വരെ തുറന്നിരിക്കും."
-      : "On the first day of every Malayalam month, as well as on Sundays, Tuesdays, and Fridays, the temple will remain open from 5:00 AM to 11:30 AM.";
+  const noteText =
+    langKey === "TA"
+      ? "ஒவ்வொரு மலையாள மாதத்தின் முதல் நாளிலும், மேலும் ஞாயிறு, செவ்வாய் மற்றும் வெள்ளிக்கிழமைகளிலும், கோவில் காலை 5:00 மணி முதல் 11:30 மணி வரை திறந்திருக்கும்."
+      : langKey === "ML"
+        ? "ഓരോ മലയാള മാസത്തിന്റെ ആദ്യ ദിവസത്തിലും, കൂടാതെ ഞായർ, ചൊവ്വ, വെള്ളി ദിവസങ്ങളിലും, ക്ഷേത്രം രാവിലെ 5:00 മുതൽ 11:30 വരെ തുറന്നിരിക്കും."
+        : "On the first day of every Malayalam month, as well as on Sundays, Tuesdays, and Fridays, the temple will remain open from 5:00 AM to 11:30 AM.";
 
-  const stats = [
-    { label: labels.opens, val: "5:00", sub: labels.amDaily },
-    { label: labels.closes, val: "7:30", sub: labels.pmDaily },
-    { label: labels.poojas, val: timingsData.reduce((a, b) => a + b.events.length, 0), sub: labels.perDay },
-    { label: labels.sessions, val: timingsData.length, sub: labels.daily },
+  const ritualText =
+    langKey === "TA"
+      ? "உஷ பூஜைக்கு பிறகு பக்தர்கள் நமஸ்காரம் செய்யலாம். கோவிலின் தாந்திரிக மரபுகளின்படி சிறப்பு பூஜைகள், கலச அபிஷேகம், மற்றும் பௌர்ணமி பூஜை நடைபெறும். ஒவ்வொரு மலையாள மாதத்தின் முதல் நாளிலும், அம்மனுக்கு கைமுக்கு மற்றும் சாந்தாட்டு நடைபெறும்."
+      : langKey === "ML"
+        ? "ഉഷപൂജത്തിനിലെ ദർശനത്തിന് ശേഷം നമസ്കാരം (പ്രതിഷ്ഠ, ദിനം മാറി ആ ചോർക്കുന്നത്). ക്ഷേത്രം തന്ത്രിയുടെ പൂജ കാര്യങ്ങൾക്കനുസരിച്ച് വിശേഷാൽ പൂജകളും, കലശാഭിഷേകവും, പൂർണ്ണചന്ദ്ര പൂജയും നടത്തപ്പെടുന്നു. എല്ലാ മലയാളമാസം 1-ാം തീയതി കൈലിയും ഭഗവതിക്ക് ചാന്താട്ടും നടത്തുന്നു."
+        : "After the Usha Pooja, devotees can offer Namaskaram. Special poojas are conducted according to the temple's tantric traditions, including special rituals, Kalasha Abhishekam, and Pournami (Full Moon) Pooja. On the 1st day of every Malayalam month, Kaimukku and Chandattam are performed for the Goddess.";
+
+  const poojaTimings = [
+    {
+      name: langKey === "TA" ? "உஷ பூஜை" : langKey === "ML" ? "ഉഷ പൂജ" : "Usha Pooja",
+      time: "7:15 AM",
+    },
+    {
+      name: langKey === "TA" ? "உச்ச பூஜை" : langKey === "ML" ? "ഉച്ച പൂജ" : "Ucha Pooja (Noon Pooja)",
+      time: "11:00 AM",
+    },
+    {
+      name: langKey === "TA" ? "தீபாராதனை" : langKey === "ML" ? "ദീപാരാധന" : "Deeparadhana",
+      time: "6:15 PM",
+    },
+    {
+      name: langKey === "TA" ? "அத்தாழ பூஜை" : langKey === "ML" ? "അത്താഴ പൂജ" : "Athazha Pooja",
+      time: "7:15 PM",
+    },
   ];
 
   return (
@@ -105,10 +128,20 @@ export default function Timing() {
             <span className="t-note-diya" aria-hidden="true">🪔</span>
           </div>
           <div className="t-note-body">
-            <span className="t-note-title">
-              {langKey === "TA" ? "சிறப்பு நாட்கள்" : langKey === "ML" ? "പ്രത്യേക ദിവസങ്ങൾ" : "Special Days Notice"}
-            </span>
             <span className="t-note-text">{noteText}</span>
+          </div>
+          <div className="t-note-accent" aria-hidden="true" />
+        </div>
+      </div>
+
+      {/* ── RITUAL DETAILS NOTE ── */}
+      <div className="t-note-wrap">
+        <div className="t-special-note">
+          <div className="t-note-left">
+            <span className="t-note-diya" aria-hidden="true">🙏</span>
+          </div>
+          <div className="t-note-body">
+            <span className="t-note-text">{ritualText}</span>
           </div>
           <div className="t-note-accent" aria-hidden="true" />
         </div>
@@ -148,7 +181,7 @@ export default function Timing() {
           })}
         </div>
 
-        {/* RIGHT — Image + Stats */}
+        {/* RIGHT — Image + Pooja Timings */}
         <div className="t-right">
 
           {/* Image card */}
@@ -170,15 +203,23 @@ export default function Timing() {
             </div>
           </div>
 
-          {/* Stat chips */}
-          <div className="t-stat-grid">
-            {stats.map((s, i) => (
-              <div className="t-stat" key={i} data-delay={i * 80}>
-                <span className="t-stat-label">{s.label}</span>
-                <strong className="t-stat-val">{s.val}</strong>
-                <span className="t-stat-sub">{s.sub}</span>
+          {/* Pooja timings list (replaces the 4-box stat grid) */}
+          <div className="t-card">
+            <div className="t-card-glow" />
+            <div className="t-card-head">
+              <div>
+                <h3 className="t-card-title">{labels.poojaTimingsTitle}</h3>
               </div>
-            ))}
+            </div>
+            <div className="t-rows">
+              {poojaTimings.map((item, index) => (
+                <div className="t-row in" key={index}>
+                  <span className="t-row-num">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="t-row-name">{item.name}</span>
+                  <span className="t-row-time">{item.time}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

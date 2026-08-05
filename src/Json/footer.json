@@ -8,6 +8,7 @@
       "exploreHeading": "Explore",
       "timingsHeading": "Pooja Timings",
       "contactHeading": "Contact Us",
+      "newone": "(On special days, the temple's closing time may differ.)",
       "navLinks": {
         "home": "Home",
         "heritage": "Our Heritage",
@@ -20,14 +21,14 @@
       "timings": [
         {
           "label": "Morning Pooja",
-          "time": "5:30 AM – 11:00 AM"
+          "time": "5:00 AM – 11:00 AM"
         },
         {
           "label": "Evening Pooja",
           "time": "5:00 PM – 7:30 PM"
         }
       ],
-      "address": "Pudussery , Palakkad, Kerala – 678623",
+      "address": "Sree Kurumba Bhagavathy Temple (Under the Malabar Devaswom Board) Puthussery, Palakkad – 678623",
       "copyright": "© {year} Sri Kurumba Bhagavathy Temple. All rights reserved.",
       "bottomNote": "Dedicated with devotion."
     },
@@ -39,6 +40,7 @@
       "exploreHeading": "ஆராய்க",
       "timingsHeading": "பூஜை நேரங்கள்",
       "contactHeading": "தொடர்பு கொள்ளுங்கள்",
+      "newone": "(விசேஷ நாட்களில் கோவில் நடை அடைக்கும் நேரத்தில் மாற்றம் இருக்கலாம்.)",
       "navLinks": {
         "home": "முகப்பு",
         "heritage": "நமது பாரம்பரியம்",
@@ -51,14 +53,14 @@
       "timings": [
         {
           "label": "காலை பூஜை",
-          "time": "காலை 5:30 – 11:00"
+          "time": "காலை 5:00 – 11:00"
         },
         {
           "label": "மாலை பூஜை",
           "time": "மாலை 5:00 – 7:30"
         }
       ],
-      "address": "புதுசேரி, பாலக்காடு, கேரளா – 678623",
+      "address": "ஸ்ரீ குரும்ப பகவதி திருக்கோவில் (மலபார் தேவசம் வாரியத்தின் கீழ்) புதுச்சேரி, பாலக்காடு – 678623",
       "copyright": "© {year} ஸ்ரீ குரும்பா பகவதி கோயில். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
       "bottomNote": "பக்தியோடு அர்பணிக்கப்பட்டது."
     },
@@ -70,6 +72,7 @@
       "exploreHeading": "അന്വേഷിക്കുക",
       "timingsHeading": "പൂജാ സമയം",
       "contactHeading": "ബന്ധപ്പെടുക",
+      "newone": "(വിശേഷദിവസങ്ങളിൽ ക്ഷേത്രം നട അടക്കുന്നതിൽ വ്യത്യാസം വരുന്നതാണ്)",
       "navLinks": {
         "home": "ഹോം",
         "heritage": "നമ്മുടെ പൈതൃകം",
@@ -82,14 +85,14 @@
       "timings": [
         {
           "label": "പ്രഭാത പൂജ",
-          "time": "5:30 AM – 11:00 AM"
+          "time": "5:00 AM – 11:00 AM"
         },
         {
           "label": "വൈകുന്നേരം പൂജ",
           "time": "5:00 PM – 7:30 PM"
         }
       ],
-      "address": "പുതുശ്ശേരി, പാലക്കാട്, കേരളം – 678623",
+      "address": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം (മലബാർ ദേവസ്വം ബോർഡിൻ കീഴിൽ) പുതുശ്ശേരി, പാലക്കാട് - 678623",
       "copyright": "© {year} ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തമാണ്.",
       "bottomNote": "ഭക്തിയോടെ സമർപ്പിച്ചത്."
     }

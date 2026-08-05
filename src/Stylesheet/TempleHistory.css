@@ -381,10 +381,11 @@
 
 /* Highlight */
 .highlight {
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--brown);
+  font-size: 15px;
+  /* font-weight: 500; */
+  /* color: var(--brown); */
   margin-bottom: 16px;
+   color: var(--text-dark);
   /* text-align: justify; */
   line-height: 1.7;
 }

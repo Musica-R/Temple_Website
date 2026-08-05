@@ -199,18 +199,7 @@ export default function DonationForm() {
               ))}
             </div>
 
-            <div className="field-group">
-              <label>{t.formPanel.amountLabel}</label>
-              <input type="number" min="1" step="1" placeholder={t.formPanel.amountPlaceholder}
-                value={amount} onChange={handleAmountChange} onKeyDown={handleAmountKeyDown}
-                style={{
-                  width: "100%", padding: "12px 16px", borderRadius: "10px",
-                  border: "1.5px solid rgba(139,94,60,0.15)",
-                  background: "var(--bg-light,#fffaf0)", color: "var(--text-dark,#3b2a1d)",
-                  fontSize: "15px", fontFamily: "Crimson Text,serif", boxSizing: "border-box"
-                }}
-              />
-            </div>
+
 
             <div className="field-group">
               <label>{t.formPanel.purposeLabel}</label>
@@ -230,6 +219,19 @@ export default function DonationForm() {
                   <option key={key} value={key}>{label}</option>
                 ))}
               </select>
+            </div>
+
+            <div className="field-group">
+              <label>{t.formPanel.amountLabel}</label>
+              <input type="number" min="1" step="1" placeholder={t.formPanel.amountPlaceholder}
+                value={amount} onChange={handleAmountChange} onKeyDown={handleAmountKeyDown}
+                style={{
+                  width: "100%", padding: "12px 16px", borderRadius: "10px",
+                  border: "1.5px solid rgba(139,94,60,0.15)",
+                  background: "var(--bg-light,#fffaf0)", color: "var(--text-dark,#3b2a1d)",
+                  fontSize: "15px", fontFamily: "Crimson Text,serif", boxSizing: "border-box"
+                }}
+              />
             </div>
 
             <button type="button" className="donate-btn" onClick={handleGenerate}>
@@ -298,9 +300,9 @@ export default function DonationForm() {
           </div>
           <div className="quote-card">
             <p>"{t.imagePanel.quote}"</p>
-            <cite>{t.imagePanel.quoteAuthor}</cite>
+            {/* <cite>{t.imagePanel.quoteAuthor}</cite> */}
           </div>
-          <div className="stat-strip">
+          {/* <div className="stat-strip">
             <div className="stat-item">
               <span className="stat-num">{t.imagePanel.stats.devotees.num}</span>
               <span className="stat-label">{t.imagePanel.stats.devotees.label}</span>
@@ -313,7 +315,7 @@ export default function DonationForm() {
               <span className="stat-num">{t.imagePanel.stats.seva.num}</span>
               <span className="stat-label">{t.imagePanel.stats.seva.label}</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -321,13 +323,14 @@ export default function DonationForm() {
       <div className="donation-types">
         <div className="section-heading">
           <span className="heading-om">{t.donationTypes.sectionTag}</span>
-          <h3>{t.donationTypes.sectionTitle}</h3>
+          {/* <h3>{t.donationTypes.sectionTitle}</h3> */}
           <div className="divider">
             <span /><i>{t.donationTypes.dividerSymbol}</i><span />
           </div>
-          <p>{t.donationTypes.sectionSubtitle}</p>
+          {/* <p>{t.donationTypes.sectionSubtitle}</p> */}
         </div>
-        <div className="donation-cards">
+
+        {/* <div className="donation-cards">
           {t.donationTypes.cards.map((card) => (
             <div className="card" key={card.key}>
               <div className="card-img-wrap">
@@ -347,17 +350,19 @@ export default function DonationForm() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+
+
       </div>
 
-      {/* ── BOTTOM CTA ── */}
+
       <div className="donation-cta">
         <div className="cta-inner">
-          <div className="cta-text">
+          {/* <div className="cta-text">
             <span className="small-label">{t.cta.smallLabel}</span>
             <h3>{t.cta.title}</h3>
             <p>{t.cta.description}</p>
-          </div>
+          </div> */}
           <button className="cta-btn"
             onClick={() => document.querySelector('.donation-form-box').scrollIntoView({ behavior: 'smooth' })}>
             {t.cta.button}

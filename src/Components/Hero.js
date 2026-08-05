@@ -7,8 +7,8 @@ import animationData from '../Json/Lightening Diya (Oil Lamp).json';
 import { Link } from "react-router-dom";
 
 const temple1 = "/assets/background1.png";
-const temple2 = "/assets/download1.jpg";
-const temple3 = "/assets/download2.jpg";
+const temple2 = "/ass1/2.jpeg";
+const temple3 = "/assets/new.png";
 
 const images = [temple1, temple2, temple3];
 const SLIDE_DURATION = 4000;

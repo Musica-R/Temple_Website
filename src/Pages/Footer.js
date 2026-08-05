@@ -62,6 +62,7 @@ export default function Footer() {
                                 <span className="timing-value">{row.time}</span>
                             </div>
                         ))}
+                        <div  className="banner-sub">{t.newone}</div>
                     </div>
                 </div>
 
@@ -76,6 +77,8 @@ export default function Footer() {
                             <span>{t.address}</span>
                         </div>
                         <div className="contact-item">
+                            <span className="contact-icon"><FaPhoneAlt /></span>
+                            <span> 0491 2567812</span>
                             <span className="contact-icon"><FaPhoneAlt /></span>
                             <span>+91 9037092183</span>
                         </div>

@@ -1666,7 +1666,7 @@
 
 /* ===== BOTTOM CTA ===== */
 .donation-cta {
-  max-width: 1160px;
+  max-width: 560px;
   margin: 70px auto 0;
   padding: 0 30px;
 }
@@ -1677,7 +1677,7 @@
   padding: 50px 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   position: relative;
   overflow: hidden;

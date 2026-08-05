@@ -5,8 +5,8 @@ const historyData = {
       image: "/assets/img2.png",
       content: [
         `Sreekurumba Kaavu, located in Pudussery about 6 kilometres east of Palakkad town, is a sacred temple with a history spanning more than 500 years. It is one of the prominent Bhagavathy temples in South Malabar and holds deep cultural and spiritual importance in the region.`,
-        `Managed by the Malabar Devaswam Board, the temple continues to be a vibrant center of devotion, attracting thousands of devotees every year. The temple is not only a place of worship but also a symbol of tradition, heritage, and community faith passed down through generations.`,
-        `Pudussery vedi, the temple's annual festival, is considered the beginning of the grand temple festival season in Palakkad district, which eventually culminates with the famous Pooram celebrations in nearby regions.`
+        `This temple comes under the administration of the Malabar Devaswom Board. The temple is managed by the traditional trustees representing the senior members of the Ullattil, Koolakkath, Madathil, Kollashkkal, and Paraykkal Moothedath family lineages of Puthussery Desam. The Executive Officer/Manager appointed by the Malabar Devaswom Board oversees and administers the day-to-day affairs of the temple.`,
+        ` The temple's annual festival, Vediyutsavam (Fireworks Festival), is one of the most renowned festivals in Palakkad district. It is celebrated with great devotion, following traditional rituals, ceremonies, and customs. On this occasion, tens of thousands of devotees gather at the temple to participate in the festival and seek the blessings of the Goddess.`
       ]
     },
     {
@@ -47,8 +47,8 @@ const historyData = {
       image: "/assets/img2.png",
       content: [
         `பாலக்காட் நகரத்திலிருந்து சுமார் 6 கிலோமீட்டர் கிழக்கே புதுச்சேரியில் அமைந்துள்ள ஸ்ரீகுரும்பா காவு, 500 ஆண்டுகளுக்கும் மேலான வரலாற்றைக் கொண்ட ஒரு புனித கோவிலாகும். இது தென் மலபாரின் முக்கியமான பகவதி கோவில்களில் ஒன்றாக விளங்குகிறது.`,
-        `மலபார் தேவஸ்வம் குழுமத்தால் நிர்வகிக்கப்படும் இக்கோவில், ஆண்டுதோறும் ஆயிரக்கணக்கான பக்தர்களை ஈர்க்கும் வகையில் தொடர்ந்து செயல்பட்டு வருகிறது. இது வழிபாட்டு தலம் மட்டுமல்லாமல், பாரம்பரியம், மரபு மற்றும் சமூக நம்பிக்கையின் அடையாளமாகவும் திகழ்கிறது.`,
-        `கோவிலின் ஆண்டு விழாவான புதுச்சேரி வேடி, பாலக்காட் மாவட்டத்தில் நடைபெறும் கோவில் திருவிழா காலத்தின் தொடக்கமாகக் கருதப்படுகிறது, இது இறுதியில் அருகிலுள்ள பகுதிகளில் பிரசித்தமான பூரம் கொண்டாட்டங்களில் முடிவடைகிறது.`
+        `இந்தக் கோவில் மலபார் தேவஸ்வம் வாரியத்தின் கீழ் நிர்வகிக்கப்படுகிறது. புதுச்சேரி தேசத்தில் உள்ள உள்ளாட்டில், கூளக்கத்து, மடத்தில், கொல்லாஷ்க்கல், பாறைக்கல் மூத்தேடத்து ஆகிய பாரம்பரிய குடும்பங்களின் மூத்த உறுப்பினர்களைக் கொண்ட பாரம்பரிய அறங்காவலர்கள் (Trustees) கோவிலின் நிர்வாகப் பொறுப்பை வகிக்கின்றனர். மலபார் தேவஸ்வம் வாரியம் நியமிக்கும் செயல் அலுவலர் / மேலாளர் கோவிலின் அன்றாட நிர்வாகப் பணிகளை மேற்கொள்கிறார்.`,
+        `கோவிலின் ஆண்டு திருவிழாவான வெடியுத்சவம் (Vediyutsavam), பாலக்காடு மாவட்டத்தின் மிகவும் புகழ்பெற்ற திருவிழாக்களில் ஒன்றாகும். இவ்விழா பாரம்பரிய சடங்குகள், வழிபாட்டு முறைகள் மற்றும் மரபுகளுடன் சிறப்பாகக் கொண்டாடப்படுகிறது. இத்திருவிழாவையொட்டி பத்தாயிரக்கணக்கான பக்தர்கள் தேவியின் அருளைப் பெறவும், திருவிழாவில் பங்கேற்கவும் கோவிலுக்கு வருகை தருகின்றனர்..`
       ]
     },
     {
@@ -85,12 +85,13 @@ const historyData = {
 
   ML: [
     {
-      title: "ശ്രീ കുറുമ്പ കാവ്",
+      title: "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം",
       image: "/assets/img2.png",
       content: [
         `പാലക്കാട് നഗരത്തിൽ നിന്ന് ഏകദേശം 6 കിലോമീറ്റർ കിഴക്ക് പുതുശ്ശേരിയിൽ സ്ഥിതി ചെയ്യുന്ന ശ്രീ കുറുമ്പ കാവ്, 500 വർഷത്തിലേറെ പഴക്കമുള്ള ഒരു പുണ്യക്ഷേത്രമാണ്. ദക്ഷിണ മലബാറിലെ പ്രമുഖ ഭഗവതി ക്ഷേത്രങ്ങളിൽ ഒന്നായ ഈ ക്ഷേത്രം ഈ പ്രദേശത്ത് ആഴമായ സാംസ്കാരിക ആത്മീയ പ്രാധാന്യം വഹിക്കുന്നു.`,
-        `മലബാർ ദേവസ്വം ബോർഡ് നിർവഹിക്കുന്ന ഈ ക്ഷേത്രം വർഷം തോറും ആയിരക്കണക്കിന് ഭക്തരെ ആകർഷിക്കുന്ന ഒരു ഭക്തി കേന്ദ്രമായി തുടരുന്നു. ഇത് ആരാധനാ കേന്ദ്രം മാത്രമല്ല, തലമുറകളായി കൈമാറിവരുന്ന പാരമ്പര്യം, ഐതിഹ്യം, സാമൂഹ്യ വിശ്വാസം എന്നിവയുടെ പ്രതീകം കൂടിയാണ്.`,
-        `ക്ഷേത്രത്തിന്റെ വാർഷിക ഉത്സവമായ പുതുശ്ശേരി വെടി, പാലക്കാട് ജില്ലയിലെ ക്ഷേത്ര ഉത്സവ സീസണിന്റെ ആരംഭമായി കണക്കാക്കപ്പെടുന്നു, ഇത് ആത്യന്തികമായി സമീപ പ്രദേശങ്ങളിലെ പ്രസിദ്ധമായ പൂരം ആഘോഷങ്ങളിൽ കലാശിക്കുന്നു.`
+        `മലബാർ ദേവസ്വം ബോർഡിൻ കീഴിലുള്ള ഈ ക്ഷേത്രം പുതുശ്ശേരി ദേശത്തെ ഉള്ളാട്ടിൽ, കൂളക്കത്ത്, മഠത്തിൽ, കൊല്ലാഷ്‌ക്കൽ, പാറയ്ക്കൽ മൂത്തേടത്ത് എന്നീ തറവാട്ടിലെ മുതിർന്നു അംഗങ്ങൾ ഉൾപ്പെട്ട പാരമ്പര്യ (ടസ്‌റ്റിമാരാണ് ക്ഷേത്രത്തിന്റെ ഭരണാധികാരികൾ. മലബാർ ദേവസ്വം ബോർഡ് നിയമിക്കുന്ന
+        എക്‌സിക്യൂട്ടീവ് ഓഫീസർ/ മാനേജർ ക്ഷേത്ര കാര്യങ്ങൾ നോക്കി നടത്തുന്നു`,
+        `ക്ഷേത്രത്തിൻ്റെ വാർഷീകോത്സവമായ വെടിയുത്സവം ചടങ്ങുകളോടും ആചാര അനുഷ്‌ഠാനങ്ങളോടും കൂടി നടത്തപ്പെടുന്ന പാലക്കാട് ജില്ലയിലെ (പ്രശസ്തമായ ഉത്സവമാണ്. (പസ്‌തുത ഉത്സവത്തോടനുബന്ധിച്ച് പതിനായിരകണക്കിന് ഭക്‌തജനങ്ങൾ വന്നു ചേരുന്നു.`,
       ]
     },
     {

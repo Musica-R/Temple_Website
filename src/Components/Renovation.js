@@ -28,12 +28,12 @@ export default function Renovation() {
 
         {/* ══ TANTRI BANNER ══ */}
         <div className="reno-tantri-banner">
-          <span className="reno-tantri-diya">🪔</span>
-          <div className="reno-tantri-text">
+          {/* <span className="reno-tantri-diya">🪔</span> */}
+          {/* <div className="reno-tantri-text">
             <span className="reno-tantri-label">{d.tantriLabel}</span>
             <span className="reno-tantri-name">{d.tantri}</span>
-          </div>
-          <span className="reno-tantri-diya">🪔</span>
+          </div> */}
+          {/* <span className="reno-tantri-diya">🪔</span> */}
         </div>
 
         {/* ══ IMAGE 2×2 GRID ══ */}
@@ -162,6 +162,17 @@ export default function Renovation() {
                 <span className="reno-detail-label">UPI ID</span>
                 <span className="reno-detail-value reno-upi-value">{d.donation.upi}</span>
               </div>
+
+              <div className="reno-donation-detail">
+                <span className="reno-detail-label">{d.donation.new1}</span>
+                <span className="reno-detail-value">9544942942</span>
+              </div>
+
+              <div className="reno-donation-detail">
+                <span className="reno-detail-label">{d.donation.new2}</span>
+                <span className="reno-detail-value">9447525386</span>
+              </div>
+
               <div className="reno-bank-name">🏦 {d.donation.bank}</div>
             </div>
             <div className="reno-donation-right">

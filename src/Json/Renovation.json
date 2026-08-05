@@ -125,7 +125,9 @@
                 "ifscLabel": "IFSC",
                 "upiLabel": "UPI ID",
                 "scanLabel": "Scan to Pay",
-                "don":"Amme Narayana, Devi Narayana"
+                "don": "Amme Narayana, Devi Narayana",
+                "new1": "President",
+                "new2": "Secretary"
             }
         },
         "TA": {
@@ -253,7 +255,9 @@
                 "ifscLabel": "IFSC குறியீடு",
                 "upiLabel": "UPI ID",
                 "scanLabel": "ஸ்கேன் செய்து பணம் அனுப்பவும்",
-                "don":"அம்மே நாராயணா, தேவி நாராயணா"
+                "don": "அம்மே நாராயணா, தேவி நாராயணா",
+                "new1": "தலைவர்",
+                "new2": "செயலாளர்"
             }
         },
         "ML": {
@@ -292,7 +296,7 @@
                         "name": "ശ്രീ. മോഹനൻ"
                     },
                     {
-                        "place": "ഉള്ളാട്ടിൽ", 
+                        "place": "ഉള്ളാട്ടിൽ",
                         "name": "ശ്രീമതി. പൊന്നമ്മാൾ"
                     },
                     {
@@ -381,7 +385,9 @@
                 "ifscLabel": "IFSC കോഡ്",
                 "upiLabel": "UPI ID",
                 "scanLabel": "സ്കാൻ ചെയ്ത് അടയ്ക്കുക",
-                "don": "അമ്മേ നാരായണ ദേവി നാരായണ"
+                "don": "അമ്മേ നാരായണ ദേവി നാരായണ",
+                "new1": "പ്രസിഡന്റ് ",
+                "new2": "സെക്രട്ടറി "
             }
         }
     }

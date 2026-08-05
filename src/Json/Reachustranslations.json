@@ -131,12 +131,9 @@
                 }
             },
             "purposeOptions": {
-                "general": "🛕 General Temple Fund",
-                "festival": "🎊 Festival & Utsavam",
-                "lamp": "🪔 Chuttuvilakku",
-                "renovation": "🏗️ Temple Renovation",
-                "vastra": "👘 Vastram — Deity Garments",
-                "pushpam": "🌺 Pushpam — Daily Flowers"
+                "general": "🛕 Annadanam",
+                "festival": "🎊 Festival Donation",
+                "lamp": "🌺 Donation"
             },
             "purposeLabels": {
                 "general": "General Temple Fund",
@@ -153,7 +150,7 @@
             },
             "imagePanel": {
                 "imgAlt": "Temple Sanctum",
-                "quote": "The hand that gives, the heart that prays — both are touched by the grace of the divine. Your offering sustains the sacred flame for all devotees.",
+                "quote": "Ya Devi Sarva Bhuteshu Mathru Rupena Samsthita Namastasyai Namastasyai Namastasyai Namo Namaha.",
                 "quoteAuthor": "— Temple Tradition",
                 "stats": {
                     "devotees": {
@@ -328,13 +325,9 @@
                 }
             },
             "purposeOptions": {
-                "general": "🛕 பொது கோயில் நிதி",
-                "festival": "🎊 திருவிழா & உத்சவம்",
-                "lamp": "🪔 சுற்றுவிளக்கு",
-                "renovation": "🏗️ கோயில் புனரமைப்பு",
-                "abhishekam": "🌸 அபிஷேக ஸ்பான்சர்ஷிப்",
-                "vastra": "👘 வஸ்திரம் — தெய்வ ஆடைகள்",
-                "pushpam": "🌺 புஷ்பம் — தினசரி மலர்கள்"
+                "general": "🛕 அன்னதானம்",
+                "festival": "🎊 திருவிழா நன்கொடை",
+                "lamp": "🌸 நன்கொடை"
             },
             "purposeLabels": {
                 "general": "பொது கோயில் நிதி",
@@ -351,7 +344,7 @@
             },
             "imagePanel": {
                 "imgAlt": "கோயில் கருவறை",
-                "quote": "தரும் கை, வேண்டும் இதயம் — இரண்டும் இறைவனின் அருளால் தொடப்படுகின்றன. உங்கள் காணிக்கை அனைத்து பக்தர்களுக்கும் புனித தீபத்தை நிலைநிறுத்துகிறது.",
+                "quote": "யா தேவி சர்வ பூதேஷு மாத்ரு ரூபேண சம்ஸ்திதா நமஸ்தஸ்யை நமஸ்தஸ்யை நமஸ்தஸ்யை நமோ நமஃ",
                 "quoteAuthor": "— கோயில் மரபு",
                 "stats": {
                     "devotees": {
@@ -526,13 +519,9 @@
                 }
             },
             "purposeOptions": {
-                "general": "🛕 പൊതു ക്ഷേത്ര ഫണ്ട്",
-                "festival": "🎊 ഉത്സവം & ആഘോഷം",
-                "lamp": "🪔 ചുറ്റുവിളക്ക്",
-                "renovation": "🏗️ ക്ഷേത്ര നവീകരണം",
-                "abhishekam": "🌸 അഭിഷേക സ്പോൺസർഷിപ്പ്",
-                "vastra": "👘 വസ്ത്രം — ദേവതയ്ക്കുള്ള വസ്ത്രം",
-                "pushpam": "🌺 പുഷ്പം — ദൈനംദിന പൂക്കൾ"
+                "general": "🛕അന്നധാനം",
+                "festival": "🎊 ഉത്സവ സംഭാവന",
+                "lamp": "🌸 സംഭാവന"
             },
             "purposeLabels": {
                 "general": "പൊതു ക്ഷേത്ര ഫണ്ട്",
@@ -549,7 +538,7 @@
             },
             "imagePanel": {
                 "imgAlt": "ക്ഷേത്ര ഗർഭഗൃഹം",
-                "quote": "നൽകുന്ന കൈ, പ്രാർഥിക്കുന്ന ഹൃദയം — രണ്ടും ദൈവകൃപയാൽ സ്പർശിക്കപ്പെടുന്നു. നിങ്ങളുടെ വഴിപാട് എല്ലാ ഭക്തർക്കും പുണ്യദീപം നിലനിർത്തുന്നു.",
+                "quote": "യാ ദേവി സർവഭൂതേഷു മാതൃരൂപേണ സംസ്ഥിതാ നമസ്തസ്യൈ നമസ്തസ്യൈ നമസ്തസ്യൈ നമോ നമഃ.",
                 "quoteAuthor": "— ക്ഷേത്ര പാരമ്പര്യം",
                 "stats": {
                     "devotees": {
@@ -698,9 +687,9 @@
                     "icon": "📍",
                     "label": "Address",
                     "content": {
-                        "line1": "Sree Kurumba Bhagavathy Temple,",
-                        "line2": "23/663, Kailas Nagar,",
-                        "line3": "Pudussery West, Kerala – 678623"
+                        "line1": "Sree Kurumba Bhagavathy Temple",
+                        "line2": "(Under the Malabar Devaswom Board)",
+                        "line3": "Puthussery, Palakkad – 678623"
                     }
                 },
                 {
@@ -723,7 +712,7 @@
                     "content": {
                         "morning": {
                             "label": "Morning",
-                            "time": "5:30 AM – 11:00 AM"
+                            "time": "5:00 AM – 11:00 AM"
                         },
                         "evening": {
                             "label": "Evening",
@@ -779,9 +768,9 @@
                     "icon": "📍",
                     "label": "முகவரி",
                     "content": {
-                        "line1": "ஸ்ரீ குரும்பா பகவதி கோவில்,",
-                        "line2": "23/663, கைலாஸ் நகர்,",
-                        "line3": "புதுச்சேரி வெஸ்ட், கேரளா – 678623"
+                        "line1": "ஸ்ரீ குரும்ப பகவதி திருக்கோவில்",
+                        "line2": "(மலபார் தேவசம் வாரியத்தின் கீழ்)",
+                        "line3": "புதுச்சேரி, பாலக்காடு – 678623"
                     }
                 },
                 {
@@ -804,7 +793,7 @@
                     "content": {
                         "morning": {
                             "label": "காலை",
-                            "time": "காலை 5:30 – பகல் 12:00"
+                            "time": "காலை 5:00 – பகல் 12:00"
                         },
                         "evening": {
                             "label": "மாலை",
@@ -861,8 +850,8 @@
                     "label": "വിലാസം",
                     "content": {
                         "line1": "ശ്രീ കുറുമ്പ ഭഗവതി ക്ഷേത്രം",
-                        "line2": "23/663, കൈലാസ് നഗർ,",
-                        "line3": "പുതുസ്സേരി വെസ്റ്റ്, കേരളം – 678623"
+                        "line2": "(മലബാർ ദേവസ്വം ബോർഡിൻ കീഴിൽ)",
+                        "line3": "പുതുശ്ശേരി, പാലക്കാട് – 678623"
                     }
                 },
                 {
@@ -885,7 +874,7 @@
                     "content": {
                         "morning": {
                             "label": "പ്രഭാത",
-                            "time": "പ്രഭാത 5:30 – ഉച്ചയ്ക്ക് 12:00"
+                            "time": "പ്രഭാത 5:00 – ഉച്ചയ്ക്ക് 12:00"
                         },
                         "evening": {
                             "label": "വൈകുന്നേരം",

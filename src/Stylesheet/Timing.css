@@ -312,9 +312,9 @@
   transform: translateX(0);
 }
 
-.t-row:hover .t-row-name {
+/* .t-row:hover .t-row-name {
   color: rgba(255, 250, 240, 0.9);
-}
+} */
 
 .t-row-num {
   font-family: var(--font-display, 'Cinzel', serif);
