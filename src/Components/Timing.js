@@ -78,10 +78,10 @@ export default function Timing() {
 
   const ritualText =
     langKey === "TA"
-      ? "உஷ பூஜைக்கு பிறகு பக்தர்கள் நமஸ்காரம் செய்யலாம். கோவிலின் தாந்திரிக மரபுகளின்படி சிறப்பு பூஜைகள், கலச அபிஷேகம், மற்றும் பௌர்ணமி பூஜை நடைபெறும். ஒவ்வொரு மலையாள மாதத்தின் முதல் நாளிலும், அம்மனுக்கு கைமுக்கு மற்றும் சாந்தாட்டு நடைபெறும்."
+      ? "துலாம் மாதத்தில் வரும் ரோகிணி நட்சத்திர நாளில் கோவிலின் பிரதிஷ்டை தினம் சிறப்பாகக் கொண்டாடப்படுகிறது. அந்நாளில் கோவில் தந்திரியின் தலைமையில் சிறப்பு பூஜைகள், கலசாபிஷேகம் மற்றும் பூர்ணசந்திராபிஷேகம் நடைபெறும்."
       : langKey === "ML"
-        ? "ഉഷപൂജത്തിനിലെ ദർശനത്തിന് ശേഷം നമസ്കാരം (പ്രതിഷ്ഠ, ദിനം മാറി ആ ചോർക്കുന്നത്). ക്ഷേത്രം തന്ത്രിയുടെ പൂജ കാര്യങ്ങൾക്കനുസരിച്ച് വിശേഷാൽ പൂജകളും, കലശാഭിഷേകവും, പൂർണ്ണചന്ദ്ര പൂജയും നടത്തപ്പെടുന്നു. എല്ലാ മലയാളമാസം 1-ാം തീയതി കൈലിയും ഭഗവതിക്ക് ചാന്താട്ടും നടത്തുന്നു."
-        : "After the Usha Pooja, devotees can offer Namaskaram. Special poojas are conducted according to the temple's tantric traditions, including special rituals, Kalasha Abhishekam, and Pournami (Full Moon) Pooja. On the 1st day of every Malayalam month, Kaimukku and Chandattam are performed for the Goddess.";
+        ? "തുലാമാസത്തിലെ രോഹിണി നക്ഷത്രം (പതിഷ്ഠാദിന മായി ആഘോഷിക്കുന്നു. ക്ഷേത്രം തന്ത്രിയുടെ മുഖ്യ കാർമ്മികത്വത്തിൽ വിശേഷാൽ പൂജകളും, കലശാഭിഷേകവും പൂർണ്ണചാന്ദാഭിഷേകവും നടത്തപ്പെടുന്നു."
+        : " On the Rohini star day in the Malayalam month of Thulam, the temple's consecration anniversary (Prathishta Dinam) is celebrated. Under the chief officiation of the temple Tantri, special poojas, Kalasha Abhishekam, and Purnachandra Abhishekam are performed.";
 
   const poojaTimings = [
     {
@@ -101,6 +101,13 @@ export default function Timing() {
       time: "7:15 PM",
     },
   ];
+
+  const closingNoteText =
+    langKey === "TA"
+      ? "சிறப்பு நாட்களில் கோவில் நடை அடைக்கும் நேரத்தில் மாற்றம் இருக்கலாம்."
+      : langKey === "ML"
+        ? "വിശേഷദിവസങ്ങളിൽ ക്ഷേത്രം നട അടക്കുന്നതിൽ വ്യത്യാസം വരുന്നതാണ്"
+        : "On special occasions, the temple closing time may vary.";
 
   return (
     <section id="timings" className="t-section" ref={sectionRef}>
@@ -141,7 +148,7 @@ export default function Timing() {
             <span className="t-note-diya" aria-hidden="true">🙏</span>
           </div>
           <div className="t-note-body">
-            <span className="t-note-text">{ritualText}</span>
+            <span className="t-note-text">{ritualText} {closingNoteText} </span>
           </div>
           <div className="t-note-accent" aria-hidden="true" />
         </div>
@@ -179,6 +186,11 @@ export default function Timing() {
               </div>
             );
           })}
+           <br />
+           <div className="t-special-note">
+              <span className="t-closing-note-icon" aria-hidden="true">⏰</span>
+              <span className="t-closing-note-text">{closingNoteText}</span>
+            </div>
         </div>
 
         {/* RIGHT — Image + Pooja Timings */}
@@ -187,7 +199,7 @@ export default function Timing() {
           {/* Image card */}
           <div className="t-img-card">
             <div className="t-img-wrap">
-              <img src="/assets/img2.png" alt="Temple" />
+              <img src="/ass1/ti.jpeg" alt="Temple" />
               <div className="t-img-veil" />
               <div className="t-img-corner t-img-corner--tl" />
               <div className="t-img-corner t-img-corner--tr" />

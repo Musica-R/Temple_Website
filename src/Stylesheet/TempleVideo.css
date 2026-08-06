@@ -325,7 +325,6 @@
 
 .tv-festivals-list {
   list-style: none;
-  counter-reset: fest-counter;
   padding: 0;
   margin: 0;
   display: flex;
@@ -334,29 +333,21 @@
 }
 
 .tv-festivals-item {
-  counter-increment: fest-counter;
   position: relative;
-  padding-left: 40px;
+  padding-left: 24px;
   font-family: var(--font-body, 'Cormorant Garamond', serif);
   font-size: 1.05rem;
   line-height: 1.75;
 }
 
 .tv-festivals-item::before {
-  content: counter(fest-counter);
+  content: "•";
   position: absolute;
   left: 0;
-  top: 2px;
-  width: 24px;
-  height: 24px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display, 'Cinzel', serif);
-  font-size: 0.75rem;
+  top: 0;
   color: var(--gold, #d4af37);
+  font-size: 1.4rem;
+  line-height: 1.2;
 }
 
 /* ── FOOTER BLESSING ── */

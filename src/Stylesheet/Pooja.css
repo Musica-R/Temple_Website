@@ -133,6 +133,7 @@
   padding: 28px 20px;
   background: rgba(255,250,240,0.02);
   border: 1px solid rgba(212,175,55,0.15);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
   transition: background 0.28s, border-color 0.28s, transform 0.25s;
 }
@@ -216,6 +217,7 @@
   }
   .pj-grid-item {
     padding: 22px 16px;
+    box-shadow: none;
   }
   .pj-grid-name {
     font-size: 0.82rem;

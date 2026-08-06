@@ -7,6 +7,25 @@ import { useNavigate } from "react-router-dom";
 import galleryImages, { gallery } from "../Data/Gallery";
 import GallerySection from "./GallerySection";
 
+const kalamezhuthuImages = [
+    { img: "/ass1/v1.jpeg", title: "Kalamezhuthu 1" },
+    { img: "/ass1/h1.jpeg", title: "Kalamezhuthu 2" },
+    { img: "/ass1/h2.jpeg", title: "Kalamezhuthu 3" },
+    { img: "/ass1/h3.jpeg", title: "Kalamezhuthu 4" },
+    { img: "/ass1/h4.jpeg", title: "Kalamezhuthu 5" },
+    { img: "/ass1/h5.jpeg", title: "Kalamezhuthu 6" },
+];
+
+const kalamezhuthuVideos = [
+    { src: "/ass1/1.mp4", poster: "/assets/v1.jpg" },
+    { src: "/ass1/2.mp4", poster: "/assets/v1.jpg" },
+];
+
+
+const niraImage = { img: "/ass1/n1.jpeg", title: "Nira" };
+const niraVideo = { src: "/ass1/new2.mp4", poster: "/ass1/t1.jpeg" };
+
+
 export default function DivineGallery() {
 
     const navigate = useNavigate();
@@ -133,7 +152,7 @@ export default function DivineGallery() {
                     <div className="chapter-lines">
                         <span></span><i>🪔</i><span></span>
                     </div>
-                    <h2 className="chapter-title">{t.chapter1.title}</h2>
+                    {/* <h2 className="chapter-title">{t.chapter1.title}</h2> */}
                 </div>
 
                 <div className="gallery-layout">
@@ -155,14 +174,14 @@ export default function DivineGallery() {
                 </div>
 
                 {/* ── STATS BAND ── */}
-                <div className="gallery-stats-band">
+                {/* <div className="gallery-stats-band">
                     {t.stats.map((s, i) => (
                         <div className="gstat" key={i}>
                             <span className="gstat-num">{s.num}</span>
                             <span className="gstat-label">{s.label}</span>
                         </div>
                     ))}
-                </div>
+                </div> */}
 
                 {/* ══ CHAPTER TWO ══ (updated gallery layout only) */}
                 {/* ══ CHAPTER TWO ══ */}
@@ -173,7 +192,64 @@ export default function DivineGallery() {
                     <h2 className="chapter-title">{t.chapter2.title}</h2>
                 </div>
 
-               <GallerySection />
+                <GallerySection />
+
+                {/* ══ KALAMEZHUTHU PATTU / NIRA ══ */}
+                <div className="kalamezhuthu-section">
+                    <div className="chapter-header">
+                        <div className="chapter-lines">
+                            <span></span><i>🎨</i><span></span>
+                        </div>
+                        <h2 className="chapter-title">
+                            {language === "TA"
+                                ? "களமெழுத்துப் பாட்டு"
+                                : language === "ML"
+                                    ? "കളമെഴുത്തു പാട്ട്"
+                                    : "Kalamezhuthu Pattu"}
+                        </h2>
+                    </div>
+
+                    <div className="kalamezhuthu-grid">
+                        {kalamezhuthuImages.map((item, i) => (
+                            <div className="kalamezhuthu-item" key={i}>
+                                <img src={item.img} alt={item.title} />
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="kalamezhuthu-videos">
+                        {kalamezhuthuVideos.map((vid, i) => (
+                            <div className="kalamezhuthu-video-card" key={i}>
+                                <video src={vid.src} controls poster={vid.poster} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* ══ NIRA ══ */}
+                <div className="nira-section">
+                    <div className="chapter-header">
+                        <div className="chapter-lines">
+                            <span></span><i>🌾</i><span></span>
+                        </div>
+                        <h2 className="chapter-title">
+                            {language === "TA"
+                                ? "நிறை"
+                                : language === "ML"
+                                    ? "നിറ"
+                                    : "Nira"}
+                        </h2>
+                    </div>
+
+                    <div className="nira-grid">
+                        <div className="nira-item">
+                            <img src={niraImage.img} alt={niraImage.title} />
+                        </div>
+                        <div className="nira-item nira-video-item">
+                            <video src={niraVideo.src} controls poster={niraVideo.poster} />
+                        </div>
+                    </div>
+                </div>
 
                 {/* ══ CHAPTER THREE — UPADEVATAS ══ */}
 
@@ -199,7 +275,15 @@ export default function DivineGallery() {
                     </div>
 
                     <div className="sub-deities-label">
-                        <span>&#9670; Sub Deities &#9670;</span>
+                        <span>
+                            &#9670;{" "}
+                            {language === "TA"
+                                ? "பரிவார தெய்வங்கள்"
+                                : language === "ML"
+                                    ? "ഉപദേവതകൾ"
+                                    : "Sub Deities"}
+                            {" "}&#9670;
+                        </span>
                     </div>
 
                     <div className="sub-deities-strip">

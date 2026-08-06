@@ -3,6 +3,7 @@ import { useLanguage } from "../Context/Languagecontext";
 import translations from "../Json/Event.json";
 import "../Stylesheet/Event.css";
 import { useNavigate } from "react-router-dom";
+
 /* ─────────────────────────────────────────────
    EventRow — explicit grid placement per parity
    ODD  index → [IMAGE col1] [NODE col2] [TEXT col3]
@@ -32,17 +33,6 @@ function EventRow({ event, index }) {
 
     const imageCell = (
         <div className="ev-card-img-zone">
-            {event.image ? (
-                <img src={event.image} alt={event.title} loading="lazy" />
-            ) : (
-                <div style={{
-                    width: "100%", height: "100%",
-                    background: "linear-gradient(135deg,#3a0a08 0%,#5e110e 100%)",
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontSize: 80, fontFamily: "'Cinzel Decorative',cursive",
-                    color: "rgba(201,152,42,.18)"
-                }}>ॐ</div>
-            )}
             {/* Date badge */}
             <div className="ev-card-date">
                 <span className="ev-card-day">{event.day}</span>
@@ -78,14 +68,14 @@ function EventRow({ event, index }) {
                     <li key={i} className="ev-panel-detail">
                         {d.label ? (
                             <>
-                                <span className="ev-detail-label">{d.label}</span>
-                                <span className="ev-detail-sep">·</span>
-                                <span className="ev-detail-text">{d.text}</span>
+                                {/* <span className="ev-detail-label">{d.label}</span> */}
+                                {/* <span className="ev-detail-sep">·</span> */}
+                                {/* <span className="ev-detail-text">{d.text}</span> */}
                             </>
                         ) : (
                             <>
-                                <span className="ev-detail-dash">—</span>
-                                <span className="ev-detail-text">{d.text}</span>
+                                {/* <span className="ev-detail-dash">—</span> */}
+                                {/* <span className="ev-detail-text">{d.text}</span> */}
                             </>
                         )}
                     </li>
@@ -105,7 +95,7 @@ function EventRow({ event, index }) {
             {!isEven ? (
                 /* ODD rows: image | node | text  */
                 <>
-                    {imageCell}
+                    {/* {imageCell} */}
                     {nodeCell}
                     {textCell}
                 </>
@@ -114,7 +104,7 @@ function EventRow({ event, index }) {
                 <>
                     {textCell}
                     {nodeCell}
-                    {imageCell}
+                    {/* {imageCell} */}
                 </>
             )}
         </div>
@@ -164,9 +154,7 @@ export default function Event() {
                     <div className="oh-mandala-ring oh-ring-3" />
                 </div>
                 <div className="ourheritage-content">
-                    {/* <span className="hero-tag oh-anim-tag">{t.heroTag}</span> */}
                     <h1 className="oh-anim-title">{t.heroTitle}</h1>
-                    {/* <p className="hero-sub oh-anim-sub">{t.heroSub}</p> */}
                     <div className="ourheritage-breadcrumb oh-anim-breadcrumb">
                         <span onClick={() => navigate("/")} style={{ cursor: "pointer" }}>{t.breadcrumb.home}</span>
                         <span className="ourheritage-dot">ॐ</span>
@@ -183,39 +171,12 @@ export default function Event() {
                 </div>
             </div>
 
-            {/* ══ GOLD STATS STRIP ══ */}
-            {/* <div className="ev-stats oh-scroll-reveal" ref={statsRef}>
-                <div className="ev-stats-om" aria-hidden="true">ॐ</div>
-                <div className="ev-stats-inner">
-                    <div className="ev-stat">
-                        <span className="ev-stat-num">14<sup>th</sup></span>
-                        <span className="ev-stat-label">Annual Edition</span>
-                    </div>
-                    <div className="ev-stat-sep" />
-                    <div className="ev-stat">
-                        <span className="ev-stat-num">{t.events.length}</span>
-                        <span className="ev-stat-label">Sacred Events</span>
-                    </div>
-                    <div className="ev-stat-sep" />
-                    <div className="ev-stat">
-                        <span className="ev-stat-num">{specialCount}</span>
-                        <span className="ev-stat-label">Grand Celebrations</span>
-                    </div>
-                    <div className="ev-stat-sep" />
-                    <div className="ev-stat">
-                        <span className="ev-stat-num">14</span>
-                        <span className="ev-stat-label">Days of Devotion</span>
-                    </div>
-                </div>
-            </div> */}
-
             {/* ══ BODY ══ */}
             <div className="ev-body">
                 <main className="ev-schedule oh-scroll-reveal oh-delay-1" ref={scheduleRef}>
 
                     {/* Section heading */}
                     <div className="ev-sched-heading">
-                        {/* <span className="ev-heading-eyebrow">Programme of Events</span> */}
                         <h2 className="ev-heading-title">{t.scheduleTitle}</h2>
                         <p className="ev-heading-sub">{t.scheduleSubtitle}</p>
                         <div className="ev-heading-ornament">
@@ -233,7 +194,8 @@ export default function Event() {
                     </div>
 
                     {/* GRAND FINALE */}
-                    <div className="ev-finale oh-scroll-reveal oh-delay-2" ref={finaleRef}>
+                    
+                    {/* <div className="ev-finale oh-scroll-reveal oh-delay-2" ref={finaleRef}>
                         <div className="ev-finale-header">
                             <div className="ev-finale-stars">
                                 <span>★</span>
@@ -268,7 +230,7 @@ export default function Event() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </main>
             </div>

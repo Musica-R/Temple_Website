@@ -158,9 +158,9 @@ export default function DonationForm() {
       {/* ── HOW TO DONATE ── */}
       <div className="how-to-donate-section">
         <div className="htd-label">
-          <span className="htd-label-tag">{t.howToDonate.tag}</span>
+          {/* <span className="htd-label-tag">{t.howToDonate.tag}</span> */}
           <h2>{t.howToDonate.title}</h2>
-          <p>{t.howToDonate.subtitle}</p>
+          {/* <p>{t.howToDonate.subtitle}</p> */}
         </div>
         <div className="htd-grid">
           {t.howToDonate.steps.map((s) => (

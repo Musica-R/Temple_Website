@@ -303,6 +303,8 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+
+
 .t-row:last-child {
   border-bottom: none;
 }
@@ -564,6 +566,8 @@
   font-family: var(--font-body, 'Cormorant Garamond', serif);
   font-size: 0.8rem;
 }
+
+
 
 /* ───────────── 1024px (Tablet / Small Laptop) ───────────── */
 @media (max-width: 1024px) {

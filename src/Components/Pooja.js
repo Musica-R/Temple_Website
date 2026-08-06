@@ -22,7 +22,7 @@ export default function Pooja() {
   const data = poojaData[language] || poojaData["EN"];
 
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 5;
+  const itemsPerPage = 6;
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const sectionRef = useRef(null);

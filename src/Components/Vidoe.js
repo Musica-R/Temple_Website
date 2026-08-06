@@ -135,7 +135,7 @@ export default function TempleVideo() {
         </p>
         <h2 className="tv-title">{t.title}</h2>
         <LotusDivider />
-        <p className="tv-description">{t.description}</p>
+        {/* <p className="tv-description">{t.description}</p> */}
       </header>
 
       {/* ── VIDEO PLAYER ── */}
@@ -153,7 +153,7 @@ export default function TempleVideo() {
           <video
             ref={videoRef}
             className="tv-video"
-            src="assets/sri.mp4"
+            src="ass1/Home1.mp4"
             poster="assets/vedifestival.jpeg"
             loop
             playsInline
@@ -192,11 +192,11 @@ export default function TempleVideo() {
           <h3 className="tv-festivals-title">{festival.title}</h3>
           <LotusDivider />
         </div>
-        <ol className="tv-festivals-list">
+        <ul className="tv-festivals-list">
           {festival.items.map((line, i) => (
             <li className="tv-festivals-item" key={i}>{line}</li>
           ))}
-        </ol>
+        </ul>
       </div>
 
       {/* ── FOOTER BLESSING ── */}
