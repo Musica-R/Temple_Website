@@ -24,7 +24,47 @@
                 ]
             },
             "footer": "Puthusheri Bhagavathi Temple · 14th Vedi Utsavam 2026",
+            "vediUtsavam": {
+                "eyebrow": "Sacred Chronicle",
+                "title": "Vedi Utsavam",
+                "paragraphs": [
+                    "The Kathir Festival is celebrated on the third Monday of the Malayalam month of Vrischikam. The Vedi Festival is observed on the 90th day thereafter.",
+                    "Kannyar is celebrated on the first Wednesday of the month of Kumbham. From the following Friday, the Vilakku (Lamp) Festival begins. On that night, the women of the Nair ancestral households of the village carry ceremonial Thalams (decorated ritual plates). After the Thalam Choriyal (ritual offering with the ceremonial plates), the temple procession concludes.",
+                    "The ceremony on the following Sunday is Variyezhuthu. On Tuesday, Cheriya Kummatti (Children's Kummatti) is celebrated. Young children are dressed in traditional Kummatti costumes with charcoal applied to their bodies and visit the houses in the village. During the daytime, the men of the Nair ancestral households perform the Ottathala Kummatti.",
+                    "Thursday marks the Seventh Vilakku. The ceremonial procession carrying the Ainkudi Thalam starts from the sanctum, reaches the temple, and performs the Thalam Choriyal ritual.",
+                    "On the following Friday, Valiya Kummatti (Grand Kummatti) is celebrated. After 2:00 PM, the Kummatti groups from Puthukulangara Bhagavathy Temple and Puthussery Kavu, along with the villagers, assemble at the center of the Vayalukulam pond for the Koodiyarppu ceremony, followed by the Night Vela.",
+                    "Early Sunday morning, the Malama ceremony is conducted. On the same day, the historically significant Kambam begins its journey from the Walayar Forest to Puthussery Temple, reaching the temple early on Monday morning. The famous Puthussery Vedi Festival is celebrated on that day.",
+                    "On the following Tuesday, the Fourteenth Vela is held, marking the conclusion of that year's Puthussery Vedi Festival."
+                ]
+            },
             "events": [
+                {
+                    "day": "1",
+                    "month": "Feb",
+                    "weekday": "Wednesday",
+                    "title": "Kathir Festival",
+                    "time": "Evening 6:30 onwards",
+                    "special": true,
+                    "image": "/assets/flag.jpeg",
+                    "details": [
+                        {
+                            "label": "Kanyaar",
+                            "text": "Bell Ringing Ceremony (Mani Idal Chandi)"
+                        },
+                        {
+                            "label": "Utsava Kodiyerum",
+                            "text": "Festival Flag Hoisting"
+                        },
+                        {
+                            "label": null,
+                            "text": "Under the chief supervision of Temple Melshanthi Sri A.M. Sreejith Namboothiri"
+                        },
+                        {
+                            "label": "Sarvaiswarya Vilakku Puja",
+                            "text": "Special inaugural lamp worship"
+                        }
+                    ]
+                },
                 {
                     "day": "11",
                     "month": "Feb",
@@ -246,7 +286,47 @@
                 ]
             },
             "footer": "புதுஷேரி பகவதி கோவில் · 14வது வேடி உத்சவம் 2026",
+            "vediUtsavam": {
+                "eyebrow": "புனித வரலாறு",
+                "title": "வேடி உத்சவம்",
+                "paragraphs": [
+                    "விருச்சிக மாதத்தின் மூன்றாவது திங்கட்கிழமையன்று கதிர் விழா கொண்டாடப்படுகிறது. அதன் பின்னர் தொண்ணூறாவது நாளில் வெடி விழா நடைபெறுகிறது.",
+                    "கும்ப மாதத்தின் முதல் புதன்கிழமையன்று கண்யார் நடைபெறும். கண்யாருக்குப் பிறகு வரும் வெள்ளிக்கிழமை முதல் விளக்கு விழா தொடங்குகிறது. அன்று இரவு நாட்டிலுள்ள நாயர் தரவாட்டுப் பெண்கள் தாளம் எடுக்கின்றனர். அதன் பின்னர் தாளம் சொரியல் சடங்கு நடைபெற்று எழுந்தருளல் நிறைவடைகிறது.",
+                    "அடுத்த ஞாயிற்றுக்கிழமை நடைபெறும் சடங்கு வாரியெழுத்து ஆகும். செவ்வாய்க்கிழமை சிறிய கும்மாட்டி (அல்லது குழந்தைகளின் கும்மாட்டி) நடைபெறும். சிறிய குழந்தைகளின் உடலில் கரி பூசி வேடமணிவித்து, அவர்கள் நாட்டிலுள்ள வீடுகளுக்குச் செல்கின்றனர். அதே நாளில் பகல் நேரத்தில் நாயர் தரவாட்டின் ஆண்கள் அணியும் வேடமே ஒற்றத்தலை கும்மாட்டி ஆகும்.",
+                    "வியாழக்கிழமை ஏழாம் விளக்கு நடைபெறும். மூலஸ்தானத்திலிருந்து ஐங்குடி தாளம் உடன் எழுந்தருளி கோவிலுக்கு வந்து தாளம் சொரிகின்றனர்.",
+                    "அடுத்த வெள்ளிக்கிழமை பெரிய கும்மாட்டி நடைபெறும். பிற்பகல் 2 மணிக்குப் பிறகு வயல்குளத்தின் நடுப்பகுதியில் புதுக்குளங்கர பகவதி கோவில் மற்றும் புதுச்சேரி காவு ஆகிய இடங்களின் கும்மாட்டித் தலைகளும், நாட்டினரும் ஒன்றுகூடி கூடியார்ப்பு நடத்துகின்றனர். அதன் பின்னர் இரவில் வேலை நடைபெறும்.",
+                    "ஞாயிற்றுக்கிழமை அதிகாலையில் மலம நடைபெறும். அதே நாளில் வாளையார் காட்டிலிருந்து வரலாற்றுப் புகழ்பெற்ற கம்பம் புதுச்சேரி கோவிலுக்குப் புறப்படுகிறது. திங்கட்கிழமை அதிகாலையில் அது கோவிலை அடைகிறது. அன்றே புகழ்பெற்ற புதுச்சேரி வெடி விழா கொண்டாடப்படுகிறது.",
+                    "அடுத்த நாள் செவ்வாய்க்கிழமை பதினான்காம் வேலை நடைபெறுகிறது. அதனுடன் அந்த ஆண்டிற்கான புதுச்சேரி வெடி விழா நிறைவடைகிறது."
+                ]
+            },
             "events": [
+                {
+                    "day": "1",
+                    "month": "பிப்",
+                    "weekday": "புதன்கிழமை",
+                    "title": "கதிர் திருவிழா",
+                    "time": "மாலை 6:30 முதல்",
+                    "special": true,
+                    "image": "/assets/flag.jpeg",
+                    "details": [
+                        {
+                            "label": "கண்யார்",
+                            "text": "மணி ஏந்தும் சடங்கு (மணி இடல் சண்டி)"
+                        },
+                        {
+                            "label": "உத்சவ கொடியேற்றம்",
+                            "text": "திருவிழா கொடி ஏற்றும் விழா"
+                        },
+                        {
+                            "label": null,
+                            "text": "கோவில் மேல்சாந்தி ஸ்ரீ ஏ.எம். ஸ்ரீஜித் நம்பூதிரி அவர்களின் மேற்பார்வையில்"
+                        },
+                        {
+                            "label": "சர்வைஸ்வர்ய விளக்கு பூஜை",
+                            "text": "சிறப்பு தொடக்க விளக்கு வழிபாடு"
+                        }
+                    ]
+                },
                 {
                     "day": "11",
                     "month": "பிப்",
@@ -468,7 +548,47 @@
                 ]
             },
             "footer": "പുതുശ്ശേരി ഭഗവതി ക്ഷേത്രം · 14-ആം വെടി ഉത്സവം 2026",
+            "vediUtsavam": {
+                "eyebrow": "വിശുദ്ധ ചരിത്രം",
+                "title": "വെടി ഉത്സവം",
+                "paragraphs": [
+                    "വൃശ്ചികമാസത്തിലെ മൂന്നാമത്തെ തിങ്കളാഴ്ചയാണ് കതിർ ഉത്സവം ആഘോഷിക്കുന്നത്. തുടർന്ന് തൊണ്ണൂറാം ദിവസം വെടി ഉത്സവം എന്നാണ് കണക്ക്.",
+                    "കുംഭമാസത്തിലെ ആദ്യത്തെ ബുധനാഴ്ചയാണ് കണ്യാർ. കണ്യാർ കഴിഞ്ഞു വെള്ളിയാഴ്ച മുതൽ വിളക്ക് ആഘോഷിക്കുന്നു. അന്ന് രാത്രി ദേശത്തിലെ നായർ തറവാട്ടിലെ സ്ത്രീകൾ താലം എടുക്കുന്നു. തുടർന്ന് താലം ചൊരിയൽ ചടങ്ങിന് ശേഷം എഴുന്നെള്ളത് അവസാനിക്കുന്നു.",
+                    "അടുത്ത ഞായറാഴ്ചത്തെ ചടങ്ങ് വാരിയെഴുത്താണ്. ചൊവ്വാഴ്ച ചെറിയകുമ്മാട്ടി അഥവ കുട്ടികളുടെ കുമ്മാട്ടി; ചെറിയ കുട്ടികളുടെ ദേഹത്തു കരി തേച് വേഷം കെട്ടിച്ചു ദേശത്തിലെ വീടുകളിൽ കുട്ടികൾ ചെല്ലുന്നു. അന്നേദിവസം പകൽ നായർ തറവാട്ടിലെ പുരുഷന്മാർ കെട്ടുന്നതാണ് ഒറ്റത്തതലകുമ്മാട്ടി.",
+                    "വ്യാഴാഴ്ചയാണ് ഏഴാം വിളക്ക്; മൂലസ്ഥാനത്തുനിന്ന് ഐങ്കുടി താലവുമായി എഴുന്നെള്ളത് അമ്പലത്തിൽ എത്തി താലം ചൊരിയുന്നു.",
+                    "അടുത്ത വെള്ളിയാഴ്ച വലിയകുമ്മാട്ടി; ഉച്ചക്ക് രണ്ടുമണിക്ക് ശേഷം വയലുകുളത്തിന്റെ മധ്യത്തിൽ പുതുക്കുളങ്ങര ഭഗവതി ക്ഷേത്രത്തിലെയും, പുതുശ്ശേരി കാവിലേയും കുമ്മാട്ടിത്തലകളും, ദേശക്കാരും ചേർന്ന് കൂടിയാർപ്പ്, അതിനുശേഷം രാത്രിവേല.",
+                    "ഞായറാഴ്ച പുലർച്ചെ മലമ; അന്നേദിവസം തന്നെ വാളയാർ കാട്ടിൽനിന്നും ചരിത്ര പ്രസിദ്ധമായ കമ്പം പുതുശ്ശേരി അമ്പലത്തിലേക്ക് പുറപ്പെടും, തിങ്കളാഴ്ച പുലർച്ചെ ക്ഷേത്രത്തിൽ എത്തിച്ചേരും. അന്നേദിവസമാണ് പ്രസിദ്ധമായ പുതുശ്ശേരി വെടി ആഘോഷിക്കുന്നത്.",
+                    "അടുത്ത  നാൾ ചൊവ്വാഴ്ച;പുലർച്ചെയാണ് കമ്പം കത്തിക്കൽ .അന്നേദിവസത്തെ പതിനാലാംവേലയോടു കൂടെ ആ വർഷത്തെ പുതുശ്ശേരി വെടിയുസവത്തിനു സമാപനം കുറിക്കുന്നു"
+                ]
+            },
             "events": [
+                {
+                    "day": "1",
+                    "month": "ഫെബ്",
+                    "weekday": "ബുധനാഴ്ച",
+                    "title": "കതിരുൽസവം",
+                    "time": "വൈകിട്ട് 6:30 മുതൽ",
+                    "special": true,
+                    "image": "/assets/flag.jpeg",
+                    "details": [
+                        {
+                            "label": "കണ്ണ്യാർ ",
+                            "text": "മണി ഇടൽ ചടങ്ങ് (മണി ഇടൽ ചണ്ടി)"
+                        },
+                        {
+                            "label": "ഉത്സവ കൊടിയേറ്റം",
+                            "text": "ഉത്സവ പതാക ഉയർത്തൽ"
+                        },
+                        {
+                            "label": null,
+                            "text": "ക്ഷേത്ര മേൽശാന്തി ശ്രീ എ.എം. ശ്രീജിത് നമ്പൂതിരിയുടെ മേൽനോട്ടത്തിൽ"
+                        },
+                        {
+                            "label": "സർവൈശ്വര്യ വിളക്ക് പൂജ",
+                            "text": "പ്രത്യേക ഉദ്ഘാടന ദീപ ആരാധന"
+                        }
+                    ]
+                },
                 {
                     "day": "11",
                     "month": "ഫെബ്",
@@ -557,7 +677,7 @@
                     "day": "19",
                     "month": "ഫെബ്",
                     "weekday": "വ്യാഴാഴ്ച",
-                    "title": "ഏഴാം വിളക്ക് – ഏഴാം ദീപം",
+                    "title": "ഏഴാം വിളക്ക്",
                     "time": "വൈകിട്ട് 6:30 – അവതരണം",
                     "special": false,
                     "image": "/assets/sevenlamp.jpg",
@@ -622,7 +742,7 @@
                     "day": "22",
                     "month": "ഫെബ്",
                     "weekday": "ഞായറാഴ്ച",
-                    "title": "ശോധന വേല",
+                    "title": "കമ്പംകത്തിക്കൽ / ശോധന വേല",
                     "time": "",
                     "special": false,
                     "image": "/assets/Procession.jpg",

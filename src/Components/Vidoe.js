@@ -38,9 +38,9 @@ function LotusDivider({ className = "" }) {
 
 const gallery = [
   { src: "assets/gallery17.png", alt: "Gopuram" },
-  { src: "assets/gallery5.jpg",  alt: "Sanctum" },
+  { src: "assets/gallery5.jpg", alt: "Sanctum" },
   { src: "assets/dharashana.jpg", alt: "Pooja" },
-  { src: "assets/bamboo.jpg",    alt: "Deepam" },
+  { src: "assets/bamboo.jpg", alt: "Deepam" },
 ];
 
 /* Annual festival list, per language.
@@ -94,26 +94,26 @@ export default function TempleVideo() {
 
   const [playing, setPlaying] = useState(false);
 
-  const videoRef    = useRef(null);
-  const headerRef   = useRef(null);
-  const playerRef   = useRef(null);
-  const captionRef  = useRef(null);
-  const galleryRef  = useRef(null);
+  const videoRef = useRef(null);
+  const headerRef = useRef(null);
+  const playerRef = useRef(null);
+  const captionRef = useRef(null);
+  const galleryRef = useRef(null);
   const festivalRef = useRef(null);
-  const footerRef   = useRef(null);
+  const footerRef = useRef(null);
 
-  useFadeIn(headerRef,   0);
-  useFadeIn(playerRef,   80);
-  useFadeIn(captionRef,  160);
-  useFadeIn(galleryRef,  200);
+  useFadeIn(headerRef, 0);
+  useFadeIn(playerRef, 80);
+  useFadeIn(captionRef, 160);
+  useFadeIn(galleryRef, 200);
   useFadeIn(festivalRef, 240);
-  useFadeIn(footerRef,   280);
+  useFadeIn(footerRef, 280);
 
   function togglePlay() {
     const v = videoRef.current;
     if (!v) return;
     if (v.paused) { v.play(); setPlaying(true); }
-    else          { v.pause(); setPlaying(false); }
+    else { v.pause(); setPlaying(false); }
   }
 
   console.log("language:", language, "festival:", festival);
@@ -153,11 +153,12 @@ export default function TempleVideo() {
           <video
             ref={videoRef}
             className="tv-video"
-            src="ass1/Home1.mp4"
-            poster="assets/vedifestival.jpeg"
+            src="/ass1/home1.mp4"
+            poster="/assets/vedifestival.jpeg"
+            controls
             loop
             playsInline
-            controls
+            preload="metadata"
             onPlay={() => setPlaying(true)}
             onPause={() => setPlaying(false)}
           />
