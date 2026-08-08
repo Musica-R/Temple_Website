@@ -338,8 +338,9 @@
   font-family: var(--font-display, 'Cinzel', serif);
   font-size: 17px;
   letter-spacing: 0.1em;
-  color: var(--gold, #d4af37);
+  color: var(--gold, #e3bb37);
   flex-shrink: 0;
+  font-weight: 700;
 }
 
 /* ══════════════════
